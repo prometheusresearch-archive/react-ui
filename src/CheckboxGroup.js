@@ -13,11 +13,11 @@ export let primitiveValueStrategy = {
     if (!value) {
       return -1;
     }
-    return value.indexOf(option.id);
+    return value.indexOf(option.value);
   },
 
   optionToValue(option) {
-    return option.id;
+    return option.value;
   },
 
   isChecked(value, option) {
@@ -74,12 +74,13 @@ export default class CheckboxGroup extends React.Component {
   }
 
   renderOption(option) {
+    let {valueStrategy} = this.props;
     let {CheckboxWrapper, Checkbox} = this.constructor.stylesheet;
-    let checked = this.props.valueStrategy.isChecked(this.props.value, option);
+    let checked = valueStrategy.isChecked(this.props.value, option);
     return (
-      <CheckboxWrapper key={option.id}>
+      <CheckboxWrapper key={valueStrategy.optionToValue(option)}>
         <Checkbox
-          label={option.title}
+          label={option.label}
           value={checked}
           onChange={this.onChange.bind(this, option)}
           />

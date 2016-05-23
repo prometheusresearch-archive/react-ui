@@ -11,8 +11,8 @@ import RadioGroup from '../RadioGroup';
 describe('react-ui', function() {
 
   let options = [
-    {id: 'a', title: 'A'},
-    {id: 'b', title: 'B'}
+    {value: 'a', label: 'A'},
+    {value: 'b', label: 'B'}
   ];
 
   let renderer = null;

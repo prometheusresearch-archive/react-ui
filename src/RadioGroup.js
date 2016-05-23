@@ -28,13 +28,13 @@ export default class RadioGroup extends React.Component {
   renderOption(option) {
     let {RadioWrapper, Radio} = this.constructor.stylesheet;
     let value = this.props.value;
-    let checked = value === option.id;
+    let checked = value === option.value;
     return (
-      <RadioWrapper key={option.id}>
+      <RadioWrapper key={option.value}>
         <Radio
           value={checked}
-          label={option.title}
-          onChange={this.onChange.bind(this, option.id)}
+          label={option.label}
+          onChange={this.onChange.bind(this, option.value)}
           />
       </RadioWrapper>
     );

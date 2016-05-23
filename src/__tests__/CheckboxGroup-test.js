@@ -11,8 +11,8 @@ import CheckboxGroup from '../CheckboxGroup';
 describe('react-ui', function() {
 
   let options = [
-    {id: 'a', title: 'A'},
-    {id: 'b', title: 'B'}
+    {value: 'a', label: 'A'},
+    {value: 'b', label: 'B'}
   ];
 
   let renderer = null;
