@@ -37,7 +37,7 @@ version-major version-minor version-patch: lint test build
 
 publish:
 	@git push --tags origin HEAD:develop
-	@npm publish
+	@npm publish --access public
 
 clean:
 	@rm -rf lib/
