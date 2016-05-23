@@ -36,7 +36,7 @@ version-major version-minor version-patch: lint test build
 	@npm version $(@:version-%=%)
 
 publish:
-	@git push --tags origin HEAD:develop
+	@git push --tags origin HEAD:master
 	@npm publish --access public
 
 clean:
