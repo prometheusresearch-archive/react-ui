@@ -1,6 +1,6 @@
 {
   "name": "@prometheusresearch/react-ui",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Configurable and styleable UI components",
   "main": "lib/index.js",
   "scripts": {
