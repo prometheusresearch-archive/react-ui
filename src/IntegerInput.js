@@ -37,6 +37,15 @@ export default class IntegerInput extends React.Component {
     );
   }
 
+  componentWillReceiveProps(nextProps) {
+    let {value} = this.state;
+    if (nextProps.value == null) {
+      this.setState({value: ''});
+    } else if (nextProps.value !== tryParseInteger(value)) {
+      this.setState({value: String(nextProps.value)});
+    }
+  }
+
   onChange = event => {
     let value = extractValueFromEvent(event);
     this.setState({value: value || ''}, () => {

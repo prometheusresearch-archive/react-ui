@@ -39,7 +39,7 @@ export default class NumberInput extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     let {value} = this.state;
-    if (nextProps.value === undefined) {
+    if (nextProps.value == null) {
       this.setState({value: ''});
     } else if (nextProps.value !== tryParseNumber(value)) {
       this.setState({value: String(nextProps.value)});
