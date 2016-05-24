@@ -1,5 +1,5 @@
 /**
- * @copyright 2015, Prometheus Research, LLC
+ * @copyright 2016-present, Prometheus Research, LLC
  */
 
 import * as React from 'react';
