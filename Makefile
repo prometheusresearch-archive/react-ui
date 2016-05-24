@@ -3,7 +3,7 @@ TESTS         = $(shell find ./src -path '**/__tests__/*-test.js')
 SRC           = $(shell find ./src -name '*.js' -not -path '*/__tests__/*')
 LIB           = $(SRC:./src/%=./lib/%)
 NODE          = $(BIN)/babel-node $(BABEL_OPTIONS)
-MOCHA_OPTIONS =
+MOCHA_OPTIONS = -R dot
 MOCHA         = $(BIN)/_mocha $(MOCHA_OPTIONS)
 NYC_OPTIONS   = --all --require babel-core/register
 NYC           = $(BIN)/nyc $(NYC_OPTIONS)

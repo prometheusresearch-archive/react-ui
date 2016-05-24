@@ -12,7 +12,10 @@
     ]
   },
   "eslintConfig": {
-    "extends": "prometheusresearch"
+    "extends": "prometheusresearch",
+    "env": {
+      "mocha": true
+    }
   },
   "repository": {
     "type": "git",
@@ -47,5 +50,9 @@
     "react-dom": "^0.14.0",
     "react-shallow-testutils": "^2.0.0",
     "sinon": "^1.17.4"
+  },
+  "dependencies": {
+    "lodash": "^4.13.0",
+    "react-stylesheet": "^1.0.0-beta.1"
   }
 }
