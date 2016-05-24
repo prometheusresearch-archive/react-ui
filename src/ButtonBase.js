@@ -4,13 +4,12 @@
 
 import * as React from 'react';
 import * as Stylesheet from 'react-stylesheet';
-import {style} from 'react-dom-stylesheet';
+import {button, div} from 'react-dom-stylesheet/component';
 import * as CSS from 'react-dom-stylesheet/css';
 import {isString} from 'lodash';
 
-
 let stylesheet = Stylesheet.create({
-  Root: style('button', {
+  Root: button({
     cursor: CSS.cursor.pointer,
     textAlign: CSS.textAlign.left,
     userSelect: CSS.none,
@@ -18,11 +17,11 @@ let stylesheet = Stylesheet.create({
     whiteSpace: 'nowrap',
     overflow: 'hidden',
   }),
-  Caption: style('div', {
+  Caption: div({
     display: CSS.display.inlineBlock,
   }),
   Icon: 'span',
-  IconWrapper: style('div', {
+  IconWrapper: div({
     display: CSS.display.inlineBlock,
   }),
 });
