@@ -11,11 +11,11 @@ const NOVALUE_OPTION = {label: '', value: NOVALUE};
 export default class Select extends React.Component {
 
   render() {
-    let {options, value, allowNovalue} = this.props;
+    let {options, value, allowNoValue} = this.props;
     if (value == null) {
       value = NOVALUE;
     }
-    if (value === NOVALUE || allowNovalue) {
+    if (value === NOVALUE || allowNoValue) {
       options = [NOVALUE_OPTION].concat(options);
     }
     return (

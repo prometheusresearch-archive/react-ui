@@ -63,7 +63,7 @@ describe('react-ui', function() {
 
       renderer.render(
         <Select
-          allowNovalue
+          allowNoValue
           value="a"
           onChange={onChange}
           options={options}
