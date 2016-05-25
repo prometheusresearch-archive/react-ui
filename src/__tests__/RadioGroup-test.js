@@ -27,7 +27,7 @@ describe('react-ui', function() {
       let onChange = spy();
       renderer.render(
         <RadioGroup
-          value={'a'}
+          value="a"
           onChange={onChange}
           options={options}
           />
