@@ -52,6 +52,7 @@
     "sinon": "^1.17.4"
   },
   "dependencies": {
+    "invariant": "^2.2.1",
     "lodash": "^4.13.0",
     "react-dom-stylesheet": "^0.2.1",
     "react-stylesheet": "^1.0.0-beta.1"
