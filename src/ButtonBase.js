@@ -3,26 +3,25 @@
  */
 
 import * as React from 'react';
-import * as Stylesheet from 'react-stylesheet';
-import {button, div} from 'react-dom-stylesheet/component';
-import * as CSS from 'react-dom-stylesheet/css';
 import {isString} from 'lodash';
 
-let stylesheet = Stylesheet.create({
-  Root: button({
-    cursor: CSS.cursor.pointer,
-    textAlign: CSS.textAlign.left,
-    userSelect: CSS.none,
-    WebkitUserSelect: CSS.none,
+import {create, css, component} from './stylesheet';
+
+let stylesheet = create({
+  Root: component.button({
+    cursor: css.cursor.pointer,
+    textAlign: css.textAlign.left,
+    userSelect: css.none,
+    WebkitUserSelect: css.none,
     whiteSpace: 'nowrap',
     overflow: 'hidden',
   }),
-  Caption: div({
-    display: CSS.display.inlineBlock,
+  Caption: component.div({
+    display: css.display.inlineBlock,
   }),
   Icon: 'span',
-  IconWrapper: div({
-    display: CSS.display.inlineBlock,
+  IconWrapper: component.div({
+    display: css.display.inlineBlock,
   }),
 });
 
