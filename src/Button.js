@@ -208,6 +208,8 @@ function makeStylesheet(stylesheet) {
         }
       },
       attachLeft: {
+        borderTopLeftRadius: 0,
+        borderBottomLeftRadius: 0,
         borderLeft: css.none,
         hover: {
           borderLeft: css.none,
@@ -223,6 +225,8 @@ function makeStylesheet(stylesheet) {
         },
       },
       attachRight: {
+        borderTopRightRadius: 0,
+        borderBottomRightRadius: 0,
         borderRight: css.none,
         hover: {
           borderRight: css.none,
@@ -238,6 +242,8 @@ function makeStylesheet(stylesheet) {
         },
       },
       attachTop: {
+        borderTopRightRadius: 0,
+        borderTopLeftRadius: 0,
         borderTop: css.none,
         hover: {
           borderTop: css.none,
@@ -253,6 +259,8 @@ function makeStylesheet(stylesheet) {
         },
       },
       attachBottom: {
+        borderBottomRightRadius: 0,
+        borderBottomLeftRadius: 0,
         borderBottom: css.none,
         hover: {
           borderBottom: css.none,
@@ -270,6 +278,7 @@ function makeStylesheet(stylesheet) {
 
       groupHorizontally: {
         borderRight: css.none,
+        borderRadius: 0,
         hover: {
           borderRight: css.none,
         },
@@ -282,7 +291,13 @@ function makeStylesheet(stylesheet) {
         disabled: {
           borderRight: css.none,
         },
+        firstChild: {
+          borderBottomLeftRadius: 2,
+          borderTopLeftRadius: 2,
+        },
         lastChild: {
+          borderBottomRightRadius: 2,
+          borderTopRightRadius: 2,
           borderRight: css.border(1, stylesheet.border),
           hover: {
             borderRight: css.border(1, stylesheet.borderHover),
@@ -300,9 +315,13 @@ function makeStylesheet(stylesheet) {
       },
       groupVertically: {
         firstChild: {
+          borderBottomRightRadius: 0,
+          borderBottomLeftRadius: 0,
           borderBottom: css.none,
         },
         lastChild: {
+          borderTopRightRadius: 0,
+          borderTopLeftRadius: 0,
           borderTop: css.none,
         }
       },

@@ -9,6 +9,8 @@ import {create, css, component} from './stylesheet';
 
 let stylesheet = create({
   Root: component.button({
+    display: css.display.inlineBlock,
+    verticalAlign: 'bottom',
     cursor: css.cursor.pointer,
     textAlign: css.textAlign.left,
     userSelect: css.none,
@@ -68,6 +70,7 @@ export default class ButtonBase extends React.Component {
       children, icon,
       disabled, active, size,
       attach,
+      groupVertically, groupHorizontally,
       variant,
       stylesheet: {Root, Caption, Icon, IconWrapper},
       ...props
@@ -78,6 +81,8 @@ export default class ButtonBase extends React.Component {
       attachRight: attach.right,
       attachTop: attach.top,
       attachBottom: attach.bottom,
+      groupVertically,
+      groupHorizontally,
       small: size === 'small',
       normal: size === 'normal',
       large: size === 'large',
