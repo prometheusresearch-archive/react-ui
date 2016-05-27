@@ -8,18 +8,18 @@ import Button from './Button';
 export default style(Button, {
   raised: true,
 
-  textWidth: 300,
+  textWidth: 400,
 
-  text: css.rgb(255),
+  text: css.rgb(255, 237, 237),
   textHover: css.rgb(255),
   textFocus: css.rgb(255),
   textActive: css.rgb(255),
   textDisabled: css.rgb(255),
 
   background: css.rgb(210, 77, 77),
-  backgroundHover: css.rgb(173, 48, 48),
-  backgroundFocus: css.rgb(173, 48, 48),
-  backgroundActive: css.rgb(173, 48, 48),
+  backgroundHover: css.rgb(210, 77, 77),
+  backgroundFocus: css.rgb(210, 77, 77),
+  backgroundActive: css.rgb(210, 77, 77),
   backgroundDisabled: css.rgb(226, 135, 135),
 
   border: css.rgb(210, 77, 77),
@@ -31,7 +31,7 @@ export default style(Button, {
   shadow: css.none,
   shadowHover: css.none,
   shadowFocus: css.none,
-  shadowActive: '#ddd',
+  shadowActive: css.rgb(134, 3, 3),
   shadowDisabled: css.none,
 }, 'FlatDangerButton');
 

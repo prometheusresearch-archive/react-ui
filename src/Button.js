@@ -8,9 +8,9 @@ import theme from './theme';
 import ButtonBase from './ButtonBase';
 
 let defaultTextSize = {
-  small: '85%',
-  normal: '90%',
-  large: '100%',
+  small: 12,
+  normal: 14,
+  large: 16,
 };
 
 let defaultHeight = {
@@ -47,7 +47,7 @@ let stylesheet = {
   borderHover: css.rgb(180),
   borderFocus: css.rgb(180),
   borderActive: css.rgb(200),
-  borderDisabled: '#ececec',
+  borderDisabled: css.rgb(210),
 
   shadow: '#b7b7b7',
   shadowHover: '#b7b7b7',
@@ -71,12 +71,21 @@ function makeStylesheet(stylesheet) {
       padding: css.padding(4, 10),
       fontWeight: stylesheet.textWidth,
       fontSize: textSize.small || textSize,
-      boxShadow: css.boxShadow(0, 1, 1, 0, stylesheet.shadow),
+      boxShadow: css.multi(
+        css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadow),
+        css.boxShadow(0, 1, 1, 0, stylesheet.shadow)
+      ),
       focus: {
-        boxShadow: css.boxShadow(0, 1, 1, 0, stylesheet.shadowFocus),
+        boxShadow: css.multi(
+          css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadowFocus),
+          css.boxShadow(0, 1, 1, 0, stylesheet.shadowFocus),
+        ),
       },
       hover: {
-        boxShadow: css.boxShadow(0, 1, 1, 0, stylesheet.shadowHover),
+        boxShadow: css.multi(
+          css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadowHover),
+          css.boxShadow(0, 1, 1, 0, stylesheet.shadowHover),
+        ),
       },
       active: {
         boxShadow: css.insetBoxShadow(0, 1, 1, 0, stylesheet.shadowActive),
@@ -94,12 +103,21 @@ function makeStylesheet(stylesheet) {
       padding: css.padding(8, 15),
       fontWeight: stylesheet.textWidth,
       fontSize: textSize.normal || textSize,
-      boxShadow: css.boxShadow(0, 1, 1, 0, stylesheet.shadow),
+      boxShadow: css.multi(
+        css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadow),
+        css.boxShadow(0, 1, 1, 0, stylesheet.shadow),
+      ),
       focus: {
-        boxShadow: css.boxShadow(0, 1, 1, 0, stylesheet.shadowFocus),
+        boxShadow: css.multi(
+          css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadowFocus),
+          css.boxShadow(0, 1, 1, 0, stylesheet.shadowFocus),
+        ),
       },
       hover: {
-        boxShadow: css.boxShadow(0, 1, 1, 0, stylesheet.shadowHover),
+        boxShadow: css.multi(
+          css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadowHover),
+          css.boxShadow(0, 1, 1, 0, stylesheet.shadowHover),
+        ),
       },
       active: {
         boxShadow: css.insetBoxShadow(0, 1, 1, 0, stylesheet.shadowActive),
@@ -117,12 +135,21 @@ function makeStylesheet(stylesheet) {
       padding: css.padding(10, 30),
       fontWeight: stylesheet.textWidth,
       fontSize: textSize.large || textSize,
-      boxShadow: css.boxShadow(0, 2, 3, 0, stylesheet.shadow),
+      boxShadow: css.multi(
+        css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadow),
+        css.boxShadow(0, 2, 3, 0, stylesheet.shadow),
+      ),
       focus: {
-        boxShadow: css.boxShadow(0, 2, 3, 0, stylesheet.shadowFocus),
+        boxShadow: css.multi(
+          css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadowFocus),
+          css.boxShadow(0, 2, 3, 0, stylesheet.shadowFocus),
+        ),
       },
       hover: {
-        boxShadow: css.boxShadow(0, 2, 3, 0, stylesheet.shadowHover),
+        boxShadow: css.multi(
+          css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadowHover),
+          css.boxShadow(0, 2, 3, 0, stylesheet.shadowHover),
+        )
       },
       active: {
         boxShadow: css.insetBoxShadow(0, 2, 3, 0, stylesheet.shadowActive),
@@ -277,40 +304,29 @@ function makeStylesheet(stylesheet) {
       },
 
       groupHorizontally: {
-        borderRight: css.none,
+        borderRight: 'none !important',
         borderRadius: 0,
-        hover: {
-          borderRight: css.none,
-        },
-        focus: {
-          borderRight: css.none,
-        },
-        active: {
-          borderRight: css.none,
-        },
-        disabled: {
-          borderRight: css.none,
-        },
         firstChild: {
           borderBottomLeftRadius: 2,
           borderTopLeftRadius: 2,
+          borderRight: 'none !important',
         },
         lastChild: {
           borderBottomRightRadius: 2,
           borderTopRightRadius: 2,
-          borderRight: css.border(1, stylesheet.border),
           hover: {
-            borderRight: css.border(1, stylesheet.borderHover),
+            borderRight: css.border(1, stylesheet.borderHover) + ' !important',
           },
           focus: {
-            borderRight: css.border(1, stylesheet.borderFocus),
+            borderRight: css.border(1, stylesheet.borderFocus) + ' !important',
           },
           active: {
-            borderRight: css.border(1, stylesheet.borderActive),
+            borderRight: css.border(1, stylesheet.borderActive) + ' !important',
           },
           disabled: {
-            borderRight: css.border(1, stylesheet.borderDisabled),
-          }
+            borderRight: css.border(1, stylesheet.borderDisabled) + ' !important',
+          },
+          borderRight: css.border(1, stylesheet.border) + ' !important',
         }
       },
       groupVertically: {
