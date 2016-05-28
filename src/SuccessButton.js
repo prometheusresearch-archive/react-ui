@@ -8,7 +8,7 @@ import {css, style} from './stylesheet';
 export default style(Button, {
   raised: true,
 
-  textWidth: 400,
+  textWidth: 300,
 
   text: css.rgb(255),
   textHover: css.rgb(255),

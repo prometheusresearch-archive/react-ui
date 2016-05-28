@@ -28,13 +28,13 @@ let defaultWidth = {
 let stylesheet = {
   raised: true,
 
-  textWidth: 400,
+  textWidth: 300,
   textSize: defaultTextSize,
 
   text: css.rgb(130),
   textHover: css.rgb(100),
   textFocus: css.rgb(100),
-  textActive: css.rgb(100),
+  textActive: css.rgb(140),
   textDisabled: '#dadada',
 
   background: css.rgb(255),
@@ -75,22 +75,28 @@ function makeStylesheet(stylesheet) {
         css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadow),
         css.boxShadow(0, 1, 1, 0, stylesheet.shadow)
       ),
-      focus: {
-        boxShadow: css.multi(
-          css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadowFocus),
-          css.boxShadow(0, 1, 1, 0, stylesheet.shadowFocus),
-        ),
-      },
       hover: {
         boxShadow: css.multi(
           css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadowHover),
           css.boxShadow(0, 1, 1, 0, stylesheet.shadowHover),
         ),
       },
+      focus: {
+        boxShadow: css.multi(
+          css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadowFocus),
+          css.boxShadow(0, 0, 0, 2, css.rgba(0, 126, 229, 0.3)),
+        ),
+      },
       active: {
         boxShadow: css.insetBoxShadow(0, 1, 1, 0, stylesheet.shadowActive),
         paddingTop: stylesheet.raised ? 6 : 4,
         paddingBottom: stylesheet.raised ? 2 : 4,
+        focus: {
+          boxShadow: css.multi(
+            css.insetBoxShadow(0, 1, 1, 0, stylesheet.shadowActive),
+            css.boxShadow(0, 0, 0, 2, css.rgba(0, 126, 229, 0.3)),
+          ),
+        }
       },
       disabled: {
         padding: css.padding(4, 10),
@@ -107,22 +113,28 @@ function makeStylesheet(stylesheet) {
         css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadow),
         css.boxShadow(0, 1, 1, 0, stylesheet.shadow),
       ),
-      focus: {
-        boxShadow: css.multi(
-          css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadowFocus),
-          css.boxShadow(0, 1, 1, 0, stylesheet.shadowFocus),
-        ),
-      },
       hover: {
         boxShadow: css.multi(
           css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadowHover),
           css.boxShadow(0, 1, 1, 0, stylesheet.shadowHover),
         ),
       },
+      focus: {
+        boxShadow: css.multi(
+          css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadowFocus),
+          css.boxShadow(0, 0, 0, 2, css.rgba(0, 126, 229, 0.3)),
+        ),
+      },
       active: {
         boxShadow: css.insetBoxShadow(0, 1, 1, 0, stylesheet.shadowActive),
         paddingTop: stylesheet.raised ? 10 : 8,
         paddingBottom: stylesheet.raised ? 6 : 8,
+        focus: {
+          boxShadow: css.multi(
+            css.insetBoxShadow(0, 1, 1, 0, stylesheet.shadowActive),
+            css.boxShadow(0, 0, 0, 2, css.rgba(0, 126, 229, 0.3)),
+          ),
+        }
       },
       disabled: {
         padding: css.padding(8, 15),
@@ -139,22 +151,28 @@ function makeStylesheet(stylesheet) {
         css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadow),
         css.boxShadow(0, 2, 3, 0, stylesheet.shadow),
       ),
-      focus: {
-        boxShadow: css.multi(
-          css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadowFocus),
-          css.boxShadow(0, 2, 3, 0, stylesheet.shadowFocus),
-        ),
-      },
       hover: {
         boxShadow: css.multi(
           css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadowHover),
           css.boxShadow(0, 2, 3, 0, stylesheet.shadowHover),
         )
       },
+      focus: {
+        boxShadow: css.multi(
+          css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadowFocus),
+          css.boxShadow(0, 0, 0, 2, css.rgba(0, 126, 229, 0.3)),
+        ),
+      },
       active: {
-        boxShadow: css.insetBoxShadow(0, 2, 3, 0, stylesheet.shadowActive),
+        boxShadow: css.insetBoxShadow(0, 3, 3, 0, stylesheet.shadowActive),
         paddingTop: stylesheet.raised ? 12 : 10,
         paddingBottom: stylesheet.raised ? 8 : 10,
+        focus: {
+          boxShadow: css.multi(
+            css.insetBoxShadow(0, 3, 3, 0, stylesheet.shadowActive),
+            css.boxShadow(0, 0, 0, 2, css.rgba(0, 126, 229, 0.3)),
+          ),
+        }
       },
       disabled: {
         padding: css.padding(10, 30),

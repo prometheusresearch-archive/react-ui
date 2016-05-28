@@ -8,7 +8,7 @@ import Button from './Button';
 export default style(Button, {
   raised: true,
 
-  textWidth: 400,
+  textWidth: 300,
 
   text: css.rgb(255, 237, 237),
   textHover: css.rgb(255),

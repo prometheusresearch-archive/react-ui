@@ -5,16 +5,18 @@
 import Button from './Button';
 import {css, style} from './stylesheet';
 
+let textColor = css.rgb(255, 231, 231);
+
 export default style(Button, {
   raised: true,
 
-  textWidth: 400,
+  textWidth: 300,
 
-  text: css.rgb(255),
-  textHover: css.rgb(255),
-  textFocus: css.rgb(255),
-  textActive: css.rgb(255),
-  textDisabled: css.rgb(255),
+  text: textColor,
+  textHover: textColor,
+  textFocus: textColor,
+  textActive: textColor,
+  textDisabled: textColor,
 
   background: css.rgb(210, 77, 77),
   backgroundHover: css.rgb(173, 48, 48),
@@ -22,14 +24,14 @@ export default style(Button, {
   backgroundActive: css.rgb(173, 48, 48),
   backgroundDisabled: css.rgb(226, 135, 135),
 
-  border: css.rgb(210, 77, 77),
-  borderHover: css.rgb(173, 48, 48),
-  borderFocus: css.rgb(173, 48, 48),
-  borderActive: css.rgb(173, 48, 48),
+  border: css.rgb(191, 55, 55),
+  borderHover: css.rgb(146, 39, 39),
+  borderFocus: css.rgb(146, 39, 39),
+  borderActive: css.rgb(146, 39, 39),
   borderDisabled: css.rgb(226, 135, 135),
 
-  shadow: css.rgb(142, 31, 31),
-  shadowFocus: css.rgb(70, 21, 20),
-  shadowHover: css.rgb(70, 21, 20),
+  shadow: css.rgb(210, 77, 77),
+  shadowHover: css.rgb(173, 48, 48),
+  shadowFocus: css.rgb(173, 48, 48),
   shadowActive: css.rgb(70, 21, 20),
 }, {displayName: 'DangerButton'});
