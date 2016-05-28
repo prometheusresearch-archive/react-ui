@@ -4,20 +4,29 @@
 
 /* global __REACT_UI_THEME__:false */
 
-let __THEME = null;
+let size = {
+  'xx-small': 4,
+  'x-small': 8,
+  'small': 16,
+  'medium': 24,
+  'large': 32,
+  'x-large': 64,
+  'xx-large': 96,
+};
 
-if (typeof __REACT_UI_THEME__  !== 'undefined') {
-  /* istanbul ignore next */
+let __THEME = {
+  margin: size,
+  padding: size,
+  button: {
+    hover: {},
+    focus: {},
+    active: {},
+    disabled: {},
+  }
+};
+
+if (typeof __REACT_UI_THEME__ !== 'undefined') {
   __THEME = __REACT_UI_THEME__;
-} else {
-  __THEME = {
-    button: {
-      hover: {},
-      focus: {},
-      active: {},
-      disabled: {},
-    }
-  };
 }
 
 module.exports = __THEME;

@@ -5,31 +5,8 @@
 
 import * as React from 'react';
 import {wrapWithStylesheet} from './stylesheet';
-
-export const size = {
-  'xx-small': 4,
-  'x-small': 8,
-  'small': 16,
-  'medium': 24,
-  'large': 32,
-  'x-large': 64,
-  'xx-large': 96,
-};
-
-function chooseSize_(name) {
-  return name != null ? size[name] : undefined;
-}
-
-function chooseSize(a, b, c) {
-  let val = chooseSize_(a);
-  if (val == null) {
-    val  = chooseSize_(b);
-    if (val == null) {
-      val = chooseSize_(c);
-    }
-  }
-  return val;
-}
+import {chooseValue} from './Utils';
+import * as theme from './theme';
 
 type Props = {
   inline?: boolean;
@@ -41,20 +18,20 @@ type Props = {
   left?: number;
   bottom?: number;
   right?: number;
-  padding?: number;
-  paddingV?: number;
-  paddingH?: number;
-  paddingLeft?: number;
-  paddingRight?: number;
-  paddingTop?: number;
-  paddingBottom?: number;
-  margin?: number;
-  marginV?: number;
-  marginH?: number;
-  marginLeft?: number;
-  marginRight?: number;
-  marginTop?: number;
-  marginBottom?: number;
+  padding?: string | number;
+  paddingV?: string | number;
+  paddingH?: string | number;
+  paddingLeft?: string | number;
+  paddingRight?: string | number;
+  paddingTop?: string | number;
+  paddingBottom?: string | number;
+  margin?: string | number;
+  marginV?: string | number;
+  marginH?: string | number;
+  marginLeft?: string | number;
+  marginRight?: string | number;
+  marginTop?: string | number;
+  marginBottom?: string | number;
   textAlign?: 'left' | 'right' | 'center',
   style?: Object;
 };
@@ -76,14 +53,14 @@ export default function Block({
 }: Props) {
 
   style = {
-    paddingLeft: chooseSize(paddingLeft, paddingH, padding),
-    paddingRight: chooseSize(paddingRight, paddingH, padding),
-    paddingTop: chooseSize(paddingTop, paddingV, padding),
-    paddingBottom: chooseSize(paddingBottom, paddingV, padding),
-    marginLeft: chooseSize(marginLeft, marginH, margin),
-    marginRight: chooseSize(marginRight, marginH, margin),
-    marginTop: chooseSize(marginTop, marginV, margin),
-    marginBottom: chooseSize(marginBottom, marginV, margin),
+    paddingLeft: chooseValue(theme.padding, paddingLeft, paddingH, padding),
+    paddingRight: chooseValue(theme.padding, paddingRight, paddingH, padding),
+    paddingTop: chooseValue(theme.padding, paddingTop, paddingV, padding),
+    paddingBottom: chooseValue(theme.padding, paddingBottom, paddingV, padding),
+    marginLeft: chooseValue(theme.margin, marginLeft, marginH, margin),
+    marginRight: chooseValue(theme.margin, marginRight, marginH, margin),
+    marginTop: chooseValue(theme.margin, marginTop, marginV, margin),
+    marginBottom: chooseValue(theme.margin, marginBottom, marginV, margin),
     display: inline ? 'inline-block' : 'block',
     whiteSpace: noWrap ? 'nowrap' : undefined,
     position,
