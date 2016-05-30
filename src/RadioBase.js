@@ -13,6 +13,10 @@ export default class RadioBase extends React.Component {
     Label: 'label',
   };
 
+  static defaultProps = {
+    onChange: noop,
+  };
+
   constructor(props) {
     super(props);
     this._inputID = uniqueId('radio');
