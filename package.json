@@ -1,5 +1,5 @@
 {
-  "name": "@prometheusresearch/react-ui",
+  "name": "@prometheusresearch/react-ui-component",
   "version": "0.1.0",
   "description": "Configurable and styleable UI components",
   "main": "lib/index.js",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prometheusresearch/react-ui.git"
+    "url": "git+https://github.com/prometheusresearch/react-ui-component.git"
   },
   "keywords": [
     "react-component"
@@ -27,9 +27,9 @@
   "author": "Prometheus Research, LLC",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/prometheusresearch/react-ui/issues"
+    "url": "https://github.com/prometheusresearch/react-ui-component/issues"
   },
-  "homepage": "https://github.com/prometheusresearch/react-ui#readme",
+  "homepage": "https://github.com/prometheusresearch/react-ui-component#readme",
   "peerDependencies": {
     "react": "^0.14.0"
   },
