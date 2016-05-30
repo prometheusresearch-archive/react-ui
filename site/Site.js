@@ -15,136 +15,193 @@ function Items({children}) {
   return <Block marginBottom="small">{children}</Block>;
 }
 
+function DemoSection({title, children}) {
+  return (
+    <Block marginBottom="large">
+      <h2>{title}</h2>
+      <Block>{children}</Block>
+    </Block>
+  );
+}
+
+function DemoVariant({title, children}) {
+  return (
+    <Block marginBottom="medium">
+      <h3 style={{color: '#777'}}>{title}</h3>
+      <Block>{children}</Block>
+    </Block>
+  );
+}
+
+function DemoButtonVariants({Button}) {
+  return (
+    <Items>
+      <Item>
+        <Button size="small">Button</Button>
+      </Item>
+      <Item>
+        <Button size="small" variant={{hover: true}}>
+          Button
+        </Button>
+      </Item>
+      <Item>
+        <Button size="small" variant={{focus: true}}>
+          Button
+        </Button>
+      </Item>
+      <Item>
+        <Button size="small" variant={{active: true}}>
+          Button
+        </Button>
+      </Item>
+      <Item>
+        <Button size="small" disabled>
+          Button
+        </Button>
+      </Item>
+
+    </Items>
+  );
+}
+
+function DemoButtonSizes({Button}) {
+  return (
+    <Items>
+      <Item>
+        <Button size="small">Button</Button>
+      </Item>
+      <Item>
+        <Button size="normal">Button</Button>
+      </Item>
+      <Item>
+        <Button size="large">Button</Button>
+      </Item>
+    </Items>
+  );
+}
+
 export default function Site() {
   return (
     <Block padding="small">
-      <Items>
+      <DemoSection title="Button">
 
-        <Item>
-          <ReactUI.Button size="small">Button</ReactUI.Button>
-        </Item>
-        <Item>
-          <ReactUI.Button size="small" variant={{hover: true}}>
-            Button
-          </ReactUI.Button>
-        </Item>
-        <Item>
-          <ReactUI.Button size="small" variant={{focus: true}}>
-            Button
-          </ReactUI.Button>
-        </Item>
-        <Item>
-          <ReactUI.Button size="small" variant={{active: true}}>
-            Button
-          </ReactUI.Button>
-        </Item>
-        <Item>
-          <ReactUI.Button size="small" disabled>
-            Button
-          </ReactUI.Button>
-        </Item>
+        <DemoVariant title="Size">
+          <DemoButtonSizes Button={ReactUI.Button} />
+        </DemoVariant>
 
-      </Items>
+        <DemoVariant title="States">
+          <DemoButtonVariants Button={ReactUI.Button} />
+        </DemoVariant>
 
-      <Items>
-        <Item>
-          <ReactUI.Button groupHorizontally size="small">Left</ReactUI.Button>
-          <ReactUI.Button groupHorizontally size="small">Center</ReactUI.Button>
-          <ReactUI.Button groupHorizontally size="small">Right</ReactUI.Button>
-        </Item>
-      </Items>
+        <DemoVariant title="Flat">
+          <DemoButtonSizes Button={ReactUI.FlatButton} />
+          <DemoButtonVariants Button={ReactUI.FlatButton} />
+        </DemoVariant>
 
-      <Items>
-        <Item>
-          <ReactUI.Button>Button</ReactUI.Button>
-        </Item>
-        <Item>
-          <ReactUI.Button variant={{hover: true}}>Button</ReactUI.Button>
-        </Item>
-        <Item>
-          <ReactUI.Button variant={{focus: true}}>Button</ReactUI.Button>
-        </Item>
-        <Item>
-          <ReactUI.Button variant={{active: true}}>Button</ReactUI.Button>
-        </Item>
-        <Item>
-          <ReactUI.Button disabled>Button</ReactUI.Button>
-        </Item>
-      </Items>
-      <Items>
-        <Item>
-          <ReactUI.Button size="large">Button</ReactUI.Button>
-        </Item>
-        <Item>
-          <ReactUI.Button size="large" variant={{hover: true}}>Button</ReactUI.Button>
-        </Item>
-        <Item>
-          <ReactUI.Button size="large" variant={{focus: true}}>Button</ReactUI.Button>
-        </Item>
-        <Item>
-          <ReactUI.Button size="large" variant={{active: true}}>Button</ReactUI.Button>
-        </Item>
-        <Item>
-          <ReactUI.Button size="large" disabled>Button</ReactUI.Button>
-        </Item>
+        <DemoVariant title="Quiet">
+          <DemoButtonSizes Button={ReactUI.QuietButton} />
+          <DemoButtonVariants Button={ReactUI.QuietButton} />
+        </DemoVariant>
 
-      </Items>
+        <DemoVariant title="Success">
+          <DemoButtonSizes Button={ReactUI.SuccessButton} />
+          <DemoButtonVariants Button={ReactUI.SuccessButton} />
+        </DemoVariant>
 
-      <Items>
-        <Item>
-          <ReactUI.FlatButton size="small">Button</ReactUI.FlatButton>
-        </Item>
-        <Item>
-          <ReactUI.FlatButton>Button</ReactUI.FlatButton>
-        </Item>
-        <Item>
-          <ReactUI.FlatButton size="large">Button</ReactUI.FlatButton>
-        </Item>
-      </Items>
-      <Items>
-        <Item>
-          <ReactUI.QuietButton size="small">Button</ReactUI.QuietButton>
-        </Item>
-        <Item>
-          <ReactUI.QuietButton>Button</ReactUI.QuietButton>
-        </Item>
-        <Item>
-          <ReactUI.QuietButton size="large">Button</ReactUI.QuietButton>
-        </Item>
-      </Items>
-      <Items>
-        <Item>
-          <ReactUI.DangerButton size="small">Button</ReactUI.DangerButton>
-        </Item>
-        <Item>
-          <ReactUI.DangerButton>Button</ReactUI.DangerButton>
-        </Item>
-        <Item>
-          <ReactUI.DangerButton size="large">Button</ReactUI.DangerButton>
-        </Item>
-      </Items>
-      <Items>
-        <Item>
-          <ReactUI.FlatDangerButton size="small">Button</ReactUI.FlatDangerButton>
-        </Item>
-        <Item>
-          <ReactUI.FlatDangerButton>Button</ReactUI.FlatDangerButton>
-        </Item>
-        <Item>
-          <ReactUI.FlatDangerButton size="large">Button</ReactUI.FlatDangerButton>
-        </Item>
-      </Items>
-      <Items>
-        <Item>
-          <ReactUI.SuccessButton size="small">Button</ReactUI.SuccessButton>
-        </Item>
-        <Item>
-          <ReactUI.SuccessButton>Button</ReactUI.SuccessButton>
-        </Item>
-        <Item>
-          <ReactUI.SuccessButton size="large">Button</ReactUI.SuccessButton>
-        </Item>
-      </Items>
+        <DemoVariant title="Danger">
+          <DemoButtonSizes Button={ReactUI.DangerButton} />
+          <DemoButtonVariants Button={ReactUI.DangerButton} />
+        </DemoVariant>
+
+        <DemoVariant title="Flat Danger">
+          <DemoButtonSizes Button={ReactUI.FlatDangerButton} />
+          <DemoButtonVariants Button={ReactUI.FlatDangerButton} />
+        </DemoVariant>
+      </DemoSection>
+
+      <DemoSection title="Button group">
+
+        <Items>
+          <Item>
+            <ReactUI.Button groupHorizontally size="small">
+              Left
+            </ReactUI.Button>
+            <ReactUI.Button groupHorizontally size="small">
+              Center
+            </ReactUI.Button>
+            <ReactUI.Button groupHorizontally size="small">
+              Right
+            </ReactUI.Button>
+          </Item>
+        </Items>
+
+        <Items>
+          <Item>
+            <ReactUI.Button groupHorizontally size="normal">
+              Left
+            </ReactUI.Button>
+            <ReactUI.Button groupHorizontally size="normal">
+              Center
+            </ReactUI.Button>
+            <ReactUI.Button groupHorizontally size="normal">
+              Right
+            </ReactUI.Button>
+          </Item>
+        </Items>
+
+      </DemoSection>
+
+      <DemoSection title="Checkbox">
+        <Items>
+          <Item>
+            <ReactUI.Checkbox label="Not checked" value={false} />
+          </Item>
+          <Item>
+            <ReactUI.Checkbox label="Checked" value={true} />
+          </Item>
+        </Items>
+      </DemoSection>
+
+      <DemoSection title="Checkbox group">
+        <DemoVariant title="Vertical layout">
+          <ReactUI.CheckboxGroup
+            options={[
+              {label: 'Dog', value: 'dog'},
+              {label: 'Cat', value: 'cat'}]}
+            value={['cat']}
+            />
+        </DemoVariant>
+        <DemoVariant title="Horizontal layout">
+          <ReactUI.CheckboxGroup
+            layout="horizontal"
+            options={[
+              {label: 'Dog', value: 'dog'},
+              {label: 'Cat', value: 'cat'}]}
+            value={['cat']}
+            />
+        </DemoVariant>
+      </DemoSection>
+
+      <DemoSection title="Radiogroup">
+        <DemoVariant title="Vertical layout">
+          <ReactUI.RadioGroup
+            options={[
+              {label: 'Dog', value: 'dog'},
+              {label: 'Cat', value: 'cat'}]}
+            value="cat"
+            />
+        </DemoVariant>
+        <DemoVariant title="Horizontal layout">
+          <ReactUI.RadioGroup
+            layout="horizontal"
+            options={[
+              {label: 'Dog', value: 'dog'},
+              {label: 'Cat', value: 'cat'}]}
+            value="cat"
+            />
+        </DemoVariant>
+      </DemoSection>
+
     </Block>
   );
 }
