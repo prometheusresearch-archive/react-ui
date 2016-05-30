@@ -39,6 +39,7 @@
     "babel-preset-prometheusresearch": "^0.1.0",
     "eslint": "^2.10.2",
     "eslint-config-prometheusresearch": "^0.2.0",
+    "flow-bin": "^0.26.0",
     "indent-string": "^2.1.0",
     "inspect-react-element": "^1.1.1",
     "lodash": "^4.13.0",
