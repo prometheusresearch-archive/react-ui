@@ -33,6 +33,7 @@ type Props = {
   marginTop?: string | number;
   marginBottom?: string | number;
   textAlign?: 'left' | 'right' | 'center',
+  verticalAlign?: string;
   style?: Object;
 };
 
@@ -48,6 +49,7 @@ export default function Block({
   marginV, marginH,
   marginLeft, marginRight, marginTop, marginBottom,
   textAlign,
+  verticalAlign,
   style,
   ...props
 }: Props) {
@@ -66,6 +68,7 @@ export default function Block({
     position,
     width, height, top, left, bottom, right,
     textAlign,
+    verticalAlign,
     ...style,
   };
   return <div {...props} style={style} />;

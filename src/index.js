@@ -3,6 +3,7 @@
  */
 
 export Block from './Block';
+export Card from './Card';
 export CheckboxBase from './CheckboxBase';
 export Checkbox from './Checkbox';
 export CheckboxGroupBase from './CheckboxGroupBase';
