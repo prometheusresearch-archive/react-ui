@@ -218,6 +218,7 @@ function makeStylesheet(stylesheet) {
       ...colors,
       focus: {
         ...focusColors,
+        zIndex: 1,
         outline: css.none,
         textDecoration: css.none,
       },
