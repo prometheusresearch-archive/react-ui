@@ -2,35 +2,18 @@
  * @copyright 2016-present, Prometheus Research, LLC
  */
 
-import React from 'react';
 
-export default class Radio extends React.Component {
+import RadioBase from './RadioBase';
+import {style} from './stylesheet';
+import {margin} from './theme';
 
-  static stylesheet = {
-    Root: 'div',
-    Input: 'input',
-    Label: 'label',
-  };
-
-  render() {
-    let {value, label, ...props} = this.props;
-    let {Root, Input, Label} = this.constructor.stylesheet;
-    return (
-      <Root>
-        <Input
-          {...props}
-          type="radio"
-          checked={value}
-          onChange={this.onChange}
-          />
-        {label && <Label>{label}</Label>}
-      </Root>
-    );
+export default style(RadioBase, {
+  Label: {
+    fontSize: '0.875rem',
+    fontWeight: 400,
+    color: '#444',
+    marginLeft: margin['xx-small'],
+    userSelect: 'none',
+    WebkitUserSelect: 'none',
   }
-
-  onChange = e => {
-    this.props.onChange(e.target.checked);
-  }
-}
-
-
+});
