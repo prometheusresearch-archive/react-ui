@@ -17,6 +17,9 @@ doctoc:
 lint::
 	@$(BIN)/eslint $(SRC)
 
+check::
+	@$(BIN)/flow
+
 test::
 	@NODE_ENV=test $(BIN)/babel-node $(MOCHA) -- $(TESTS)
 
