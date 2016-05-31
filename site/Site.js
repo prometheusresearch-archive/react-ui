@@ -202,6 +202,14 @@ export default function Site() {
         </DemoVariant>
       </DemoSection>
 
+      <DemoSection title="Input">
+        <ReactUI.Input />
+      </DemoSection>
+
+      <DemoSection title="Textarea">
+        <ReactUI.Textarea />
+      </DemoSection>
+
     </Block>
   );
 }
