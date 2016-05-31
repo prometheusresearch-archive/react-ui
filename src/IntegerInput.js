@@ -3,15 +3,16 @@
  */
 
 import * as React from 'react';
-import * as Stylesheet from 'react-stylesheet';
+import {create} from './stylesheet';
+import Input from './Input';
 
 import {
   tryParseInteger,
   extractValueFromEvent
 } from './FormUtils';
 
-let stylesheet = Stylesheet.create({
-  Input: 'input',
+let stylesheet = create({
+  Input: Input,
 });
 
 export default class IntegerInput extends React.Component {
