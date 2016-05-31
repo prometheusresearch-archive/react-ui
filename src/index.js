@@ -20,6 +20,7 @@ export RadioGroup from './RadioGroup';
 export Select from './Select';
 
 export Input from './Input';
+export Textarea from './Textarea';
 export IntegerInput from './IntegerInput';
 export NumberInput from './NumberInput';
 
