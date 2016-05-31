@@ -1,10 +1,10 @@
 /**
- * @copyright 2015, Prometheus Research, LLC
+ * @copyright 2016-present, Prometheus Research, LLC
  */
 
 /* global __REACT_UI_THEME__:false */
 
-let size = {
+const size = {
   'xx-small': 4,
   'x-small': 8,
   'small': 16,
@@ -14,9 +14,18 @@ let size = {
   'xx-large': 96,
 };
 
+const fontSize = {
+  'x-small': 12,
+  'small': 14,
+  'medium': 16,
+  'large': 18,
+  'x-large': 22,
+};
+
 let __THEME = {
   margin: size,
   padding: size,
+  fontSize: fontSize,
   button: {
     hover: {},
     focus: {},

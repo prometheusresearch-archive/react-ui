@@ -32,4 +32,8 @@ export SuccessButton from './SuccessButton';
 export DangerButton from './DangerButton';
 export FlatDangerButton from './FlatDangerButton';
 
+export Text from './Text';
+export LabelText from './LabelText';
+export ErrorText from './ErrorText';
+
 export stylesheet from './stylesheet';
