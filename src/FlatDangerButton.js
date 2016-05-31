@@ -13,7 +13,7 @@ export default style(Button, {
   text: css.rgb(255, 237, 237),
   textHover: css.rgb(255),
   textFocus: css.rgb(255),
-  textActive: css.rgb(255),
+  textActive: css.rgb(241, 203, 203),
   textDisabled: css.rgb(255),
 
   background: css.rgb(210, 77, 77),

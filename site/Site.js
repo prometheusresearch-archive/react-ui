@@ -80,6 +80,18 @@ function DemoButtonSizes({Button}) {
   );
 }
 
+function DemoButtonGroup({children}) {
+  return (
+    <Items>
+      <Item>
+        {React.cloneElement(children, {children: 'Left', groupHorizontally: true})}
+        {React.cloneElement(children, {children: 'Center', groupHorizontally: true})}
+        {React.cloneElement(children, {children: 'Right', groupHorizontally: true})}
+      </Item>
+    </Items>
+  );
+}
+
 export default function Site() {
   return (
     <Block padding="small">
@@ -121,33 +133,29 @@ export default function Site() {
 
       <DemoSection title="Button group">
 
-        <Items>
-          <Item>
-            <ReactUI.Button groupHorizontally size="small">
-              Left
-            </ReactUI.Button>
-            <ReactUI.Button groupHorizontally size="small">
-              Center
-            </ReactUI.Button>
-            <ReactUI.Button groupHorizontally size="small">
-              Right
-            </ReactUI.Button>
-          </Item>
-        </Items>
+        <DemoButtonGroup>
+          <ReactUI.Button size="small" />
+        </DemoButtonGroup>
 
-        <Items>
-          <Item>
-            <ReactUI.Button groupHorizontally size="normal">
-              Left
-            </ReactUI.Button>
-            <ReactUI.Button groupHorizontally size="normal">
-              Center
-            </ReactUI.Button>
-            <ReactUI.Button groupHorizontally size="normal">
-              Right
-            </ReactUI.Button>
-          </Item>
-        </Items>
+        <DemoButtonGroup>
+          <ReactUI.Button size="normal" />
+        </DemoButtonGroup>
+
+        <DemoButtonGroup>
+          <ReactUI.FlatButton size="normal" />
+        </DemoButtonGroup>
+
+        <DemoButtonGroup>
+          <ReactUI.QuietButton size="normal" />
+        </DemoButtonGroup>
+
+        <DemoButtonGroup>
+          <ReactUI.SuccessButton size="normal" />
+        </DemoButtonGroup>
+
+        <DemoButtonGroup>
+          <ReactUI.DangerButton size="normal" />
+        </DemoButtonGroup>
 
       </DemoSection>
 

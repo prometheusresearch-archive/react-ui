@@ -15,12 +15,12 @@ export default style(Button, {
   text: textColor,
   textHover: textColor,
   textFocus: textColor,
-  textActive: textColor,
+  textActive: css.rgb(241, 203, 203),
   textDisabled: textColor,
 
   background: css.rgb(210, 77, 77),
   backgroundHover: css.rgb(173, 48, 48),
-  backgroundFocus: css.rgb(173, 48, 48),
+  backgroundFocus: css.rgb(210, 77, 77),
   backgroundActive: css.rgb(173, 48, 48),
   backgroundDisabled: css.rgb(226, 135, 135),
 
