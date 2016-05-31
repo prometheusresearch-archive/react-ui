@@ -90,6 +90,8 @@ export default class CheckboxGroupBase extends React.Component {
         <Checkbox
           label={option.label}
           value={checked}
+          onBlur={this.props.onBlur}
+          onFocus={this.props.onFocus}
           onChange={this.onChange.bind(this, option)}
           />
       </CheckboxWrapper>
