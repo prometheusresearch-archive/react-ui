@@ -5,6 +5,7 @@
 import * as React from 'react';
 import {createRenderer, assert, spy} from '../testutils';
 
+import Input from '../Input';
 import IntegerInput from '../IntegerInput';
 
 describe('react-ui', function() {
@@ -19,7 +20,7 @@ describe('react-ui', function() {
         <IntegerInput onChange={onChange} />
       );
       root = renderer.element;
-      assert(root.type === 'input');
+      assert(root.type === Input);
       root.props.onChange('12');
       assert(onChange.lastCall.args[0] === 12);
       root.props.onChange('12.');

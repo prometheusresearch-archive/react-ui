@@ -7,6 +7,7 @@ import assert from 'power-assert';
 import React from 'react';
 import TestUtils from 'react-addons-test-utils';
 
+import Input from '../Input';
 import NumberInput from '../NumberInput';
 
 describe('react-ui', function() {
@@ -21,7 +22,7 @@ describe('react-ui', function() {
         <NumberInput onChange={onChange} />
       );
       root = renderer.getRenderOutput();
-      assert(root.type === 'input');
+      assert(root.type === Input);
       assert(root.props.value === '');
       root.props.onChange('12');
       assert(onChange.lastCall.args[0] === 12);
