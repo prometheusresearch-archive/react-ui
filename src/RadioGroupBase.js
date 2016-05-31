@@ -17,6 +17,8 @@ export default class RadioGroupBase extends React.Component {
 
   static defaultProps = {
     onChange: noop,
+    onBlur: noop,
+    onFocus: noop,
     layout: 'vertical',
   };
 
@@ -46,6 +48,8 @@ export default class RadioGroupBase extends React.Component {
           value={checked}
           label={option.label}
           onChange={this.onChange.bind(this, option.value)}
+          onFocus={this.props.onFocus}
+          onBlur={this.props.onBlur}
           />
       </RadioWrapper>
     );
