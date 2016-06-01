@@ -40,9 +40,8 @@ export default class CheckboxBase extends React.Component {
   }
 
   onClick = _e => {
-    if (!this.props.value) {
-      this.props.onChange(true);
-    }
+    let value = !this.props.value;
+    this.props.onChange(value);
   };
 
   onChange = e => {
