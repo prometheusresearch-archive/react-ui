@@ -54,6 +54,8 @@ let stylesheet = {
   shadowFocus: '#b7b7b7',
   shadowActive: '#ddd',
   shadowDisabled: '#ddd',
+
+  shadowFocusRing: css.boxShadow(0, 0, 0, 2, css.rgba(0, 126, 229, 0.5)),
 };
 
 function makeStylesheet(stylesheet) {
@@ -84,7 +86,7 @@ function makeStylesheet(stylesheet) {
       focus: {
         boxShadow: css.multi(
           css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadowFocus),
-          css.boxShadow(0, 0, 0, 2, css.rgba(0, 126, 229, 0.3)),
+          stylesheet.shadowFocusRing,
         ),
       },
       active: {
@@ -94,7 +96,7 @@ function makeStylesheet(stylesheet) {
         focus: {
           boxShadow: css.multi(
             css.insetBoxShadow(0, 1, 1, 0, stylesheet.shadowActive),
-            css.boxShadow(0, 0, 0, 2, css.rgba(0, 126, 229, 0.3)),
+            stylesheet.shadowFocusRing,
           ),
         }
       },
@@ -122,7 +124,7 @@ function makeStylesheet(stylesheet) {
       focus: {
         boxShadow: css.multi(
           css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadowFocus),
-          css.boxShadow(0, 0, 0, 2, css.rgba(0, 126, 229, 0.3)),
+          stylesheet.shadowFocusRing,
         ),
       },
       active: {
@@ -132,7 +134,7 @@ function makeStylesheet(stylesheet) {
         focus: {
           boxShadow: css.multi(
             css.insetBoxShadow(0, 1, 1, 0, stylesheet.shadowActive),
-            css.boxShadow(0, 0, 0, 2, css.rgba(0, 126, 229, 0.3)),
+            stylesheet.shadowFocusRing,
           ),
         }
       },
@@ -160,7 +162,7 @@ function makeStylesheet(stylesheet) {
       focus: {
         boxShadow: css.multi(
           css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadowFocus),
-          css.boxShadow(0, 0, 0, 2, css.rgba(0, 126, 229, 0.3)),
+          stylesheet.shadowFocusRing,
         ),
       },
       active: {
@@ -170,7 +172,7 @@ function makeStylesheet(stylesheet) {
         focus: {
           boxShadow: css.multi(
             css.insetBoxShadow(0, 3, 3, 0, stylesheet.shadowActive),
-            css.boxShadow(0, 0, 0, 2, css.rgba(0, 126, 229, 0.3)),
+            stylesheet.shadowFocusRing,
           ),
         }
       },

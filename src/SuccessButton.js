@@ -32,4 +32,6 @@ export default style(Button, {
   shadowFocus: css.rgb(56, 134, 51),
   shadowHover: css.rgb(56, 134, 51),
   shadowActive: css.rgb(56, 134, 51),
+
+  shadowFocusRing: css.boxShadow(0, 0, 0, 2, css.rgba(0, 126, 229, 0.5)),
 }, {displayName: 'SuccessButton'});

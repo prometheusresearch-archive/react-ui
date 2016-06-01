@@ -34,4 +34,6 @@ export default style(Button, {
   shadowHover: css.rgb(173, 48, 48),
   shadowFocus: css.rgb(173, 48, 48),
   shadowActive: css.rgb(70, 21, 20),
+
+  shadowFocusRing: css.boxShadow(0, 0, 0, 2, css.rgba(0, 126, 229, 0.5)),
 }, {displayName: 'DangerButton'});
