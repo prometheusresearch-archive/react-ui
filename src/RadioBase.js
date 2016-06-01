@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import {uniqueId, noop} from 'lodash';
+import noop from 'lodash/noop';
 
 export default class RadioBase extends React.Component {
 
