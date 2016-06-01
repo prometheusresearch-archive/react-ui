@@ -10,7 +10,9 @@ export default class RadioBase extends React.Component {
   static stylesheet = {
     Root: 'div',
     Input: 'input',
-    Label: 'label',
+    LabelWrapper: 'div',
+    Hint: 'div',
+    Label: 'div',
   };
 
   static defaultProps = {
@@ -23,8 +25,8 @@ export default class RadioBase extends React.Component {
   }
 
   render() {
-    let {value, label, inputRef, ...props} = this.props;
-    let {Root, Input, Label} = this.constructor.stylesheet;
+    let {value, label, hint, inputRef, ...props} = this.props;
+    let {Root, Input, Label, Hint, LabelWrapper} = this.constructor.stylesheet;
     return (
       <Root>
         <Input
@@ -35,10 +37,18 @@ export default class RadioBase extends React.Component {
           checked={value}
           onChange={this.onChange}
           />
-        {label && <Label htmlFor={this._inputID}>{label}</Label>}
+        {label &&
+          <LabelWrapper onClick={this.onClick}>
+            <Label>{label}</Label>
+            <Hint>{hint}</Hint>
+          </LabelWrapper>}
       </Root>
     );
   }
+
+  onClick = _e => {
+    this.props.onChange(true);
+  };
 
   onChange = e => {
     this.props.onChange(e.target.checked);

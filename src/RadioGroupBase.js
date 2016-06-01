@@ -48,6 +48,7 @@ export default class RadioGroupBase extends React.Component {
           idx={idx}
           value={checked}
           label={option.label}
+          hint={option.hint}
           onChange={this.onChange.bind(this, option.value)}
           onFocus={this.props.onFocus}
           onBlur={this.props.onBlur}
