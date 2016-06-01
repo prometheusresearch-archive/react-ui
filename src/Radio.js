@@ -13,14 +13,13 @@ export default style(RadioBase, {
     fontSize: '0.875rem',
     fontWeight: 400,
     color: '#444',
-    userSelect: 'none',
-    WebkitUserSelect: 'none',
   },
   LabelWrapper: style(Block, {
     cursor: css.cursor.default,
     display: 'inline-block',
     verticalAlign: 'top',
     marginLeft: margin['x-small'],
+    userSelect: 'none',
   }),
   Hint: {
     fontSize: '0.6rem'

@@ -19,11 +19,6 @@ export default class RadioBase extends React.Component {
     onChange: noop,
   };
 
-  constructor(props) {
-    super(props);
-    this._inputID = uniqueId('radio');
-  }
-
   render() {
     let {value, label, hint, inputRef, ...props} = this.props;
     let {Root, Input, Label, Hint, LabelWrapper} = this.constructor.stylesheet;
@@ -32,7 +27,6 @@ export default class RadioBase extends React.Component {
         <Input
           {...props}
           ref={inputRef}
-          id={this._inputID}
           type="radio"
           checked={value}
           onChange={this.onChange}
