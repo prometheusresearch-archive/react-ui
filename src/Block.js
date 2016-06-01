@@ -63,7 +63,7 @@ export default function Block({
     marginRight: chooseValue(theme.margin, marginRight, marginH, margin),
     marginTop: chooseValue(theme.margin, marginTop, marginV, margin),
     marginBottom: chooseValue(theme.margin, marginBottom, marginV, margin),
-    display: inline ? 'inline-block' : 'block',
+    display: inline ? 'inline-block' : undefined,
     whiteSpace: noWrap ? 'nowrap' : undefined,
     position,
     width, height, top, left, bottom, right,
