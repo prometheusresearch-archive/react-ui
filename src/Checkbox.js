@@ -3,7 +3,8 @@
  */
 
 import CheckboxBase from './CheckboxBase';
-import {style} from './stylesheet';
+import Block from './Block';
+import {style, css} from './stylesheet';
 import {margin} from './theme';
 
 export default style(CheckboxBase, {
@@ -11,8 +12,16 @@ export default style(CheckboxBase, {
     fontSize: '0.875rem',
     fontWeight: 400,
     color: '#444',
-    marginLeft: margin['xx-small'],
     userSelect: 'none',
-    WebkitUserSelect: 'none',
+  },
+  LabelWrapper: style(Block, {
+    cursor: css.cursor.default,
+    display: 'inline-block',
+    verticalAlign: 'top',
+    marginLeft: margin['x-small'],
+    userSelect: 'none',
+  }),
+  Hint: {
+    fontSize: '0.6rem'
   }
 });

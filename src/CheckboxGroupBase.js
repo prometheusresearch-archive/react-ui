@@ -89,6 +89,7 @@ export default class CheckboxGroupBase extends React.Component {
         }}>
         <Checkbox
           label={option.label}
+          hint={option.hint}
           value={checked}
           onBlur={this.props.onBlur}
           onFocus={this.props.onFocus}
