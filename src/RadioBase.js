@@ -23,12 +23,13 @@ export default class RadioBase extends React.Component {
   }
 
   render() {
-    let {value, label, ...props} = this.props;
+    let {value, label, inputRef, ...props} = this.props;
     let {Root, Input, Label} = this.constructor.stylesheet;
     return (
       <Root>
         <Input
           {...props}
+          ref={inputRef}
           id={this._inputID}
           type="radio"
           checked={value}
