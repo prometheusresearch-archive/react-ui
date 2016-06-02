@@ -67,7 +67,7 @@ export default class ButtonBase extends React.Component {
 
   render() {
     let {
-      children, icon,
+      children, icon, iconRight,
       disabled, active, size,
       attach,
       groupVertically, groupHorizontally,
@@ -75,6 +75,11 @@ export default class ButtonBase extends React.Component {
       stylesheet: {Root, Caption, Icon, IconWrapper},
       ...props
     } = this.props;
+    let sizeVariant = {
+      small: size === 'small',
+      normal: size === 'normal',
+      large: size === 'large',
+    };
     variant = {
       active, disabled,
       attachLeft: attach.left,
@@ -83,18 +88,20 @@ export default class ButtonBase extends React.Component {
       attachBottom: attach.bottom,
       groupVertically,
       groupHorizontally,
-      small: size === 'small',
-      normal: size === 'normal',
-      large: size === 'large',
+      ...sizeVariant,
       ...variant,
     };
     if (isString(icon)) {
       icon = <Icon name={icon} />;
     }
+    if (isString(iconRight)) {
+      iconRight = <Icon name={iconRight} />;
+    }
     let caption = null;
     if (children) {
       caption = <Caption>{children}</Caption>;
     }
+    let hasCaption = !!children;
     return (
       <Root
         {...props}
@@ -103,11 +110,16 @@ export default class ButtonBase extends React.Component {
         aria-pressed={active}
         role="button">
         {icon ?
-          <IconWrapper variant={{hasCaption: !!children}}>
+          <IconWrapper variant={{...sizeVariant, hasCaption, leftPosition: true}}>
             {icon}
           </IconWrapper> :
           null}
         {caption}
+        {iconRight ?
+          <IconWrapper variant={{...sizeVariant, hasCaption, rightPosition: true}}>
+            {iconRight}
+          </IconWrapper> :
+          null}
       </Root>
     );
   }

@@ -1,5 +1,9 @@
 import 'normalize.css/normalize.css';
+
 import React from 'react';
+import AngleRightIcon from 'react-icons/lib/fa/angle-right';
+import AngleLeftIcon from 'react-icons/lib/fa/angle-left';
+
 import * as ReactUI from '../src/index';
 import {Block} from '../src/index';
 
@@ -157,6 +161,29 @@ export default function Site() {
           <ReactUI.DangerButton size="normal" />
         </DemoButtonGroup>
 
+      </DemoSection>
+
+      <DemoSection title="Button with icons">
+        <Items>
+          <ReactUI.Button groupHorizontally icon={<AngleLeftIcon />}>
+            Prev
+          </ReactUI.Button>
+          <ReactUI.Button groupHorizontally iconRight={<AngleRightIcon />}>
+            Next
+          </ReactUI.Button>
+        </Items>
+        <Items>
+          <ReactUI.Button size="small" groupHorizontally icon={<AngleLeftIcon />}>
+            Prev
+          </ReactUI.Button>
+          <ReactUI.Button size="small" groupHorizontally iconRight={<AngleRightIcon />}>
+            Next
+          </ReactUI.Button>
+        </Items>
+        <Items>
+          <ReactUI.Button groupHorizontally icon={<AngleLeftIcon />} />
+          <ReactUI.Button groupHorizontally icon={<AngleRightIcon />} />
+        </Items>
       </DemoSection>
 
       <DemoSection title="Checkbox">

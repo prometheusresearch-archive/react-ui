@@ -368,7 +368,30 @@ function makeStylesheet(stylesheet) {
       position: 'relative',
       top: -1,
       hasCaption: {
-        marginRight: 10,
+        small: {
+          leftPosition: {
+            marginRight: 4,
+          },
+          rightPosition: {
+            marginLeft: 4,
+          }
+        },
+        normal: {
+          leftPosition: {
+            marginRight: 8,
+          },
+          rightPosition: {
+            marginLeft: 8,
+          }
+        },
+        large: {
+          leftPosition: {
+            marginRight: 10,
+          },
+          rightPosition: {
+            marginLeft: 10,
+          }
+        }
       }
     }
   };
