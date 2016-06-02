@@ -14,10 +14,13 @@ export default style(CheckboxBase, {
     color: '#444',
     userSelect: 'none',
   },
+  Input: {
+    verticalAlign: 'middle',
+  },
   LabelWrapper: style(Block, {
     cursor: css.cursor.default,
     display: 'inline-block',
-    verticalAlign: 'top',
+    verticalAlign: 'middle',
     marginLeft: margin['x-small'],
     userSelect: 'none',
   }),

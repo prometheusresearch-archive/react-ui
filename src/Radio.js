@@ -14,10 +14,13 @@ export default style(RadioBase, {
     fontWeight: 400,
     color: '#444',
   },
+  Input: {
+    verticalAlign: 'middle',
+  },
   LabelWrapper: style(Block, {
     cursor: css.cursor.default,
     display: 'inline-block',
-    verticalAlign: 'top',
+    verticalAlign: 'middle',
     marginLeft: margin['x-small'],
     userSelect: 'none',
   }),

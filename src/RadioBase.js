@@ -7,21 +7,20 @@ import noop from 'lodash/noop';
 
 export default class RadioBase extends React.Component {
 
-  static stylesheet = {
-    Root: 'div',
-    Input: 'input',
-    LabelWrapper: 'div',
-    Hint: 'div',
-    Label: 'div',
-  };
-
   static defaultProps = {
     onChange: noop,
+    stylesheet: {
+      Root: 'div',
+      Input: 'input',
+      LabelWrapper: 'div',
+      Hint: 'div',
+      Label: 'div',
+    }
   };
 
   render() {
-    let {value, label, hint, inputRef, ...props} = this.props;
-    let {Root, Input, Label, Hint, LabelWrapper} = this.constructor.stylesheet;
+    let {value, label, hint, inputRef, stylesheet, ...props} = this.props;
+    let {Root, Input, Label, Hint, LabelWrapper} = stylesheet;
     return (
       <Root>
         <Input
