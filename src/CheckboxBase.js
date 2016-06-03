@@ -19,10 +19,10 @@ export default class CheckboxBase extends React.Component {
   };
 
   render() {
-    let {value, label, hint, stylesheet, ...props} = this.props;
+    let {value, label, title, hint, stylesheet, ...props} = this.props;
     let {Root, Input, Label, Hint, LabelWrapper} = stylesheet;
     return (
-      <Root>
+      <Root title={title}>
         <Input
           {...props}
           type="checkbox"
