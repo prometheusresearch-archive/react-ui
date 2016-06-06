@@ -238,11 +238,21 @@ export default function Site() {
       </DemoSection>
 
       <DemoSection title="Input">
-        <ReactUI.Input />
+        <Items>
+          <ReactUI.Input />
+        </Items>
+        <Items>
+          <ReactUI.Input variant={{error: true}} />
+        </Items>
       </DemoSection>
 
       <DemoSection title="Textarea">
-        <ReactUI.Textarea />
+        <Items>
+          <ReactUI.Textarea />
+        </Items>
+        <Items>
+          <ReactUI.Textarea variant={{error: true}} />
+        </Items>
       </DemoSection>
 
     </Block>
