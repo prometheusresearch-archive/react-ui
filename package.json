@@ -53,7 +53,7 @@
     "react-icons": "^2.1.0",
     "react-shallow-testutils": "^2.0.0",
     "sinon": "^1.17.4",
-    "sitegen": "^0.25.1"
+    "sitegen": "^0.27.1"
   },
   "dependencies": {
     "invariant": "^2.2.1",
