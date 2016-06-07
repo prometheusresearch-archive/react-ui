@@ -21,10 +21,10 @@ check::
 	@$(BIN)/flow
 
 site-serve::
-	@DEBUG='sitegen:*' $(BIN)/sitegen serve
+	@$(BIN)/sitegen serve
 
 site-build::
-	@DEBUG='sitegen:*' $(BIN)/sitegen build
+	@$(BIN)/sitegen build
 
 test::
 	@NODE_ENV=test $(BIN)/babel-node $(MOCHA) -- $(TESTS)
