@@ -161,6 +161,62 @@ export default function Site() {
           <ReactUI.DangerButton size="normal" />
         </DemoButtonGroup>
 
+        <Items>
+          <Item>
+            <ReactUI.Button groupHorizontally icon={<AngleLeftIcon />}>
+              Left
+            </ReactUI.Button>
+            <ReactUI.Button groupHorizontally>
+              Center
+            </ReactUI.Button>
+            <ReactUI.Button groupHorizontally icon={<AngleRightIcon />}>
+              Right
+            </ReactUI.Button>
+          </Item>
+        </Items>
+
+        <Items>
+          <Item>
+            <ReactUI.Button size="small" groupHorizontally icon={<AngleLeftIcon />}>
+              Left
+            </ReactUI.Button>
+            <ReactUI.Button size="small" groupHorizontally>
+              Center
+            </ReactUI.Button>
+            <ReactUI.Button size="small" groupHorizontally icon={<AngleRightIcon />}>
+              Right
+            </ReactUI.Button>
+          </Item>
+        </Items>
+
+        <Items>
+          <Item>
+            <ReactUI.FlatButton groupHorizontally icon={<AngleLeftIcon />}>
+              Left
+            </ReactUI.FlatButton>
+            <ReactUI.FlatButton groupHorizontally>
+              Center
+            </ReactUI.FlatButton>
+            <ReactUI.FlatButton groupHorizontally icon={<AngleRightIcon />}>
+              Right
+            </ReactUI.FlatButton>
+          </Item>
+        </Items>
+
+        <Items>
+          <Item>
+            <ReactUI.FlatButton size="small" groupHorizontally icon={<AngleLeftIcon />}>
+              Left
+            </ReactUI.FlatButton>
+            <ReactUI.FlatButton size="small" groupHorizontally>
+              Center
+            </ReactUI.FlatButton>
+            <ReactUI.FlatButton size="small" groupHorizontally icon={<AngleRightIcon />}>
+              Right
+            </ReactUI.FlatButton>
+          </Item>
+        </Items>
+
       </DemoSection>
 
       <DemoSection title="Button with icons">
