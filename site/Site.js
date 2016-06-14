@@ -300,6 +300,9 @@ export default function Site() {
         <Items>
           <ReactUI.Input variant={{error: true}} />
         </Items>
+        <Items>
+          <ReactUI.Input disabled />
+        </Items>
       </DemoSection>
 
       <DemoSection title="Textarea">
@@ -308,6 +311,9 @@ export default function Site() {
         </Items>
         <Items>
           <ReactUI.Textarea variant={{error: true}} />
+        </Items>
+        <Items>
+          <ReactUI.Textarea disabled />
         </Items>
       </DemoSection>
 

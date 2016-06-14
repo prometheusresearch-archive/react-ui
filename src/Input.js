@@ -39,4 +39,9 @@ export default style('input', {
       border: css.border(1, 'red'),
     }
   },
+  disabled: {
+    backgroundColor: '#f9f9f9',
+    borderColor: '#f1f1f1',
+    cursor: 'not-allowed',
+  }
 });
