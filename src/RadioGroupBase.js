@@ -35,7 +35,7 @@ export default class RadioGroupBase extends React.Component {
 
   renderOption(option, idx) {
     let {RadioWrapper, Radio} = this.constructor.stylesheet;
-    let {value, layout} = this.props;
+    let {value, layout, disabled} = this.props;
     let checked = value === option.value;
     return (
       <RadioWrapper
@@ -45,6 +45,7 @@ export default class RadioGroupBase extends React.Component {
           vertical: layout === 'vertical'
         }}>
         <Radio
+          disabled={disabled}
           idx={idx}
           value={checked}
           label={option.label}

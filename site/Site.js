@@ -250,6 +250,12 @@ export default function Site() {
           <Item>
             <ReactUI.Checkbox label="Checked" value={true} />
           </Item>
+          <Item>
+            <ReactUI.Checkbox label="Checked" value={true} disabled />
+          </Item>
+          <Item>
+            <ReactUI.Checkbox label="Checked" value={false} disabled />
+          </Item>
         </Items>
       </DemoSection>
 
@@ -271,9 +277,21 @@ export default function Site() {
             value={['cat']}
             />
         </DemoVariant>
+
+        <DemoVariant title="Disabled">
+          <ReactUI.CheckboxGroup
+            disabled
+            options={[
+              {label: 'Dog', value: 'dog'},
+              {label: 'Cat', value: 'cat'}]}
+            value={['cat']}
+            />
+        </DemoVariant>
+
       </DemoSection>
 
       <DemoSection title="Radiogroup">
+
         <DemoVariant title="Vertical layout">
           <ReactUI.RadioGroup
             options={[
@@ -282,9 +300,21 @@ export default function Site() {
             value="cat"
             />
         </DemoVariant>
+
         <DemoVariant title="Horizontal layout">
           <ReactUI.RadioGroup
             layout="horizontal"
+            options={[
+              {label: 'Dog', value: 'dog'},
+              {label: 'Cat', value: 'cat'}]}
+            value="cat"
+            />
+        </DemoVariant>
+
+        <DemoVariant title="Disabled state">
+          <ReactUI.RadioGroup
+            layout="horizontal"
+            disabled
             options={[
               {label: 'Dog', value: 'dog'},
               {label: 'Cat', value: 'cat'}]}

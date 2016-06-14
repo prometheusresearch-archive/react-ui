@@ -77,7 +77,7 @@ export default class CheckboxGroupBase extends React.Component {
   }
 
   renderOption(option) {
-    let {valueStrategy, layout} = this.props;
+    let {valueStrategy, layout, disabled} = this.props;
     let {CheckboxWrapper, Checkbox} = this.constructor.stylesheet;
     let checked = valueStrategy.isChecked(this.props.value, option);
     return (
@@ -88,6 +88,7 @@ export default class CheckboxGroupBase extends React.Component {
           vertical: layout === 'vertical'
         }}>
         <Checkbox
+          disabled={disabled}
           label={option.label}
           hint={option.hint}
           value={checked}
