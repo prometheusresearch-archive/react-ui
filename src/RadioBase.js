@@ -40,7 +40,9 @@ export default class RadioBase extends React.Component {
   }
 
   onClick = _e => {
-    this.props.onChange(true);
+    if (!this.props.disabled) {
+      this.props.onChange(true);
+    }
   };
 
   onChange = e => {
