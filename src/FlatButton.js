@@ -10,10 +10,10 @@ export default style(Button, {
 
   textWidth: 300,
 
-  text: css.rgb(173),
+  text: css.rgb(160),
   textHover: css.rgb(130),
-  textFocus: css.rgb(154),
-  textActive: css.rgb(173),
+  textFocus: css.rgb(130),
+  textActive: css.rgb(150),
   textDisabled: '#dadada',
 
   background: css.rgb(255),
@@ -22,10 +22,10 @@ export default style(Button, {
   backgroundActive: css.rgb(241),
   backgroundDisabled: css.rgb(255),
 
-  border: css.rgb(234),
-  borderHover: css.rgb(224),
-  borderFocus: css.rgb(204),
-  borderActive: css.rgb(224),
+  border: css.rgb(180),
+  borderHover: css.rgb(180),
+  borderFocus: css.rgb(140),
+  borderActive: css.rgb(140),
   borderDisabled: '#ececec',
 
   shadow: css.none,
