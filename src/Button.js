@@ -40,7 +40,7 @@ let stylesheet = {
   background: css.rgb(255),
   backgroundHover: css.rgb(241),
   backgroundFocus: css.rgb(255),
-  backgroundActive: css.rgb(241),
+  backgroundActive: css.rgb(231),
   backgroundDisabled: css.rgb(251),
 
   border: css.rgb(180),
@@ -52,7 +52,7 @@ let stylesheet = {
   shadow: '#b7b7b7',
   shadowHover: '#b7b7b7',
   shadowFocus: '#b7b7b7',
-  shadowActive: '#ddd',
+  shadowActive: css.rgb(210),
   shadowDisabled: '#ddd',
 
   shadowFocusRing: css.boxShadow(0, 0, 0, 2, css.rgba(0, 126, 229, 0.5)),

@@ -19,7 +19,7 @@ export default style(Button, {
   background: css.rgb(255),
   backgroundHover: css.rgb(241),
   backgroundFocus: css.rgb(255),
-  backgroundActive: css.rgb(241),
+  backgroundActive: css.rgb(231),
   backgroundDisabled: css.rgb(251),
 
   border: css.rgb(180),
@@ -31,6 +31,6 @@ export default style(Button, {
   shadow: css.none,
   shadowHover: css.none,
   shadowFocus: css.none,
-  shadowActive: '#ddd',
+  shadowActive: css.rgb(210),
   shadowDisabled: css.none,
 }, 'FlatButton');
