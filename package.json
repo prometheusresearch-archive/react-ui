@@ -56,6 +56,7 @@
     "sitegen": "^0.29.0"
   },
   "dependencies": {
+    "@prometheusresearch/react-box": "^0.6.0",
     "invariant": "^2.2.1",
     "lodash": "^4.13.0",
     "react-dom-stylesheet": "^0.5.2",

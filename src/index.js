@@ -3,6 +3,9 @@
  */
 
 export Block from './Block';
+export HBox from './HBox';
+export VBox from './VBox';
+
 export CardBase from './CardBase';
 export Card from './Card';
 
