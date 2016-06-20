@@ -370,16 +370,16 @@ export default function Site() {
           </ReactUI.Card>
         </DemoVariant>
 
-        <DemoVariant title="<SuccessCard />">
-          <ReactUI.SuccessCard padding="x-small">
+        <DemoVariant title="<Card variant={{success: true}} />">
+          <ReactUI.Card padding="x-small" variant={{success: true}}>
             Children
-          </ReactUI.SuccessCard>
+          </ReactUI.Card>
         </DemoVariant>
 
-        <DemoVariant title="<SuccessCard header={...} />">
-          <ReactUI.SuccessCard header="Title" padding="x-small">
+        <DemoVariant title="<Card variant={{success: true}} header={...} />">
+          <ReactUI.Card variant={{success: true}} header="Title" padding="x-small">
             Children
-          </ReactUI.SuccessCard>
+          </ReactUI.Card>
         </DemoVariant>
 
       </DemoSection>

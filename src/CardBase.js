@@ -13,15 +13,17 @@ export default function Card({
   padding,
   paddingTop, paddingBottom, paddingLeft, paddingRight,
   paddingV, paddingH,
+  variant,
   ...props
 }) {
   return (
-    <stylesheet.Root {...props}>
+    <stylesheet.Root {...props} variant={variant}>
       {header &&
-        <stylesheet.Header>
+        <stylesheet.Header variant={variant}>
           {header}
         </stylesheet.Header>}
       <stylesheet.Content
+        variant={variant}
         padding={padding}
         paddingTop={paddingTop}
         paddingBottom={paddingBottom}
@@ -32,7 +34,7 @@ export default function Card({
         {children}
       </stylesheet.Content>
       {footer &&
-        <stylesheet.Footer>
+        <stylesheet.Footer variant={variant}>
           {footer}
         </stylesheet.Footer>}
     </stylesheet.Root>

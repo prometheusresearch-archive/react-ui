@@ -5,7 +5,6 @@
 export Block from './Block';
 export CardBase from './CardBase';
 export Card from './Card';
-export SuccessCard from './SuccessCard';
 
 export CheckboxBase from './CheckboxBase';
 export CheckboxGroupBase from './CheckboxGroupBase';
