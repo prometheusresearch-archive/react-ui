@@ -84,13 +84,25 @@ function DemoButtonSizes({Button}) {
   );
 }
 
-function DemoButtonGroup({children}) {
+function DemoButtonGroup({children, disabled = []}) {
+  if (!Array.isArray(disabled)) {
+    disabled = [disabled];
+  }
   return (
     <Items>
       <Item>
-        {React.cloneElement(children, {children: 'Left', groupHorizontally: true})}
-        {React.cloneElement(children, {children: 'Center', groupHorizontally: true})}
-        {React.cloneElement(children, {children: 'Right', groupHorizontally: true})}
+        {React.cloneElement(children, {
+          children: 'Left',
+          disabled: disabled.indexOf('left') > -1,
+          groupHorizontally: true})}
+        {React.cloneElement(children, {
+          children: 'Center',
+          disabled: disabled.indexOf('center') > -1,
+          groupHorizontally: true})}
+        {React.cloneElement(children, {
+          children: 'Right',
+          disabled: disabled.indexOf('right') > -1,
+          groupHorizontally: true})}
       </Item>
     </Items>
   );
@@ -145,9 +157,43 @@ export default function Site() {
           <ReactUI.Button size="normal" />
         </DemoButtonGroup>
 
-        <DemoButtonGroup>
-          <ReactUI.FlatButton size="normal" />
-        </DemoButtonGroup>
+        <DemoVariant title="Disabled buttons">
+          <DemoButtonGroup disabled="left">
+            <ReactUI.Button size="normal" />
+          </DemoButtonGroup>
+
+          <DemoButtonGroup disabled="center">
+            <ReactUI.Button size="normal" />
+          </DemoButtonGroup>
+
+          <DemoButtonGroup disabled="right">
+            <ReactUI.Button size="normal" />
+          </DemoButtonGroup>
+        </DemoVariant>
+
+        <DemoVariant title="With <FlatButton />">
+          <DemoButtonGroup>
+            <ReactUI.FlatButton size="small" />
+          </DemoButtonGroup>
+
+          <DemoButtonGroup>
+            <ReactUI.FlatButton size="normal" />
+          </DemoButtonGroup>
+        </DemoVariant>
+
+        <DemoVariant title="With <FlatButton /> with Disabled buttons">
+          <DemoButtonGroup disabled="left">
+            <ReactUI.FlatButton size="normal" />
+          </DemoButtonGroup>
+
+          <DemoButtonGroup disabled="center">
+            <ReactUI.FlatButton size="normal" />
+          </DemoButtonGroup>
+
+          <DemoButtonGroup disabled="right">
+            <ReactUI.FlatButton size="normal" />
+          </DemoButtonGroup>
+        </DemoVariant>
 
         <DemoButtonGroup>
           <ReactUI.QuietButton size="normal" />

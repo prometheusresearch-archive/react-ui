@@ -41,13 +41,13 @@ let stylesheet = {
   backgroundHover: css.rgb(241),
   backgroundFocus: css.rgb(255),
   backgroundActive: css.rgb(241),
-  backgroundDisabled: css.rgb(255),
+  backgroundDisabled: css.rgb(251),
 
   border: css.rgb(180),
   borderHover: css.rgb(180),
   borderFocus: css.rgb(180),
   borderActive: css.rgb(200),
-  borderDisabled: css.rgb(210),
+  borderDisabled: css.rgb(180),
 
   shadow: '#b7b7b7',
   shadowHover: '#b7b7b7',
