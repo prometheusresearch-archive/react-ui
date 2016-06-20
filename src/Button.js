@@ -70,6 +70,7 @@ function makeStylesheet(stylesheet) {
     small: {
       height: height.small,
       width: width.small,
+      lineHeight: 1.2,
       padding: css.padding(4, 10),
       fontWeight: stylesheet.textWidth,
       fontSize: textSize.small || textSize,
@@ -111,6 +112,7 @@ function makeStylesheet(stylesheet) {
       padding: css.padding(8, 15),
       fontWeight: stylesheet.textWidth,
       fontSize: textSize.normal || textSize,
+      lineHeight: 1.3,
       boxShadow: css.multi(
         css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadow),
         css.boxShadow(0, 1, 1, 0, stylesheet.shadow),
@@ -149,6 +151,7 @@ function makeStylesheet(stylesheet) {
       padding: css.padding(10, 30),
       fontWeight: stylesheet.textWidth,
       fontSize: textSize.large || textSize,
+      lineHeight: 1.3,
       boxShadow: css.multi(
         css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadow),
         css.boxShadow(0, 2, 3, 0, stylesheet.shadow),
