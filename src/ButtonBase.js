@@ -82,6 +82,8 @@ export default class ButtonBase extends React.Component {
       groupVertically, groupHorizontally,
       variant,
       stylesheet: {Root, Caption, Icon, IconWrapper},
+      textAlign, width, height,
+      style,
       ...props
     } = this.props;
     let sizeVariant = {
@@ -99,6 +101,11 @@ export default class ButtonBase extends React.Component {
       groupHorizontally,
       ...sizeVariant,
       ...variant,
+    };
+    style = {
+      width, height,
+      textAlign,
+      ...style,
     };
     if (href != null && Component == null) {
       Component = 'a';
@@ -121,6 +128,7 @@ export default class ButtonBase extends React.Component {
         href={href}
         disabled={disabled}
         variant={variant}
+        style={style}
         aria-pressed={active}
         role="button">
         {icon ?
