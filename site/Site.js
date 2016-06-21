@@ -137,27 +137,32 @@ export default function Site() {
             <DemoButtonVariants Button={ReactUI.Button} />
           </DemoVariant>
 
-          <DemoVariant title="Flat">
+          <DemoVariant title="<FlatButton />">
             <DemoButtonSizes Button={ReactUI.FlatButton} />
             <DemoButtonVariants Button={ReactUI.FlatButton} />
           </DemoVariant>
 
-          <DemoVariant title="Quiet">
+          <DemoVariant title="<QuietButton />">
             <DemoButtonSizes Button={ReactUI.QuietButton} />
             <DemoButtonVariants Button={ReactUI.QuietButton} />
           </DemoVariant>
 
-          <DemoVariant title="Success">
+          <DemoVariant title="<SuccessButton />">
             <DemoButtonSizes Button={ReactUI.SuccessButton} />
             <DemoButtonVariants Button={ReactUI.SuccessButton} />
           </DemoVariant>
 
-          <DemoVariant title="Danger">
+          <DemoVariant title="<DangerButton />">
             <DemoButtonSizes Button={ReactUI.DangerButton} />
             <DemoButtonVariants Button={ReactUI.DangerButton} />
           </DemoVariant>
 
-          <DemoVariant title="Flat Danger">
+          <DemoVariant title="<FlatSuccessButton />">
+            <DemoButtonSizes Button={ReactUI.FlatSuccessButton} />
+            <DemoButtonVariants Button={ReactUI.FlatSuccessButton} />
+          </DemoVariant>
+
+          <DemoVariant title="<FlatDangerButton />">
             <DemoButtonSizes Button={ReactUI.FlatDangerButton} />
             <DemoButtonVariants Button={ReactUI.FlatDangerButton} />
           </DemoVariant>
