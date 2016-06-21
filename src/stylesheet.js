@@ -7,10 +7,13 @@ import {
   style as styleImpl,
   override as overrideImpl
 } from 'react-stylesheet';
+
 import {
   style as styleHostComponent,
   wrapWithStylesheet
 } from 'react-dom-stylesheet';
+
+import color from 'color-js';
 
 import * as css from 'react-dom-stylesheet/css';
 import * as component from 'react-dom-stylesheet/component';
@@ -29,6 +32,7 @@ export function override(stylesheet, override, options) {
 
 export {
   css,
+  color,
   component,
   wrapWithStylesheet
 };

@@ -4,6 +4,13 @@
 
 /* global __REACT_UI_THEME__:false */
 
+import {color} from './stylesheet';
+
+const brandColors = {
+  primary: color('#004E94'),
+  secondary: color('#0094CD'),
+};
+
 const size = {
   'xx-small': 4,
   'x-small': 8,
@@ -26,6 +33,7 @@ let __THEME = {
   margin: size,
   padding: size,
   fontSize: fontSize,
+  brandColors: brandColors,
   button: {
     hover: {},
     focus: {},
