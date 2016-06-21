@@ -20,9 +20,12 @@ export default style('input', {
   boxShadow: css.insetBoxShadow(0, 1, 1, css.rgba(0, 0,0 , 0.075)),
   transition: 'border-color ease-in-out .15s,box-shadow ease-in-out .15s',
   focus: {
-    border: css.border(1, '#888'),
-    boxShadow: css.insetBoxShadow(0, 1, 1, css.rgba(0, 0, 0, 0.075)),
     outline: css.none,
+    border: css.border(1, '#708698'),
+    boxShadow: css.multi(
+      css.insetBoxShadow(0, 1, 1, 0, css.rgba(0, 0, 0, 0.075)),
+      css.boxShadow(0, 0, 0, 2, css.rgba(0, 126, 229, 0.5))
+    ),
   },
   noBorder: {
     border: css.none,
@@ -36,7 +39,11 @@ export default style('input', {
   error: {
     border: css.border(1, 'red'),
     focus: {
-      border: css.border(1, 'red'),
+      border: css.border(1, '#708698'),
+      boxShadow: css.multi(
+        css.insetBoxShadow(0, 1, 1, 0, css.rgba(0, 0, 0, 0.075)),
+        css.boxShadow(0, 0, 0, 2, css.rgba(0, 126, 229, 0.5))
+      ),
     }
   },
   disabled: {
