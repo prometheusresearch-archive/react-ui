@@ -13,7 +13,11 @@ type Props = {
   noWrap?: boolean;
   position?: 'relative' | 'absolute' | 'fixed',
   width?: number;
+  maxWidth?: number;
+  minWidth?: number;
   height?: number;
+  maxHeight?: number;
+  minHeight?: number;
   top?: number;
   left?: number;
   bottom?: number;
@@ -41,7 +45,9 @@ export default function Block({
   inline,
   noWrap,
   position = 'relative',
-  width, height, top, left, bottom, right,
+  width, maxWidth, minWidth,
+  height, maxHeight, minHeight,
+  top, left, bottom, right,
   padding,
   paddingV, paddingH,
   paddingLeft, paddingRight, paddingTop, paddingBottom,
@@ -66,7 +72,9 @@ export default function Block({
     display: inline ? 'inline-block' : undefined,
     whiteSpace: noWrap ? 'nowrap' : undefined,
     position,
-    width, height, top, left, bottom, right,
+    width, minWidth, maxWidth,
+    height, minHeight, maxHeight,
+    top, left, bottom, right,
     textAlign,
     verticalAlign,
     ...style,
