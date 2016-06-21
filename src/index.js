@@ -35,6 +35,7 @@ export QuietButton from './QuietButton';
 export SuccessButton from './SuccessButton';
 export DangerButton from './DangerButton';
 export FlatDangerButton from './FlatDangerButton';
+export FlatSuccessButton from './FlatSuccessButton';
 
 export Text from './Text';
 export LabelText from './LabelText';

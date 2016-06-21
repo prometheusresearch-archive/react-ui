@@ -26,7 +26,7 @@ export default style(Button, {
   borderHover: css.rgb(173, 48, 48),
   borderFocus: css.rgb(173, 48, 48),
   borderActive: css.rgb(173, 48, 48),
-  borderDisabled: css.rgb(226, 135, 135),
+  borderDisabled: css.rgb(173, 48, 48),
 
   shadow: css.none,
   shadowHover: css.none,
