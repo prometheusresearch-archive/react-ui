@@ -161,7 +161,23 @@ export default function Site() {
             <DemoButtonSizes Button={ReactUI.FlatDangerButton} />
             <DemoButtonVariants Button={ReactUI.FlatDangerButton} />
           </DemoVariant>
+
+          <DemoVariant title="Button as a link">
+            <Items>
+              <Item>
+                <ReactUI.Button size="small" href="/">Go home</ReactUI.Button>
+              </Item>
+              <Item>
+                <ReactUI.FlatButton size="small" href="/">Go home</ReactUI.FlatButton>
+              </Item>
+              <Item>
+                <ReactUI.QuietButton size="small" href="/">Go home</ReactUI.QuietButton>
+              </Item>
+          </Items>
+          </DemoVariant>
+
         </DemoSection>
+
 
         <DemoSection title="Button group">
 

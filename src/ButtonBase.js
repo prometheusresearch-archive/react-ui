@@ -53,6 +53,13 @@ export default class ButtonBase extends React.Component {
       React.PropTypes.node
     ]),
 
+    href: React.PropTypes.string,
+
+    Component: React.PropTypes.oneOfType([
+      React.PropTypes.string,
+      React.PropTypes.func,
+    ]),
+
     /**
      * Button's caption.
      */
@@ -70,6 +77,8 @@ export default class ButtonBase extends React.Component {
       children, icon, iconRight,
       disabled, active, size,
       attach,
+      href,
+      Component,
       groupVertically, groupHorizontally,
       variant,
       stylesheet: {Root, Caption, Icon, IconWrapper},
@@ -91,6 +100,9 @@ export default class ButtonBase extends React.Component {
       ...sizeVariant,
       ...variant,
     };
+    if (href != null && Component == null) {
+      Component = 'a';
+    }
     if (isString(icon)) {
       icon = <Icon name={icon} />;
     }
@@ -104,7 +116,9 @@ export default class ButtonBase extends React.Component {
     let hasCaption = !!children;
     return (
       <Root
+        Component={Component}
         {...props}
+        href={href}
         disabled={disabled}
         variant={variant}
         aria-pressed={active}
