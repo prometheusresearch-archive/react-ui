@@ -72,9 +72,9 @@ export default style(CardBase, mixinVariants({
 }, {
   default: variant({
     shadow: css.rgba(37, 40, 43, 0.1),
-    border: css.rgb(163, 164, 166),
+    border: css.rgb(180),
     borderRadius: 2,
-    headerBackground: css.rgb(163, 164, 166),
+    headerBackground: css.rgb(180),
     headerColor: '#fbfbfb',
     contentBackground: 'white',
     contentColor: '#000',
