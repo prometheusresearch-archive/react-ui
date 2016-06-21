@@ -406,7 +406,13 @@ export default function Site() {
             <ReactUI.Input />
           </Items>
           <Items>
+            <ReactUI.Input variant={{focus: true}} />
+          </Items>
+          <Items>
             <ReactUI.Input variant={{error: true}} />
+          </Items>
+          <Items>
+            <ReactUI.Input variant={{error: true, focus: true}} />
           </Items>
           <Items>
             <ReactUI.Input disabled />
