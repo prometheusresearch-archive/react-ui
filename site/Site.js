@@ -462,6 +462,34 @@ export default function Site() {
 
         </DemoSection>
 
+        <DemoSection title="Menu">
+          <ReactUI.Card width={300}>
+            <ReactUI.Block paddingH="small" marginTop="small">
+              <ReactUI.LabelText>Menu</ReactUI.LabelText>
+            </ReactUI.Block>
+            <ReactUI.Block marginV="x-small">
+              <ReactUI.QuietButton
+                attach={{left: true, right: true}}
+                width="100%"
+                textAlign="left">
+                First item
+              </ReactUI.QuietButton>
+              <ReactUI.QuietButton
+                attach={{left: true, right: true}}
+                width="100%"
+                textAlign="left">
+                Second item
+              </ReactUI.QuietButton>
+              <ReactUI.QuietButton
+                attach={{left: true, right: true}}
+                width="100%"
+                textAlign="left">
+                Third item
+              </ReactUI.QuietButton>
+            </ReactUI.Block>
+          </ReactUI.Card>
+        </DemoSection>
+
       </Block>
     </Block>
   );
