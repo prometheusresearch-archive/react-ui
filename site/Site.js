@@ -473,7 +473,7 @@ export default function Site() {
 
         </DemoSection>
 
-        <DemoSection title="Menu">
+        <DemoSection title="<Menu />">
           <ReactUI.Card width={300}>
             <ReactUI.Block paddingH="small" marginTop="small">
               <ReactUI.LabelText>Menu</ReactUI.LabelText>
@@ -499,6 +499,26 @@ export default function Site() {
               </ReactUI.QuietButton>
             </ReactUI.Block>
           </ReactUI.Card>
+        </DemoSection>
+
+        <DemoSection title="<ProgressBar />">
+          <ReactUI.Block maxWidth={300}>
+            <Items>
+              <ReactUI.ProgressBar progress={0} />
+            </Items>
+            <Items>
+              <ReactUI.ProgressBar progress={0.23} />
+            </Items>
+            <Items>
+              <ReactUI.ProgressBar progress={0.49} />
+            </Items>
+            <Items>
+              <ReactUI.ProgressBar progress={0.76} />
+            </Items>
+            <Items>
+              <ReactUI.ProgressBar progress={1} />
+            </Items>
+          </ReactUI.Block>
         </DemoSection>
 
       </Block>
