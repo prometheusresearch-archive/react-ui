@@ -18,7 +18,7 @@ export function extractValueFromEvent(event) {
   return value;
 }
 
-const NUMBER_RE = /^\-?[0-9]+(\.[0-9]*)?$/;
+const NUMBER_RE = /^\-?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))$/;
 
 /**
  * Try parse number value out of string.
