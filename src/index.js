@@ -37,6 +37,8 @@ export DangerButton from './DangerButton';
 export FlatDangerButton from './FlatDangerButton';
 export FlatSuccessButton from './FlatSuccessButton';
 
+export ProgressBar from './ProgressBar';
+
 export Text from './Text';
 export LabelText from './LabelText';
 export ErrorText from './ErrorText';
