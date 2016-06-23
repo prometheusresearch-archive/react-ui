@@ -507,7 +507,7 @@ export default function Site() {
               <ReactUI.ProgressBar progress={0} />
             </Items>
             <Items>
-              <ReactUI.ProgressBar progress={0.23} />
+              <ReactUI.ProgressBar progress={0.2334234} />
             </Items>
             <Items>
               <ReactUI.ProgressBar progress={0.49} />

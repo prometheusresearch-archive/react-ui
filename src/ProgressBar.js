@@ -29,9 +29,11 @@ let ProgressBarLabel = style(Block, {
   padding: '5px',
 });
 
-export default function ProgressBar({progress}) {
+export default function ProgressBar({progress, formatLabel}) {
   let progressWidth = `${100 * progress}%`;
-  let progressLabel = `${100 * progress}%`;
+  let progressLabel = formatLabel ?
+    formatLabel({progress}) :
+    `${Math.floor(100 * progress)}%`;
   return (
     <ProgressBarRoot>
       <ProgressBarBar
