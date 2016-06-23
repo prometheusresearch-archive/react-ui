@@ -20,6 +20,36 @@ function Items({children}) {
   return <Block marginBottom="small">{children}</Block>;
 }
 
+class InputDemo extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {value: ''};
+  }
+
+  render() {
+    let {value} = this.state;
+    let {children} = this.props;
+    return (
+      <Block marginBottom="small">
+        <Block marginBottom="x-small">
+          {React.cloneElement(children, {onChange: this.onChange, value})}
+        </Block>
+        <Block>
+          <pre style={{fontSize: 12}}>{JSON.stringify(value)}</pre>
+        </Block>
+      </Block>
+    );
+  }
+
+  onChange = value => {
+    if (value && value.target) {
+      value = value.target.value;
+    }
+    this.setState({value});
+  };
+}
+
 function DemoSection({title, children}) {
   return (
     <Block marginBottom="large">
@@ -406,9 +436,11 @@ export default function Site() {
           </DemoVariant>
         </DemoSection>
 
-        <DemoSection title="Input">
+        <DemoSection title="<Input />">
           <Items>
-            <ReactUI.Input />
+            <InputDemo>
+              <ReactUI.Input />
+            </InputDemo>
           </Items>
           <Items>
             <ReactUI.Input variant={{focus: true}} />
@@ -424,7 +456,13 @@ export default function Site() {
           </Items>
         </DemoSection>
 
-        <DemoSection title="Textarea">
+        <DemoSection title="<NumberInput />">
+          <InputDemo>
+            <ReactUI.NumberInput />
+          </InputDemo>
+        </DemoSection>
+
+        <DemoSection title="<Textarea />">
           <Items>
             <ReactUI.Textarea />
           </Items>
@@ -436,7 +474,7 @@ export default function Site() {
           </Items>
         </DemoSection>
 
-        <DemoSection title="Card">
+        <DemoSection title="<Card />">
 
           <DemoVariant title="<Card />">
             <ReactUI.Card padding="x-small">
