@@ -65,8 +65,8 @@ class ReactShallowRenderer {
     this._renderer = _createRenderer();
   }
 
-  render(element) {
-    return this._renderer.render(element);
+  render(element, context) {
+    return this._renderer.render(element, context);
   }
 
   get instance() {
