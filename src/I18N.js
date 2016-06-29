@@ -17,7 +17,7 @@ export const defaultContext: I18NContext = {
   dir: 'ltr',
 };
 
-export default class I18N extends React.Component {
+export class I18N extends React.Component {
 
   props: I18NContext & {
     children: any;
@@ -37,3 +37,4 @@ export default class I18N extends React.Component {
   }
 }
 
+export default I18N;
