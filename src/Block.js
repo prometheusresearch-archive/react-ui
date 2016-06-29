@@ -44,6 +44,7 @@ type Props = {
   marginRight?: string | number;
   marginTop?: string | number;
   marginBottom?: string | number;
+  float?: 'left' | 'right' | 'start' | 'end',
   textAlign?: 'left' | 'right' | 'center' | 'start' | 'end',
   verticalAlign?: string;
   style?: Object;
@@ -69,6 +70,7 @@ export default function Block({
   marginV, marginH,
   marginStart, marginEnd,
   marginLeft, marginRight, marginTop, marginBottom,
+  float,
   textAlign,
   verticalAlign,
   style,
@@ -123,6 +125,12 @@ export default function Block({
     }
   }
 
+  if (float === 'start') {
+    float = i18n.dir === 'rtl' ? 'right' : 'left';
+  } else if (float === 'end') {
+    float = i18n.dir === 'rtl' ? 'left' : 'right';
+  }
+
   if (textAlign === 'start') {
     textAlign = i18n.dir === 'rtl' ? 'right' : 'left';
   } else if (textAlign === 'end') {
@@ -144,6 +152,7 @@ export default function Block({
     width, minWidth, maxWidth,
     height, minHeight, maxHeight,
     top, left, bottom, right,
+    float,
     textAlign,
     verticalAlign,
     ...style,

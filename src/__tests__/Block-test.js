@@ -70,6 +70,26 @@ describe('react-ui/Block', function() {
       assert(renderer.element.props.style.textAlign === 'left');
     });
 
+    it('processes float="start"', function() {
+      let renderer = createRenderer();
+      renderer.render(<Block float="start" />);
+      assert(renderer.element.props.style.float === 'left');
+      renderer.render(<Block float="start" />, {
+        i18n: {dir: 'rtl'}
+      });
+      assert(renderer.element.props.style.float === 'right');
+    });
+
+    it('processes float="end"', function() {
+      let renderer = createRenderer();
+      renderer.render(<Block float="end" />);
+      assert(renderer.element.props.style.float === 'right');
+      renderer.render(<Block float="end" />, {
+        i18n: {dir: 'rtl'}
+      });
+      assert(renderer.element.props.style.float === 'left');
+    });
+
   });
 
 });
