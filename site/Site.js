@@ -415,6 +415,27 @@ export default function Site() {
               value={['cat']}
               />
           </DemoVariant>
+          <DemoVariant title="Vertical layout (RTL)">
+            <ReactUI.I18N.I18N dir="rtl">
+              <ReactUI.CheckboxGroup
+                options={[
+                  {label: 'Dog', value: 'dog'},
+                  {label: 'Cat', value: 'cat'}]}
+                value={['cat']}
+                />
+            </ReactUI.I18N.I18N>
+          </DemoVariant>
+          <DemoVariant title="Horizontal layout (RTL)">
+            <ReactUI.I18N.I18N dir="rtl">
+              <ReactUI.CheckboxGroup
+                layout="horizontal"
+                options={[
+                  {label: 'Dog', value: 'dog'},
+                  {label: 'Cat', value: 'cat'}]}
+                value={['cat']}
+                />
+            </ReactUI.I18N.I18N>
+          </DemoVariant>
 
           <DemoVariant title="Disabled">
             <ReactUI.CheckboxGroup
@@ -447,6 +468,29 @@ export default function Site() {
                 {label: 'Cat', value: 'cat'}]}
               value="cat"
               />
+          </DemoVariant>
+
+          <DemoVariant title="Vertical layout (RTL)">
+            <ReactUI.I18N.I18N dir="rtl">
+              <ReactUI.RadioGroup
+                options={[
+                  {label: 'Dog', value: 'dog'},
+                  {label: 'Cat', value: 'cat'}]}
+                value="cat"
+                />
+              </ReactUI.I18N.I18N>
+          </DemoVariant>
+
+          <DemoVariant title="Horizontal layout (RTL)">
+            <ReactUI.I18N.I18N dir="rtl">
+              <ReactUI.RadioGroup
+                layout="horizontal"
+                options={[
+                  {label: 'Dog', value: 'dog'},
+                  {label: 'Cat', value: 'cat'}]}
+                value="cat"
+                />
+            </ReactUI.I18N.I18N>
           </DemoVariant>
 
           <DemoVariant title="Disabled state">
