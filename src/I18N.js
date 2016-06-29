@@ -26,7 +26,8 @@ export class I18N extends React.Component {
   static childContextTypes = contextTypes;
 
   render() {
-    return React.Children.only(this.props.children);
+    let {dir, ...props} = this.props;
+    return <div {...props} dir={dir} />;
   }
 
   getChildContext() {
