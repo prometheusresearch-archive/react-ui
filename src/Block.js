@@ -7,6 +7,8 @@ import * as React from 'react';
 import {wrapWithStylesheet} from './stylesheet';
 import {chooseValue} from './Utils';
 import * as theme from './theme';
+import type {I18NContext} from './I18N';
+import * as I18N from './I18N';
 
 type Props = {
   inline?: boolean;
@@ -22,9 +24,13 @@ type Props = {
   left?: number;
   bottom?: number;
   right?: number;
+  positionStart?: number;
+  positionEnd?: number;
   padding?: string | number;
   paddingV?: string | number;
   paddingH?: string | number;
+  paddingStart?: string | number;
+  paddingEnd?: string | number;
   paddingLeft?: string | number;
   paddingRight?: string | number;
   paddingTop?: string | number;
@@ -32,13 +38,19 @@ type Props = {
   margin?: string | number;
   marginV?: string | number;
   marginH?: string | number;
+  marginStart?: string | number;
+  marginEnd?: string | number;
   marginLeft?: string | number;
   marginRight?: string | number;
   marginTop?: string | number;
   marginBottom?: string | number;
-  textAlign?: 'left' | 'right' | 'center',
+  textAlign?: 'left' | 'right' | 'center' | 'start' | 'end',
   verticalAlign?: string;
   style?: Object;
+};
+
+type Context = {
+  i18n: I18NContext;
 };
 
 export default function Block({
@@ -47,18 +59,75 @@ export default function Block({
   position = 'relative',
   width, maxWidth, minWidth,
   height, maxHeight, minHeight,
+  positionStart, positionEnd,
   top, left, bottom, right,
   padding,
   paddingV, paddingH,
+  paddingStart, paddingEnd,
   paddingLeft, paddingRight, paddingTop, paddingBottom,
   margin,
   marginV, marginH,
+  marginStart, marginEnd,
   marginLeft, marginRight, marginTop, marginBottom,
   textAlign,
   verticalAlign,
   style,
   ...props
-}: Props) {
+}: Props, {i18n = I18N.defaultContext}: Context) {
+
+  if (paddingStart !== undefined) {
+    if (i18n.rtl && paddingRight === undefined) {
+      paddingRight = paddingStart;
+    } else if (!i18n.rtl && paddingLeft === undefined) {
+      paddingLeft = paddingStart;
+    }
+  }
+
+  if (paddingEnd !== undefined) {
+    if (i18n.rtl && paddingLeft === undefined) {
+      paddingLeft = paddingEnd;
+    } else if (!i18n.rtl && paddingRight === undefined) {
+      paddingRight = paddingEnd;
+    }
+  }
+
+  if (marginStart !== undefined) {
+    if (i18n.rtl && marginRight === undefined) {
+      marginRight = marginStart;
+    } else if (!i18n.rtl && marginLeft === undefined) {
+      marginLeft = marginStart;
+    }
+  }
+
+  if (marginEnd !== undefined) {
+    if (i18n.rtl && marginLeft === undefined) {
+      marginLeft = marginEnd;
+    } else if (!i18n.rtl && marginRight === undefined) {
+      marginRight = marginEnd;
+    }
+  }
+
+  if (positionStart !== undefined) {
+    if (i18n.rtl && right === undefined) {
+      right = positionStart;
+    } else if (!i18n.rtl && left === undefined) {
+      left = positionStart;
+    }
+  }
+
+  if (positionEnd !== undefined) {
+    if (i18n.rtl && left === undefined) {
+      left = positionEnd;
+    } else if (!i18n.rtl && right === undefined) {
+      right = positionEnd;
+    }
+  }
+
+  if (textAlign === 'start') {
+    textAlign = i18n.rtl ? 'right' : 'left';
+  } else if (textAlign === 'end') {
+    textAlign = i18n.rtl ? 'left' : 'right';
+  }
 
   style = {
     paddingLeft: chooseValue(theme.padding, paddingLeft, paddingH, padding),
@@ -81,6 +150,8 @@ export default function Block({
   };
   return <div {...props} style={style} />;
 }
+
+Block.contextTypes = I18N.contextTypes;
 
 Block.style = function style(stylesheet, displayName) {
   return wrapWithStylesheet(Block, stylesheet, displayName || 'Block');
