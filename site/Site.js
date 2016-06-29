@@ -337,7 +337,7 @@ export default function Site() {
             <ReactUI.Button groupHorizontally icon={<AngleLeftIcon />}>
               Prev
             </ReactUI.Button>
-            <ReactUI.Button groupHorizontally iconRight={<AngleRightIcon />}>
+            <ReactUI.Button groupHorizontally iconAlt={<AngleRightIcon />}>
               Next
             </ReactUI.Button>
           </Items>
@@ -345,7 +345,7 @@ export default function Site() {
             <ReactUI.Button size="small" groupHorizontally icon={<AngleLeftIcon />}>
               Prev
             </ReactUI.Button>
-            <ReactUI.Button size="small" groupHorizontally iconRight={<AngleRightIcon />}>
+            <ReactUI.Button size="small" groupHorizontally iconAlt={<AngleRightIcon />}>
               Next
             </ReactUI.Button>
           </Items>
@@ -353,6 +353,31 @@ export default function Site() {
             <ReactUI.Button groupHorizontally icon={<AngleLeftIcon />} />
             <ReactUI.Button groupHorizontally icon={<AngleRightIcon />} />
           </Items>
+        </DemoSection>
+
+        <DemoSection title="Button with icons (RTL)">
+          <ReactUI.I18N.I18N dir="rtl">
+            <Items>
+              <ReactUI.Button groupHorizontally icon={<AngleLeftIcon />}>
+                Prev
+              </ReactUI.Button>
+              <ReactUI.Button groupHorizontally iconAlt={<AngleRightIcon />}>
+                Next
+              </ReactUI.Button>
+            </Items>
+            <Items>
+              <ReactUI.Button size="small" groupHorizontally icon={<AngleLeftIcon />}>
+                Prev
+              </ReactUI.Button>
+              <ReactUI.Button size="small" groupHorizontally iconAlt={<AngleRightIcon />}>
+                Next
+              </ReactUI.Button>
+            </Items>
+            <Items>
+              <ReactUI.Button groupHorizontally icon={<AngleLeftIcon />} />
+              <ReactUI.Button groupHorizontally icon={<AngleRightIcon />} />
+            </Items>
+          </ReactUI.I18N.I18N>
         </DemoSection>
 
         <DemoSection title="Checkbox">
