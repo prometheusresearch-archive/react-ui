@@ -328,29 +328,57 @@ function makeStylesheet(stylesheet) {
       },
 
       groupHorizontally: {
-        borderRight: 'none !important',
-        borderRadius: 0,
-        firstChild: {
-          borderBottomLeftRadius: 2,
-          borderTopLeftRadius: 2,
+        ltr: {
           borderRight: 'none !important',
+          borderRadius: 0,
+          firstChild: {
+            borderBottomLeftRadius: 2,
+            borderTopLeftRadius: 2,
+            borderRight: 'none !important',
+          },
+          lastChild: {
+            borderBottomRightRadius: 2,
+            borderTopRightRadius: 2,
+            hover: {
+              borderRight: css.border(1, stylesheet.borderHover) + ' !important',
+            },
+            focus: {
+              borderRight: css.border(1, stylesheet.borderFocus) + ' !important',
+            },
+            active: {
+              borderRight: css.border(1, stylesheet.borderActive) + ' !important',
+            },
+            disabled: {
+              borderRight: css.border(1, stylesheet.borderDisabled) + ' !important',
+            },
+            borderRight: css.border(1, stylesheet.border) + ' !important',
+          }
         },
-        lastChild: {
-          borderBottomRightRadius: 2,
-          borderTopRightRadius: 2,
-          hover: {
-            borderRight: css.border(1, stylesheet.borderHover) + ' !important',
+        rtl: {
+          borderLeft: 'none !important',
+          borderRadius: 0,
+          firstChild: {
+            borderBottomRightRadius: 2,
+            borderTopRightRadius: 2,
+            borderLeft: 'none !important',
           },
-          focus: {
-            borderRight: css.border(1, stylesheet.borderFocus) + ' !important',
-          },
-          active: {
-            borderRight: css.border(1, stylesheet.borderActive) + ' !important',
-          },
-          disabled: {
-            borderRight: css.border(1, stylesheet.borderDisabled) + ' !important',
-          },
-          borderRight: css.border(1, stylesheet.border) + ' !important',
+          lastChild: {
+            borderBottomLeftRadius: 2,
+            borderTopLeftRadius: 2,
+            hover: {
+              borderLeft: css.border(1, stylesheet.borderHover) + ' !important',
+            },
+            focus: {
+              borderLeft: css.border(1, stylesheet.borderFocus) + ' !important',
+            },
+            active: {
+              borderLeft: css.border(1, stylesheet.borderActive) + ' !important',
+            },
+            disabled: {
+              borderLeft: css.border(1, stylesheet.borderDisabled) + ' !important',
+            },
+            borderLeft: css.border(1, stylesheet.border) + ' !important',
+          }
         }
       },
       groupVertically: {
@@ -373,26 +401,68 @@ function makeStylesheet(stylesheet) {
       hasCaption: {
         small: {
           leftPosition: {
-            marginRight: 4,
+            ltr: {
+              marginRight: 4,
+              marginLeft: 0,
+            },
+            rtl: {
+              marginRight: 0,
+              marginLeft: 4,
+            }
           },
           rightPosition: {
-            marginLeft: 4,
+            ltr: {
+              marginLeft: 4,
+              marginRight: 0,
+            },
+            rtl: {
+              marginLeft: 0,
+              marginRight: 4,
+            }
           }
         },
         normal: {
           leftPosition: {
-            marginRight: 8,
+            ltr: {
+              marginLeft: 0,
+              marginRight: 8,
+            },
+            rtl: {
+              marginLeft: 8,
+              marginRight: 0,
+            }
           },
           rightPosition: {
-            marginLeft: 8,
+            ltr: {
+              marginLeft: 8,
+              marginRight: 0,
+            },
+            rtl: {
+              marginLeft: 0,
+              marginRight: 8,
+            }
           }
         },
         large: {
           leftPosition: {
-            marginRight: 10,
+            ltr: {
+              marginLeft: 0,
+              marginRight: 10,
+            },
+            rtl: {
+              marginLeft: 10,
+              marginRight: 0,
+            }
           },
           rightPosition: {
-            marginLeft: 10,
+            ltr: {
+              marginLeft: 10,
+              marginRight: 0,
+            },
+            rtl: {
+              marginLeft: 0,
+              marginRight: 10,
+            }
           }
         }
       }

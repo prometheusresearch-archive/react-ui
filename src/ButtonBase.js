@@ -5,6 +5,7 @@
 import * as React from 'react';
 import {isString} from 'lodash';
 
+import * as I18N from './I18N';
 import {create, css, component} from './stylesheet';
 
 let stylesheet = create({
@@ -75,6 +76,8 @@ export default class ButtonBase extends React.Component {
     children: React.PropTypes.node,
   };
 
+  static contextTypes = I18N.contextTypes;
+
   static defaultProps = {
     size: 'normal',
     attach: {},
@@ -95,6 +98,7 @@ export default class ButtonBase extends React.Component {
       style,
       ...props
     } = this.props;
+    let {i18n = I18N.defaultContext} = this.context;
     let sizeVariant = {
       small: size === 'small',
       normal: size === 'normal',
@@ -108,6 +112,8 @@ export default class ButtonBase extends React.Component {
       attachBottom: attach.bottom,
       groupVertically,
       groupHorizontally,
+      rtl: i18n.dir === 'rtl',
+      ltr: i18n.dir === 'ltr',
       ...sizeVariant,
       ...variant,
     };
@@ -141,13 +147,21 @@ export default class ButtonBase extends React.Component {
         aria-pressed={active}
         role="button">
         {icon ?
-          <IconWrapper variant={{...sizeVariant, hasCaption, leftPosition: true}}>
+          <IconWrapper variant={{
+            ...sizeVariant, hasCaption, leftPosition: true,
+            rtl: i18n.dir === 'rtl',
+            ltr: i18n.dir === 'ltr',
+          }}>
             {icon}
           </IconWrapper> :
           null}
         {caption}
         {iconAlt ?
-          <IconWrapper variant={{...sizeVariant, hasCaption, rightPosition: true}}>
+          <IconWrapper variant={{
+            ...sizeVariant, hasCaption, rightPosition: true,
+            rtl: i18n.dir === 'rtl',
+            ltr: i18n.dir === 'ltr',
+          }}>
             {iconAlt}
           </IconWrapper> :
           null}
