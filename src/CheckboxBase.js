@@ -4,8 +4,11 @@
 
 import React from 'react';
 import noop from 'lodash/noop';
+import * as I18N from './I18N';
 
 export default class CheckboxBase extends React.Component {
+
+  static contextTypes = I18N.contextTypes;
 
   static defaultProps = {
     onChange: noop,
@@ -19,20 +22,27 @@ export default class CheckboxBase extends React.Component {
   };
 
   render() {
-    let {value, label, title, hint, stylesheet, ...props} = this.props;
+    let {value, label, title, hint, stylesheet, variant, ...props} = this.props;
     let {Root, Input, Label, Hint, LabelWrapper} = stylesheet;
+    let {i18n = I18N.defaultContext} = this.context;
+    variant = {
+      rtl: i18n.dir === 'rtl',
+      ltr: i18n.dir === 'ltr',
+      ...variant,
+    };
     return (
-      <Root title={title}>
+      <Root title={title} variant={variant}>
         <Input
           {...props}
+          variant={variant}
           type="checkbox"
           checked={value}
           onChange={this.onChange}
           />
         {label &&
-          <LabelWrapper onClick={this.onClick}>
-            <Label>{label}</Label>
-            <Hint>{hint}</Hint>
+          <LabelWrapper variant={variant} onClick={this.onClick}>
+            <Label variant={variant}>{label}</Label>
+            <Hint variant={variant}>{hint}</Hint>
           </LabelWrapper>}
       </Root>
     );

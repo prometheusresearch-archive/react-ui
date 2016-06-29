@@ -21,8 +21,13 @@ export default style(RadioBase, {
     cursor: css.cursor.default,
     display: 'inline-block',
     verticalAlign: 'middle',
-    marginLeft: margin['x-small'],
     userSelect: 'none',
+    ltr: {
+      marginLeft: margin['x-small'],
+    },
+    rtl: {
+      marginRight: margin['x-small'],
+    },
   }),
   Hint: {
     fontSize: '0.6rem'
