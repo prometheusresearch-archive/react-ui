@@ -53,6 +53,15 @@ export default class ButtonBase extends React.Component {
       React.PropTypes.node
     ]),
 
+    /**
+     * Button's alternative icon (placed at the opposite direction to the
+     * label).
+     */
+    iconAlt: React.PropTypes.oneOfType([
+      React.PropTypes.string,
+      React.PropTypes.node
+    ]),
+
     href: React.PropTypes.string,
 
     Component: React.PropTypes.oneOfType([
@@ -74,7 +83,7 @@ export default class ButtonBase extends React.Component {
 
   render() {
     let {
-      children, icon, iconRight,
+      children, icon, iconAlt = this.props.iconRight,
       disabled, active, size,
       attach,
       href,
@@ -113,8 +122,8 @@ export default class ButtonBase extends React.Component {
     if (isString(icon)) {
       icon = <Icon name={icon} />;
     }
-    if (isString(iconRight)) {
-      iconRight = <Icon name={iconRight} />;
+    if (isString(iconAlt)) {
+      iconAlt = <Icon name={iconAlt} />;
     }
     let caption = null;
     if (children) {
@@ -137,9 +146,9 @@ export default class ButtonBase extends React.Component {
           </IconWrapper> :
           null}
         {caption}
-        {iconRight ?
+        {iconAlt ?
           <IconWrapper variant={{...sizeVariant, hasCaption, rightPosition: true}}>
-            {iconRight}
+            {iconAlt}
           </IconWrapper> :
           null}
       </Root>
