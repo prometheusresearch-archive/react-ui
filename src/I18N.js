@@ -23,7 +23,7 @@ export default class I18N extends React.Component {
     children: any;
   };
 
-  static contextTypes = contextTypes;
+  static childContextTypes = contextTypes;
 
   render() {
     return React.Children.only(this.props.children);
