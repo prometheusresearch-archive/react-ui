@@ -76,57 +76,57 @@ export default function Block({
 }: Props, {i18n = I18N.defaultContext}: Context) {
 
   if (paddingStart !== undefined) {
-    if (i18n.rtl && paddingRight === undefined) {
+    if (i18n.dir === 'rtl' && paddingRight === undefined) {
       paddingRight = paddingStart;
-    } else if (!i18n.rtl && paddingLeft === undefined) {
+    } else if (i18n.dir === 'ltr' && paddingLeft === undefined) {
       paddingLeft = paddingStart;
     }
   }
 
   if (paddingEnd !== undefined) {
-    if (i18n.rtl && paddingLeft === undefined) {
+    if (i18n.dir === 'rtl' && paddingLeft === undefined) {
       paddingLeft = paddingEnd;
-    } else if (!i18n.rtl && paddingRight === undefined) {
+    } else if (i18n.dir === 'ltr' && paddingRight === undefined) {
       paddingRight = paddingEnd;
     }
   }
 
   if (marginStart !== undefined) {
-    if (i18n.rtl && marginRight === undefined) {
+    if (i18n.dir === 'rtl' && marginRight === undefined) {
       marginRight = marginStart;
-    } else if (!i18n.rtl && marginLeft === undefined) {
+    } else if (i18n.dir === 'ltr' && marginLeft === undefined) {
       marginLeft = marginStart;
     }
   }
 
   if (marginEnd !== undefined) {
-    if (i18n.rtl && marginLeft === undefined) {
+    if (i18n.dir === 'rtl' && marginLeft === undefined) {
       marginLeft = marginEnd;
-    } else if (!i18n.rtl && marginRight === undefined) {
+    } else if (i18n.dir === 'ltr' && marginRight === undefined) {
       marginRight = marginEnd;
     }
   }
 
   if (positionStart !== undefined) {
-    if (i18n.rtl && right === undefined) {
+    if (i18n.dir === 'rtl' && right === undefined) {
       right = positionStart;
-    } else if (!i18n.rtl && left === undefined) {
+    } else if (i18n.dir === 'ltr' && left === undefined) {
       left = positionStart;
     }
   }
 
   if (positionEnd !== undefined) {
-    if (i18n.rtl && left === undefined) {
+    if (i18n.dir === 'rtl' && left === undefined) {
       left = positionEnd;
-    } else if (!i18n.rtl && right === undefined) {
+    } else if (i18n.dir === 'ltr' && right === undefined) {
       right = positionEnd;
     }
   }
 
   if (textAlign === 'start') {
-    textAlign = i18n.rtl ? 'right' : 'left';
+    textAlign = i18n.dir === 'rtl' ? 'right' : 'left';
   } else if (textAlign === 'end') {
-    textAlign = i18n.rtl ? 'left' : 'right';
+    textAlign = i18n.dir === 'rtl' ? 'left' : 'right';
   }
 
   style = {

@@ -20,7 +20,7 @@ describe('react-ui/Block', function() {
       assert(renderer.element.props.style.left === 10);
       assert(renderer.element.props.style.right === 11);
       renderer.render(<Block positionStart={10} positionEnd={11} />, {
-        i18n: {rtl: true}
+        i18n: {dir: 'rtl'}
       });
       assert(renderer.element.props.style.left === 11);
       assert(renderer.element.props.style.right === 10);
@@ -32,7 +32,7 @@ describe('react-ui/Block', function() {
       assert(renderer.element.props.style.paddingLeft === 10);
       assert(renderer.element.props.style.paddingRight === 11);
       renderer.render(<Block paddingStart={10} paddingEnd={11} />, {
-        i18n: {rtl: true}
+        i18n: {dir: 'rtl'}
       });
       assert(renderer.element.props.style.paddingLeft === 11);
       assert(renderer.element.props.style.paddingRight === 10);
@@ -44,7 +44,7 @@ describe('react-ui/Block', function() {
       assert(renderer.element.props.style.marginLeft === 10);
       assert(renderer.element.props.style.marginRight === 11);
       renderer.render(<Block marginStart={10} marginEnd={11} />, {
-        i18n: {rtl: true}
+        i18n: {dir: 'rtl'}
       });
       assert(renderer.element.props.style.marginLeft === 11);
       assert(renderer.element.props.style.marginRight === 10);
@@ -55,7 +55,7 @@ describe('react-ui/Block', function() {
       renderer.render(<Block textAlign="start" />);
       assert(renderer.element.props.style.textAlign === 'left');
       renderer.render(<Block textAlign="start" />, {
-        i18n: {rtl: true}
+        i18n: {dir: 'rtl'}
       });
       assert(renderer.element.props.style.textAlign === 'right');
     });
@@ -65,7 +65,7 @@ describe('react-ui/Block', function() {
       renderer.render(<Block textAlign="end" />);
       assert(renderer.element.props.style.textAlign === 'right');
       renderer.render(<Block textAlign="end" />, {
-        i18n: {rtl: true}
+        i18n: {dir: 'rtl'}
       });
       assert(renderer.element.props.style.textAlign === 'left');
     });

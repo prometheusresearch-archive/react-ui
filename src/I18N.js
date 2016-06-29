@@ -6,7 +6,7 @@
 import * as React from 'react';
 
 export type I18NContext = {
-  rtl: boolean;
+  dir: 'ltr' | 'rtl';
 };
 
 export const contextTypes = {
@@ -14,10 +14,14 @@ export const contextTypes = {
 };
 
 export const defaultContext: I18NContext = {
-  rtl: false,
+  dir: 'ltr',
 };
 
 export default class I18N extends React.Component {
+
+  props: I18NContext & {
+    children: any;
+  };
 
   static contextTypes = contextTypes;
 
@@ -27,7 +31,7 @@ export default class I18N extends React.Component {
 
   getChildContext() {
     let i18n = {
-      rtl: this.props.rtl,
+      dir: this.props.dir,
     };
     return {i18n};
   }
