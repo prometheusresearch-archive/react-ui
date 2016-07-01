@@ -56,11 +56,11 @@
     "sitegen": "^0.29.0"
   },
   "dependencies": {
-    "@prometheusresearch/react-box": "^0.6.1",
+    "@prometheusresearch/react-box": "^0.7.0",
     "color-js": "^1.0.3",
     "invariant": "^2.2.1",
     "lodash": "^4.13.0",
-    "react-dom-stylesheet": "^0.5.2",
+    "react-dom-stylesheet": "^0.6.0",
     "react-stylesheet": "^1.0.0-beta.3"
   }
 }
