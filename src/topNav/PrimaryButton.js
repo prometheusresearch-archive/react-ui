@@ -34,7 +34,7 @@ export default style(ButtonBase, {
       outline: css.none,
     },
     small: {
-      fontSize: '12pt',
+      fontSize: '10pt',
     }
   },
   Caption: {
