@@ -13,9 +13,15 @@ export default style(RadioBase, {
     fontSize: '0.875rem',
     fontWeight: 400,
     color: '#444',
+    disabled: {
+      cursor: 'not-allowed',
+    },
   },
   Input: {
     verticalAlign: 'middle',
+    disabled: {
+      cursor: 'not-allowed',
+    },
   },
   LabelWrapper: style(Block, {
     cursor: css.cursor.default,

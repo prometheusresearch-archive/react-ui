@@ -12,4 +12,7 @@ export default style(Text, {
   fontSize: fontSize.small,
   textAlign: css.textAlign.left,
   padding: css.padding(0, 0),
+  disabled: {
+    color: '#aaa',
+  }
 });

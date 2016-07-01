@@ -13,9 +13,15 @@ export default style(CheckboxBase, {
     fontWeight: 400,
     color: '#444',
     userSelect: 'none',
+    disabled: {
+      cursor: 'not-allowed',
+    },
   },
   Input: {
     verticalAlign: 'middle',
+    disabled: {
+      cursor: 'not-allowed',
+    },
   },
   LabelWrapper: style(Block, {
     cursor: css.cursor.default,

@@ -22,18 +22,23 @@ export default class CheckboxBase extends React.Component {
   };
 
   render() {
-    let {value, label, title, hint, stylesheet, variant, ...props} = this.props;
+    let {
+      value, label, title, hint, stylesheet,
+      variant, disabled, ...props
+    } = this.props;
     let {Root, Input, Label, Hint, LabelWrapper} = stylesheet;
     let {i18n = I18N.defaultContext} = this.context;
     variant = {
       rtl: i18n.dir === 'rtl',
       ltr: i18n.dir === 'ltr',
+      disabled,
       ...variant,
     };
     return (
       <Root title={title} variant={variant}>
         <Input
           {...props}
+          disabled={disabled}
           variant={variant}
           type="checkbox"
           checked={value}
