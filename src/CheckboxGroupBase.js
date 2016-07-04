@@ -71,11 +71,11 @@ export default class CheckboxGroupBase extends React.Component {
   };
 
   render() {
-    let {options, tabIndex} = this.props;
+    let {options, disabled, tabIndex} = this.props;
     let {Root} = this.constructor.stylesheet;
     options = options.map(this.renderOption, this);
     return (
-      <Focus.FocusableList tabIndex={tabIndex}>
+      <Focus.FocusableList tabIndex={disabled ? undefined : tabIndex}>
         <Root>
           {options}
         </Root>

@@ -5,6 +5,7 @@
 import invariant from 'invariant';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import debounce from 'lodash/debounce';
 
 export let contextTypes = {
   focusable: React.PropTypes.object,
@@ -85,7 +86,15 @@ export class FocusableList extends React.Component {
   constructor(props) {
     super(props);
     this.items = {};
+    this.state = {focused: false};
   }
+
+  toggleFocused = debounce(focused => this.setState(state => {
+    if (state.focused !== focused) {
+      state = {...state, focused};
+    }
+    return state;
+  }), 0);
 
   getChildContext() {
     return {
@@ -95,11 +104,16 @@ export class FocusableList extends React.Component {
 
   render() {
     let {tabIndex, children} = this.props;
+    let {focused} = this.state;
+    if (focused) {
+      tabIndex = -1;
+    }
     return React.cloneElement(
       React.Children.only(children), {
         tabIndex,
         onKeyDown: this.onKeyDown,
         onFocus: this.onFocus,
+        onBlur: this.onBlur,
       });
   }
 
@@ -187,25 +201,35 @@ export class FocusableList extends React.Component {
         }
         break;
     }
-    if (this.props.onKeyDown) {
-      this.props.onKeyDown(event);
+    if (this.props.children.props.onKeyDown) {
+      this.props.children.props.onKeyDown(event);
     }
   };
 
-  onFocus = () => {
-    let focusedIndex = this.getFocusedIndex();
-    if (focusedIndex !== -1) {
-      return;
+  onBlur = event => {
+    this.toggleFocused(false);
+    if (this.props.children.props.onBlur) {
+      this.props.children.props.onBlur(event);
     }
-    let activeDescendant = this.props.activeDescendant;
-    if (activeDescendant && this.items[activeDescendant]) {
-      this.items[activeDescendant].focus();
-    } else {
-      let keys = this.getKeys();
-      activeDescendant = keys[0];
+  };
+
+  onFocus = event => {
+    let focusedIndex = this.getFocusedIndex();
+    this.toggleFocused(true);
+    if (focusedIndex === -1) {
+      let activeDescendant = this.props.activeDescendant;
       if (activeDescendant && this.items[activeDescendant]) {
         this.items[activeDescendant].focus();
+      } else {
+        let keys = this.getKeys();
+        activeDescendant = keys[0];
+        if (activeDescendant && this.items[activeDescendant]) {
+          this.items[activeDescendant].focus();
+        }
       }
+    }
+    if (this.props.children.props.onFocus) {
+      this.props.children.props.onFocus(event);
     }
   };
 }
