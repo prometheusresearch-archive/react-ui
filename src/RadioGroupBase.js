@@ -6,8 +6,12 @@ import React from 'react';
 import {noop} from 'lodash';
 
 import Radio from './RadioBase';
+import * as I18N from './I18N';
+import * as Focus from './Focus';
 
 export default class RadioGroupBase extends React.Component {
+
+  static contextTypes = I18N.contextTypes;
 
   static stylesheet = {
     Root: 'div',
@@ -20,32 +24,45 @@ export default class RadioGroupBase extends React.Component {
     onBlur: noop,
     onFocus: noop,
     layout: 'vertical',
+    tabIndex: 0,
   };
 
   render() {
-    let {options} = this.props;
+    let {options, tabIndex} = this.props;
     let {Root} = this.constructor.stylesheet;
     options = options.map(this.renderOption, this);
     return (
-      <Root>
-        {options}
-      </Root>
+      <Focus.FocusableList tabIndex={tabIndex}>
+        <Root role="radiogroup">
+          {options}
+        </Root>
+      </Focus.FocusableList>
     );
   }
 
   renderOption(option, idx) {
     let {RadioWrapper, Radio} = this.constructor.stylesheet;
-    let {value, layout, disabled} = this.props;
+    let {value, layout, disabled, variant} = this.props;
+    let {i18n = I18N.defaultContext} = this.context;
     let checked = value === option.value;
+    variant = {
+      rtl: i18n.dir === 'rtl',
+      ltr: i18n.dir === 'ltr',
+      disabled,
+      ...variant,
+    };
     return (
       <RadioWrapper
         key={option.value}
         variant={{
           horizontal: layout === 'horizontal',
-          vertical: layout === 'vertical'
+          vertical: layout === 'vertical',
+          ...variant,
         }}>
         <Radio
           disabled={disabled}
+          focusIndex={idx}
+          tabIndex={-1}
           idx={idx}
           value={checked}
           label={option.label}

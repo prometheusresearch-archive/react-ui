@@ -4,10 +4,15 @@
 
 import CheckboxGroupBase from './CheckboxGroupBase';
 import Checkbox from './Checkbox';
-import {style} from './stylesheet';
+import {style, css} from './stylesheet';
 import {margin} from './theme';
 
 export default style(CheckboxGroupBase, {
+  Root: {
+    focus: {
+      outline: css.none,
+    },
+  },
   Checkbox: Checkbox,
   CheckboxWrapper: {
     vertical: {
@@ -15,7 +20,18 @@ export default style(CheckboxGroupBase, {
     },
     horizontal: {
       display: 'inline-block',
-      marginRight: margin['x-small'],
+      ltr: {
+        marginRight: margin['x-small'],
+        lastChild: {
+          marginRight: 0,
+        }
+      },
+      rtl: {
+        marginLeft: margin['x-small'],
+        lastChild: {
+          marginLeft: 0,
+        }
+      }
     },
   }
 });

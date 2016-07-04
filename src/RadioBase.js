@@ -5,6 +5,7 @@
 import React from 'react';
 import noop from 'lodash/noop';
 import * as I18N from './I18N';
+import * as Focus from './Focus';
 
 export default class RadioBase extends React.Component {
 
@@ -24,7 +25,7 @@ export default class RadioBase extends React.Component {
   render() {
     let {
       value, label, title, hint, inputRef, stylesheet,
-      variant, disabled, ...props
+      variant, disabled, focusIndex, ...props
     } = this.props;
     let {Root, Input, Label, Hint, LabelWrapper} = stylesheet;
     let {i18n = I18N.defaultContext} = this.context;
@@ -36,15 +37,18 @@ export default class RadioBase extends React.Component {
     };
     return (
       <Root title={title} variant={variant}>
-        <Input
-          {...props}
-          disabled={disabled}
-          variant={variant}
-          ref={inputRef}
-          type="radio"
-          checked={value}
-          onChange={this.onChange}
-          />
+        <Focus.Focusable focusIndex={focusIndex}>
+          <Input
+            {...props}
+            disabled={disabled}
+            variant={variant}
+            ref={inputRef}
+            inputRef={inputRef}
+            type="radio"
+            checked={value}
+            onChange={this.onChange}
+            />
+        </Focus.Focusable>
         {label &&
           <LabelWrapper variant={variant} onClick={this.onClick}>
             <Label variant={variant}>{label}</Label>

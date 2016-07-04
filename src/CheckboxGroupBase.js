@@ -6,6 +6,8 @@ import invariant from 'invariant';
 import React from 'react';
 import {noop} from 'lodash';
 
+import * as I18N from './I18N';
+import * as Focus from './Focus';
 import Checkbox from './CheckboxBase';
 
 export let primitiveValueStrategy = {
@@ -53,10 +55,13 @@ export default class CheckboxGroupBase extends React.Component {
     valueStrategy: React.PropTypes.object
   };
 
+  static contextTypes = I18N.contextTypes;
+
   static defaultProps = {
     valueStrategy: primitiveValueStrategy,
     onChange: noop,
     layout: 'vertical',
+    tabIndex: 0,
   };
 
   static stylesheet = {
@@ -66,28 +71,40 @@ export default class CheckboxGroupBase extends React.Component {
   };
 
   render() {
-    let {options} = this.props;
+    let {options, tabIndex} = this.props;
     let {Root} = this.constructor.stylesheet;
     options = options.map(this.renderOption, this);
     return (
-      <Root>
-        {options}
-      </Root>
+      <Focus.FocusableList tabIndex={tabIndex}>
+        <Root>
+          {options}
+        </Root>
+      </Focus.FocusableList>
     );
   }
 
-  renderOption(option) {
-    let {valueStrategy, layout, disabled} = this.props;
+  renderOption(option, idx) {
+    let {valueStrategy, layout, disabled, variant} = this.props;
     let {CheckboxWrapper, Checkbox} = this.constructor.stylesheet;
+    let {i18n = I18N.defaultContext} = this.context;
     let checked = valueStrategy.isChecked(this.props.value, option);
+    variant = {
+      rtl: i18n.dir === 'rtl',
+      ltr: i18n.dir === 'ltr',
+      disabled,
+      ...variant,
+    };
     return (
       <CheckboxWrapper
         key={valueStrategy.optionToValue(option)}
         variant={{
           horizontal: layout === 'horizontal',
-          vertical: layout === 'vertical'
+          vertical: layout === 'vertical',
+          ...variant,
         }}>
         <Checkbox
+          focusIndex={idx}
+          tabIndex={-1}
           disabled={disabled}
           label={option.label}
           hint={option.hint}
