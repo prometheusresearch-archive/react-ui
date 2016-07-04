@@ -3,6 +3,7 @@
  */
 
 export * as I18N from './I18N';
+export * as Focus from './Focus';
 
 export Block from './Block';
 export HBox from './HBox';

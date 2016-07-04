@@ -21,7 +21,7 @@ export class Focusable extends React.Component {
   }
 
   get input() {
-    return ReactDOM.findDOMNode(this._inputRef || this._ref);
+    return ReactDOM.findDOMNode(this._inputRef || this._ref || this);
   }
 
   get isFocused() {
@@ -54,21 +54,21 @@ export class Focusable extends React.Component {
     }
   }
 
-  componentWillUnount() {
+  componentWillUnmount() {
     if (this.props.focusIndex != null) {
       this.context.focusable.unregister(this, this.props.focusIndex);
     }
   }
 
   componentWillReceiveProps(nextProps) {
-    if (this.props.focusIndex) {
-      this.context.focusable.unregister(this, this.props.focusIndex);
+    if (this.props.focusIndex !== nextProps.focusIndex) {
+      if (this.props.focusIndex != null) {
+        this.context.focusable.unregister(this, this.props.focusIndex);
+      }
+      if (nextProps.focusIndex != null) {
+        this.context.focusable.register(this, nextProps.focusIndex);
+      }
     }
-    if (nextProps.focusIndex) {
-      this.context.focusable.register(this, nextProps.focusIndex);
-    }
-    this.context.focusable.onFocusableChange(
-      this, this.props.focusIndex, nextProps.focusIndex);
   }
 
   focus() {
@@ -134,15 +134,6 @@ export class FocusableList extends React.Component {
     delete this.items[focusIndex];
   };
 
-  onFocusableChange = (focusable, prevTabIndex, nextTabIndex) => {
-    invariant(
-      this.items[prevTabIndex] === focusable,
-      'Inconsistent state'
-    );
-    delete this.items[prevTabIndex];
-    this.items[nextTabIndex] = focusable;
-  };
-
   focusPrev = () => {
     let fromIndex = this.getFocusedIndex();
     let keys = this.getKeys();
@@ -203,9 +194,18 @@ export class FocusableList extends React.Component {
 
   onFocus = () => {
     let focusedIndex = this.getFocusedIndex();
-    if (focusedIndex === -1) {
+    if (focusedIndex !== -1) {
+      return;
+    }
+    let activeDescendant = this.props.activeDescendant;
+    if (activeDescendant && this.items[activeDescendant]) {
+      this.items[activeDescendant].focus();
+    } else {
       let keys = this.getKeys();
-      this.items[keys[0]].focus();
+      activeDescendant = keys[0];
+      if (activeDescendant && this.items[activeDescendant]) {
+        this.items[activeDescendant].focus();
+      }
     }
   };
 }
