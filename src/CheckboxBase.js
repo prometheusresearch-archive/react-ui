@@ -4,6 +4,7 @@
 
 import React from 'react';
 import noop from 'lodash/noop';
+import uniqueId from 'lodash/uniqueId';
 import * as I18N from './I18N';
 import * as Focus from './Focus';
 
@@ -21,6 +22,11 @@ export default class CheckboxBase extends React.Component {
       Label: 'div',
     },
   };
+
+  constructor(props) {
+    super(props);
+    this.ariaId = uniqueId('aria');
+  }
 
   render() {
     let {
@@ -40,6 +46,7 @@ export default class CheckboxBase extends React.Component {
         <Focus.Focusable focusIndex={focusIndex}>
           <Input
             {...props}
+            aria-labelledby={this.ariaId}
             disabled={disabled}
             variant={variant}
             type="checkbox"
@@ -49,7 +56,7 @@ export default class CheckboxBase extends React.Component {
         </Focus.Focusable>
         {label &&
           <LabelWrapper variant={variant} onClick={this.onClick}>
-            <Label variant={variant}>{label}</Label>
+            <Label id={this.ariaId} variant={variant}>{label}</Label>
             <Hint variant={variant}>{hint}</Hint>
           </LabelWrapper>}
       </Root>
