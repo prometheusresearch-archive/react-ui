@@ -2,7 +2,6 @@
  * @copyright 2016-present, Prometheus Research, LLC
  */
 
-import invariant from 'invariant';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import debounce from 'lodash/debounce';
@@ -133,19 +132,15 @@ export class FocusableList extends React.Component {
   }
 
   register = (focusable, focusIndex) => {
-    invariant(
-      this.items[focusIndex] === undefined,
-      'Inconsistent state'
-    );
     this.items[focusIndex] = focusable;
   };
 
   unregister = (focusable, focusIndex) => {
-    invariant(
-      this.items[focusIndex] === focusable,
-      'Inconsistent state'
-    );
-    delete this.items[focusIndex];
+    // We check if focusable wasn't overridden earlier due to another child's
+    // update
+    if (this.items[focusIndex] === focusable) {
+      delete this.items[focusIndex];
+    }
   };
 
   focusPrev = () => {
