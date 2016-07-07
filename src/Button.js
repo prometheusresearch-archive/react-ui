@@ -94,6 +94,9 @@ function makeStylesheet(stylesheet) {
         boxShadow: css.insetBoxShadow(0, 1, 1, 0, stylesheet.shadowActive),
         paddingTop: stylesheet.raised ? 6 : 4,
         paddingBottom: stylesheet.raised ? 2 : 4,
+        hover: {
+          boxShadow: css.insetBoxShadow(0, 1, 1, 0, stylesheet.shadowActive),
+        },
         focus: {
           boxShadow: css.multi(
             css.insetBoxShadow(0, 1, 1, 0, stylesheet.shadowActive),
@@ -133,6 +136,9 @@ function makeStylesheet(stylesheet) {
         boxShadow: css.insetBoxShadow(0, 1, 1, 0, stylesheet.shadowActive),
         paddingTop: stylesheet.raised ? 10 : 8,
         paddingBottom: stylesheet.raised ? 6 : 8,
+        hover: {
+          boxShadow: css.insetBoxShadow(0, 1, 1, 0, stylesheet.shadowActive),
+        },
         focus: {
           boxShadow: css.multi(
             css.insetBoxShadow(0, 1, 1, 0, stylesheet.shadowActive),
@@ -172,6 +178,9 @@ function makeStylesheet(stylesheet) {
         boxShadow: css.insetBoxShadow(0, 3, 3, 0, stylesheet.shadowActive),
         paddingTop: stylesheet.raised ? 12 : 10,
         paddingBottom: stylesheet.raised ? 8 : 10,
+        hover: {
+          boxShadow: css.insetBoxShadow(0, 3, 3, 0, stylesheet.shadowActive),
+        },
         focus: {
           boxShadow: css.multi(
             css.insetBoxShadow(0, 3, 3, 0, stylesheet.shadowActive),
