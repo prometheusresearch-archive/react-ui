@@ -66,9 +66,10 @@ export default class Navigation extends React.Component {
 
     return (
       <TopNavigationContainer>
-        <SecondaryMenuContainer variant={{collapsed: !secondaryMenu}}>
-          {secondaryMenu}
-        </SecondaryMenuContainer>
+        {secondaryMenu &&
+          <SecondaryMenuContainer variant={{collapsed: secondaryMenu.length === 0}}>
+            {secondaryMenu}
+          </SecondaryMenuContainer>}
         <Top>
           <ApplicationTitleContainer>
             {title}
