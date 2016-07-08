@@ -118,7 +118,7 @@ export class FocusableList extends React.Component {
 
   getFocusedIndex() {
     let keys = this.getKeys();
-    let focused = keys.find(key => this.items[key].isFocused);
+    let focused = keys.findIndex(key => this.items[key].isFocused);
     if (focused === undefined) {
       focused = -1;
     }
@@ -154,7 +154,7 @@ export class FocusableList extends React.Component {
     } else {
       nextKey = keys[fromIndex - 1];
     }
-    if (nextKey !== undefined && nextKey > -1) {
+    if (this.items[nextKey] !== undefined) {
       this.items[nextKey].focus();
       return true;
     } else {
@@ -173,7 +173,7 @@ export class FocusableList extends React.Component {
     } else {
       nextKey = keys[fromIndex + 1];
     }
-    if (nextKey !== undefined && nextKey < keys.length) {
+    if (this.items[nextKey] !== undefined) {
       this.items[nextKey].focus();
       return true;
     } else {
