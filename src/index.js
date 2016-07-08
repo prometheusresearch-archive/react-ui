@@ -30,6 +30,7 @@ export Input from './Input';
 export Textarea from './Textarea';
 export IntegerInput from './IntegerInput';
 export NumberInput from './NumberInput';
+export Autosuggest from './Autosuggest';
 
 export ButtonBase from './ButtonBase';
 export Button from './Button';

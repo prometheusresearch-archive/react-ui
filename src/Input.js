@@ -5,7 +5,7 @@
 
 import {style, css} from './stylesheet';
 
-export default style('input', {
+export let InputChrome = style('div', {
   display: 'block',
   width: '100%',
   height: 34,
@@ -52,3 +52,7 @@ export default style('input', {
     cursor: 'not-allowed',
   }
 });
+
+export default class Input extends InputChrome {
+  static Component = 'input';
+}
