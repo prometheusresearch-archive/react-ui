@@ -6,7 +6,7 @@
 import RadioBase from './RadioBase';
 import Block from './Block';
 import {style, css} from './stylesheet';
-import {margin} from './theme';
+import {margin, textColors} from './theme';
 
 export default style(RadioBase, {
   Label: {
@@ -15,6 +15,7 @@ export default style(RadioBase, {
     color: '#444',
     disabled: {
       cursor: 'not-allowed',
+      color: textColors.disabled,
     },
   },
   Input: {
@@ -36,6 +37,10 @@ export default style(RadioBase, {
     },
   }),
   Hint: {
-    fontSize: '0.6rem'
+    fontSize: '0.6rem',
+    disabled: {
+      cursor: 'not-allowed',
+      color: textColors.disabled,
+    },
   }
 });
