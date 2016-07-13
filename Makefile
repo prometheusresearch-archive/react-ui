@@ -18,7 +18,7 @@ changelog:
 	@git diff-index --quiet HEAD -- \
 		|| (echo 'error: uncommitted changes' && exit 1)
 	@$(BIN)/conventional-changelog -p angular -i CHANGELOG.md -s -r 0
-	@(git add CHANGELOG.md && git ci -m 'chore: update CHANGELOG')
+	@(git add CHANGELOG.md && git ci -m 'chore: update CHANGELOG') \
 		|| (echo 'error: no changes were found' && exit 1)
 
 lint::
