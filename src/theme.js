@@ -29,11 +29,17 @@ const fontSize = {
   'x-large': 22,
 };
 
+const textColors = {
+  normal: '#000',
+  disabled: '#999',
+};
+
 let __THEME = {
   margin: size,
   padding: size,
   fontSize: fontSize,
   brandColors: brandColors,
+  textColors: textColors,
   button: {
     hover: {},
     focus: {},
