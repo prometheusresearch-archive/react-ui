@@ -47,7 +47,7 @@ ci:
 version-major version-minor version-patch: lint test build
 	@npm version $(@:version-%=%)
 
-publish: changelog
+publish:
 	@git push --tags origin HEAD:master
 	@npm publish --access public
 
