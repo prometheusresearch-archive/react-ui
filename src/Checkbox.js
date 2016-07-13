@@ -5,7 +5,7 @@
 import CheckboxBase from './CheckboxBase';
 import Block from './Block';
 import {style, css} from './stylesheet';
-import {margin} from './theme';
+import {margin, textColors} from './theme';
 
 export default style(CheckboxBase, {
   Label: {
@@ -15,6 +15,7 @@ export default style(CheckboxBase, {
     userSelect: 'none',
     disabled: {
       cursor: 'not-allowed',
+      color: textColors.disabled,
     },
   },
   Input: {
@@ -36,6 +37,10 @@ export default style(CheckboxBase, {
     },
   }),
   Hint: {
-    fontSize: '0.6rem'
+    fontSize: '0.6rem',
+    disabled: {
+      cursor: 'not-allowed',
+      color: textColors.disabled,
+    }
   }
 });
