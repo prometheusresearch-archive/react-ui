@@ -48,10 +48,10 @@ report-cov-coveralls::
 ci:
 	@NODE_ENV=test $(BIN)/babel-node $(MOCHA) --watch -- $(TESTS)
 
-version-major version-minor version-patch: lint test build changelog
+version-major version-minor version-patch: lint test build
 	@npm version $(@:version-%=%)
 
-publish:
+publish: changelog
 	@git push --tags origin HEAD:master
 	@npm publish --access public
 
