@@ -8,18 +8,21 @@ import theme from './theme';
 import ButtonBase from './ButtonBase';
 
 let defaultTextSize = {
+  'x-small': 10,
   small: 12,
   normal: 14,
   large: 16,
 };
 
 let defaultHeight = {
+  'x-small': undefined,
   small: undefined,
   normal: undefined,
   large: undefined,
 };
 
 let defaultWidth = {
+  'x-small': undefined,
   small: undefined,
   normal: undefined,
   large: undefined,
@@ -67,6 +70,47 @@ function makeStylesheet(stylesheet) {
   } = stylesheet;
 
   let buttonSize = {
+
+    'x-small': {
+      height: height['x-small'],
+      width: width['x-small'],
+      lineHeight: 1.2,
+      padding: css.padding(2, 6),
+      fontWeight: stylesheet.textWidth,
+      fontSize: textSize['x-small'] || textSize,
+      boxShadow: css.multi(
+        css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadow),
+        css.boxShadow(0, 1, 1, 0, stylesheet.shadow)
+      ),
+      hover: {
+        boxShadow: css.multi(
+          css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadowHover),
+          css.boxShadow(0, 1, 1, 0, stylesheet.shadowHover),
+        ),
+      },
+      focus: {
+        boxShadow: css.multi(
+          css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadowFocus),
+          stylesheet.shadowFocusRing,
+        ),
+      },
+      active: {
+        boxShadow: css.insetBoxShadow(0, 1, 1, 0, stylesheet.shadowActive),
+        hover: {
+          boxShadow: css.insetBoxShadow(0, 1, 1, 0, stylesheet.shadowActive),
+        },
+        focus: {
+          boxShadow: css.multi(
+            css.insetBoxShadow(0, 1, 1, 0, stylesheet.shadowActive),
+            stylesheet.shadowFocusRing,
+          ),
+        }
+      },
+      disabled: {
+        padding: css.padding(2, 6),
+      }
+    },
+
     small: {
       height: height.small,
       width: width.small,
@@ -408,6 +452,28 @@ function makeStylesheet(stylesheet) {
       position: 'relative',
       top: -1,
       hasCaption: {
+        ['x-small']: {
+          leftPosition: {
+            ltr: {
+              marginRight: 4,
+              marginLeft: 0,
+            },
+            rtl: {
+              marginRight: 0,
+              marginLeft: 4,
+            }
+          },
+          rightPosition: {
+            ltr: {
+              marginLeft: 4,
+              marginRight: 0,
+            },
+            rtl: {
+              marginLeft: 0,
+              marginRight: 4,
+            }
+          }
+        },
         small: {
           leftPosition: {
             ltr: {

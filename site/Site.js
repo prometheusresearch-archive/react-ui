@@ -103,6 +103,9 @@ function DemoButtonSizes({Button}) {
   return (
     <Items>
       <Item>
+        <Button size="x-small">Button</Button>
+      </Item>
+      <Item>
         <Button size="small">Button</Button>
       </Item>
       <Item>

@@ -44,7 +44,7 @@ export default class ButtonBase extends React.Component {
     /**
      * Button size.
      */
-    size: React.PropTypes.oneOf(['small', 'normal', 'large']),
+    size: React.PropTypes.oneOf(['x-small', 'small', 'normal', 'large']),
 
     /**
      * Button's icon.
@@ -100,6 +100,7 @@ export default class ButtonBase extends React.Component {
     } = this.props;
     let {i18n = I18N.defaultContext} = this.context;
     let sizeVariant = {
+      'x-small': size === 'x-small',
       small: size === 'small',
       normal: size === 'normal',
       large: size === 'large',
