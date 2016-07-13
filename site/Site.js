@@ -583,6 +583,23 @@ export default function Site() {
             </ReactUI.Card>
           </DemoVariant>
 
+          <DemoVariant title="<Card /> w/ items">
+            <ReactUI.Card>
+              <ReactUI.CardItem padding="x-small">
+                Children
+              </ReactUI.CardItem>
+              <ReactUI.CardItem padding="x-small">
+                Children
+              </ReactUI.CardItem>
+              <ReactUI.CardItem padding="x-small">
+                Children
+              </ReactUI.CardItem>
+              <ReactUI.CardItem padding="x-small">
+                Children
+              </ReactUI.CardItem>
+            </ReactUI.Card>
+          </DemoVariant>
+
         </DemoSection>
 
         <DemoSection title="<Menu />">

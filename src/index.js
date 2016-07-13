@@ -11,6 +11,7 @@ export VBox from './VBox';
 
 export CardBase from './CardBase';
 export Card from './Card';
+export {CardItem} from './Card';
 
 export CheckboxBase from './CheckboxBase';
 export CheckboxGroupBase from './CheckboxGroupBase';

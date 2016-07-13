@@ -4,6 +4,7 @@
 
 import CardBase from './CardBase';
 import {style, css} from './stylesheet';
+import Block from './Block';
 import {padding, fontSize} from './theme';
 
 function mixinVariants(stylesheet, variants) {
@@ -89,3 +90,10 @@ export default style(CardBase, mixinVariants({
     contentColor: '#000',
   }),
 }));
+
+export let CardItem = style(Block, {
+  borderBottom: css.border(1, css.rgb(180)),
+  lastChild: {
+    borderBottom: css.none,
+  }
+});
