@@ -48,7 +48,7 @@ report-cov-coveralls::
 ci:
 	@NODE_ENV=test $(BIN)/babel-node $(MOCHA) --watch -- $(TESTS)
 
-version-major version-minor version-patch: lint test build
+version-major version-minor version-patch: lint test build changelog
 	@npm version $(@:version-%=%)
 
 publish:
