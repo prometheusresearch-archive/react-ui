@@ -35,6 +35,7 @@ export ButtonBase from './ButtonBase';
 export Button from './Button';
 export FlatButton from './FlatButton';
 export QuietButton from './QuietButton';
+export OptionButton from './OptionButton';
 export SuccessButton from './SuccessButton';
 export DangerButton from './DangerButton';
 export FlatDangerButton from './FlatDangerButton';

@@ -177,6 +177,11 @@ export default function Site() {
             <DemoButtonVariants Button={ReactUI.QuietButton} />
           </DemoVariant>
 
+          <DemoVariant title="<OptionButton />">
+            <DemoButtonSizes Button={ReactUI.OptionButton} />
+            <DemoButtonVariants Button={ReactUI.OptionButton} />
+          </DemoVariant>
+
           <DemoVariant title="<SuccessButton />">
             <DemoButtonSizes Button={ReactUI.SuccessButton} />
             <DemoButtonVariants Button={ReactUI.SuccessButton} />
