@@ -1,3 +1,13 @@
+<a name="0.18.0"></a>
+# [0.18.0](https://github.com/prometheusresearch/react-ui/compare/v0.17.0...v0.18.0) (2016-07-13)
+
+
+### Features
+
+* **button:** add x-small button size ([d5edc73](https://github.com/prometheusresearch/react-ui/commit/d5edc73))
+
+
+
 <a name="0.17.0"></a>
 # [0.17.0](https://github.com/prometheusresearch/react-ui/compare/v0.16.7...v0.17.0) (2016-07-13)
 
