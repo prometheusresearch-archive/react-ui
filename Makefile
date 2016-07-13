@@ -14,6 +14,11 @@ build::
 doctoc:
 	@$(BIN)/doctoc --title '**Table of Contents**' ./README.md
 
+changelog:
+	@git diff-index --quiet HEAD -- || echo 'error: uncommitted changes' && exit 1
+	@$(BIN)/conventional-changelog -p angular -i CHANGELOG.md -s -r 0
+	@git add CHANGELOG.md && git ci -m 'chore: update CHANGELOG'
+
 lint::
 	@$(BIN)/eslint $(SRC)
 
