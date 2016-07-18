@@ -32,6 +32,8 @@ export Textarea from './Textarea';
 export IntegerInput from './IntegerInput';
 export NumberInput from './NumberInput';
 
+export Field from './Field';
+
 export ButtonBase from './ButtonBase';
 export Button from './Button';
 export FlatButton from './FlatButton';
