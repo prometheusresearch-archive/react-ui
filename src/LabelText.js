@@ -14,5 +14,6 @@ export default style(Text, {
   padding: css.padding(0, 0),
   disabled: {
     color: '#aaa',
+    cursor: 'not-allowed',
   }
 });
