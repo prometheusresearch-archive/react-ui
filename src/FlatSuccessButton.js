@@ -19,7 +19,7 @@ export default style(Button, {
   background: css.rgb(255),
   backgroundHover: css.rgb(246, 253, 247),
   backgroundFocus: css.rgb(255),
-  backgroundActive: css.rgb(203, 224, 201),
+  backgroundActive: css.rgb(236, 245, 236),
   backgroundDisabled: css.rgb(255),
 
   border: css.rgb(18, 134, 12),
