@@ -51,7 +51,7 @@ export default class Field extends React.Component {
                   {label}
                 </LabelText>
                 {errorInline &&
-                  <Block inline marginLeft="xx-small">
+                  <Block inline marginStart="xx-small">
                     {errorInline}
                   </Block>}
               </Block>
