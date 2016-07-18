@@ -50,9 +50,9 @@ class InputDemo extends React.Component {
   };
 }
 
-function DemoSection({title, children}) {
+function DemoSection({title, children, ...props}) {
   return (
-    <Block marginBottom="large">
+    <Block marginBottom="large" {...props}>
       <h2>{title}</h2>
       <Block>{children}</Block>
     </Block>
@@ -160,6 +160,97 @@ export default function Site() {
         ]}
         />
       <Block padding="medium">
+
+        <DemoSection title="Field" width={400}>
+
+          <DemoVariant title="Basic">
+            <ReactUI.Field
+              label="First name"
+              input={<ReactUI.Input />}
+              />
+          </DemoVariant>
+
+          <DemoVariant title="w/ hint">
+            <ReactUI.Field
+              label="First name"
+              hint="Enter your first name here"
+              input={<ReactUI.Input />}
+              />
+          </DemoVariant>
+
+          <DemoVariant title="w/ error">
+            <ReactUI.Field
+              label="First name"
+              error="invalid value"
+              input={<ReactUI.Input variant={{error: true}} />}
+              />
+          </DemoVariant>
+
+          <DemoVariant title="w/ inline error">
+            <ReactUI.Field
+              label="First name"
+              errorInline="invalid value"
+              input={<ReactUI.Input variant={{error: true}} />}
+              />
+          </DemoVariant>
+
+          <DemoVariant title="w/ hint and inline error">
+            <ReactUI.Field
+              label="First name"
+              hint="Enter your first name here"
+              errorInline="invalid value"
+              input={<ReactUI.Input variant={{error: true}} />}
+              />
+          </DemoVariant>
+
+          <DemoVariant title="in disabled state">
+            <ReactUI.Field
+              disabled
+              label="First name"
+              hint="Enter your first name here"
+              input={<ReactUI.Input disabled />}
+              />
+          </DemoVariant>
+
+          <DemoVariant title="w/ custom input component">
+            <ReactUI.Field
+              label="Favourite pet"
+              hint="Enter your favourite pet here"
+              input={
+                <ReactUI.Block padding="x-small">
+                  <ReactUI.CheckboxGroup
+                    options={[
+                      {label: 'Dog', value: 'dog'},
+                      {label: 'Cat', value: 'cat'}]}
+                    value={['cat']}
+                    />
+                </ReactUI.Block>
+              }
+              />
+          </DemoVariant>
+
+          <DemoVariant title="Multiple fields together">
+            <ReactUI.Block marginBottom="small">
+              <ReactUI.Field
+                label="First name"
+                hint="Enter your first name here"
+                input={<ReactUI.Input />}
+                />
+            </ReactUI.Block>
+            <ReactUI.Block marginBottom="small">
+              <ReactUI.Field
+                label="Last name"
+                hint="Enter your last name here"
+                input={<ReactUI.Input />}
+                />
+            </ReactUI.Block>
+            <ReactUI.SuccessButton>
+              Save
+            </ReactUI.SuccessButton>
+          </DemoVariant>
+
+        </DemoSection>
+
         <DemoSection title="Button">
 
           <DemoVariant title="Size">
