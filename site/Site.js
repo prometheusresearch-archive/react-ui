@@ -249,6 +249,18 @@ export default function Site() {
             </ReactUI.SuccessButton>
           </DemoVariant>
 
+          <DemoVariant title="Support for i18n">
+            <ReactUI.I18N.I18N dir="rtl">
+              <ReactUI.Field
+                label="الاسم الاول"
+                hint="أدخل اسمك الأول هنا"
+                errorInline="قيمة غير صالحة"
+                error="قيمة غير صالحة"
+                input={<ReactUI.Input variant={{error: true}} />}
+                />
+            </ReactUI.I18N.I18N>
+          </DemoVariant>
+
         </DemoSection>
 
         <DemoSection title="Button">
