@@ -31,7 +31,13 @@ export default class Field extends React.Component {
   }
 
   render() {
-    let {input, label, hint, error, errorInline, disabled, invalid} = this.props;
+    let {
+      input,
+      label, hint,
+      error, errorInline,
+      disabled, required, invalid
+    } = this.props;
+
     if (error && !invalid) {
       invalid = true;
     }
@@ -50,6 +56,10 @@ export default class Field extends React.Component {
                 <LabelText variant={{invalid, disabled}}>
                   {label}
                 </LabelText>
+                {required &&
+                  <Block inline marginStart="xx-small">
+                    <ErrorText>*</ErrorText>
+                  </Block>}
                 {errorInline &&
                   <Block inline marginStart="xx-small">
                     {errorInline}
