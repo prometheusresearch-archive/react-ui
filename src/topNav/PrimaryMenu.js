@@ -13,6 +13,7 @@ import PrimaryButton from './PrimaryButton';
 
 let PrimaryMenuContainer = style(VBox, {
   position: 'absolute',
+  top: theme.header.height,
   background: theme.headerMenu.background,
   zIndex: 1000,
   minWidth: 200,
