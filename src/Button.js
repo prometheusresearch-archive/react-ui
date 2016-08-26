@@ -376,74 +376,6 @@ function makeStylesheet(stylesheet) {
           boxShadow: css.none,
         }
       },
-      attachLeft: {
-        borderTopLeftRadius: 0,
-        borderBottomLeftRadius: 0,
-        borderLeft: css.none,
-        hover: {
-          borderLeft: css.none,
-        },
-        focus: {
-          borderLeft: css.none,
-        },
-        active: {
-          borderLeft: css.none,
-        },
-        disabled: {
-          borderLeft: css.none,
-        },
-      },
-      attachRight: {
-        borderTopRightRadius: 0,
-        borderBottomRightRadius: 0,
-        borderRight: css.none,
-        hover: {
-          borderRight: css.none,
-        },
-        focus: {
-          borderRight: css.none,
-        },
-        active: {
-          borderRight: css.none,
-        },
-        disabled: {
-          borderRight: css.none,
-        },
-      },
-      attachTop: {
-        borderTopRightRadius: 0,
-        borderTopLeftRadius: 0,
-        borderTop: css.none,
-        hover: {
-          borderTop: css.none,
-        },
-        focus: {
-          borderTop: css.none,
-        },
-        active: {
-          borderTop: css.none,
-        },
-        disabled: {
-          borderTop: css.none,
-        },
-      },
-      attachBottom: {
-        borderBottomRightRadius: 0,
-        borderBottomLeftRadius: 0,
-        borderBottom: css.none,
-        hover: {
-          borderBottom: css.none,
-        },
-        focus: {
-          borderBottom: css.none,
-        },
-        active: {
-          borderBottom: css.none,
-        },
-        disabled: {
-          borderBottom: css.none,
-        },
-      },
 
       groupHorizontally: {
         ltr: {
@@ -510,6 +442,82 @@ function makeStylesheet(stylesheet) {
           borderTopLeftRadius: 0,
           borderTop: css.none,
         }
+      },
+      attachLeft: {
+        borderTopLeftRadius: 0,
+        borderBottomLeftRadius: 0,
+        borderLeft: css.none,
+        hover: {
+          borderLeft: css.none,
+        },
+        focus: {
+          borderLeft: css.none,
+        },
+        active: {
+          borderLeft: css.none,
+          hover: {
+            borderLeft: css.none,
+          },
+          focus: {
+            borderLeft: css.none,
+          }
+        },
+        disabled: {
+          borderLeft: css.none,
+        },
+      },
+      attachRight: {
+        borderTopRightRadius: 0,
+        borderBottomRightRadius: 0,
+        borderRight: css.none,
+        hover: {borderRight: css.none},
+        focus: {borderRight: css.none},
+        active: {
+          borderRight: css.none,
+          hover: {borderRight: css.none},
+          focus: {borderLeft: css.none},
+        },
+        disabled: {
+          borderRight: css.none,
+        },
+      },
+      attachTop: {
+        borderTopRightRadius: 0,
+        borderTopLeftRadius: 0,
+        borderTop: css.none,
+        hover: {
+          borderTop: css.none,
+        },
+        focus: {
+          borderTop: css.none
+        },
+        active: {
+          borderTop: css.none,
+          hover: {borderTop: css.none},
+          focus: {borderTop: css.none},
+        },
+        disabled: {
+          borderTop: css.none,
+        },
+      },
+      attachBottom: {
+        borderBottomRightRadius: 0,
+        borderBottomLeftRadius: 0,
+        borderBottom: css.none,
+        hover: {
+          borderBottom: css.none,
+        },
+        focus: {
+          borderBottom: css.none,
+        },
+        active: {
+          borderBottom: css.none,
+          hover: {borderBottom: css.none},
+          focus: {borderBottom: css.none},
+        },
+        disabled: {
+          borderBottom: css.none,
+        },
       },
     },
 
