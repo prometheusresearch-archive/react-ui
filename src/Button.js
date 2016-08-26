@@ -14,6 +14,8 @@ let defaultTextSize = {
   large: 16,
 };
 
+let defaultBorderRadius = 2;
+
 let defaultHeight = {
   'x-small': undefined,
   small: undefined,
@@ -67,6 +69,7 @@ function makeStylesheet(stylesheet) {
     textSize = defaultTextSize,
     height = defaultHeight,
     width = defaultWidth,
+    borderRadius = defaultBorderRadius,
   } = stylesheet;
 
   let buttonSize = {
@@ -272,7 +275,7 @@ function makeStylesheet(stylesheet) {
     Root: {
       position: 'relative',
       textAlign: 'center',
-      borderRadius: 2,
+      borderRadius: borderRadius,
       ...colors,
       focus: {
         ...focusColors,
