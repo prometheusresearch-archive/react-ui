@@ -258,11 +258,13 @@ function makeStylesheet(stylesheet) {
   let hoverColors = {
     background: (
       theme.button.hover.backgroundColor ||
-      stylesheet.backgroundHover
+      stylesheet.backgroundHover ||
+      stylesheet.background
     ),
     color: (
       theme.button.hover.textColor ||
-      stylesheet.textHover
+      stylesheet.textHover ||
+      stylesheet.text
     ),
     border: css.border(
       1, css.border.solid,
@@ -272,11 +274,13 @@ function makeStylesheet(stylesheet) {
   let focusColors = {
     background: (
       theme.button.focus.backgroundColor ||
-      stylesheet.backgroundFocus
+      stylesheet.backgroundFocus ||
+      stylesheet.background
     ),
     color: (
       theme.button.focus.textColor ||
-      stylesheet.textFocus
+      stylesheet.textFocus ||
+      stylesheet.text
     ),
     border: css.border(
       1, css.border.solid,
@@ -286,11 +290,13 @@ function makeStylesheet(stylesheet) {
   let activeColors = {
     background: (
       theme.button.active.backgroundColor ||
-      stylesheet.backgroundActive
+      stylesheet.backgroundActive ||
+      stylesheet.background
     ),
     color: (
       theme.button.active.textColor ||
-      stylesheet.textActive
+      stylesheet.textActive ||
+      stylesheet.text
     ),
     border: css.border(
       1, css.border.solid,
@@ -300,11 +306,13 @@ function makeStylesheet(stylesheet) {
   let disabledColors = {
     background: (
       theme.button.disabled.backgroundColor ||
-      stylesheet.backgroundDisabled
+      stylesheet.backgroundDisabled ||
+      stylesheet.background
     ),
     color: (
       theme.button.disabled.textColor ||
-      stylesheet.textDisabled
+      stylesheet.textDisabled ||
+      stylesheet.text
     ),
     border: css.border(
       1, css.border.solid,
