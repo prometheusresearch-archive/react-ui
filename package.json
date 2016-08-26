@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/prometheusresearch/react-ui#readme",
   "peerDependencies": {
-    "react": "^0.14.0"
+    "react": "^0.14.0 || ^15.3.1"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
@@ -48,20 +48,20 @@
     "normalize.css": "^4.1.1",
     "nyc": "^6.4.4",
     "power-assert": "^1.4.1",
-    "react": "^0.14.0",
-    "react-addons-test-utils": "^15.1.0",
-    "react-dom": "^0.14.0",
+    "react": "^15.3.1",
+    "react-addons-test-utils": "^15.3.1",
+    "react-dom": "^15.3.1",
     "react-icons": "^2.1.0",
     "react-shallow-testutils": "^2.0.0",
     "sinon": "^1.17.4",
     "sitegen": "^0.29.0"
   },
   "dependencies": {
-    "@prometheusresearch/react-box": "^0.7.0",
+    "@prometheusresearch/react-box": "^0.9.2",
     "color-js": "^1.0.3",
     "invariant": "^2.2.1",
     "lodash": "^4.13.0",
-    "react-dom-stylesheet": "^0.6.0",
-    "react-stylesheet": "^1.0.0-beta.3"
+    "react-dom-stylesheet": "^0.7.0",
+    "react-stylesheet": "^1.0.0"
   }
 }
