@@ -242,33 +242,73 @@ function makeStylesheet(stylesheet) {
   };
 
   let colors = {
-    background: theme.button.backgroundColor || stylesheet.background,
-    color: theme.button.textColor || stylesheet.text,
-    border: css.border(1, css.border.solid, theme.button.borderColor || stylesheet.border),
+    background: (
+      theme.button.backgroundColor ||
+      stylesheet.background
+    ),
+    color: (
+      theme.button.textColor ||
+      stylesheet.text
+    ),
+    border: css.border(
+      1, css.border.solid,
+      theme.button.borderColor || stylesheet.border),
   };
 
   let hoverColors = {
-    background: theme.button.hover.backgroundColor || stylesheet.backgroundHover,
-    color: theme.button.hover.textColor || stylesheet.textHover,
-    border: css.border(1, css.border.solid, theme.button.hover.borderColor || stylesheet.borderHover),
+    background: (
+      theme.button.hover.backgroundColor ||
+      stylesheet.backgroundHover
+    ),
+    color: (
+      theme.button.hover.textColor ||
+      stylesheet.textHover
+    ),
+    border: css.border(
+      1, css.border.solid,
+      theme.button.hover.borderColor || stylesheet.borderHover),
   };
 
   let focusColors = {
-    background: theme.button.focus.backgroundColor || stylesheet.backgroundFocus,
-    color: theme.button.focus.textColor || stylesheet.textFocus,
-    border: css.border(1, css.border.solid, theme.button.focus.borderColor || stylesheet.borderFocus),
+    background: (
+      theme.button.focus.backgroundColor ||
+      stylesheet.backgroundFocus
+    ),
+    color: (
+      theme.button.focus.textColor ||
+      stylesheet.textFocus
+    ),
+    border: css.border(
+      1, css.border.solid,
+      theme.button.focus.borderColor || stylesheet.borderFocus),
   };
 
   let activeColors = {
-    background: theme.button.active.backgroundColor || stylesheet.backgroundActive,
-    color: theme.button.active.textColor || stylesheet.textActive,
-    border: css.border(1, css.border.solid, theme.button.active.borderColor || stylesheet.borderActive),
+    background: (
+      theme.button.active.backgroundColor ||
+      stylesheet.backgroundActive
+    ),
+    color: (
+      theme.button.active.textColor ||
+      stylesheet.textActive
+    ),
+    border: css.border(
+      1, css.border.solid,
+      theme.button.active.borderColor || stylesheet.borderActive),
   };
 
   let disabledColors = {
-    background: theme.button.disabled.backgroundColor || stylesheet.backgroundDisabled,
-    color: theme.button.disabled.textColor || stylesheet.textDisabled,
-    border: css.border(1, css.border.solid, theme.button.disabled.borderColor || stylesheet.borderDisabled),
+    background: (
+      theme.button.disabled.backgroundColor ||
+      stylesheet.backgroundDisabled
+    ),
+    color: (
+      theme.button.disabled.textColor ||
+      stylesheet.textDisabled
+    ),
+    border: css.border(
+      1, css.border.solid,
+      theme.button.disabled.borderColor || stylesheet.borderDisabled),
   };
 
   return {
