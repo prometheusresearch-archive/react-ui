@@ -252,7 +252,9 @@ function makeStylesheet(stylesheet) {
     ),
     border: css.border(
       1, css.border.solid,
-      theme.button.borderColor || stylesheet.border),
+      theme.button.borderColor ||
+      stylesheet.border
+    ),
   };
 
   let hoverColors = {
@@ -268,7 +270,10 @@ function makeStylesheet(stylesheet) {
     ),
     border: css.border(
       1, css.border.solid,
-      theme.button.hover.borderColor || stylesheet.borderHover),
+      theme.button.hover.borderColor ||
+      stylesheet.borderHover ||
+      stylesheet.border
+    ),
   };
 
   let focusColors = {
@@ -284,7 +289,10 @@ function makeStylesheet(stylesheet) {
     ),
     border: css.border(
       1, css.border.solid,
-      theme.button.focus.borderColor || stylesheet.borderFocus),
+      theme.button.focus.borderColor ||
+      stylesheet.borderFocus ||
+      stylesheet.border
+    ),
   };
 
   let activeColors = {
@@ -300,7 +308,10 @@ function makeStylesheet(stylesheet) {
     ),
     border: css.border(
       1, css.border.solid,
-      theme.button.active.borderColor || stylesheet.borderActive),
+      theme.button.active.borderColor ||
+      stylesheet.borderActive ||
+      stylesheet.border
+    ),
   };
 
   let disabledColors = {
@@ -316,7 +327,10 @@ function makeStylesheet(stylesheet) {
     ),
     border: css.border(
       1, css.border.solid,
-      theme.button.disabled.borderColor || stylesheet.borderDisabled),
+      theme.button.disabled.borderColor ||
+      stylesheet.borderDisabled ||
+      stylesheet.border
+    ),
   };
 
   return {
@@ -436,13 +450,13 @@ function makeStylesheet(stylesheet) {
           borderRight: 'none !important',
           borderRadius: 0,
           firstChild: {
-            borderBottomLeftRadius: 2,
-            borderTopLeftRadius: 2,
+            borderBottomLeftRadius: borderRadius,
+            borderTopLeftRadius: borderRadius,
             borderRight: 'none !important',
           },
           lastChild: {
-            borderBottomRightRadius: 2,
-            borderTopRightRadius: 2,
+            borderBottomRightRadius: borderRadius,
+            borderTopRightRadius: borderRadius,
             hover: {
               borderRight: css.border(1, stylesheet.borderHover) + ' !important',
             },
@@ -462,13 +476,13 @@ function makeStylesheet(stylesheet) {
           borderLeft: 'none !important',
           borderRadius: 0,
           firstChild: {
-            borderBottomRightRadius: 2,
-            borderTopRightRadius: 2,
+            borderBottomRightRadius: borderRadius,
+            borderTopRightRadius: borderRadius,
             borderLeft: 'none !important',
           },
           lastChild: {
-            borderBottomLeftRadius: 2,
-            borderTopLeftRadius: 2,
+            borderBottomLeftRadius: borderRadius,
+            borderTopLeftRadius: borderRadius,
             hover: {
               borderLeft: css.border(1, stylesheet.borderHover) + ' !important',
             },
