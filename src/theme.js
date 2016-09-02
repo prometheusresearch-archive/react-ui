@@ -49,7 +49,11 @@ let __THEME = {
 };
 
 if (typeof __REACT_UI_THEME__ !== 'undefined') {
-  __THEME = __REACT_UI_THEME__;
+  if (typeof __REACT_UI_THEME__ === 'function') {
+    __THEME = __REACT_UI_THEME__(__THEME) || __THEME;
+  } else {
+    __THEME = __REACT_UI_THEME__;
+  }
 }
 
 module.exports = __THEME;
