@@ -4,11 +4,9 @@
 
 /* global __REACT_UI_THEME__:false */
 
-import {color} from './stylesheet';
-
 const brandColors = {
-  primary: color('#004E94'),
-  secondary: color('#0094CD'),
+  primary: '#004E94',
+  secondary: '#0094CD',
 };
 
 const size = {

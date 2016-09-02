@@ -2,10 +2,13 @@
  * @copyright 2016-present, Prometheus Research, LLC
  */
 
-import {css} from '../stylesheet';
+import {css, color} from '../stylesheet';
 import {brandColors} from '../theme';
 
 function makeTheme({primaryColor, secondaryColor}) {
+
+  primaryColor = color(primaryColor);
+  secondaryColor = color(secondaryColor);
 
   let header = {
     height: 50,
