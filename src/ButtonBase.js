@@ -1,15 +1,18 @@
 /**
  * @copyright 2016-present, Prometheus Research, LLC
+ * @flow
  */
 
-import * as React from 'react';
-import {isString} from 'lodash';
+import React, {Component} from 'react';
+
+import type {I18NContext} from './I18N';
 
 import * as I18N from './I18N';
-import {create, css, component} from './stylesheet';
+import {style} from 'react-dom-stylesheet';
+import * as css from 'react-dom-stylesheet/css';
 
-let stylesheet = create({
-  Root: component.button({
+let stylesheet = {
+  Root: style('button', {
     display: css.display.inlineBlock,
     verticalAlign: 'bottom',
     cursor: css.cursor.pointer,
@@ -19,76 +22,98 @@ let stylesheet = create({
     whiteSpace: 'nowrap',
     overflow: 'hidden',
   }),
-  Caption: component.div({
+  Caption: style('div', {
     display: css.display.inlineBlock,
   }),
   Icon: 'span',
-  IconWrapper: component.div({
+  IconWrapper: style('div', {
     display: css.display.inlineBlock,
   }),
-});
+};
+
+type ButtonBaseProps = {
+
+  /**
+    * If button should be rendered as being pressed.
+    */
+  active?: boolean;
+
+  /**
+    * If button should be rendered in disabled state.
+    */
+  disabled?: boolean;
+
+  width?: number | string;
+  height?: number | string;
+  textAlign?: typeof css.textAlign;
+
+  attach?: {left?: boolean; right?: boolean; top?: boolean; bottom?: boolean};
+
+  groupVertically?: boolean;
+  groupHorizontally?: boolean;
+
+  /**
+    * Button size.
+    */
+  size?: 'x-small' | 'small' | 'normal' | 'large';
+
+  /**
+    * Button's icon.
+    */
+  icon?: string | React.Element<*>;
+
+  /**
+    * Button's alternative icon (placed at the opposite direction to the
+    * label).
+    */
+  iconAlt?: string | React.Element<*>;
+
+  /**
+    * Button's alternative icon (placed at the opposite direction to the
+    * label).
+    *
+    * Deprecated.
+    */
+  iconRight?: string | React.Element<*>;
+
+  href?: String;
+
+  stylesheet: typeof stylesheet;
+
+  variant?: Object;
+
+  style?: Object;
+
+  Component?: string | Function;
+
+  children?: React.Element<*>;
+};
+
+type ButtonBasePropsDefault = {
+  stylesheet: typeof stylesheet;
+};
 
 /**
  * Button component.
  *
  * Button is clickable element with optional icon and/or caption.
  */
-export default class ButtonBase extends React.Component {
+export default class ButtonBase extends Component<ButtonBasePropsDefault, ButtonBaseProps, *> {
 
-  static propTypes = {
-    /**
-     * If button should be rendered as being pressed.
-     */
-    active: React.PropTypes.bool,
-
-    /**
-     * Button size.
-     */
-    size: React.PropTypes.oneOf(['x-small', 'small', 'normal', 'large']),
-
-    /**
-     * Button's icon.
-     */
-    icon: React.PropTypes.oneOfType([
-      React.PropTypes.string,
-      React.PropTypes.node
-    ]),
-
-    /**
-     * Button's alternative icon (placed at the opposite direction to the
-     * label).
-     */
-    iconAlt: React.PropTypes.oneOfType([
-      React.PropTypes.string,
-      React.PropTypes.node
-    ]),
-
-    href: React.PropTypes.string,
-
-    Component: React.PropTypes.oneOfType([
-      React.PropTypes.string,
-      React.PropTypes.func,
-    ]),
-
-    /**
-     * Button's caption.
-     */
-    children: React.PropTypes.node,
-  };
+  context: I18NContext;
 
   static contextTypes = I18N.contextTypes;
 
   static defaultProps = {
-    size: 'normal',
-    attach: {},
     stylesheet,
   };
 
   render() {
     let {
       children, icon, iconAlt = this.props.iconRight,
-      disabled, active, size,
-      attach,
+      disabled, active,
+      size = 'normal',
+      attach = {},
       href,
       Component,
       groupVertically, groupHorizontally,
@@ -126,10 +151,10 @@ export default class ButtonBase extends React.Component {
     if (href != null && Component == null) {
       Component = 'a';
     }
-    if (isString(icon)) {
+    if (typeof icon === 'string') {
       icon = <Icon name={icon} />;
     }
-    if (isString(iconAlt)) {
+    if (typeof iconAlt === 'string') {
       iconAlt = <Icon name={iconAlt} />;
     }
     let caption = null;
