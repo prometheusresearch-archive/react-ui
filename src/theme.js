@@ -1,8 +1,7 @@
 /**
  * @copyright 2016-present, Prometheus Research, LLC
+ * @flow
  */
-
-/* global __REACT_UI_THEME__:false */
 
 const brandColors = {
   primary: '#004E94',
@@ -45,6 +44,10 @@ let __THEME = {
     disabled: {},
   }
 };
+
+type ThemeType = typeof __THEME; // eslint-disable-line no-unused-vars
+
+declare var __REACT_UI_THEME__: ThemeType | (theme: ThemeType) => ThemeType;
 
 if (typeof __REACT_UI_THEME__ !== 'undefined') {
   if (typeof __REACT_UI_THEME__ === 'function') {
