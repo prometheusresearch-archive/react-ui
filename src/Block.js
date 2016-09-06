@@ -3,8 +3,10 @@
  * @flow
  */
 
+import type {DOMStylesheet} from 'react-dom-stylesheet';
+
 import * as React from 'react';
-import {wrapWithStylesheet} from './stylesheet';
+import {wrapWithStylesheet} from 'react-dom-stylesheet';
 import {chooseValue} from './Utils';
 import * as theme from './theme';
 import type {I18NContext} from './I18N';
@@ -162,6 +164,6 @@ export default function Block({
 
 Block.contextTypes = I18N.contextTypes;
 
-Block.style = function style(stylesheet, displayName) {
-  return wrapWithStylesheet(Block, stylesheet, displayName || 'Block');
+Block.style = function style(stylesheet: DOMStylesheet, displayName: string) {
+  return wrapWithStylesheet(Block, stylesheet, {displayName});
 };
