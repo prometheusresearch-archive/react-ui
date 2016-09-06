@@ -16,7 +16,7 @@ export function findByType(tree, type) {
       }
     }
   }
-  expect(false).toBe(true);
+  throw new Error(`Couldn't find an element of type: ${type}`);
 }
 
 export function findAllByType(tree, type) {
