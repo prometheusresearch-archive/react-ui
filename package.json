@@ -41,7 +41,7 @@
     "eslint": "^2.10.2",
     "eslint-config-prometheusresearch": "^0.2.0",
     "eslint-plugin-react": "^6.1.2",
-    "flow-bin": "^0.26.0",
+    "flow-bin": "^0.32.0",
     "indent-string": "^2.1.0",
     "inspect-react-element": "^1.1.1",
     "lodash": "^4.13.0",
@@ -58,11 +58,11 @@
     "sitegen": "^0.29.0"
   },
   "dependencies": {
-    "@prometheusresearch/react-box": "^0.9.2",
+    "@prometheusresearch/react-box": "^0.10.0",
     "color-js": "^1.0.3",
     "invariant": "^2.2.1",
     "lodash": "^4.13.0",
-    "react-dom-stylesheet": "^0.7.0",
+    "react-dom-stylesheet": "^0.8.1",
     "react-stylesheet": "^1.0.0"
   }
 }
