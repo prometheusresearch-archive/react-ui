@@ -1,51 +1,43 @@
 /**
- * @copyright 2016, Prometheus Research, LLC
+ * @copyright 2016+, Prometheus Research, LLC
  */
 
+jest.mock('react-dom');
+
+import Renderer from 'react-test-renderer';
 import React from 'react';
 
-import {createRenderer, spy, assert} from '../testutils';
+import {findAllByType} from '../test';
 import Checkbox from '../Checkbox';
 import CheckboxGroup from '../CheckboxGroup';
 
-describe('react-ui', function() {
+let options = [
+  {value: 'a', label: 'A'},
+  {value: 'b', label: 'B'}
+];
 
-  let options = [
-    {value: 'a', label: 'A'},
-    {value: 'b', label: 'B'}
-  ];
+let tree;
 
-  let renderer = null;
+it('renders', function() {
+  let onChange = jest.fn();
+  tree = Renderer.create(
+    <CheckboxGroup
+      value={['a']}
+      onChange={onChange}
+      options={options}
+      />
+  );
+  expect(tree).toMatchSnapshot();
 
-  beforeEach(function() {
-    renderer = createRenderer();
-  });
+  let checkboxes = findAllByType(tree, 'input');
 
-  describe('<CheckboxGroup />', function() {
+  expect(checkboxes.length).toBe(2);
+  expect(checkboxes[0].props.checked).toBeTruthy();
+  expect(checkboxes[1].props.checked).toBeFalsy();
 
-    it('renders', function() {
-      let onChange = spy();
-      renderer.render(
-        <CheckboxGroup
-          value={['a']}
-          onChange={onChange}
-          options={options}
-          />
-      );
-      let checkboxes = renderer.findAllWithType(Checkbox);
+  checkboxes[0].props.onChange({target: {checked: false}});
+  expect(onChange).toBeCalledWith([]);
 
-      assert(checkboxes.length === 2);
-      assert(checkboxes[0].props.value);
-      assert(!checkboxes[1].props.value);
-
-      checkboxes[0].props.onChange(false);
-      assert(onChange.callCount === 1);
-      assert.deepEqual(onChange.lastCall.args[0], []);
-
-      checkboxes[1].props.onChange(true);
-      assert(onChange.callCount === 2);
-      assert.deepEqual(onChange.lastCall.args[0], ['a', 'b']);
-    });
-  });
-
+  checkboxes[1].props.onChange({target: {checked: true}});
+  expect(onChange).toBeCalledWith(['a', 'b']);
 });

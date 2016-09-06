@@ -36,6 +36,7 @@
   "devDependencies": {
     "babel-cli": "^6.9.0",
     "babel-core": "^6.9.0",
+    "babel-jest": "^15.0.0",
     "babel-preset-prometheusresearch": "^0.1.0",
     "conventional-changelog-cli": "^1.2.0",
     "eslint": "^2.10.2",
@@ -43,18 +44,15 @@
     "eslint-plugin-react": "^6.1.2",
     "flow-bin": "^0.32.0",
     "indent-string": "^2.1.0",
-    "inspect-react-element": "^1.1.1",
+    "jest-cli": "^15.1.1",
     "lodash": "^4.13.0",
-    "mocha": "^2.5.1",
     "normalize.css": "^4.1.1",
-    "nyc": "^6.4.4",
     "power-assert": "^1.4.1",
     "react": "^15.3.1",
     "react-addons-test-utils": "^15.3.1",
     "react-dom": "^15.3.1",
     "react-icons": "^2.1.0",
-    "react-shallow-testutils": "^2.0.0",
-    "sinon": "^1.17.4",
+    "react-test-renderer": "^15.3.1",
     "sitegen": "^0.29.0"
   },
   "dependencies": {

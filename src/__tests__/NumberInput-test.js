@@ -2,45 +2,41 @@
  * @copyright 2016, Prometheus Research, LLC
  */
 
-import Sinon from 'sinon';
-import assert from 'power-assert';
+import Renderer from 'react-test-renderer';
 import React from 'react';
-import TestUtils from 'react-addons-test-utils';
 
-import Input from '../Input';
+import {findByType} from '../test';
 import NumberInput from '../NumberInput';
 
-describe('react-ui', function() {
+it('renders', function() {
 
-  describe('<NumberInput />', function() {
+  let onChange = jest.fn();
 
-    it('renders', function() {
-      let root;
-      let onChange = Sinon.spy();
-      let renderer = TestUtils.createRenderer();
-      renderer.render(
-        <NumberInput onChange={onChange} />
-      );
-      root = renderer.getRenderOutput();
-      assert(root.type === Input);
-      assert(root.props.value === '');
-      root.props.onChange('12');
-      assert(onChange.lastCall.args[0] === 12);
-      root.props.onChange('12.');
-      assert(onChange.lastCall.args[0] === 12);
-      root.props.onChange('12.2');
-      assert(onChange.lastCall.args[0] === 12.2);
-      root.props.onChange('xx');
-      assert(onChange.lastCall.args[0] === 'xx');
-      root.props.onChange('');
-      assert(onChange.lastCall.args[0] === '');
-      renderer.render(
-        <NumberInput onChange={onChange} value={undefined} />
-      );
-      root = renderer.getRenderOutput();
-      assert(root.props.value === '');
-    });
-  });
+  let tree = Renderer.create(
+    <NumberInput onChange={onChange} />
+  );
+  expect(tree).toMatchSnapshot();
+
+  let input = findByType(tree, 'input');
+
+  input.props.onChange('12');
+  expect(onChange).toBeCalledWith(12);
+
+  input.props.onChange('12.');
+  expect(onChange).toBeCalledWith(12);
+
+  input.props.onChange('12.2');
+  expect(onChange).toBeCalledWith(12.2);
+
+  input.props.onChange('xx');
+  expect(onChange).toBeCalledWith('xx');
+
+  input.props.onChange('');
+  expect(onChange).toBeCalledWith('');
+
+  tree = Renderer.create(
+    <NumberInput onChange={onChange} value={undefined} />
+  );
+  expect(tree).toMatchSnapshot();
 
 });
-

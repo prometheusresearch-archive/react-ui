@@ -30,10 +30,7 @@ site-build::
 	@$(BIN)/sitegen build
 
 test::
-	@NODE_ENV=test $(BIN)/babel-node $(MOCHA) -- $(TESTS)
-
-test-cov::
-	@NODE_ENV=test $(NYC) --check-coverage $(MOCHA) -- $(TESTS)
+	@$(BIN)/jest
 
 report-cov::
 	@$(BIN)/nyc report --reporter html
@@ -41,8 +38,8 @@ report-cov::
 report-cov-coveralls::
 	@$(BIN)/nyc report --reporter=text-lcov | $(BIN)/coveralls
 
-ci:
-	@NODE_ENV=test $(BIN)/babel-node $(MOCHA) --watch -- $(TESTS)
+ci::
+	@$(BIN)/jest --watch
 
 version-major version-minor version-patch: lint test build
 	@npm version $(@:version-%=%)
