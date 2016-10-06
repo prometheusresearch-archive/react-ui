@@ -61,6 +61,7 @@ export class PrimaryMenu extends React.Component {
   render() {
     let {
       children,
+      href,
       items,
       variant,
       ...props
@@ -69,9 +70,9 @@ export class PrimaryMenu extends React.Component {
     return (
       <VBox
         {...props}
-        onMouseEnter={this.onMouseEnter}
-        onMouseLeave={this.onMouseLeave}>
-        <PrimaryButton variant={{...variant, open}}>
+        onMouseEnter={items.length ? this.onMouseEnter : null}
+        onMouseLeave={items.length ? this.onMouseLeave : null}>
+        <PrimaryButton variant={{...variant, open}} href={href}>
           {children}
         </PrimaryButton>
         {open &&
