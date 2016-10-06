@@ -1,3 +1,72 @@
+<a name="0.21.3"></a>
+## [0.21.3](https://github.com/prometheusresearch/react-ui/compare/v0.21.1...v0.21.3) (2016-10-06)
+
+
+### Bug Fixes
+
+* minor fix for test utils ([d3b3417](https://github.com/prometheusresearch/react-ui/commit/d3b3417))
+* **navigation:** make first level menu items support hyperlinks ([ccaa3c9](https://github.com/prometheusresearch/react-ui/commit/ccaa3c9))
+
+
+### Features
+
+* rm old testutils ([de306ec](https://github.com/prometheusresearch/react-ui/commit/de306ec))
+* **button:** add typings to <ButtonBase /> ([fb771b4](https://github.com/prometheusresearch/react-ui/commit/fb771b4))
+
+
+
+<a name="0.21.1"></a>
+## [0.21.1](https://github.com/prometheusresearch/react-ui/compare/v0.21.0...v0.21.1) (2016-09-02)
+
+
+### Bug Fixes
+
+* do not expect colors to be wrapped ([bdf7fde](https://github.com/prometheusresearch/react-ui/commit/bdf7fde))
+
+
+
+<a name="0.21.0"></a>
+# [0.21.0](https://github.com/prometheusresearch/react-ui/compare/v0.20.0...v0.21.0) (2016-09-02)
+
+
+### Features
+
+* allow override theme with function ([87aa7aa](https://github.com/prometheusresearch/react-ui/commit/87aa7aa))
+
+
+
+<a name="0.20.0"></a>
+# [0.20.0](https://github.com/prometheusresearch/react-ui/compare/v0.19.1...v0.20.0) (2016-08-26)
+
+
+### Bug Fixes
+
+* **button:** fix attachment ([4673a33](https://github.com/prometheusresearch/react-ui/commit/4673a33))
+
+
+### Features
+
+* **button:** default to regular color/bg for other states ([9937d0e](https://github.com/prometheusresearch/react-ui/commit/9937d0e))
+* **button:** make borderRadius styleable ([a5d9537](https://github.com/prometheusresearch/react-ui/commit/a5d9537))
+
+
+
+<a name="0.19.1"></a>
+## [0.19.1](https://github.com/prometheusresearch/react-ui/compare/v0.19.0...v0.19.1) (2016-07-29)
+
+
+### Bug Fixes
+
+* **form:** fix rtl for <Field /> ([fed382d](https://github.com/prometheusresearch/react-ui/commit/fed382d))
+* **topNav:** fix <PrimaryMenu /> for Chrome 52 ([9351b0e](https://github.com/prometheusresearch/react-ui/commit/9351b0e))
+
+
+### Features
+
+* **form:** add required for <Field /> ([ab01fa0](https://github.com/prometheusresearch/react-ui/commit/ab01fa0))
+
+
+
 <a name="0.19.0"></a>
 # [0.19.0](https://github.com/prometheusresearch/react-ui/compare/v0.18.0...v0.19.0) (2016-07-18)
 
