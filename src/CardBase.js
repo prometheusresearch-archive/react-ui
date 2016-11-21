@@ -13,7 +13,21 @@ export let stylesheet = {
   Footer: Block,
 };
 
-export default class CardBase extends React.Component {
+type Props = {
+  children?: React.Element<*>;
+  header?: React.Element<*>;
+  footer?: React.Element<*>;
+  padding?: string | number;
+  paddingTop?: string | number;
+  paddingBottom?: string | number;
+  paddingLeft?: string | number;
+  paddingRight?: string | number;
+  paddingV?: string | number;
+  paddingH?: string | number;
+  variant?: Object;
+};
+
+export default class CardBase extends React.Component<*, Props, *> {
 
   static stylesheet = stylesheet;
 

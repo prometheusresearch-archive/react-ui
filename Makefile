@@ -29,6 +29,9 @@ check::
 test::
 	@$(BIN)/jest
 
+report-type-cov::
+	@$(BIN)/flow-coverage-report -i 'src/**/*.js'
+
 report-cov::
 	@$(BIN)/nyc report --reporter html
 

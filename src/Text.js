@@ -3,7 +3,7 @@
  * @flow
  */
 
-import type {fontSize, fontWidth} from 'react-stylesheet/lib/CSSType';
+import type {fontSize, fontWeight} from 'react-stylesheet/lib/CSSType';
 
 import * as React from 'react';
 
@@ -11,22 +11,22 @@ import * as theme from './theme';
 import {chooseValue} from './Utils';
 
 type Props = {
-  fontSize: fontSize;
-  fontWidth: fontWidth;
-  color: string;
-  style: Object;
+  fontSize?: fontSize;
+  fontWeight?: fontWeight;
+  color?: string;
+  style?: Object;
 };
 
 export default function Text({
   fontSize,
-  fontWidth,
+  fontWeight,
   color,
   style,
   ...props
 }: Props) {
   style = {
     fontSize: chooseValue(theme.fontSize, fontSize),
-    fontWidth,
+    fontWeight: fontWeight,
     color,
     ...style,
   };

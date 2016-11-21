@@ -1,5 +1,6 @@
 /**
  * @copyright 2016-present, Prometheus Research, LLC
+ * @flow
  */
 
 import React from 'react';
@@ -10,21 +11,30 @@ export let contextTypes = {
   focusable: React.PropTypes.object,
 };
 
-export class Focusable extends React.Component {
+type FocusableProps = {
+  children: React.Element<*>;
+  inputRef: (HTMLElement) => *;
+  focusIndex: number;
+};
+
+export class Focusable extends React.Component<*, FocusableProps, *> {
+
+  _ref: ?HTMLElement;
+  _inputRef: ?HTMLElement;
 
   static contextTypes = contextTypes;
 
-  constructor(props) {
+  constructor(props: FocusableProps) {
     super(props);
     this._ref = null;
     this._inputRef = null;
   }
 
-  get input() {
+  get input(): HTMLElement {
     return ReactDOM.findDOMNode(this._inputRef || this._ref || this);
   }
 
-  get isFocused() {
+  get isFocused(): boolean {
     return this.input === document.activeElement;
   }
 
@@ -37,14 +47,14 @@ export class Focusable extends React.Component {
     );
   }
 
-  onInputRef = _inputRef => {
+  onInputRef = (_inputRef: HTMLElement) => {
     this._inputRef = _inputRef;
     if (this.props.inputRef) {
       this.props.inputRef(_inputRef);
     }
   };
 
-  onRef = _ref => {
+  onRef = (_ref: HTMLElement) => {
     this._ref = _ref;
   };
 
@@ -60,7 +70,7 @@ export class Focusable extends React.Component {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps(nextProps: FocusableProps) {
     if (this.props.focusIndex !== nextProps.focusIndex) {
       if (this.props.focusIndex != null) {
         this.context.focusable.unregister(this, this.props.focusIndex);
@@ -78,11 +88,25 @@ export class Focusable extends React.Component {
   }
 }
 
-export class FocusableList extends React.Component {
+type FocusableListProps = {
+  tabIndex: number;
+  children: any;
+  activeDescendant: string;
+};
+
+export class FocusableList extends React.Component<*, FocusableListProps, *> {
+
+  items: {
+    [name: string]: Focusable;
+  };
+
+  state: {
+    focused: false;
+  };
 
   static childContextTypes = contextTypes;
 
-  constructor(props) {
+  constructor(props: FocusableListProps) {
     super(props);
     this.items = {};
     this.state = {focused: false};
@@ -131,11 +155,11 @@ export class FocusableList extends React.Component {
     return keys;
   }
 
-  register = (focusable, focusIndex) => {
+  register = (focusable: Focusable, focusIndex: string) => {
     this.items[focusIndex] = focusable;
   };
 
-  unregister = (focusable, focusIndex) => {
+  unregister = (focusable: Focusable, focusIndex: string) => {
     // We check if focusable wasn't overridden earlier due to another child's
     // update
     if (this.items[focusIndex] === focusable) {
@@ -181,7 +205,7 @@ export class FocusableList extends React.Component {
     }
   };
 
-  onKeyDown = event => {
+  onKeyDown = (event: KeyboardEvent) => {
     switch (event.key) {
       case 'ArrowUp':
       case 'ArrowLeft':
@@ -201,14 +225,14 @@ export class FocusableList extends React.Component {
     }
   };
 
-  onBlur = event => {
+  onBlur = (event: UIEvent) => {
     this.toggleFocused(false);
     if (this.props.children.props.onBlur) {
       this.props.children.props.onBlur(event);
     }
   };
 
-  onFocus = event => {
+  onFocus = (event: UIEvent) => {
     let focusedIndex = this.getFocusedIndex();
     this.toggleFocused(true);
     if (focusedIndex === -1) {

@@ -19,6 +19,7 @@ type Props = {
   options: Array<Option>;
   value: string;
   allowNoValue?: boolean;
+  onChange: (?string) => *;
 };
 
 export default class Select extends React.Component<*, Props, *> {
