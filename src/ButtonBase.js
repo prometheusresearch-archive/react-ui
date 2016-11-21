@@ -8,30 +8,33 @@ import React, {Component} from 'react';
 import type {I18NContext} from './I18N';
 
 import * as I18N from './I18N';
-import {style} from 'react-dom-stylesheet';
-import * as css from 'react-dom-stylesheet/css';
+import {style, css} from 'react-stylesheet';
 
-let stylesheet = {
+export let stylesheet = {
   Root: style('button', {
-    display: css.display.inlineBlock,
-    verticalAlign: 'bottom',
-    cursor: css.cursor.pointer,
-    textAlign: css.textAlign.left,
-    userSelect: css.none,
-    WebkitUserSelect: css.none,
-    whiteSpace: 'nowrap',
-    overflow: 'hidden',
+    base: {
+      display: 'inline-block',
+      verticalAlign: 'bottom',
+      textAlign: 'left',
+      userSelect: 'none',
+      whiteSpace: 'nowrap',
+      overflow: 'hidden',
+    }
   }),
   Caption: style('div', {
-    display: css.display.inlineBlock,
+    base: {
+      display: 'inline-block',
+    }
   }),
   Icon: 'span',
   IconWrapper: style('div', {
-    display: css.display.inlineBlock,
+    base: {
+      display: 'inline-block',
+    }
   }),
 };
 
-type ButtonBaseProps = {
+export type ButtonBaseProps = {
 
   /**
     * If button should be rendered as being pressed.
@@ -89,26 +92,22 @@ type ButtonBaseProps = {
   children?: React.Element<*>;
 };
 
-type ButtonBasePropsDefault = {
-  stylesheet: typeof stylesheet;
-};
-
 /**
  * Button component.
  *
  * Button is clickable element with optional icon and/or caption.
  */
-export default class ButtonBase extends Component<ButtonBasePropsDefault, ButtonBaseProps, *> {
+export default class ButtonBase
+  extends Component<*, ButtonBaseProps, *> {
 
-  context: I18NContext;
+  context: {i18n: I18NContext};
+
+  static stylesheet = stylesheet;
 
   static contextTypes = I18N.contextTypes;
 
-  static defaultProps = {
-    stylesheet,
-  };
-
   render() {
+
     let {
       children, icon, iconAlt = this.props.iconRight,
       disabled, active,
@@ -118,18 +117,28 @@ export default class ButtonBase extends Component<ButtonBasePropsDefault, Button
       Component,
       groupVertically, groupHorizontally,
       variant,
-      stylesheet: {Root, Caption, Icon, IconWrapper},
+      stylesheet: {Root, Caption, Icon, IconWrapper} = this.constructor.stylesheet,
       textAlign, width, height,
       style,
       ...props
     } = this.props;
-    let {i18n = I18N.defaultContext} = this.context;
+
+    let {
+      i18n = I18N.defaultContext
+    } = this.context;
+
     let sizeVariant = {
-      'x-small': size === 'x-small',
+      xSmall: size === 'x-small',
       small: size === 'small',
       normal: size === 'normal',
       large: size === 'large',
     };
+
+    let i18nVariant = {
+      rtl: i18n.dir === 'rtl',
+      ltr: i18n.dir === 'ltr',
+    };
+
     variant = {
       active, disabled,
       attachLeft: attach.left,
@@ -138,30 +147,50 @@ export default class ButtonBase extends Component<ButtonBasePropsDefault, Button
       attachBottom: attach.bottom,
       groupVertically,
       groupHorizontally,
-      rtl: i18n.dir === 'rtl',
-      ltr: i18n.dir === 'ltr',
+      ...i18nVariant,
       ...sizeVariant,
       ...variant,
     };
+
     style = {
       width, height,
       textAlign,
       ...style,
     };
+
     if (href != null && Component == null) {
       Component = 'a';
     }
-    if (typeof icon === 'string') {
-      icon = <Icon name={icon} />;
-    }
-    if (typeof iconAlt === 'string') {
-      iconAlt = <Icon name={iconAlt} />;
-    }
+
     let caption = null;
     if (children) {
       caption = <Caption>{children}</Caption>;
     }
-    let hasCaption = !!children;
+
+    if (icon) {
+      let style = {
+        marginRight: i18n.dir === 'ltr' ? 4 : 0,
+        marginLeft: i18n.dir === 'rtl' ? 4 : 0,
+      };
+      icon = (
+        <IconWrapper style={style}>
+          {icon}
+        </IconWrapper>
+      );
+    }
+
+    if (iconAlt) {
+      let style = {
+        marginLeft: i18n.dir === 'ltr' ? 4 : 0,
+        marginRight: i18n.dir === 'rtl' ? 4 : 0,
+      };
+      iconAlt = (
+        <IconWrapper style={style}>
+          {iconAlt}
+        </IconWrapper>
+      );
+    }
+
     return (
       <Root
         Component={Component}
@@ -172,27 +201,10 @@ export default class ButtonBase extends Component<ButtonBasePropsDefault, Button
         style={style}
         aria-pressed={active}
         role="button">
-        {icon ?
-          <IconWrapper variant={{
-            ...sizeVariant, hasCaption, leftPosition: true,
-            rtl: i18n.dir === 'rtl',
-            ltr: i18n.dir === 'ltr',
-          }}>
-            {icon}
-          </IconWrapper> :
-          null}
+        {icon}
         {caption}
-        {iconAlt ?
-          <IconWrapper variant={{
-            ...sizeVariant, hasCaption, rightPosition: true,
-            rtl: i18n.dir === 'rtl',
-            ltr: i18n.dir === 'ltr',
-          }}>
-            {iconAlt}
-          </IconWrapper> :
-          null}
+        {iconAlt}
       </Root>
     );
   }
 }
-

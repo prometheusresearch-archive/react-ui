@@ -1,37 +1,42 @@
 /**
  * @copyright 2015, Prometheus Research, LLC
+ * @flow
  */
 
-import Button from './Button';
-import {css, style} from './stylesheet';
+import {css} from 'react-stylesheet';
+import * as ButtonStylesheet from './ButtonStylesheet';
+import ButtonBase from './ButtonBase';
 
-export default style(Button, {
-  raised: true,
+export default class SuccessButton extends ButtonBase {
 
-  textWidth: 300,
+  static stylesheet = ButtonStylesheet.create({
+    raised: true,
 
-  text: css.rgb(255),
-  textHover: css.rgb(255),
-  textFocus: css.rgb(255),
-  textActive: css.rgb(255),
-  textDisabled: css.rgb(255),
+    textWidth: 300,
 
-  background: css.rgb(41, 173, 34),
-  backgroundHover: css.rgb(26, 160, 30),
-  backgroundFocus: css.rgb(41, 173, 34),
-  backgroundActive: css.rgb(26, 160, 30),
-  backgroundDisabled: css.rgb(162, 232, 158),
+    text: css.rgb(255),
+    textHover: css.rgb(255),
+    textFocus: css.rgb(255),
+    textActive: css.rgb(255),
+    textDisabled: css.rgb(255),
 
-  border: css.rgb(18, 134, 12),
-  borderHover: css.rgb(18, 134, 12),
-  borderFocus: css.rgb(18, 134, 12),
-  borderActive: css.rgb(18, 134, 12),
-  borderDisabled: css.rgb(162, 232, 158),
+    background: css.rgb(41, 173, 34),
+    backgroundHover: css.rgb(26, 160, 30),
+    backgroundFocus: css.rgb(41, 173, 34),
+    backgroundActive: css.rgb(26, 160, 30),
+    backgroundDisabled: css.rgb(162, 232, 158),
 
-  shadow: css.rgb(56, 134, 51),
-  shadowFocus: css.rgb(56, 134, 51),
-  shadowHover: css.rgb(56, 134, 51),
-  shadowActive: css.rgb(56, 134, 51),
+    border: css.rgb(18, 134, 12),
+    borderHover: css.rgb(18, 134, 12),
+    borderFocus: css.rgb(18, 134, 12),
+    borderActive: css.rgb(18, 134, 12),
+    borderDisabled: css.rgb(162, 232, 158),
 
-  shadowFocusRing: css.boxShadow(0, 0, 0, 2, css.rgba(0, 126, 229, 0.5)),
-}, {displayName: 'SuccessButton'});
+    shadow: css.rgb(56, 134, 51),
+    shadowFocus: css.rgb(56, 134, 51),
+    shadowHover: css.rgb(56, 134, 51),
+    shadowActive: css.rgb(56, 134, 51),
+
+    shadowFocusRing: css.boxShadow(0, 0, 0, 2, css.rgba(0, 126, 229, 0.5)),
+  });
+}

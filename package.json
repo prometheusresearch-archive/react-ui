@@ -4,7 +4,9 @@
   "description": "Configurable and styleable UI components",
   "main": "lib/index.js",
   "scripts": {
-    "test": "make lint test"
+    "test": "make lint test",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "babel": {
     "presets": [
@@ -34,6 +36,7 @@
     "react": "^0.14.0 || ^15.3.1"
   },
   "devDependencies": {
+    "@kadira/storybook": "^2.21.0",
     "babel-cli": "^6.9.0",
     "babel-core": "^6.9.0",
     "babel-jest": "^15.0.0",
@@ -42,7 +45,7 @@
     "eslint": "^2.10.2",
     "eslint-config-prometheusresearch": "^0.2.0",
     "eslint-plugin-react": "^6.1.2",
-    "flow-bin": "^0.32.0",
+    "flow-bin": "^0.35.0",
     "indent-string": "^2.1.0",
     "jest-cli": "^15.1.1",
     "lodash": "^4.13.0",
@@ -60,7 +63,6 @@
     "color-js": "^1.0.3",
     "invariant": "^2.2.1",
     "lodash": "^4.13.0",
-    "react-dom-stylesheet": "^0.8.3",
-    "react-stylesheet": "^1.0.0"
+    "react-stylesheet": "2-beta"
   }
 }

@@ -3,48 +3,72 @@
  * @flow
  */
 
-import {style, css} from './stylesheet';
+import React from 'react';
+import {style, css} from 'react-stylesheet';
 
-export default style('input', {
-  display: 'block',
-  width: '100%',
-  height: 34,
-  padding: css.padding(6, 12),
-  fontSize: '14px',
-  lineHeight: 1.42857143,
-  color: '#000',
-  backgroundColor: '#fff',
-  backgroundImage: css.none,
-  border: css.border(1, '#ccc'),
-  borderRadius: 2,
-  boxShadow: css.insetBoxShadow(0, 1, 1, css.rgba(0, 0,0 , 0.075)),
-  transition: 'border-color ease-in-out .15s,box-shadow ease-in-out .15s',
-  focus: {
-    outline: css.none,
-    border: css.border(1, '#708698'),
-    boxShadow: css.multi(
-      css.insetBoxShadow(0, 1, 1, 0, css.rgba(0, 0, 0, 0.075)),
-      css.boxShadow(0, 0, 0, 2, css.rgba(0, 126, 229, 0.5))
-    ),
+let InputRootFocus = {
+  outline: 'none',
+  border: {width: 1, color: '#708698'},
+  boxShadow: [
+    {
+      inset: true,
+      x: 0, y: 1, blur: 1,
+      color: css.rgba(0, 0, 0, 0.075)
+    },
+    {
+      x: 0, y: 0, spread: 2,
+      color: css.rgba(0, 126, 229, 0.5)
+    },
+  ],
+};
+
+let InputRootTransition = [
+  {
+    property: 'border-coolor',
+    timingFunction: 'ease-in-out',
+    duration: 0.15
+  },
+  {
+    property: 'box-shadow',
+    timingFunction: 'ease-in-out',
+    duration: 0.15,
+  }
+];
+
+export const InputRoot = style('input', {
+  base: {
+    display: 'block',
+    width: '100%',
+    padding: {vertical: 6, horizontal: 12},
+    fontSize: '14px',
+    lineHeight: 1.42857143,
+    color: '#000',
+    backgroundColor: '#fff',
+    backgroundImage: 'none',
+    border: {
+      width: 1,
+      style: 'solid',
+      color: '#ccc'
+    },
+    borderRadius: 2,
+    boxShadow: {
+      x: 0,
+      y: 1,
+      blur: 1,
+      color: css.rgba(0, 0, 0, 0.075)
+    },
+    transition: InputRootTransition,
+    focus: InputRootFocus,
   },
   noBorder: {
-    border: css.none,
+    border: 'none',
     focus: {
-      border: css.none,
+      border: 'none',
     },
-    error: {
-      border: css.none,
-    }
   },
   error: {
-    border: css.border(1, 'red'),
-    focus: {
-      border: css.border(1, '#708698'),
-      boxShadow: css.multi(
-        css.insetBoxShadow(0, 1, 1, 0, css.rgba(0, 0, 0, 0.075)),
-        css.boxShadow(0, 0, 0, 2, css.rgba(0, 126, 229, 0.5))
-      ),
-    }
+    border: {width: 1, style: 'solid', color: 'red'},
+    focus: InputRootFocus,
   },
   disabled: {
     backgroundColor: '#f9f9f9',
@@ -52,3 +76,14 @@ export default style('input', {
     cursor: 'not-allowed',
   }
 });
+
+export type InputProps = {
+  noBorder?: boolean;
+  disabled?: boolean;
+  error?: boolean;
+};
+
+export default function Input({error, disabled, noBorder, ...props}: InputProps) {
+  let variant = {noBorder, disabled, error};
+  return <InputRoot {...props} disabled={disabled} variant={variant} />;
+}

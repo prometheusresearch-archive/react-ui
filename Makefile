@@ -20,6 +20,9 @@ changelog:
 lint::
 	@$(BIN)/eslint $(SRC)
 
+storybook::
+	@npm run storybook
+
 check::
 	@$(BIN)/flow
 

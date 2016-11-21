@@ -1,37 +1,40 @@
 /**
  * @copyright 2016-present, Prometheus Research, LLC
+ * @flow
  */
 
-import {style, css} from './stylesheet';
-import Button from './Button';
+import {css} from 'react-stylesheet';
+import * as ButtonStylesheet from './ButtonStylesheet';
+import ButtonBase from './ButtonBase';
 
-export default style(Button, {
-  raised: true,
+export default class FlatDangerButton extends ButtonBase {
 
-  textWidth: 300,
+  static stylesheet = ButtonStylesheet.create({
+    raised: true,
 
-  text: css.rgb(210, 77, 77),
-  textHover: css.rgb(210, 77, 77),
-  textFocus: css.rgb(210, 77, 77),
-  textActive: css.rgb(210, 77, 77),
-  textDisabled: css.rgb(239, 163, 163),
+    textWidth: 300,
 
-  background: css.rgb(255),
-  backgroundHover: css.rgb(253, 246, 246),
-  backgroundFocus: css.rgb(255),
-  backgroundActive: css.rgb(253, 245, 245),
-  backgroundDisabled: css.rgb(255),
+    text: css.rgb(210, 77, 77),
+    textHover: css.rgb(210, 77, 77),
+    textFocus: css.rgb(210, 77, 77),
+    textActive: css.rgb(210, 77, 77),
+    textDisabled: css.rgb(239, 163, 163),
 
-  border: css.rgb(210, 77, 77),
-  borderHover: css.rgb(173, 48, 48),
-  borderFocus: css.rgb(173, 48, 48),
-  borderActive: css.rgb(173, 48, 48),
-  borderDisabled: css.rgb(173, 48, 48),
+    background: css.rgb(255),
+    backgroundHover: css.rgb(253, 246, 246),
+    backgroundFocus: css.rgb(255),
+    backgroundActive: css.rgb(253, 245, 245),
+    backgroundDisabled: css.rgb(255),
 
-  shadow: css.none,
-  shadowHover: css.none,
-  shadowFocus: css.none,
-  shadowActive: css.rgb(241, 170, 170),
-  shadowDisabled: css.none,
-}, 'FlatDangerButton');
+    border: css.rgb(210, 77, 77),
+    borderHover: css.rgb(173, 48, 48),
+    borderFocus: css.rgb(173, 48, 48),
+    borderActive: css.rgb(173, 48, 48),
+    borderDisabled: css.rgb(173, 48, 48),
 
+    shadow: css.none,
+    shadowHover: css.none,
+    shadowFocus: css.none,
+    shadowActive: css.rgb(241, 170, 170),
+  });
+}

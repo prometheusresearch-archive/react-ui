@@ -1,5 +1,6 @@
 /**
  * @copyright 2016-present, Prometheus Research, LLC
+ * @flow
  */
 
 import invariant from 'invariant';
@@ -8,26 +9,34 @@ import {noop} from 'lodash';
 
 import * as I18N from './I18N';
 import * as Focus from './Focus';
-import Checkbox from './CheckboxBase';
+import CheckboxBase from './CheckboxBase';
+
+type Value = Array<string>;
+
+type Option = {
+  label: string;
+  hint?: string;
+  value: string;
+};
 
 export let primitiveValueStrategy = {
 
-  findIndex(value, option) {
+  findIndex(value: ?Value, option: Option): number {
     if (!value) {
       return -1;
     }
     return value.indexOf(option.value);
   },
 
-  optionToValue(option) {
+  optionToValue(option: Option): string {
     return option.value;
   },
 
-  isChecked(value, option) {
+  isChecked(value: ?Array<string>, option: Option): boolean {
     return this.findIndex(value, option) > -1;
   },
 
-  update(value, option, checked) {
+  update(value: ?Value, option: Option, checked: boolean): Value {
     value = value || [];
     value = value.slice(0);
     let idx = this.findIndex(value, option);
@@ -49,11 +58,19 @@ export let primitiveValueStrategy = {
 
 };
 
+export let stylesheet = {
+  Root: 'div',
+  CheckboxWrapper: 'div',
+  Checkbox: CheckboxBase,
+};
+
 export default class CheckboxGroupBase extends React.Component {
 
   static propTypes = {
     valueStrategy: React.PropTypes.object
   };
+
+  static stylesheet = stylesheet;
 
   static contextTypes = I18N.contextTypes;
 
@@ -62,12 +79,6 @@ export default class CheckboxGroupBase extends React.Component {
     onChange: noop,
     layout: 'vertical',
     tabIndex: 0,
-  };
-
-  static stylesheet = {
-    Root: 'div',
-    CheckboxWrapper: 'div',
-    Checkbox: Checkbox,
   };
 
   render() {
@@ -83,7 +94,7 @@ export default class CheckboxGroupBase extends React.Component {
     );
   }
 
-  renderOption(option, idx) {
+  renderOption(option: Option, idx: number) {
     let {valueStrategy, layout, disabled, variant} = this.props;
     let {CheckboxWrapper, Checkbox} = this.constructor.stylesheet;
     let {i18n = I18N.defaultContext} = this.context;
@@ -117,7 +128,7 @@ export default class CheckboxGroupBase extends React.Component {
     );
   }
 
-  onChange(option, checked) {
+  onChange(option: Option, checked: boolean) {
     let {value, valueStrategy} = this.props;
     value = valueStrategy.update(value, option, checked);
     this.props.onChange(value);

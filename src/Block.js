@@ -3,16 +3,14 @@
  * @flow
  */
 
-import type {DOMStylesheet} from 'react-dom-stylesheet';
-
 import * as React from 'react';
-import {wrapWithStylesheet} from 'react-dom-stylesheet';
 import {chooseValue} from './Utils';
 import * as theme from './theme';
 import type {I18NContext} from './I18N';
 import * as I18N from './I18N';
 
 type Props = {
+  Component?: string | Function;
   inline?: boolean;
   noWrap?: boolean;
   position?: 'relative' | 'absolute' | 'fixed',
@@ -57,6 +55,7 @@ type Context = {
 };
 
 export default function Block({
+  Component,
   inline,
   noWrap,
   position = 'relative',
@@ -78,6 +77,10 @@ export default function Block({
   style,
   ...props
 }: Props, {i18n = I18N.defaultContext}: Context) {
+
+  if (Component == null) {
+    Component = 'div';
+  }
 
   if (paddingStart !== undefined) {
     if (i18n.dir === 'rtl' && paddingRight === undefined) {
@@ -159,11 +162,7 @@ export default function Block({
     verticalAlign,
     ...style,
   };
-  return <div {...props} style={style} />;
+  return <Component {...props} style={style} />;
 }
 
 Block.contextTypes = I18N.contextTypes;
-
-Block.style = function style(stylesheet: DOMStylesheet, displayName: string) {
-  return wrapWithStylesheet(Block, stylesheet, {displayName});
-};

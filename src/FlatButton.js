@@ -1,36 +1,40 @@
 /**
  * @copyright 2016-present, Prometheus Research, LLC
+ * @flow
  */
 
-import {style, css} from './stylesheet';
-import Button from './Button';
+import {css} from 'react-stylesheet';
+import * as ButtonStylesheet from './ButtonStylesheet';
+import ButtonBase from './ButtonBase';
 
-export default style(Button, {
-  raised: true,
+export default class FlatButton extends ButtonBase {
 
-  textWidth: 300,
+  static stylesheet = ButtonStylesheet.create({
+    raised: true,
 
-  text: css.rgb(160),
-  textHover: css.rgb(130),
-  textFocus: css.rgb(130),
-  textActive: css.rgb(150),
-  textDisabled: '#dadada',
+    textWidth: 300,
 
-  background: css.rgb(255),
-  backgroundHover: css.rgb(241),
-  backgroundFocus: css.rgb(255),
-  backgroundActive: css.rgb(231),
-  backgroundDisabled: css.rgb(251),
+    text: css.rgb(160),
+    textHover: css.rgb(130),
+    textFocus: css.rgb(130),
+    textActive: css.rgb(150),
+    textDisabled: '#dadada',
 
-  border: css.rgb(180),
-  borderHover: css.rgb(180),
-  borderFocus: css.rgb(180),
-  borderActive: css.rgb(180),
-  borderDisabled: css.rgb(180),
+    background: css.rgb(255),
+    backgroundHover: css.rgb(241),
+    backgroundFocus: css.rgb(255),
+    backgroundActive: css.rgb(231),
+    backgroundDisabled: css.rgb(251),
 
-  shadow: css.none,
-  shadowHover: css.none,
-  shadowFocus: css.none,
-  shadowActive: css.rgb(210),
-  shadowDisabled: css.none,
-}, 'FlatButton');
+    border: css.rgb(180),
+    borderHover: css.rgb(180),
+    borderFocus: css.rgb(180),
+    borderActive: css.rgb(180),
+    borderDisabled: css.rgb(180),
+
+    shadow: css.none,
+    shadowHover: css.none,
+    shadowFocus: css.none,
+    shadowActive: css.rgb(210),
+  });
+}

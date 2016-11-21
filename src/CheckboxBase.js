@@ -1,5 +1,6 @@
 /**
  * @copyright 2016-present, Prometheus Research, LLC
+ * @flow
  */
 
 import React from 'react';
@@ -8,32 +9,58 @@ import uniqueId from 'lodash/uniqueId';
 import * as I18N from './I18N';
 import * as Focus from './Focus';
 
-export default class CheckboxBase extends React.Component {
+type Props = {
+  value?: boolean;
+  label?: string;
+  title?: string;
+  hint?: string;
+  variant?: Object;
+  disabled?: boolean;
+  focusIndex?: number;
+  onChange: (boolean) => number;
+};
+
+type Component = string | ReactClass<*>;
+
+export type Stylesheet = {
+  Root: Component;
+  Input: Component;
+  LabelWrapper: Component;
+  Hint: Component;
+  Label: Component;
+};
+
+export let stylesheet: Stylesheet = {
+  Root: 'div',
+  Input: 'input',
+  LabelWrapper: 'div',
+  Hint: 'div',
+  Label: 'div',
+};
+
+export default class CheckboxBase extends React.Component<*, Props, *> {
+
+  ariaId: string;
 
   static contextTypes = I18N.contextTypes;
 
+  static stylesheet = stylesheet;
+
   static defaultProps = {
     onChange: noop,
-    stylesheet: {
-      Root: 'div',
-      Input: 'input',
-      LabelWrapper: 'div',
-      Hint: 'div',
-      Label: 'div',
-    },
   };
 
-  constructor(props) {
+  constructor(props: Props) {
     super(props);
     this.ariaId = uniqueId('aria');
   }
 
   render() {
     let {
-      value, label, title, hint, stylesheet,
+      value, label, title, hint,
       variant, disabled, focusIndex, ...props
     } = this.props;
-    let {Root, Input, Label, Hint, LabelWrapper} = stylesheet;
+    let {Root, Input, Label, Hint, LabelWrapper} = this.constructor.stylesheet;
     let {i18n = I18N.defaultContext} = this.context;
     variant = {
       rtl: i18n.dir === 'rtl',
@@ -63,15 +90,16 @@ export default class CheckboxBase extends React.Component {
     );
   }
 
-  onClick = _e => {
+  onClick = () => {
     if (!this.props.disabled) {
       let value = !this.props.value;
       this.props.onChange(value);
     }
   };
 
-  onChange = e => {
-    this.props.onChange(e.target.checked);
+  onChange = (e: UIEvent) => {
+    let checked: boolean = (e.target: any).checked;
+    this.props.onChange(checked);
   };
 }
 
