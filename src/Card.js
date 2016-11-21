@@ -1,32 +1,12 @@
 /**
  * @copyright 2016-present, Prometheus Research, LLC
+ * @flow
  */
 
-import CardBase from './CardBase';
-import {style, css} from './stylesheet';
+import {style, css} from 'react-stylesheet';
+import CardBase, {stylesheet} from './CardBase';
 import Block from './Block';
 import {padding, fontSize} from './theme';
-
-function mixinVariants(stylesheet, variants) {
-  let nextStylesheet = {...stylesheet};
-  for (let variantName in variants) {
-    let variantStylesheet = variants[variantName];
-    for (let name in variantStylesheet) {
-      if (variantName === 'default') {
-        nextStylesheet[name] = {
-          ...nextStylesheet[name],
-          ...variantStylesheet[name],
-        };
-      } else {
-        nextStylesheet[name] = {
-          ...nextStylesheet[name],
-          [variantName]: variantStylesheet[name],
-        };
-      }
-    }
-  }
-  return nextStylesheet;
-}
 
 function variant({
   shadow,
@@ -50,50 +30,82 @@ function variant({
     Content: {
       backgroundColor: contentBackground,
       color: contentColor,
-    }
+    },
+    Footer: {
+
+    },
   };
 }
 
-export default style(CardBase, mixinVariants({
-  Root: {
-    position: css.position.relative,
-  },
-  Header: {
-    padding: padding['x-small'],
-    fontSize: fontSize['small'],
-    fontWeight: 'bold',
-  },
-  Content: {
-    verticalAlign: 'top',
-    backgroundClip: 'padding-box',
-  },
-  Footer: {
-    padding: padding['xx-small'],
+let base = variant({
+  shadow: css.rgba(37, 40, 43, 0.1),
+  border: css.rgb(180),
+  borderRadius: 2,
+  headerBackground: css.rgb(180),
+  headerColor: '#fbfbfb',
+  contentBackground: 'white',
+  contentColor: '#000',
+});
+
+let success =  variant({
+  shadow: css.rgba(37, 40, 43, 0.1),
+  border: css.rgb(40, 172, 33),
+  borderRadius: 2,
+  headerBackground: css.rgb(40, 172, 33),
+  headerColor: '#ffffff',
+  contentBackground: 'white',
+  contentColor: '#000',
+});
+
+export class Card extends CardBase {
+
+  static stylesheet = {
+    ...stylesheet,
+
+    Root: style(stylesheet.Root, {
+      base: {
+        position: css.position.relative,
+        ...base.Root,
+      },
+      success: success.Root,
+    }),
+
+    Header: style(stylesheet.Header, {
+      base: {
+        padding: padding['x-small'],
+        fontSize: fontSize['small'],
+        fontWeight: 'bold',
+        ...base.Header,
+      },
+      success: success.Header,
+    }),
+
+    Content: style(stylesheet.Content, {
+      base: {
+        verticalAlign: 'top',
+        backgroundClip: 'padding-box',
+        ...base.Content,
+      },
+      success: success.Content,
+    }),
+
+    Footer: style(stylesheet.Footer, {
+      base: {
+        padding: padding['xx-small'],
+        ...base.Footer,
+      },
+      success: success.Footer,
+    })
   }
-}, {
-  default: variant({
-    shadow: css.rgba(37, 40, 43, 0.1),
-    border: css.rgb(180),
-    borderRadius: 2,
-    headerBackground: css.rgb(180),
-    headerColor: '#fbfbfb',
-    contentBackground: 'white',
-    contentColor: '#000',
-  }),
-  success: variant({
-    shadow: css.rgba(37, 40, 43, 0.1),
-    border: css.rgb(40, 172, 33),
-    borderRadius: 2,
-    headerBackground: css.rgb(40, 172, 33),
-    headerColor: '#ffffff',
-    contentBackground: 'white',
-    contentColor: '#000',
-  }),
-}));
+}
 
 export let CardItem = style(Block, {
-  borderBottom: css.border(1, css.rgb(180)),
-  lastChild: {
-    borderBottom: css.none,
+  base: {
+    borderBottom: css.border(1, css.rgb(180)),
+    lastChild: {
+      borderBottom: css.none,
+    }
   }
 });
+
+export default Card;

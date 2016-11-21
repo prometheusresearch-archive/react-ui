@@ -22,20 +22,20 @@ export default class CardBase extends React.Component {
       children,
       header,
       footer,
-      stylesheet,
       padding,
       paddingTop, paddingBottom, paddingLeft, paddingRight,
       paddingV, paddingH,
       variant,
       ...props
     } = this.props;
+    let {Root, Content, Header, Footer} = this.constructor.stylesheet;
     return (
-      <stylesheet.Root {...props} variant={variant}>
+      <Root {...props} variant={variant}>
         {header &&
-          <stylesheet.Header variant={variant}>
+          <Header variant={variant}>
             {header}
-          </stylesheet.Header>}
-        <stylesheet.Content
+          </Header>}
+        <Content
           variant={variant}
           padding={padding}
           paddingTop={paddingTop}
@@ -45,12 +45,12 @@ export default class CardBase extends React.Component {
           paddingV={paddingV}
           paddingH={paddingH}>
           {children}
-        </stylesheet.Content>
+        </Content>
         {footer &&
-          <stylesheet.Footer variant={variant}>
+          <Footer variant={variant}>
             {footer}
-          </stylesheet.Footer>}
-      </stylesheet.Root>
+          </Footer>}
+      </Root>
     );
   }
 }

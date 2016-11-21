@@ -1,3 +1,7 @@
+/**
+ * @flow
+ */
+
 import './index.css';
 
 import React from 'react';
@@ -5,6 +9,7 @@ import {storiesOf} from '@kadira/storybook';
 
 import Input from '../src/Input';
 import Textarea from '../src/Textarea';
+
 import ButtonBase from '../src/ButtonBase';
 import Button from '../src/Button';
 import FlatButton from '../src/FlatButton';
@@ -14,10 +19,15 @@ import FlatDangerButton from '../src/FlatDangerButton';
 import SuccessButton from '../src/SuccessButton';
 import FlatSuccessButton from '../src/FlatSuccessButton';
 import OptionButton from '../src/OptionButton';
+
 import CheckboxBase from '../src/CheckboxBase';
 import Checkbox from '../src/Checkbox';
+
 import CheckboxGroupBase from '../src/CheckboxGroupBase';
 import CheckboxGroup from '../src/CheckboxGroup';
+
+import {Card, CardItem} from '../src/Card';
+
 import I18N from '../src/I18N';
 
 storiesOf('<Input />', module)
@@ -47,6 +57,48 @@ storiesOf('<Textarea />', module)
   .add('No border variant', () => (
     <Textarea noBorder />
   ));
+
+storiesOf('<Card />', module)
+  .add('Basic', () => (
+    <Card>
+      Card content
+    </Card>
+  ))
+  .add('Basic with padding', () => (
+    <Card padding={10}>
+      Card content
+    </Card>
+  ))
+  .add('With header', () => (
+    <Card padding={10} header="Header">
+      Card content
+    </Card>
+  ))
+  .add('With footer', () => (
+    <Card padding={10} footer="Footer">
+      Card content
+    </Card>
+  ))
+  .add('With header & footer', () => (
+    <Card padding={10} header="Header" footer="Footer">
+      Card content
+    </Card>
+  ))
+  .add('Success variant', () => (
+    <Card padding={10} variant={{success: true}} header="Header" footer="Footer">
+      Card content
+    </Card>
+  ))
+  .add('With card item', () => (
+    <Card>
+      <CardItem padding={10}>
+        Item 1
+      </CardItem>
+      <CardItem padding={10}>
+        Item 2
+      </CardItem>
+    </Card>
+  ))
 
 storiesOf('<ButtonBase />', module)
   .add('Default state', () => (

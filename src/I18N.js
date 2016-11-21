@@ -20,7 +20,7 @@ export const defaultContext: I18NContext = {
 export class I18N extends React.Component {
 
   props: I18NContext & {
-    children: any;
+    children?: any;
   };
 
   static childContextTypes = contextTypes;
