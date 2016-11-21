@@ -1,12 +1,21 @@
 /**
  * @copyright 2016-present, Prometheus Research, LLC
+ * @flow
  */
+
+import type {fontSize, fontWidth} from 'react-stylesheet/lib/CSSType';
 
 import * as React from 'react';
 
 import * as theme from './theme';
-import {wrapWithStylesheet} from './stylesheet';
 import {chooseValue} from './Utils';
+
+type Props = {
+  fontSize: fontSize;
+  fontWidth: fontWidth;
+  color: string;
+  style: Object;
+};
 
 export default function Text({
   fontSize,
@@ -14,7 +23,7 @@ export default function Text({
   color,
   style,
   ...props
-}) {
+}: Props) {
   style = {
     fontSize: chooseValue(theme.fontSize, fontSize),
     fontWidth,
@@ -23,7 +32,3 @@ export default function Text({
   };
   return <span {...props} style={style} />;
 }
-
-Text.style = function style(stylesheet) {
-  return wrapWithStylesheet(Text, stylesheet, 'Text');
-};

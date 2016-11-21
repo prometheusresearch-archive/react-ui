@@ -1,5 +1,6 @@
 /**
  * @copyright 2016-present, Prometheus Research, LLC
+ * @flow
  */
 
 import React from 'react';
@@ -8,7 +9,19 @@ export const NOVALUE = '__NOVALUE__';
 
 const NOVALUE_OPTION = {label: '', value: NOVALUE};
 
-export default class Select extends React.Component {
+type Option = {
+  value: string;
+  label?: string;
+  hint?: string;
+};
+
+type Props = {
+  options: Array<Option>;
+  value: string;
+  allowNoValue?: boolean;
+};
+
+export default class Select extends React.Component<*, Props, *> {
 
   render() {
     let {options, value, allowNoValue} = this.props;
@@ -25,7 +38,7 @@ export default class Select extends React.Component {
     );
   }
 
-  renderOption(option) {
+  renderOption(option: Option) {
     let key = option.value === NOVALUE ? '__NOVALUE__' : option.value;
     return (
       <option key={key} value={option.value}>
@@ -34,7 +47,8 @@ export default class Select extends React.Component {
     );
   }
 
-  onChange = event => {
+  onChange = (event: UIEvent) => {
+    // $FlowIssue: ...
     let value = event.target.value;
     if (value === NOVALUE) {
       value = null;
@@ -42,5 +56,3 @@ export default class Select extends React.Component {
     this.props.onChange(value);
   }
 }
-
-

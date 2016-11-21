@@ -7,6 +7,7 @@ import './index.css';
 import React from 'react';
 import {storiesOf} from '@kadira/storybook';
 
+import {Card, CardItem} from '../src/Card';
 import Input from '../src/Input';
 import IntegerInput from '../src/IntegerInput';
 import Textarea from '../src/Textarea';
@@ -33,7 +34,11 @@ import CheckboxGroup from '../src/CheckboxGroup';
 import RadioGroupBase from '../src/RadioGroupBase';
 import RadioGroup from '../src/RadioGroup';
 
-import {Card, CardItem} from '../src/Card';
+import Select from '../src/Select';
+
+import Text from '../src/Text';
+import ErrorText from '../src/ErrorText';
+import LabelText from '../src/LabelText';
 
 import I18N from '../src/I18N';
 
@@ -341,6 +346,31 @@ storiesOf('<RadioGroup />', module)
         ]}
         />
     </I18N>
+  ));
+
+storiesOf('<Select />', module)
+  .add('Basic', () => (
+    <Select
+      options={[
+        {label: 'A', value: 'a'},
+        {label: 'B', value: 'b'},
+      ]}
+      />
+  ));
+
+storiesOf('<Text />', module)
+  .add('Regular', () => (
+    <Text>Hello</Text>
+  ));
+
+storiesOf('<LabelText />', module)
+  .add('Regular', () => (
+    <LabelText>I'm a label</LabelText>
+  ));
+
+storiesOf('<ErrorText />', module)
+  .add('Regular', () => (
+    <ErrorText>Error happened</ErrorText>
   ));
 
 createButtonStories(Button);
