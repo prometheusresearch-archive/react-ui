@@ -8,6 +8,7 @@ import React from 'react';
 import {storiesOf} from '@kadira/storybook';
 
 import Input from '../src/Input';
+import IntegerInput from '../src/IntegerInput';
 import Textarea from '../src/Textarea';
 
 import ButtonBase from '../src/ButtonBase';
@@ -42,6 +43,11 @@ storiesOf('<Input />', module)
   ))
   .add('No border variant', () => (
     <Input noBorder />
+  ));
+
+storiesOf('<IntegerInput />', module)
+  .add('Basic', () => (
+    <IntegerInput />
   ));
 
 storiesOf('<Textarea />', module)

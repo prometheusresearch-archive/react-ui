@@ -1,9 +1,10 @@
 /**
  * @copyright 2016, Prometheus Research, LLC
+ * @flow
  */
 
 import * as React from 'react';
-import {create} from './stylesheet';
+import invariant from 'invariant';
 import Input from './Input';
 
 import {
@@ -11,34 +12,42 @@ import {
   extractValueFromEvent
 } from './FormUtils';
 
-let stylesheet = create({
-  Input: Input,
-});
+type Props = {
+  value: string | number;
+  onChange: (number | string) => *;
+};
 
-export default class IntegerInput extends React.Component {
+export default class IntegerInput extends React.Component<*, Props, *> {
+
+  state: {
+    value: string;
+  };
+
+  static stylesheet = {
+    Input: Input,
+  };
 
   static defaultProps = {
-    stylesheet,
     value: '',
   };
 
-  constructor(props) {
+  constructor(props: Props) {
     super(props);
-    this.state = {value: props.value};
+    this.state = {value: props.value ? String(props.value) : ''};
   }
 
   render() {
-    let {stylesheet: {Input}, ...props} = this.props;
+    let {Input} = this.constructor.stylesheet;
     return (
       <Input
-        {...props}
+        {...this.props}
         value={this.state.value}
         onChange={this.onChange}
         />
     );
   }
 
-  componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps(nextProps: Props) {
     let {value} = this.state;
     if (nextProps.value == null) {
       this.setState({value: ''});
@@ -47,13 +56,18 @@ export default class IntegerInput extends React.Component {
     }
   }
 
-  onChange = event => {
-    let value = extractValueFromEvent(event);
-    this.setState({value: value || ''}, () => {
-      if (value !== null) {
-        value = tryParseInteger(value);
+  onChange = (event: UIEvent) => {
+    const value = extractValueFromEvent(event) || '';
+    invariant(
+      typeof value === 'string',
+      'Expected a string value from the underlying input'
+    );
+    this.setState({value}, () => {
+      if (value != null) {
+        this.props.onChange(tryParseInteger(value));
+      } else {
+        this.props.onChange(value);
       }
-      this.props.onChange(value);
     });
   }
 
