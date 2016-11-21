@@ -26,12 +26,6 @@ storybook::
 check::
 	@$(BIN)/flow
 
-site-serve::
-	@$(BIN)/sitegen serve
-
-site-build::
-	@$(BIN)/sitegen build
-
 test::
 	@$(BIN)/jest
 
