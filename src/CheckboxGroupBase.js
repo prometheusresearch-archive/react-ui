@@ -64,7 +64,23 @@ export let stylesheet = {
   Checkbox: CheckboxBase,
 };
 
-export default class CheckboxGroupBase extends React.Component {
+type Props = {
+  options: Array<Option>;
+  disabled?: boolean;
+  tabIndex?: number;
+  valueStrategy: typeof primitiveValueStrategy;
+  onChange: (Value) => *;
+  value: Value;
+
+  layout: 'horizontal' | 'vertical';
+
+  onFocus?: (UIEvent) => *;
+  onBlur?: (UIEvent) => *;
+
+  variant?: Object;
+};
+
+export default class CheckboxGroupBase extends React.Component<*, Props, *> {
 
   static propTypes = {
     valueStrategy: React.PropTypes.object

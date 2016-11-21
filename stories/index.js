@@ -40,6 +40,8 @@ import Text from '../src/Text';
 import ErrorText from '../src/ErrorText';
 import LabelText from '../src/LabelText';
 
+import Field from '../src/Field';
+
 import I18N from '../src/I18N';
 
 storiesOf('<Input />', module)
@@ -371,6 +373,50 @@ storiesOf('<LabelText />', module)
 storiesOf('<ErrorText />', module)
   .add('Regular', () => (
     <ErrorText>Error happened</ErrorText>
+  ));
+
+storiesOf('<Field />', module)
+  .add('Simple', () => (
+    <Field
+      label="Label"
+      input={<Input />}
+      />
+  ))
+  .add('Hint', () => (
+    <Field
+      label="Label"
+      hint="Hint"
+      input={<Input />}
+      />
+  ))
+  .add('Invalid', () => (
+    <Field
+      invalid
+      label="Label"
+      hint="Hint"
+      input={<Input />}
+      />
+  ))
+  .add('Error text', () => (
+    <Field
+      error="Error"
+      label="Label"
+      input={<Input />}
+      />
+  ))
+  .add('Error text inline', () => (
+    <Field
+      errorInline="Error"
+      label="Label"
+      input={<Input />}
+      />
+  ))
+  .add('Disabled', () => (
+    <Field
+      disabled
+      label="Label"
+      input={<Input disabled />}
+      />
   ));
 
 createButtonStories(Button);

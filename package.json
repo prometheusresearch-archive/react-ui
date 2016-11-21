@@ -19,7 +19,8 @@
       "mocha": true
     },
     "globals": {
-      "ReactClass": true
+      "ReactClass": true,
+      "React$Element": true
     }
   },
   "repository": {

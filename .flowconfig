@@ -1,15 +1,11 @@
 [ignore]
-.*/node_modules/esformatter/.*
-.*/node_modules/.store/fbjs@.*/.*.flow
-.*/node_modules/.store/reactdown@.*/.*.flow
-.*/node_modules/.store/gh-pages@.*/.*
-.*/node_modules/.store/browserify-zlib@.*/_/package.json
-.*/test/.*
+<PROJECT_ROOT>/node_modules/flow-coverage-report/.*.js
+<PROJECT_ROOT>/node_modules/conventional-changelog-core/.*.js
+<PROJECT_ROOT>/node_modules/conventional-changelog-core/.*.json
 
 [include]
 
 [libs]
-declarations/
 
 [options]
 esproposal.class_static_fields=enable

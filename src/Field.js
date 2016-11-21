@@ -1,11 +1,12 @@
 /**
  * @copyright 2016-present, Prometheus Research, LLC
+ * @flow
  */
 
 import React from 'react';
 import uniqueId from 'lodash/uniqueId';
+import {style, css} from 'react-stylesheet';
 
-import {style, css} from './stylesheet';
 import Block from './Block';
 import Text from './Text';
 import LabelText from './LabelText';
@@ -13,19 +14,34 @@ import ErrorText from './ErrorText';
 import {fontSize} from './theme';
 
 let Hint = style(Text, {
-  color: '#222',
-  fontSize: fontSize['x-small'],
-  textAlign: css.textAlign.left,
-  padding: css.padding(0, 0),
+  base: {
+    color: '#222',
+    fontSize: fontSize['x-small'],
+    textAlign: css.textAlign.left,
+    padding: css.padding(0, 0),
+  },
   disabled: {
     color: '#aaa',
     cursor: 'not-allowed',
   }
 });
 
-export default class Field extends React.Component {
+type Props = {
+  input: React.Element<*>;
+  label?: string;
+  hint?: string;
+  error?: string;
+  errorInline?: string;
+  disabled?: boolean;
+  required?: boolean;
+  invalid?: boolean;
+};
 
-  constructor(props) {
+export default class Field extends React.Component<*, Props, *> {
+
+  id: string;
+
+  constructor(props: Props) {
     super(props);
     this.id = uniqueId('formfield');
   }

@@ -30,7 +30,7 @@ test::
 	@$(BIN)/jest
 
 report-type-cov::
-	@$(BIN)/flow-coverage-report -i 'src/**/*.js'
+	@$(BIN)/flow-coverage-report -i 'src/**/*.js' -x 'src/**/*-test.js' -f $(BIN)/flow
 
 report-cov::
 	@$(BIN)/nyc report --reporter html
