@@ -1,46 +1,58 @@
 /**
  * @copyright 2016-present, Prometheus Research, LLC
+ * @flow
  */
 
-
-import RadioBase from './RadioBase';
+import {style, css} from 'react-stylesheet';
+import RadioBase, {stylesheet} from './RadioBase';
 import Block from './Block';
-import {style, css} from './stylesheet';
 import {margin, textColors} from './theme';
 
-export default style(RadioBase, {
-  Label: {
-    fontSize: '0.875rem',
-    fontWeight: 400,
-    color: '#444',
-    disabled: {
-      cursor: 'not-allowed',
-      color: textColors.disabled,
-    },
-  },
-  Input: {
-    verticalAlign: 'middle',
-    disabled: {
-      cursor: 'not-allowed',
-    },
-  },
-  LabelWrapper: style(Block, {
-    cursor: css.cursor.default,
-    display: 'inline-block',
-    verticalAlign: 'middle',
-    userSelect: 'none',
-    ltr: {
-      marginLeft: margin['x-small'],
-    },
-    rtl: {
-      marginRight: margin['x-small'],
-    },
-  }),
-  Hint: {
-    fontSize: '0.6rem',
-    disabled: {
-      cursor: 'not-allowed',
-      color: textColors.disabled,
-    },
-  }
-});
+export default class Radio extends RadioBase {
+
+  static stylesheet = {
+    ...stylesheet,
+    Label: style(stylesheet.Label, {
+      base: {
+        fontSize: '0.875rem',
+        fontWeight: 400,
+        color: '#444',
+      },
+      disabled: {
+        cursor: 'not-allowed',
+        color: textColors.disabled,
+      },
+    }),
+    Input: style(stylesheet.Input, {
+      base: {
+        verticalAlign: 'middle',
+      },
+      disabled: {
+        cursor: 'not-allowed',
+      },
+    }),
+    LabelWrapper: style(Block, {
+      base: {
+        cursor: css.cursor.default,
+        display: 'inline-block',
+        verticalAlign: 'middle',
+        userSelect: 'none',
+      },
+      ltr: {
+        marginLeft: margin['x-small'],
+      },
+      rtl: {
+        marginRight: margin['x-small'],
+      },
+    }),
+    Hint: style(stylesheet.Hint, {
+      base: {
+        fontSize: '0.6rem',
+      },
+      disabled: {
+        cursor: 'not-allowed',
+        color: textColors.disabled,
+      },
+    })
+  };
+}

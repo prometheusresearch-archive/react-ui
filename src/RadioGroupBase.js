@@ -1,5 +1,6 @@
 /**
  * @copyright 2016-present, Prometheus Research, LLC
+ * @flow
  */
 
 import React from 'react';
@@ -9,15 +10,44 @@ import Radio from './RadioBase';
 import * as I18N from './I18N';
 import * as Focus from './Focus';
 
-export default class RadioGroupBase extends React.Component {
+type Option = {
+  value: string;
+  label?: string;
+  hint?: string;
+};
+
+type Props = {
+  options: Array<Option>;
+  value: string;
+  onChange: (string) => *;
+  layout?: 'horizontal' | 'vertical';
+  disabled?: boolean;
+  variant?: Object;
+  tabIndex?: number;
+
+  onFocus: (ev: UIEvent) => *;
+  onBlur: (ev: UIEvent) => *;
+};
+
+type Component = string | ReactClass<*>;
+
+export type Stylesheet = {
+  Root: Component;
+  RadioWrapper: Component;
+  Radio: Component;
+};
+
+export let stylesheet: Stylesheet = {
+  Root: 'div',
+  RadioWrapper: 'div',
+  Radio: Radio,
+};
+
+export default class RadioGroupBase extends React.Component<*, Props, *> {
 
   static contextTypes = I18N.contextTypes;
 
-  static stylesheet = {
-    Root: 'div',
-    RadioWrapper: 'div',
-    Radio: Radio,
-  };
+  static stylesheet = stylesheet;
 
   static defaultProps = {
     onChange: noop,
@@ -40,7 +70,7 @@ export default class RadioGroupBase extends React.Component {
     );
   }
 
-  renderOption(option, idx) {
+  renderOption(option: Option, idx: number) {
     let {RadioWrapper, Radio} = this.constructor.stylesheet;
     let {value, layout, disabled, variant} = this.props;
     let {i18n = I18N.defaultContext} = this.context;
@@ -75,7 +105,7 @@ export default class RadioGroupBase extends React.Component {
     );
   }
 
-  onChange(id, checked) {
+  onChange(id: string, checked: boolean) {
     if (checked) {
       this.props.onChange(id);
     }

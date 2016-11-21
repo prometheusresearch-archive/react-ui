@@ -17,6 +17,9 @@
     "extends": "prometheusresearch",
     "env": {
       "mocha": true
+    },
+    "globals": {
+      "ReactClass": true
     }
   },
   "repository": {

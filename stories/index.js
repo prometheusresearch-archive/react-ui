@@ -24,8 +24,14 @@ import OptionButton from '../src/OptionButton';
 import CheckboxBase from '../src/CheckboxBase';
 import Checkbox from '../src/Checkbox';
 
+import RadioBase from '../src/RadioBase';
+import Radio from '../src/Radio';
+
 import CheckboxGroupBase from '../src/CheckboxGroupBase';
 import CheckboxGroup from '../src/CheckboxGroup';
+
+import RadioGroupBase from '../src/RadioGroupBase';
+import RadioGroup from '../src/RadioGroup';
 
 import {Card, CardItem} from '../src/Card';
 
@@ -104,7 +110,7 @@ storiesOf('<Card />', module)
         Item 2
       </CardItem>
     </Card>
-  ))
+  ));
 
 storiesOf('<ButtonBase />', module)
   .add('Default state', () => (
@@ -206,9 +212,70 @@ storiesOf('<Checkbox/>', module)
       />
   ));
 
+storiesOf('<RadioBase />', module)
+  .add('Off state', () => (
+    <RadioBase value={false} />
+  ))
+  .add('On state', () => (
+    <RadioBase value={true} />
+  ));
+
+storiesOf('<Radio/>', module)
+  .add('Off state', () => (
+    <Radio
+      value={false}
+      />
+  ))
+  .add('On state', () => (
+    <Radio
+      value={true}
+      />
+  ))
+  .add('With label', () => (
+    <Radio
+      value={true}
+      label="Lights on"
+      />
+  ))
+  .add('With label & hint', () => (
+    <Radio
+      value={true}
+      label="Lights on"
+      hint="You can control the lights"
+      />
+  ))
+  .add('With label & hint (rtl)', () => (
+    <I18N dir="rtl">
+      <Radio
+        value={true}
+        label="Lights on"
+        hint="You can control the lights"
+        />
+    </I18N>
+  ))
+  .add('Disabled state', () => (
+    <Radio
+      disabled
+      value={true}
+      label="Lights on"
+      hint="You can control the lights"
+      />
+  ));
+
+
 storiesOf('<CheckboxGroupBase />', module)
   .add('Example', () => (
     <CheckboxGroupBase
+      options={[
+        {label: 'A', value: 'a'},
+        {label: 'B', value: 'b'},
+      ]}
+      />
+  ));
+
+storiesOf('<RadioGroupBase />', module)
+  .add('Example', () => (
+    <RadioGroupBase
       options={[
         {label: 'A', value: 'a'},
         {label: 'B', value: 'b'},
@@ -237,6 +304,36 @@ storiesOf('<CheckboxGroup />', module)
   .add('Horizontal layout (rtl)', () => (
     <I18N dir="rtl">
       <CheckboxGroup
+        layout="horizontal"
+        options={[
+          {label: 'A', value: 'a'},
+          {label: 'B', value: 'b'},
+        ]}
+        />
+    </I18N>
+  ));
+
+storiesOf('<RadioGroup />', module)
+  .add('Vertical layout', () => (
+    <RadioGroup
+      options={[
+        {label: 'A', value: 'a'},
+        {label: 'B', value: 'b'},
+      ]}
+      />
+  ))
+  .add('Horizontal layout', () => (
+    <RadioGroup
+      layout="horizontal"
+      options={[
+        {label: 'A', value: 'a'},
+        {label: 'B', value: 'b'},
+      ]}
+      />
+  ))
+  .add('Horizontal layout (rtl)', () => (
+    <I18N dir="rtl">
+      <RadioGroup
         layout="horizontal"
         options={[
           {label: 'A', value: 'a'},
