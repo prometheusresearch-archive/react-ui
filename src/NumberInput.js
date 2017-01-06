@@ -3,7 +3,6 @@
  */
 
 import * as React from 'react';
-import {create} from './stylesheet';
 import Input from './Input';
 
 import {
@@ -11,14 +10,13 @@ import {
   extractValueFromEvent
 } from './FormUtils';
 
-let stylesheet = create({
-  Input: Input,
-});
-
 export default class NumberInput extends React.Component {
 
+  static stylesheet = {
+    Input: Input,
+  };
+
   static defaultProps = {
-    stylesheet,
     value: '',
   };
 
@@ -28,10 +26,10 @@ export default class NumberInput extends React.Component {
   }
 
   render() {
-    let {stylesheet: {Input}, ...props} = this.props;
+    let {Input} = this.constructor.stylesheet;
     return (
       <Input
-        {...props}
+        {...this.props}
         value={this.state.value}
         onChange={this.onChange}
         />

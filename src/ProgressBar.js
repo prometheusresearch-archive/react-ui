@@ -38,11 +38,11 @@ let ProgressBarLabel = style(Block, {
 });
 
 type Props = {
-  progress: number;
-  formatLabel: ({progress: number}) => string | React$Element<*>;
+  progress?: number;
+  formatLabel?: ({progress: number}) => string | React$Element<*>;
 };
 
-export default function ProgressBar({progress, formatLabel}: Props) {
+export default function ProgressBar({progress = 0, formatLabel}: Props) {
   let progressWidth = `${100 * progress}%`;
   let progressLabel = formatLabel ?
     formatLabel({progress}) :

@@ -63,10 +63,9 @@
     "react-test-renderer": "^15.3.1"
   },
   "dependencies": {
-    "@prometheusresearch/react-box": "^0.10.0",
     "color-js": "^1.0.3",
     "invariant": "^2.2.1",
     "lodash": "^4.13.0",
-    "react-stylesheet": "2-beta"
+    "react-stylesheet": "file:../react-stylesheet"
   }
 }
