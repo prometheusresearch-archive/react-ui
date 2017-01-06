@@ -1,56 +1,80 @@
 /**
  * @copyright 2016-present, Prometheus Research, LLC
+ * @flow
  */
 
 import * as React from 'react';
-import {VBox, HBox} from '@prometheusresearch/react-box';
+import {css, style} from 'react-stylesheet';
 
-import {css, style} from '../stylesheet';
+import VBox from '../VBox';
+import HBox from '../HBox';
 import theme from './theme';
 import Title from './Title';
 
 let TopNavigationContainer = style(VBox, {
-  flexDirection: 'column-reverse',
+  base: {
+    flexDirection: 'column-reverse',
+    overflow: 'visible',
+  }
 });
 
 let Top = style(HBox, {
-  boxShadow: theme.header.boxShadow,
-  background: theme.header.background,
-  color: theme.header.text,
-  border: css.none,
-  height: theme.header.height,
-  justifyContent: 'center',
+  base: {
+    overflow: 'visible',
+    boxShadow: theme.header.boxShadow,
+    background: theme.header.background,
+    color: theme.header.text,
+    border: css.none,
+    height: theme.header.height,
+    justifyContent: 'center',
+  }
 });
 
 let PrimaryMenuContainer = style(HBox, {
-  alignItems: 'flex-end',
-  flex: 1,
+  base: {
+    alignItems: 'flex-end',
+    overflow: 'visible',
+    flex: '1',
+  }
 });
 
 let SecondaryMenuContainer = style(HBox, {
-  boxShadow: theme.subHeader.boxShadow,
-  background: theme.subHeader.background,
-  color: theme.subHeader.text,
-  border: css.display.block,
-  height: theme.subHeader.height,
-  paddingLeft: 208,
-  width: '100%',
+  base: {
+    boxShadow: theme.subHeader.boxShadow,
+    background: theme.subHeader.background,
+    color: theme.subHeader.text,
+    border: css.display.block,
+    height: theme.subHeader.height,
+    paddingLeft: 208,
+    width: '100%',
+  },
   collapsed: {
     height: 5
   },
 });
 
 let ApplicationTitleContainer = style(VBox, {
-  justifyContent: 'flex-end',
-  padding: '5px 10px',
+  base: {
+    justifyContent: 'flex-end',
+    padding: '5px 10px',
+  }
 });
 
 let ApplicationMenuContainer = style(HBox, {
-  alignItems: 'flex-start',
-  marginRight: 5
+  base: {
+    alignItems: 'flex-start',
+    marginRight: 5
+  }
 });
 
 export default class Navigation extends React.Component {
+
+  props: {
+    title: ?string | React.Element<*>;
+    menu: Array<React.Element<*>>;
+    secondaryMenu: Array<React.Element<*>>;
+    applicationMenu: Array<React.Element<*>>;
+  };
 
   render() {
     let {

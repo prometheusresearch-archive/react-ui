@@ -1,34 +1,42 @@
 /**
  * @copyright 2016-present, Prometheus Research, LLC
+ * @flow
  */
 
-import {css, style} from '../stylesheet';
+import {css, style} from 'react-stylesheet';
 import ButtonBase from '../ButtonBase';
 import theme from './theme';
 
-export default style(ButtonBase, {
-  Root: {
-    Component: 'a',
-    display: 'inline-flex',
-    alignItems: 'center',
-    textDecoration: 'none',
-    cursor: 'pointer',
-    fontWeight: 400,
-    textShadow: theme.subHeader.textShadow,
-    fontSize: '10pt',
-    position: 'relative',
-    color: theme.subHeader.text,
-    background: theme.subHeader.background,
-    border: css.none,
-    height: theme.subHeader.height,
-    padding: css.padding(0, 25),
-    borderTop: css.border(4, theme.subHeader.background),
-    borderBottom: css.border(4, theme.subHeader.background),
-    open: {
-      borderBottom: css.border(5, theme.header.background),
-    },
-    focus: {
-      outline: css.none,
-    },
-  }
-});
+export default class SecondaryButton extends ButtonBase {
+
+  static stylesheet = {
+    ...ButtonBase.stylesheet,
+    Root: style('a', {
+      base: {
+        display: 'inline-flex',
+        alignItems: 'center',
+        textDecoration: 'none',
+        cursor: 'pointer',
+        fontWeight: 400,
+        textShadow: theme.subHeader.textShadow,
+        fontSize: '10pt',
+        position: 'relative',
+        color: theme.subHeader.text,
+        border: css.none,
+        height: theme.subHeader.height,
+        padding: css.padding(0, 25),
+        hover: {
+          background: theme.subHeader.background,
+          borderTop: css.border(4, theme.subHeader.background),
+          borderBottom: css.border(4, theme.subHeader.background),
+        },
+        focus: {
+          outline: css.none,
+        },
+      },
+      open: {
+        borderBottom: css.border(5, theme.header.background),
+      },
+    }),
+  };
+}

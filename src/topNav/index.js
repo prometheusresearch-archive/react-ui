@@ -2,8 +2,8 @@
  * @copyright 2016-present, Prometheus Research, LLC
  */
 
-export Title from './Title';
-export PrimaryButton from './PrimaryButton';
+export {default as Title} from './Title';
+export {default as PrimaryButton} from './PrimaryButton';
 export {PrimaryMenu, PrimaryMenuItem} from './PrimaryMenu';
-export SecondaryButton from './SecondaryButton';
-export Navigation from './Navigation';
+export {default as SecondaryButton} from './SecondaryButton';
+export {default as Navigation} from './Navigation';

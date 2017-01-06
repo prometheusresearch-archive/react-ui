@@ -1,8 +1,10 @@
 /**
  * @copyright 2016-present, Prometheus Research, LLC
+ * @flow
  */
 
-import {css, color} from '../stylesheet';
+import {css} from 'react-stylesheet';
+import color from 'color-js';
 import {brandColors} from '../theme';
 
 function makeTheme({primaryColor, secondaryColor}) {
@@ -14,6 +16,7 @@ function makeTheme({primaryColor, secondaryColor}) {
     height: 50,
     background: primaryColor.toCSS(),
     text: '#FFFFFF',
+    textShadow: 'none',
     boxShadow: css.boxShadow(0, 1, 0, 0, primaryColor.darkenByRatio(0.2).toCSS()),
     hover: {
       background: primaryColor.lightenByRatio(0.2).saturateByRatio(0.3).toCSS()
@@ -32,6 +35,7 @@ function makeTheme({primaryColor, secondaryColor}) {
     background: secondaryColor.toCSS(),
     text: '#FFFFFF',
     boxShadow: css.boxShadow(0, 1, 0, 0, secondaryColor.darkenByRatio(0.2).toCSS()),
+    textShadow: 'none',
     hover: {
       background: radialGradient(
         'ellipse at 50% 55%',

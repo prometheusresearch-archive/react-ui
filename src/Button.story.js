@@ -7,7 +7,7 @@ import {storiesOf} from '@kadira/storybook';
 import Button from './Button';
 import I18N from './I18N';
 
-export function createButtonStories(Button) {
+export function createButtonStories(Button: any) {
   storiesOf(`<${Button.displayName || Button.name} />`, module)
     .add('Default state', () =>
       <Button>Click me</Button>
