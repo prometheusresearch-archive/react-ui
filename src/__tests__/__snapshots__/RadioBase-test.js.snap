@@ -5,30 +5,30 @@ exports[`test does not triggerd onChange on label click if disabled 1`] = `
     Object {
       "disabled": true,
       "ltr": true,
-      "rtl": false
+      "rtl": false,
     }
   }>
   <input
     aria-labelledby="aria3"
     checked={false}
     disabled={true}
-    inputRef={[Function anonymous]}
-    onChange={[Function anonymous]}
+    inputRef={[Function]}
+    onChange={[Function]}
     type="radio"
     variant={
       Object {
         "disabled": true,
         "ltr": true,
-        "rtl": false
+        "rtl": false,
       }
     } />
   <div
-    onClick={[Function anonymous]}
+    onClick={[Function]}
     variant={
       Object {
         "disabled": true,
         "ltr": true,
-        "rtl": false
+        "rtl": false,
       }
     }>
     <div
@@ -37,7 +37,7 @@ exports[`test does not triggerd onChange on label click if disabled 1`] = `
         Object {
           "disabled": true,
           "ltr": true,
-          "rtl": false
+          "rtl": false,
         }
       }>
       OK
@@ -47,7 +47,7 @@ exports[`test does not triggerd onChange on label click if disabled 1`] = `
         Object {
           "disabled": true,
           "ltr": true,
-          "rtl": false
+          "rtl": false,
         }
       } />
   </div>
@@ -61,21 +61,21 @@ exports[`test triggers onChange on input 1`] = `
     Object {
       "disabled": undefined,
       "ltr": true,
-      "rtl": false
+      "rtl": false,
     }
   }>
   <input
     aria-labelledby="aria1"
     checked={false}
     disabled={undefined}
-    inputRef={[Function anonymous]}
-    onChange={[Function anonymous]}
+    inputRef={[Function]}
+    onChange={[Function]}
     type="radio"
     variant={
       Object {
         "disabled": undefined,
         "ltr": true,
-        "rtl": false
+        "rtl": false,
       }
     } />
 </div>
@@ -88,30 +88,30 @@ exports[`test triggers onChange on label click 1`] = `
     Object {
       "disabled": undefined,
       "ltr": true,
-      "rtl": false
+      "rtl": false,
     }
   }>
   <input
     aria-labelledby="aria2"
     checked={false}
     disabled={undefined}
-    inputRef={[Function anonymous]}
-    onChange={[Function anonymous]}
+    inputRef={[Function]}
+    onChange={[Function]}
     type="radio"
     variant={
       Object {
         "disabled": undefined,
         "ltr": true,
-        "rtl": false
+        "rtl": false,
       }
     } />
   <div
-    onClick={[Function anonymous]}
+    onClick={[Function]}
     variant={
       Object {
         "disabled": undefined,
         "ltr": true,
-        "rtl": false
+        "rtl": false,
       }
     }>
     <div
@@ -120,7 +120,7 @@ exports[`test triggers onChange on label click 1`] = `
         Object {
           "disabled": undefined,
           "ltr": true,
-          "rtl": false
+          "rtl": false,
         }
       }>
       OK
@@ -130,7 +130,7 @@ exports[`test triggers onChange on label click 1`] = `
         Object {
           "disabled": undefined,
           "ltr": true,
-          "rtl": false
+          "rtl": false,
         }
       } />
   </div>

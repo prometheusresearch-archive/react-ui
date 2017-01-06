@@ -1,35 +1,35 @@
 exports[`test renders 1`] = `
 <div
-  className="div--213234647"
-  onBlur={[Function anonymous]}
-  onFocus={[Function anonymous]}
-  onKeyDown={[Function anonymous]}
+  className="div-1648223554"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
   tabIndex={0}>
   <div
-    className="div--177721320 div--vertical--177721320">
+    className="div-2379509982 div-vertical-2379509982">
     <div
       title={undefined}
       variant={
         Object {
           "disabled": undefined,
           "ltr": true,
-          "rtl": false
+          "rtl": false,
         }
       }>
       <input
         aria-labelledby="aria1"
         checked={true}
-        className="input--125707658"
+        className="input-161314557"
         disabled={undefined}
-        inputRef={[Function anonymous]}
+        inputRef={[Function]}
         onBlur={undefined}
-        onChange={[Function anonymous]}
+        onChange={[Function]}
         onFocus={undefined}
         tabIndex={-1}
         type="checkbox" />
       <div
-        className="Block--671161322 Block--ltr--671161322"
-        onClick={[Function anonymous]}
+        className="Block-2087937970 Block-ltr-2087937970"
+        onClick={[Function]}
         style={
           Object {
             "bottom": undefined,
@@ -55,44 +55,44 @@ exports[`test renders 1`] = `
             "top": undefined,
             "verticalAlign": undefined,
             "whiteSpace": undefined,
-            "width": undefined
+            "width": undefined,
           }
         }>
         <div
-          className="div--2240660900"
+          className="div-4001537281"
           id="aria1">
           A
         </div>
         <div
-          className="div--3582280542" />
+          className="div-2120500968" />
       </div>
     </div>
   </div>
   <div
-    className="div--177721320 div--vertical--177721320">
+    className="div-2379509982 div-vertical-2379509982">
     <div
       title={undefined}
       variant={
         Object {
           "disabled": undefined,
           "ltr": true,
-          "rtl": false
+          "rtl": false,
         }
       }>
       <input
         aria-labelledby="aria2"
         checked={false}
-        className="input--125707658"
+        className="input-161314557"
         disabled={undefined}
-        inputRef={[Function anonymous]}
+        inputRef={[Function]}
         onBlur={undefined}
-        onChange={[Function anonymous]}
+        onChange={[Function]}
         onFocus={undefined}
         tabIndex={-1}
         type="checkbox" />
       <div
-        className="Block--671161322 Block--ltr--671161322"
-        onClick={[Function anonymous]}
+        className="Block-2087937970 Block-ltr-2087937970"
+        onClick={[Function]}
         style={
           Object {
             "bottom": undefined,
@@ -118,16 +118,16 @@ exports[`test renders 1`] = `
             "top": undefined,
             "verticalAlign": undefined,
             "whiteSpace": undefined,
-            "width": undefined
+            "width": undefined,
           }
         }>
         <div
-          className="div--2240660900"
+          className="div-4001537281"
           id="aria2">
           B
         </div>
         <div
-          className="div--3582280542" />
+          className="div-2120500968" />
       </div>
     </div>
   </div>

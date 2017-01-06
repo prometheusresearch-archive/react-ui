@@ -8,11 +8,6 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "babel": {
-    "presets": [
-      "prometheusresearch"
-    ]
-  },
   "eslintConfig": {
     "extends": "prometheusresearch",
     "env": {
@@ -36,6 +31,24 @@
     "url": "https://github.com/prometheusresearch/react-ui/issues"
   },
   "homepage": "https://github.com/prometheusresearch/react-ui#readme",
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>[/\\\\](build|docs|node_modules)[/\\\\]"
+    ],
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+    ]
+  },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.3.1"
   },
@@ -43,7 +56,7 @@
     "@kadira/storybook": "^2.21.0",
     "babel-cli": "^6.9.0",
     "babel-core": "^6.9.0",
-    "babel-jest": "^15.0.0",
+    "babel-jest": "^17.0.0",
     "babel-preset-prometheusresearch": "^0.1.0",
     "conventional-changelog-cli": "^1.2.0",
     "eslint": "^2.10.2",
@@ -52,7 +65,7 @@
     "flow-bin": "^0.37.0",
     "flow-coverage-report": "^0.2.0",
     "indent-string": "^2.1.0",
-    "jest-cli": "^15.1.1",
+    "jest-cli": "^17.0.0",
     "lodash": "^4.13.0",
     "normalize.css": "^4.1.1",
     "power-assert": "^1.4.1",
@@ -60,12 +73,14 @@
     "react-addons-test-utils": "^15.3.1",
     "react-dom": "^15.3.1",
     "react-icons": "^2.1.0",
-    "react-test-renderer": "^15.3.1"
+    "react-test-renderer": "^15.3.1",
+    "storyshots": "^3.2.0"
   },
   "dependencies": {
     "color-js": "^1.0.3",
     "invariant": "^2.2.1",
     "lodash": "^4.13.0",
+    "react-scripts": "^0.8.4",
     "react-stylesheet": "2.0.0-beta.15"
   }
 }

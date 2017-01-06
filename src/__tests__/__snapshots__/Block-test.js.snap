@@ -25,7 +25,7 @@ exports[`i18n props processes float="end" 1`] = `
       "top": undefined,
       "verticalAlign": undefined,
       "whiteSpace": undefined,
-      "width": undefined
+      "width": undefined,
     }
   } />
 `;
@@ -59,7 +59,7 @@ exports[`i18n props processes float="end" 2`] = `
         "top": undefined,
         "verticalAlign": undefined,
         "whiteSpace": undefined,
-        "width": undefined
+        "width": undefined,
       }
     } />
 </div>
@@ -92,7 +92,7 @@ exports[`i18n props processes float="start" 1`] = `
       "top": undefined,
       "verticalAlign": undefined,
       "whiteSpace": undefined,
-      "width": undefined
+      "width": undefined,
     }
   } />
 `;
@@ -126,7 +126,7 @@ exports[`i18n props processes float="start" 2`] = `
         "top": undefined,
         "verticalAlign": undefined,
         "whiteSpace": undefined,
-        "width": undefined
+        "width": undefined,
       }
     } />
 </div>
@@ -159,7 +159,7 @@ exports[`i18n props processes marginStart/marginEnd 1`] = `
       "top": undefined,
       "verticalAlign": undefined,
       "whiteSpace": undefined,
-      "width": undefined
+      "width": undefined,
     }
   } />
 `;
@@ -193,7 +193,7 @@ exports[`i18n props processes marginStart/marginEnd 2`] = `
         "top": undefined,
         "verticalAlign": undefined,
         "whiteSpace": undefined,
-        "width": undefined
+        "width": undefined,
       }
     } />
 </div>
@@ -226,7 +226,7 @@ exports[`i18n props processes paddingStart/paddingEnd 1`] = `
       "top": undefined,
       "verticalAlign": undefined,
       "whiteSpace": undefined,
-      "width": undefined
+      "width": undefined,
     }
   } />
 `;
@@ -260,7 +260,7 @@ exports[`i18n props processes paddingStart/paddingEnd 2`] = `
         "top": undefined,
         "verticalAlign": undefined,
         "whiteSpace": undefined,
-        "width": undefined
+        "width": undefined,
       }
     } />
 </div>
@@ -293,7 +293,7 @@ exports[`i18n props processes positionStart/positionEnd 1`] = `
       "top": undefined,
       "verticalAlign": undefined,
       "whiteSpace": undefined,
-      "width": undefined
+      "width": undefined,
     }
   } />
 `;
@@ -327,7 +327,7 @@ exports[`i18n props processes positionStart/positionEnd 2`] = `
         "top": undefined,
         "verticalAlign": undefined,
         "whiteSpace": undefined,
-        "width": undefined
+        "width": undefined,
       }
     } />
 </div>
@@ -360,7 +360,7 @@ exports[`i18n props processes textAlign="end" 1`] = `
       "top": undefined,
       "verticalAlign": undefined,
       "whiteSpace": undefined,
-      "width": undefined
+      "width": undefined,
     }
   }
   testAlign="end" />
@@ -395,7 +395,7 @@ exports[`i18n props processes textAlign="end" 2`] = `
         "top": undefined,
         "verticalAlign": undefined,
         "whiteSpace": undefined,
-        "width": undefined
+        "width": undefined,
       }
     } />
 </div>
@@ -428,7 +428,7 @@ exports[`i18n props processes textAlign="start" 1`] = `
       "top": undefined,
       "verticalAlign": undefined,
       "whiteSpace": undefined,
-      "width": undefined
+      "width": undefined,
     }
   } />
 `;
@@ -462,7 +462,7 @@ exports[`i18n props processes textAlign="start" 2`] = `
         "top": undefined,
         "verticalAlign": undefined,
         "whiteSpace": undefined,
-        "width": undefined
+        "width": undefined,
       }
     } />
 </div>

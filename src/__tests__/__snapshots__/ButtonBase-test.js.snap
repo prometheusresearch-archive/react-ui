@@ -1,7 +1,7 @@
 exports[`test renders with icon and caption 1`] = `
 <button
   aria-pressed={undefined}
-  className="button--2864346000"
+  className="button-2121099832"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -9,16 +9,21 @@ exports[`test renders with icon and caption 1`] = `
     Object {
       "height": undefined,
       "textAlign": undefined,
-      "width": undefined
+      "width": undefined,
     }
   }>
   <div
-    className="div--457433472">
-    <span
-      name="plus" />
+    className="div-2772671"
+    style={
+      Object {
+        "marginLeft": 0,
+        "marginRight": 4,
+      }
+    }>
+    plus
   </div>
   <div
-    className="div--457433472">
+    className="div-2772671">
     Caption
   </div>
 </button>
@@ -27,7 +32,7 @@ exports[`test renders with icon and caption 1`] = `
 exports[`test renders with just caption 1`] = `
 <button
   aria-pressed={undefined}
-  className="button--2864346000"
+  className="button-2121099832"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -35,11 +40,11 @@ exports[`test renders with just caption 1`] = `
     Object {
       "height": undefined,
       "textAlign": undefined,
-      "width": undefined
+      "width": undefined,
     }
   }>
   <div
-    className="div--457433472">
+    className="div-2772671">
     OK
   </div>
 </button>
@@ -48,7 +53,7 @@ exports[`test renders with just caption 1`] = `
 exports[`test renders with just icon (element) 1`] = `
 <button
   aria-pressed={undefined}
-  className="button--2864346000"
+  className="button-2121099832"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -56,11 +61,17 @@ exports[`test renders with just icon (element) 1`] = `
     Object {
       "height": undefined,
       "textAlign": undefined,
-      "width": undefined
+      "width": undefined,
     }
   }>
   <div
-    className="div--457433472">
+    className="div-2772671"
+    style={
+      Object {
+        "marginLeft": 0,
+        "marginRight": 4,
+      }
+    }>
     <icon />
   </div>
 </button>
@@ -69,7 +80,7 @@ exports[`test renders with just icon (element) 1`] = `
 exports[`test renders with just icon (text) 1`] = `
 <button
   aria-pressed={undefined}
-  className="button--2864346000"
+  className="button-2121099832"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -77,13 +88,18 @@ exports[`test renders with just icon (text) 1`] = `
     Object {
       "height": undefined,
       "textAlign": undefined,
-      "width": undefined
+      "width": undefined,
     }
   }>
   <div
-    className="div--457433472">
-    <span
-      name="plus" />
+    className="div-2772671"
+    style={
+      Object {
+        "marginLeft": 0,
+        "marginRight": 4,
+      }
+    }>
+    plus
   </div>
 </button>
 `;

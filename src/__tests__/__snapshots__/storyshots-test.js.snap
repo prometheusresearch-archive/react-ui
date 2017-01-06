@@ -1,0 +1,6904 @@
+exports[`Storyshots <Button /> Default state 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-21528751 button-normal-21528751"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <Button /> Grouped horizontally (rtl) 1`] = `
+<div
+  dir="rtl">
+  <div>
+    <button
+      aria-pressed={undefined}
+      className="button-21528751  button-groupHorizontally-rtl-21528751 button-normal-21528751"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        Add
+      </div>
+    </button>
+    <button
+      aria-pressed={undefined}
+      className="button-21528751  button-groupHorizontally-rtl-21528751 button-normal-21528751"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        Remove
+      </div>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <Button /> Grouped horizontally 1`] = `
+<div>
+  <button
+    aria-pressed={undefined}
+    className="button-21528751  button-groupHorizontally-ltr-21528751 button-normal-21528751"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-21528751  button-groupHorizontally-ltr-21528751 button-normal-21528751"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Remove
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <Button /> Grouped vertically 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }>
+  <button
+    aria-pressed={undefined}
+    className="button-21528751 button-groupVertically-21528751 button-normal-21528751"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-21528751 button-groupVertically-21528751 button-normal-21528751"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Remove
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <Button /> Size: large 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-21528751 button-large-21528751"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <Button /> Size: normal 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-21528751 button-normal-21528751"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <Button /> Size: small 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-21528751 button-small-21528751"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <Button /> Size: x-small 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-21528751 button-xSmall-21528751"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <Button /> With icon (alternative) 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-21528751 button-normal-21528751"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Add
+  </div>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 4,
+        "marginRight": 0,
+      }
+    }>
+    +
+  </div>
+</button>
+`;
+
+exports[`Storyshots <Button /> With icon 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-21528751 button-normal-21528751"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 0,
+        "marginRight": 4,
+      }
+    }>
+    +
+  </div>
+  <div
+    className="div-2772671">
+    Add
+  </div>
+</button>
+`;
+
+exports[`Storyshots <ButtonBase /> Default state 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2121099832"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <Card /> Basic 1`] = `
+<div
+  className="Block-2497921398"
+  style={
+    Object {
+      "bottom": undefined,
+      "display": undefined,
+      "float": undefined,
+      "height": undefined,
+      "left": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "maxHeight": undefined,
+      "maxWidth": undefined,
+      "minHeight": undefined,
+      "minWidth": undefined,
+      "paddingBottom": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "position": "relative",
+      "right": undefined,
+      "textAlign": undefined,
+      "top": undefined,
+      "verticalAlign": undefined,
+      "whiteSpace": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="Block-425503661"
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    Card content
+  </div>
+</div>
+`;
+
+exports[`Storyshots <Card /> Basic with padding 1`] = `
+<div
+  className="Block-2497921398"
+  style={
+    Object {
+      "bottom": undefined,
+      "display": undefined,
+      "float": undefined,
+      "height": undefined,
+      "left": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "maxHeight": undefined,
+      "maxWidth": undefined,
+      "minHeight": undefined,
+      "minWidth": undefined,
+      "paddingBottom": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "position": "relative",
+      "right": undefined,
+      "textAlign": undefined,
+      "top": undefined,
+      "verticalAlign": undefined,
+      "whiteSpace": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="Block-425503661"
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    Card content
+  </div>
+</div>
+`;
+
+exports[`Storyshots <Card /> Success variant 1`] = `
+<div
+  className="Block-2497921398 Block-success-2497921398"
+  style={
+    Object {
+      "bottom": undefined,
+      "display": undefined,
+      "float": undefined,
+      "height": undefined,
+      "left": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "maxHeight": undefined,
+      "maxWidth": undefined,
+      "minHeight": undefined,
+      "minWidth": undefined,
+      "paddingBottom": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "position": "relative",
+      "right": undefined,
+      "textAlign": undefined,
+      "top": undefined,
+      "verticalAlign": undefined,
+      "whiteSpace": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="Block-952277273 Block-success-952277273"
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    Header
+  </div>
+  <div
+    className="Block-425503661 Block-success-425503661"
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    Card content
+  </div>
+  <div
+    className="Block-852971618 Block-success-852971618"
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    Footer
+  </div>
+</div>
+`;
+
+exports[`Storyshots <Card /> With card item 1`] = `
+<div
+  className="Block-2497921398"
+  style={
+    Object {
+      "bottom": undefined,
+      "display": undefined,
+      "float": undefined,
+      "height": undefined,
+      "left": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "maxHeight": undefined,
+      "maxWidth": undefined,
+      "minHeight": undefined,
+      "minWidth": undefined,
+      "paddingBottom": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "position": "relative",
+      "right": undefined,
+      "textAlign": undefined,
+      "top": undefined,
+      "verticalAlign": undefined,
+      "whiteSpace": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="Block-425503661"
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="Block-2137046575"
+      style={
+        Object {
+          "bottom": undefined,
+          "display": undefined,
+          "float": undefined,
+          "height": undefined,
+          "left": undefined,
+          "marginBottom": undefined,
+          "marginLeft": undefined,
+          "marginRight": undefined,
+          "marginTop": undefined,
+          "maxHeight": undefined,
+          "maxWidth": undefined,
+          "minHeight": undefined,
+          "minWidth": undefined,
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "position": "relative",
+          "right": undefined,
+          "textAlign": undefined,
+          "top": undefined,
+          "verticalAlign": undefined,
+          "whiteSpace": undefined,
+          "width": undefined,
+        }
+      }>
+      Item 1
+    </div>
+    <div
+      className="Block-2137046575"
+      style={
+        Object {
+          "bottom": undefined,
+          "display": undefined,
+          "float": undefined,
+          "height": undefined,
+          "left": undefined,
+          "marginBottom": undefined,
+          "marginLeft": undefined,
+          "marginRight": undefined,
+          "marginTop": undefined,
+          "maxHeight": undefined,
+          "maxWidth": undefined,
+          "minHeight": undefined,
+          "minWidth": undefined,
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "position": "relative",
+          "right": undefined,
+          "textAlign": undefined,
+          "top": undefined,
+          "verticalAlign": undefined,
+          "whiteSpace": undefined,
+          "width": undefined,
+        }
+      }>
+      Item 2
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <Card /> With footer 1`] = `
+<div
+  className="Block-2497921398"
+  style={
+    Object {
+      "bottom": undefined,
+      "display": undefined,
+      "float": undefined,
+      "height": undefined,
+      "left": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "maxHeight": undefined,
+      "maxWidth": undefined,
+      "minHeight": undefined,
+      "minWidth": undefined,
+      "paddingBottom": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "position": "relative",
+      "right": undefined,
+      "textAlign": undefined,
+      "top": undefined,
+      "verticalAlign": undefined,
+      "whiteSpace": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="Block-425503661"
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    Card content
+  </div>
+  <div
+    className="Block-852971618"
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    Footer
+  </div>
+</div>
+`;
+
+exports[`Storyshots <Card /> With header & footer 1`] = `
+<div
+  className="Block-2497921398"
+  style={
+    Object {
+      "bottom": undefined,
+      "display": undefined,
+      "float": undefined,
+      "height": undefined,
+      "left": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "maxHeight": undefined,
+      "maxWidth": undefined,
+      "minHeight": undefined,
+      "minWidth": undefined,
+      "paddingBottom": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "position": "relative",
+      "right": undefined,
+      "textAlign": undefined,
+      "top": undefined,
+      "verticalAlign": undefined,
+      "whiteSpace": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="Block-952277273"
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    Header
+  </div>
+  <div
+    className="Block-425503661"
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    Card content
+  </div>
+  <div
+    className="Block-852971618"
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    Footer
+  </div>
+</div>
+`;
+
+exports[`Storyshots <Card /> With header 1`] = `
+<div
+  className="Block-2497921398"
+  style={
+    Object {
+      "bottom": undefined,
+      "display": undefined,
+      "float": undefined,
+      "height": undefined,
+      "left": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "maxHeight": undefined,
+      "maxWidth": undefined,
+      "minHeight": undefined,
+      "minWidth": undefined,
+      "paddingBottom": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "position": "relative",
+      "right": undefined,
+      "textAlign": undefined,
+      "top": undefined,
+      "verticalAlign": undefined,
+      "whiteSpace": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="Block-952277273"
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    Header
+  </div>
+  <div
+    className="Block-425503661"
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    Card content
+  </div>
+</div>
+`;
+
+exports[`Storyshots <Checkbox/> Disabled state 1`] = `
+<div
+  title={undefined}
+  variant={
+    Object {
+      "disabled": true,
+      "ltr": true,
+      "rtl": false,
+    }
+  }>
+  <input
+    aria-labelledby="aria6"
+    checked={true}
+    className="input-161314557 input-disabled-161314557"
+    disabled={true}
+    inputRef={[Function]}
+    onChange={[Function]}
+    type="checkbox" />
+  <div
+    className="Block-2087937970 Block-ltr-2087937970"
+    onClick={[Function]}
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-4001537281 div-disabled-4001537281"
+      id="aria6">
+      Lights on
+    </div>
+    <div
+      className="div-2120500968 div-disabled-2120500968">
+      You can control the lights
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <Checkbox/> Off state 1`] = `
+<div
+  title={undefined}
+  variant={
+    Object {
+      "disabled": undefined,
+      "ltr": true,
+      "rtl": false,
+    }
+  }>
+  <input
+    aria-labelledby="aria1"
+    checked={false}
+    className="input-161314557"
+    disabled={undefined}
+    inputRef={[Function]}
+    onChange={[Function]}
+    type="checkbox" />
+</div>
+`;
+
+exports[`Storyshots <Checkbox/> On state 1`] = `
+<div
+  title={undefined}
+  variant={
+    Object {
+      "disabled": undefined,
+      "ltr": true,
+      "rtl": false,
+    }
+  }>
+  <input
+    aria-labelledby="aria2"
+    checked={true}
+    className="input-161314557"
+    disabled={undefined}
+    inputRef={[Function]}
+    onChange={[Function]}
+    type="checkbox" />
+</div>
+`;
+
+exports[`Storyshots <Checkbox/> With label & hint (rtl) 1`] = `
+<div
+  dir="rtl">
+  <div
+    title={undefined}
+    variant={
+      Object {
+        "disabled": undefined,
+        "ltr": false,
+        "rtl": true,
+      }
+    }>
+    <input
+      aria-labelledby="aria5"
+      checked={true}
+      className="input-161314557"
+      disabled={undefined}
+      inputRef={[Function]}
+      onChange={[Function]}
+      type="checkbox" />
+    <div
+      className="Block-2087937970 Block-rtl-2087937970"
+      onClick={[Function]}
+      style={
+        Object {
+          "bottom": undefined,
+          "display": undefined,
+          "float": undefined,
+          "height": undefined,
+          "left": undefined,
+          "marginBottom": undefined,
+          "marginLeft": undefined,
+          "marginRight": undefined,
+          "marginTop": undefined,
+          "maxHeight": undefined,
+          "maxWidth": undefined,
+          "minHeight": undefined,
+          "minWidth": undefined,
+          "paddingBottom": undefined,
+          "paddingLeft": undefined,
+          "paddingRight": undefined,
+          "paddingTop": undefined,
+          "position": "relative",
+          "right": undefined,
+          "textAlign": undefined,
+          "top": undefined,
+          "verticalAlign": undefined,
+          "whiteSpace": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-4001537281"
+        id="aria5">
+        Lights on
+      </div>
+      <div
+        className="div-2120500968">
+        You can control the lights
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <Checkbox/> With label & hint 1`] = `
+<div
+  title={undefined}
+  variant={
+    Object {
+      "disabled": undefined,
+      "ltr": true,
+      "rtl": false,
+    }
+  }>
+  <input
+    aria-labelledby="aria4"
+    checked={true}
+    className="input-161314557"
+    disabled={undefined}
+    inputRef={[Function]}
+    onChange={[Function]}
+    type="checkbox" />
+  <div
+    className="Block-2087937970 Block-ltr-2087937970"
+    onClick={[Function]}
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-4001537281"
+      id="aria4">
+      Lights on
+    </div>
+    <div
+      className="div-2120500968">
+      You can control the lights
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <Checkbox/> With label 1`] = `
+<div
+  title={undefined}
+  variant={
+    Object {
+      "disabled": undefined,
+      "ltr": true,
+      "rtl": false,
+    }
+  }>
+  <input
+    aria-labelledby="aria3"
+    checked={true}
+    className="input-161314557"
+    disabled={undefined}
+    inputRef={[Function]}
+    onChange={[Function]}
+    type="checkbox" />
+  <div
+    className="Block-2087937970 Block-ltr-2087937970"
+    onClick={[Function]}
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-4001537281"
+      id="aria3">
+      Lights on
+    </div>
+    <div
+      className="div-2120500968" />
+  </div>
+</div>
+`;
+
+exports[`Storyshots <CheckboxBase /> Off state 1`] = `
+<div
+  title={undefined}
+  variant={
+    Object {
+      "disabled": undefined,
+      "ltr": true,
+      "rtl": false,
+    }
+  }>
+  <input
+    aria-labelledby="aria7"
+    checked={false}
+    disabled={undefined}
+    inputRef={[Function]}
+    onChange={[Function]}
+    type="checkbox"
+    variant={
+      Object {
+        "disabled": undefined,
+        "ltr": true,
+        "rtl": false,
+      }
+    } />
+</div>
+`;
+
+exports[`Storyshots <CheckboxBase /> On state 1`] = `
+<div
+  title={undefined}
+  variant={
+    Object {
+      "disabled": undefined,
+      "ltr": true,
+      "rtl": false,
+    }
+  }>
+  <input
+    aria-labelledby="aria8"
+    checked={true}
+    disabled={undefined}
+    inputRef={[Function]}
+    onChange={[Function]}
+    type="checkbox"
+    variant={
+      Object {
+        "disabled": undefined,
+        "ltr": true,
+        "rtl": false,
+      }
+    } />
+</div>
+`;
+
+exports[`Storyshots <CheckboxGroup /> Horizontal layout (rtl) 1`] = `
+<div
+  dir="rtl">
+  <div
+    className="div-1648223554"
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    tabIndex={0}>
+    <div
+      className="div-2379509982 div-horizontal-2379509982 div-horizontal-rtl-2379509982">
+      <div
+        title={undefined}
+        variant={
+          Object {
+            "disabled": undefined,
+            "ltr": false,
+            "rtl": true,
+          }
+        }>
+        <input
+          aria-labelledby="aria13"
+          checked={false}
+          className="input-161314557"
+          disabled={undefined}
+          inputRef={[Function]}
+          onBlur={undefined}
+          onChange={[Function]}
+          onFocus={undefined}
+          tabIndex={-1}
+          type="checkbox" />
+        <div
+          className="Block-2087937970 Block-rtl-2087937970"
+          onClick={[Function]}
+          style={
+            Object {
+              "bottom": undefined,
+              "display": undefined,
+              "float": undefined,
+              "height": undefined,
+              "left": undefined,
+              "marginBottom": undefined,
+              "marginLeft": undefined,
+              "marginRight": undefined,
+              "marginTop": undefined,
+              "maxHeight": undefined,
+              "maxWidth": undefined,
+              "minHeight": undefined,
+              "minWidth": undefined,
+              "paddingBottom": undefined,
+              "paddingLeft": undefined,
+              "paddingRight": undefined,
+              "paddingTop": undefined,
+              "position": "relative",
+              "right": undefined,
+              "textAlign": undefined,
+              "top": undefined,
+              "verticalAlign": undefined,
+              "whiteSpace": undefined,
+              "width": undefined,
+            }
+          }>
+          <div
+            className="div-4001537281"
+            id="aria13">
+            A
+          </div>
+          <div
+            className="div-2120500968" />
+        </div>
+      </div>
+    </div>
+    <div
+      className="div-2379509982 div-horizontal-2379509982 div-horizontal-rtl-2379509982">
+      <div
+        title={undefined}
+        variant={
+          Object {
+            "disabled": undefined,
+            "ltr": false,
+            "rtl": true,
+          }
+        }>
+        <input
+          aria-labelledby="aria14"
+          checked={false}
+          className="input-161314557"
+          disabled={undefined}
+          inputRef={[Function]}
+          onBlur={undefined}
+          onChange={[Function]}
+          onFocus={undefined}
+          tabIndex={-1}
+          type="checkbox" />
+        <div
+          className="Block-2087937970 Block-rtl-2087937970"
+          onClick={[Function]}
+          style={
+            Object {
+              "bottom": undefined,
+              "display": undefined,
+              "float": undefined,
+              "height": undefined,
+              "left": undefined,
+              "marginBottom": undefined,
+              "marginLeft": undefined,
+              "marginRight": undefined,
+              "marginTop": undefined,
+              "maxHeight": undefined,
+              "maxWidth": undefined,
+              "minHeight": undefined,
+              "minWidth": undefined,
+              "paddingBottom": undefined,
+              "paddingLeft": undefined,
+              "paddingRight": undefined,
+              "paddingTop": undefined,
+              "position": "relative",
+              "right": undefined,
+              "textAlign": undefined,
+              "top": undefined,
+              "verticalAlign": undefined,
+              "whiteSpace": undefined,
+              "width": undefined,
+            }
+          }>
+          <div
+            className="div-4001537281"
+            id="aria14">
+            B
+          </div>
+          <div
+            className="div-2120500968" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <CheckboxGroup /> Horizontal layout 1`] = `
+<div
+  className="div-1648223554"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  tabIndex={0}>
+  <div
+    className="div-2379509982 div-horizontal-2379509982 div-horizontal-ltr-2379509982">
+    <div
+      title={undefined}
+      variant={
+        Object {
+          "disabled": undefined,
+          "ltr": true,
+          "rtl": false,
+        }
+      }>
+      <input
+        aria-labelledby="aria11"
+        checked={false}
+        className="input-161314557"
+        disabled={undefined}
+        inputRef={[Function]}
+        onBlur={undefined}
+        onChange={[Function]}
+        onFocus={undefined}
+        tabIndex={-1}
+        type="checkbox" />
+      <div
+        className="Block-2087937970 Block-ltr-2087937970"
+        onClick={[Function]}
+        style={
+          Object {
+            "bottom": undefined,
+            "display": undefined,
+            "float": undefined,
+            "height": undefined,
+            "left": undefined,
+            "marginBottom": undefined,
+            "marginLeft": undefined,
+            "marginRight": undefined,
+            "marginTop": undefined,
+            "maxHeight": undefined,
+            "maxWidth": undefined,
+            "minHeight": undefined,
+            "minWidth": undefined,
+            "paddingBottom": undefined,
+            "paddingLeft": undefined,
+            "paddingRight": undefined,
+            "paddingTop": undefined,
+            "position": "relative",
+            "right": undefined,
+            "textAlign": undefined,
+            "top": undefined,
+            "verticalAlign": undefined,
+            "whiteSpace": undefined,
+            "width": undefined,
+          }
+        }>
+        <div
+          className="div-4001537281"
+          id="aria11">
+          A
+        </div>
+        <div
+          className="div-2120500968" />
+      </div>
+    </div>
+  </div>
+  <div
+    className="div-2379509982 div-horizontal-2379509982 div-horizontal-ltr-2379509982">
+    <div
+      title={undefined}
+      variant={
+        Object {
+          "disabled": undefined,
+          "ltr": true,
+          "rtl": false,
+        }
+      }>
+      <input
+        aria-labelledby="aria12"
+        checked={false}
+        className="input-161314557"
+        disabled={undefined}
+        inputRef={[Function]}
+        onBlur={undefined}
+        onChange={[Function]}
+        onFocus={undefined}
+        tabIndex={-1}
+        type="checkbox" />
+      <div
+        className="Block-2087937970 Block-ltr-2087937970"
+        onClick={[Function]}
+        style={
+          Object {
+            "bottom": undefined,
+            "display": undefined,
+            "float": undefined,
+            "height": undefined,
+            "left": undefined,
+            "marginBottom": undefined,
+            "marginLeft": undefined,
+            "marginRight": undefined,
+            "marginTop": undefined,
+            "maxHeight": undefined,
+            "maxWidth": undefined,
+            "minHeight": undefined,
+            "minWidth": undefined,
+            "paddingBottom": undefined,
+            "paddingLeft": undefined,
+            "paddingRight": undefined,
+            "paddingTop": undefined,
+            "position": "relative",
+            "right": undefined,
+            "textAlign": undefined,
+            "top": undefined,
+            "verticalAlign": undefined,
+            "whiteSpace": undefined,
+            "width": undefined,
+          }
+        }>
+        <div
+          className="div-4001537281"
+          id="aria12">
+          B
+        </div>
+        <div
+          className="div-2120500968" />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <CheckboxGroup /> Vertical layout 1`] = `
+<div
+  className="div-1648223554"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  tabIndex={0}>
+  <div
+    className="div-2379509982 div-vertical-2379509982">
+    <div
+      title={undefined}
+      variant={
+        Object {
+          "disabled": undefined,
+          "ltr": true,
+          "rtl": false,
+        }
+      }>
+      <input
+        aria-labelledby="aria9"
+        checked={false}
+        className="input-161314557"
+        disabled={undefined}
+        inputRef={[Function]}
+        onBlur={undefined}
+        onChange={[Function]}
+        onFocus={undefined}
+        tabIndex={-1}
+        type="checkbox" />
+      <div
+        className="Block-2087937970 Block-ltr-2087937970"
+        onClick={[Function]}
+        style={
+          Object {
+            "bottom": undefined,
+            "display": undefined,
+            "float": undefined,
+            "height": undefined,
+            "left": undefined,
+            "marginBottom": undefined,
+            "marginLeft": undefined,
+            "marginRight": undefined,
+            "marginTop": undefined,
+            "maxHeight": undefined,
+            "maxWidth": undefined,
+            "minHeight": undefined,
+            "minWidth": undefined,
+            "paddingBottom": undefined,
+            "paddingLeft": undefined,
+            "paddingRight": undefined,
+            "paddingTop": undefined,
+            "position": "relative",
+            "right": undefined,
+            "textAlign": undefined,
+            "top": undefined,
+            "verticalAlign": undefined,
+            "whiteSpace": undefined,
+            "width": undefined,
+          }
+        }>
+        <div
+          className="div-4001537281"
+          id="aria9">
+          A
+        </div>
+        <div
+          className="div-2120500968" />
+      </div>
+    </div>
+  </div>
+  <div
+    className="div-2379509982 div-vertical-2379509982">
+    <div
+      title={undefined}
+      variant={
+        Object {
+          "disabled": undefined,
+          "ltr": true,
+          "rtl": false,
+        }
+      }>
+      <input
+        aria-labelledby="aria10"
+        checked={false}
+        className="input-161314557"
+        disabled={undefined}
+        inputRef={[Function]}
+        onBlur={undefined}
+        onChange={[Function]}
+        onFocus={undefined}
+        tabIndex={-1}
+        type="checkbox" />
+      <div
+        className="Block-2087937970 Block-ltr-2087937970"
+        onClick={[Function]}
+        style={
+          Object {
+            "bottom": undefined,
+            "display": undefined,
+            "float": undefined,
+            "height": undefined,
+            "left": undefined,
+            "marginBottom": undefined,
+            "marginLeft": undefined,
+            "marginRight": undefined,
+            "marginTop": undefined,
+            "maxHeight": undefined,
+            "maxWidth": undefined,
+            "minHeight": undefined,
+            "minWidth": undefined,
+            "paddingBottom": undefined,
+            "paddingLeft": undefined,
+            "paddingRight": undefined,
+            "paddingTop": undefined,
+            "position": "relative",
+            "right": undefined,
+            "textAlign": undefined,
+            "top": undefined,
+            "verticalAlign": undefined,
+            "whiteSpace": undefined,
+            "width": undefined,
+          }
+        }>
+        <div
+          className="div-4001537281"
+          id="aria10">
+          B
+        </div>
+        <div
+          className="div-2120500968" />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <CheckboxGroupBase /> Example 1`] = `
+<div
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  tabIndex={0}>
+  <div
+    variant={
+      Object {
+        "disabled": undefined,
+        "horizontal": false,
+        "ltr": true,
+        "rtl": false,
+        "vertical": true,
+      }
+    }>
+    <div
+      title={undefined}
+      variant={
+        Object {
+          "disabled": undefined,
+          "ltr": true,
+          "rtl": false,
+        }
+      }>
+      <input
+        aria-labelledby="aria15"
+        checked={false}
+        disabled={undefined}
+        inputRef={[Function]}
+        onBlur={undefined}
+        onChange={[Function]}
+        onFocus={undefined}
+        tabIndex={-1}
+        type="checkbox"
+        variant={
+          Object {
+            "disabled": undefined,
+            "ltr": true,
+            "rtl": false,
+          }
+        } />
+      <div
+        onClick={[Function]}
+        variant={
+          Object {
+            "disabled": undefined,
+            "ltr": true,
+            "rtl": false,
+          }
+        }>
+        <div
+          id="aria15"
+          variant={
+            Object {
+              "disabled": undefined,
+              "ltr": true,
+              "rtl": false,
+            }
+          }>
+          A
+        </div>
+        <div
+          variant={
+            Object {
+              "disabled": undefined,
+              "ltr": true,
+              "rtl": false,
+            }
+          } />
+      </div>
+    </div>
+  </div>
+  <div
+    variant={
+      Object {
+        "disabled": undefined,
+        "horizontal": false,
+        "ltr": true,
+        "rtl": false,
+        "vertical": true,
+      }
+    }>
+    <div
+      title={undefined}
+      variant={
+        Object {
+          "disabled": undefined,
+          "ltr": true,
+          "rtl": false,
+        }
+      }>
+      <input
+        aria-labelledby="aria16"
+        checked={false}
+        disabled={undefined}
+        inputRef={[Function]}
+        onBlur={undefined}
+        onChange={[Function]}
+        onFocus={undefined}
+        tabIndex={-1}
+        type="checkbox"
+        variant={
+          Object {
+            "disabled": undefined,
+            "ltr": true,
+            "rtl": false,
+          }
+        } />
+      <div
+        onClick={[Function]}
+        variant={
+          Object {
+            "disabled": undefined,
+            "ltr": true,
+            "rtl": false,
+          }
+        }>
+        <div
+          id="aria16"
+          variant={
+            Object {
+              "disabled": undefined,
+              "ltr": true,
+              "rtl": false,
+            }
+          }>
+          B
+        </div>
+        <div
+          variant={
+            Object {
+              "disabled": undefined,
+              "ltr": true,
+              "rtl": false,
+            }
+          } />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <DangerButton /> Default state 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2081366032 button-normal-2081366032"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <DangerButton /> Grouped horizontally (rtl) 1`] = `
+<div
+  dir="rtl">
+  <div>
+    <button
+      aria-pressed={undefined}
+      className="button-2081366032  button-groupHorizontally-rtl-2081366032 button-normal-2081366032"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        Add
+      </div>
+    </button>
+    <button
+      aria-pressed={undefined}
+      className="button-2081366032  button-groupHorizontally-rtl-2081366032 button-normal-2081366032"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        Remove
+      </div>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <DangerButton /> Grouped horizontally 1`] = `
+<div>
+  <button
+    aria-pressed={undefined}
+    className="button-2081366032  button-groupHorizontally-ltr-2081366032 button-normal-2081366032"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-2081366032  button-groupHorizontally-ltr-2081366032 button-normal-2081366032"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Remove
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <DangerButton /> Grouped vertically 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }>
+  <button
+    aria-pressed={undefined}
+    className="button-2081366032 button-groupVertically-2081366032 button-normal-2081366032"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-2081366032 button-groupVertically-2081366032 button-normal-2081366032"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Remove
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <DangerButton /> Size: large 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2081366032 button-large-2081366032"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <DangerButton /> Size: normal 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2081366032 button-normal-2081366032"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <DangerButton /> Size: small 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2081366032 button-small-2081366032"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <DangerButton /> Size: x-small 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2081366032 button-xSmall-2081366032"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <DangerButton /> With icon (alternative) 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2081366032 button-normal-2081366032"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Add
+  </div>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 4,
+        "marginRight": 0,
+      }
+    }>
+    +
+  </div>
+</button>
+`;
+
+exports[`Storyshots <DangerButton /> With icon 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2081366032 button-normal-2081366032"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 0,
+        "marginRight": 4,
+      }
+    }>
+    +
+  </div>
+  <div
+    className="div-2772671">
+    Add
+  </div>
+</button>
+`;
+
+exports[`Storyshots <ErrorText /> Regular 1`] = `
+<span
+  className="ErrorText-4170078621"
+  style={
+    Object {
+      "color": undefined,
+      "fontSize": undefined,
+      "fontWeight": undefined,
+    }
+  }>
+  Error happened
+</span>
+`;
+
+exports[`Storyshots <Field /> Disabled 1`] = `
+<div
+  style={
+    Object {
+      "bottom": undefined,
+      "display": undefined,
+      "float": undefined,
+      "height": undefined,
+      "left": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "maxHeight": undefined,
+      "maxWidth": undefined,
+      "minHeight": undefined,
+      "minWidth": undefined,
+      "paddingBottom": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "position": "relative",
+      "right": undefined,
+      "textAlign": undefined,
+      "top": undefined,
+      "verticalAlign": undefined,
+      "whiteSpace": undefined,
+      "width": undefined,
+    }
+  }
+  variant={
+    Object {
+      "disabled": true,
+      "invalid": undefined,
+    }
+  }>
+  <div
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": 4,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    <label
+      htmlFor="formfield22">
+      <div
+        style={
+          Object {
+            "bottom": undefined,
+            "display": undefined,
+            "float": undefined,
+            "height": undefined,
+            "left": undefined,
+            "marginBottom": undefined,
+            "marginLeft": undefined,
+            "marginRight": undefined,
+            "marginTop": undefined,
+            "maxHeight": undefined,
+            "maxWidth": undefined,
+            "minHeight": undefined,
+            "minWidth": undefined,
+            "paddingBottom": undefined,
+            "paddingLeft": undefined,
+            "paddingRight": undefined,
+            "paddingTop": undefined,
+            "position": "relative",
+            "right": undefined,
+            "textAlign": undefined,
+            "top": undefined,
+            "verticalAlign": undefined,
+            "whiteSpace": undefined,
+            "width": undefined,
+          }
+        }>
+        <span
+          className="LabelText-1647196763 LabelText-disabled-1647196763"
+          style={
+            Object {
+              "color": undefined,
+              "fontSize": undefined,
+              "fontWeight": undefined,
+            }
+          }>
+          Label
+        </span>
+      </div>
+    </label>
+  </div>
+  <div
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    <input
+      className="input-3270226184 input-disabled-3270226184"
+      disabled={true}
+      id="formfield22" />
+  </div>
+</div>
+`;
+
+exports[`Storyshots <Field /> Error text 1`] = `
+<div
+  style={
+    Object {
+      "bottom": undefined,
+      "display": undefined,
+      "float": undefined,
+      "height": undefined,
+      "left": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "maxHeight": undefined,
+      "maxWidth": undefined,
+      "minHeight": undefined,
+      "minWidth": undefined,
+      "paddingBottom": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "position": "relative",
+      "right": undefined,
+      "textAlign": undefined,
+      "top": undefined,
+      "verticalAlign": undefined,
+      "whiteSpace": undefined,
+      "width": undefined,
+    }
+  }
+  variant={
+    Object {
+      "disabled": undefined,
+      "invalid": true,
+    }
+  }>
+  <div
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": 4,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    <label
+      htmlFor="formfield20">
+      <div
+        style={
+          Object {
+            "bottom": undefined,
+            "display": undefined,
+            "float": undefined,
+            "height": undefined,
+            "left": undefined,
+            "marginBottom": undefined,
+            "marginLeft": undefined,
+            "marginRight": undefined,
+            "marginTop": undefined,
+            "maxHeight": undefined,
+            "maxWidth": undefined,
+            "minHeight": undefined,
+            "minWidth": undefined,
+            "paddingBottom": undefined,
+            "paddingLeft": undefined,
+            "paddingRight": undefined,
+            "paddingTop": undefined,
+            "position": "relative",
+            "right": undefined,
+            "textAlign": undefined,
+            "top": undefined,
+            "verticalAlign": undefined,
+            "whiteSpace": undefined,
+            "width": undefined,
+          }
+        }>
+        <span
+          className="LabelText-1647196763"
+          style={
+            Object {
+              "color": undefined,
+              "fontSize": undefined,
+              "fontWeight": undefined,
+            }
+          }>
+          Label
+        </span>
+      </div>
+    </label>
+  </div>
+  <div
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    <input
+      className="input-3270226184"
+      disabled={undefined}
+      id="formfield20" />
+  </div>
+  <span
+    className="ErrorText-4170078621"
+    style={
+      Object {
+        "color": undefined,
+        "fontSize": undefined,
+        "fontWeight": undefined,
+      }
+    }>
+    Error
+  </span>
+</div>
+`;
+
+exports[`Storyshots <Field /> Error text inline 1`] = `
+<div
+  style={
+    Object {
+      "bottom": undefined,
+      "display": undefined,
+      "float": undefined,
+      "height": undefined,
+      "left": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "maxHeight": undefined,
+      "maxWidth": undefined,
+      "minHeight": undefined,
+      "minWidth": undefined,
+      "paddingBottom": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "position": "relative",
+      "right": undefined,
+      "textAlign": undefined,
+      "top": undefined,
+      "verticalAlign": undefined,
+      "whiteSpace": undefined,
+      "width": undefined,
+    }
+  }
+  variant={
+    Object {
+      "disabled": undefined,
+      "invalid": undefined,
+    }
+  }>
+  <div
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": 4,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    <label
+      htmlFor="formfield21">
+      <div
+        style={
+          Object {
+            "bottom": undefined,
+            "display": undefined,
+            "float": undefined,
+            "height": undefined,
+            "left": undefined,
+            "marginBottom": undefined,
+            "marginLeft": undefined,
+            "marginRight": undefined,
+            "marginTop": undefined,
+            "maxHeight": undefined,
+            "maxWidth": undefined,
+            "minHeight": undefined,
+            "minWidth": undefined,
+            "paddingBottom": undefined,
+            "paddingLeft": undefined,
+            "paddingRight": undefined,
+            "paddingTop": undefined,
+            "position": "relative",
+            "right": undefined,
+            "textAlign": undefined,
+            "top": undefined,
+            "verticalAlign": undefined,
+            "whiteSpace": undefined,
+            "width": undefined,
+          }
+        }>
+        <span
+          className="LabelText-1647196763"
+          style={
+            Object {
+              "color": undefined,
+              "fontSize": undefined,
+              "fontWeight": undefined,
+            }
+          }>
+          Label
+        </span>
+        <div
+          style={
+            Object {
+              "bottom": undefined,
+              "display": "inline-block",
+              "float": undefined,
+              "height": undefined,
+              "left": undefined,
+              "marginBottom": undefined,
+              "marginLeft": 4,
+              "marginRight": undefined,
+              "marginTop": undefined,
+              "maxHeight": undefined,
+              "maxWidth": undefined,
+              "minHeight": undefined,
+              "minWidth": undefined,
+              "paddingBottom": undefined,
+              "paddingLeft": undefined,
+              "paddingRight": undefined,
+              "paddingTop": undefined,
+              "position": "relative",
+              "right": undefined,
+              "textAlign": undefined,
+              "top": undefined,
+              "verticalAlign": undefined,
+              "whiteSpace": undefined,
+              "width": undefined,
+            }
+          }>
+          <span
+            className="ErrorText-4170078621"
+            style={
+              Object {
+                "color": undefined,
+                "fontSize": undefined,
+                "fontWeight": undefined,
+              }
+            }>
+            Error
+          </span>
+        </div>
+      </div>
+    </label>
+  </div>
+  <div
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    <input
+      className="input-3270226184"
+      disabled={undefined}
+      id="formfield21" />
+  </div>
+</div>
+`;
+
+exports[`Storyshots <Field /> Hint 1`] = `
+<div
+  style={
+    Object {
+      "bottom": undefined,
+      "display": undefined,
+      "float": undefined,
+      "height": undefined,
+      "left": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "maxHeight": undefined,
+      "maxWidth": undefined,
+      "minHeight": undefined,
+      "minWidth": undefined,
+      "paddingBottom": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "position": "relative",
+      "right": undefined,
+      "textAlign": undefined,
+      "top": undefined,
+      "verticalAlign": undefined,
+      "whiteSpace": undefined,
+      "width": undefined,
+    }
+  }
+  variant={
+    Object {
+      "disabled": undefined,
+      "invalid": undefined,
+    }
+  }>
+  <div
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": 4,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    <label
+      htmlFor="formfield18">
+      <div
+        style={
+          Object {
+            "bottom": undefined,
+            "display": undefined,
+            "float": undefined,
+            "height": undefined,
+            "left": undefined,
+            "marginBottom": undefined,
+            "marginLeft": undefined,
+            "marginRight": undefined,
+            "marginTop": undefined,
+            "maxHeight": undefined,
+            "maxWidth": undefined,
+            "minHeight": undefined,
+            "minWidth": undefined,
+            "paddingBottom": undefined,
+            "paddingLeft": undefined,
+            "paddingRight": undefined,
+            "paddingTop": undefined,
+            "position": "relative",
+            "right": undefined,
+            "textAlign": undefined,
+            "top": undefined,
+            "verticalAlign": undefined,
+            "whiteSpace": undefined,
+            "width": undefined,
+          }
+        }>
+        <span
+          className="LabelText-1647196763"
+          style={
+            Object {
+              "color": undefined,
+              "fontSize": undefined,
+              "fontWeight": undefined,
+            }
+          }>
+          Label
+        </span>
+      </div>
+      <div
+        style={
+          Object {
+            "bottom": undefined,
+            "display": undefined,
+            "float": undefined,
+            "height": undefined,
+            "left": undefined,
+            "marginBottom": undefined,
+            "marginLeft": undefined,
+            "marginRight": undefined,
+            "marginTop": undefined,
+            "maxHeight": undefined,
+            "maxWidth": undefined,
+            "minHeight": undefined,
+            "minWidth": undefined,
+            "paddingBottom": undefined,
+            "paddingLeft": undefined,
+            "paddingRight": undefined,
+            "paddingTop": undefined,
+            "position": "relative",
+            "right": undefined,
+            "textAlign": undefined,
+            "top": undefined,
+            "verticalAlign": undefined,
+            "whiteSpace": undefined,
+            "width": undefined,
+          }
+        }>
+        <span
+          className="Text-4146280123"
+          style={
+            Object {
+              "color": undefined,
+              "fontSize": undefined,
+              "fontWeight": undefined,
+            }
+          }>
+          Hint
+        </span>
+      </div>
+    </label>
+  </div>
+  <div
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    <input
+      className="input-3270226184"
+      disabled={undefined}
+      id="formfield18" />
+  </div>
+</div>
+`;
+
+exports[`Storyshots <Field /> Invalid 1`] = `
+<div
+  style={
+    Object {
+      "bottom": undefined,
+      "display": undefined,
+      "float": undefined,
+      "height": undefined,
+      "left": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "maxHeight": undefined,
+      "maxWidth": undefined,
+      "minHeight": undefined,
+      "minWidth": undefined,
+      "paddingBottom": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "position": "relative",
+      "right": undefined,
+      "textAlign": undefined,
+      "top": undefined,
+      "verticalAlign": undefined,
+      "whiteSpace": undefined,
+      "width": undefined,
+    }
+  }
+  variant={
+    Object {
+      "disabled": undefined,
+      "invalid": true,
+    }
+  }>
+  <div
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": 4,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    <label
+      htmlFor="formfield19">
+      <div
+        style={
+          Object {
+            "bottom": undefined,
+            "display": undefined,
+            "float": undefined,
+            "height": undefined,
+            "left": undefined,
+            "marginBottom": undefined,
+            "marginLeft": undefined,
+            "marginRight": undefined,
+            "marginTop": undefined,
+            "maxHeight": undefined,
+            "maxWidth": undefined,
+            "minHeight": undefined,
+            "minWidth": undefined,
+            "paddingBottom": undefined,
+            "paddingLeft": undefined,
+            "paddingRight": undefined,
+            "paddingTop": undefined,
+            "position": "relative",
+            "right": undefined,
+            "textAlign": undefined,
+            "top": undefined,
+            "verticalAlign": undefined,
+            "whiteSpace": undefined,
+            "width": undefined,
+          }
+        }>
+        <span
+          className="LabelText-1647196763"
+          style={
+            Object {
+              "color": undefined,
+              "fontSize": undefined,
+              "fontWeight": undefined,
+            }
+          }>
+          Label
+        </span>
+      </div>
+      <div
+        style={
+          Object {
+            "bottom": undefined,
+            "display": undefined,
+            "float": undefined,
+            "height": undefined,
+            "left": undefined,
+            "marginBottom": undefined,
+            "marginLeft": undefined,
+            "marginRight": undefined,
+            "marginTop": undefined,
+            "maxHeight": undefined,
+            "maxWidth": undefined,
+            "minHeight": undefined,
+            "minWidth": undefined,
+            "paddingBottom": undefined,
+            "paddingLeft": undefined,
+            "paddingRight": undefined,
+            "paddingTop": undefined,
+            "position": "relative",
+            "right": undefined,
+            "textAlign": undefined,
+            "top": undefined,
+            "verticalAlign": undefined,
+            "whiteSpace": undefined,
+            "width": undefined,
+          }
+        }>
+        <span
+          className="Text-4146280123"
+          style={
+            Object {
+              "color": undefined,
+              "fontSize": undefined,
+              "fontWeight": undefined,
+            }
+          }>
+          Hint
+        </span>
+      </div>
+    </label>
+  </div>
+  <div
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    <input
+      className="input-3270226184"
+      disabled={undefined}
+      id="formfield19" />
+  </div>
+</div>
+`;
+
+exports[`Storyshots <Field /> Simple 1`] = `
+<div
+  style={
+    Object {
+      "bottom": undefined,
+      "display": undefined,
+      "float": undefined,
+      "height": undefined,
+      "left": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "maxHeight": undefined,
+      "maxWidth": undefined,
+      "minHeight": undefined,
+      "minWidth": undefined,
+      "paddingBottom": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "position": "relative",
+      "right": undefined,
+      "textAlign": undefined,
+      "top": undefined,
+      "verticalAlign": undefined,
+      "whiteSpace": undefined,
+      "width": undefined,
+    }
+  }
+  variant={
+    Object {
+      "disabled": undefined,
+      "invalid": undefined,
+    }
+  }>
+  <div
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": 4,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    <label
+      htmlFor="formfield17">
+      <div
+        style={
+          Object {
+            "bottom": undefined,
+            "display": undefined,
+            "float": undefined,
+            "height": undefined,
+            "left": undefined,
+            "marginBottom": undefined,
+            "marginLeft": undefined,
+            "marginRight": undefined,
+            "marginTop": undefined,
+            "maxHeight": undefined,
+            "maxWidth": undefined,
+            "minHeight": undefined,
+            "minWidth": undefined,
+            "paddingBottom": undefined,
+            "paddingLeft": undefined,
+            "paddingRight": undefined,
+            "paddingTop": undefined,
+            "position": "relative",
+            "right": undefined,
+            "textAlign": undefined,
+            "top": undefined,
+            "verticalAlign": undefined,
+            "whiteSpace": undefined,
+            "width": undefined,
+          }
+        }>
+        <span
+          className="LabelText-1647196763"
+          style={
+            Object {
+              "color": undefined,
+              "fontSize": undefined,
+              "fontWeight": undefined,
+            }
+          }>
+          Label
+        </span>
+      </div>
+    </label>
+  </div>
+  <div
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    <input
+      className="input-3270226184"
+      disabled={undefined}
+      id="formfield17" />
+  </div>
+</div>
+`;
+
+exports[`Storyshots <FlatButton /> Default state 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3703635351 button-normal-3703635351"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatButton /> Grouped horizontally (rtl) 1`] = `
+<div
+  dir="rtl">
+  <div>
+    <button
+      aria-pressed={undefined}
+      className="button-3703635351  button-groupHorizontally-rtl-3703635351 button-normal-3703635351"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        Add
+      </div>
+    </button>
+    <button
+      aria-pressed={undefined}
+      className="button-3703635351  button-groupHorizontally-rtl-3703635351 button-normal-3703635351"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        Remove
+      </div>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <FlatButton /> Grouped horizontally 1`] = `
+<div>
+  <button
+    aria-pressed={undefined}
+    className="button-3703635351  button-groupHorizontally-ltr-3703635351 button-normal-3703635351"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-3703635351  button-groupHorizontally-ltr-3703635351 button-normal-3703635351"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Remove
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <FlatButton /> Grouped vertically 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }>
+  <button
+    aria-pressed={undefined}
+    className="button-3703635351 button-groupVertically-3703635351 button-normal-3703635351"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-3703635351 button-groupVertically-3703635351 button-normal-3703635351"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Remove
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <FlatButton /> Size: large 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3703635351 button-large-3703635351"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatButton /> Size: normal 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3703635351 button-normal-3703635351"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatButton /> Size: small 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3703635351 button-small-3703635351"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatButton /> Size: x-small 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3703635351 button-xSmall-3703635351"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatButton /> With icon (alternative) 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3703635351 button-normal-3703635351"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Add
+  </div>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 4,
+        "marginRight": 0,
+      }
+    }>
+    +
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatButton /> With icon 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3703635351 button-normal-3703635351"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 0,
+        "marginRight": 4,
+      }
+    }>
+    +
+  </div>
+  <div
+    className="div-2772671">
+    Add
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatDangerButton /> Default state 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-194652796 button-normal-194652796"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatDangerButton /> Grouped horizontally (rtl) 1`] = `
+<div
+  dir="rtl">
+  <div>
+    <button
+      aria-pressed={undefined}
+      className="button-194652796  button-groupHorizontally-rtl-194652796 button-normal-194652796"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        Add
+      </div>
+    </button>
+    <button
+      aria-pressed={undefined}
+      className="button-194652796  button-groupHorizontally-rtl-194652796 button-normal-194652796"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        Remove
+      </div>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <FlatDangerButton /> Grouped horizontally 1`] = `
+<div>
+  <button
+    aria-pressed={undefined}
+    className="button-194652796  button-groupHorizontally-ltr-194652796 button-normal-194652796"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-194652796  button-groupHorizontally-ltr-194652796 button-normal-194652796"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Remove
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <FlatDangerButton /> Grouped vertically 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }>
+  <button
+    aria-pressed={undefined}
+    className="button-194652796 button-groupVertically-194652796 button-normal-194652796"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-194652796 button-groupVertically-194652796 button-normal-194652796"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Remove
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <FlatDangerButton /> Size: large 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-194652796 button-large-194652796"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatDangerButton /> Size: normal 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-194652796 button-normal-194652796"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatDangerButton /> Size: small 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-194652796 button-small-194652796"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatDangerButton /> Size: x-small 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-194652796 button-xSmall-194652796"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatDangerButton /> With icon (alternative) 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-194652796 button-normal-194652796"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Add
+  </div>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 4,
+        "marginRight": 0,
+      }
+    }>
+    +
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatDangerButton /> With icon 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-194652796 button-normal-194652796"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 0,
+        "marginRight": 4,
+      }
+    }>
+    +
+  </div>
+  <div
+    className="div-2772671">
+    Add
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatSuccessButton /> Default state 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2293669648 button-normal-2293669648"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatSuccessButton /> Grouped horizontally (rtl) 1`] = `
+<div
+  dir="rtl">
+  <div>
+    <button
+      aria-pressed={undefined}
+      className="button-2293669648  button-groupHorizontally-rtl-2293669648 button-normal-2293669648"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        Add
+      </div>
+    </button>
+    <button
+      aria-pressed={undefined}
+      className="button-2293669648  button-groupHorizontally-rtl-2293669648 button-normal-2293669648"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        Remove
+      </div>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <FlatSuccessButton /> Grouped horizontally 1`] = `
+<div>
+  <button
+    aria-pressed={undefined}
+    className="button-2293669648  button-groupHorizontally-ltr-2293669648 button-normal-2293669648"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-2293669648  button-groupHorizontally-ltr-2293669648 button-normal-2293669648"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Remove
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <FlatSuccessButton /> Grouped vertically 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }>
+  <button
+    aria-pressed={undefined}
+    className="button-2293669648 button-groupVertically-2293669648 button-normal-2293669648"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-2293669648 button-groupVertically-2293669648 button-normal-2293669648"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Remove
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <FlatSuccessButton /> Size: large 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2293669648 button-large-2293669648"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatSuccessButton /> Size: normal 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2293669648 button-normal-2293669648"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatSuccessButton /> Size: small 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2293669648 button-small-2293669648"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatSuccessButton /> Size: x-small 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2293669648 button-xSmall-2293669648"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatSuccessButton /> With icon (alternative) 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2293669648 button-normal-2293669648"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Add
+  </div>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 4,
+        "marginRight": 0,
+      }
+    }>
+    +
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatSuccessButton /> With icon 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2293669648 button-normal-2293669648"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 0,
+        "marginRight": 4,
+      }
+    }>
+    +
+  </div>
+  <div
+    className="div-2772671">
+    Add
+  </div>
+</button>
+`;
+
+exports[`Storyshots <HBox /> Simple 1`] = `
+<div
+  className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+  style={
+    Object {
+      "border": "1px solid red",
+      "padding": "10px",
+    }
+  }>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "padding": "10px",
+      }
+    }>
+    1
+  </div>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "padding": "10px",
+      }
+    }>
+    2
+  </div>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "padding": "10px",
+      }
+    }>
+    3
+  </div>
+</div>
+`;
+
+exports[`Storyshots <HBox /> alignItems props 1`] = `
+<div
+  className="Box-1692465394 rs-alignItems-center-normal rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+  style={
+    Object {
+      "border": "1px solid red",
+      "height": "100px",
+      "padding": "10px",
+    }
+  }>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "height": "50px",
+        "padding": "10px",
+      }
+    }>
+    1
+  </div>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "height": "50px",
+        "padding": "10px",
+      }
+    }>
+    2
+  </div>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "height": "50px",
+        "padding": "10px",
+      }
+    }>
+    3
+  </div>
+</div>
+`;
+
+exports[`Storyshots <HBox /> flexGrow prop 1`] = `
+<div
+  className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+  style={
+    Object {
+      "border": "1px solid red",
+      "padding": "10px",
+    }
+  }>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "flexGrow": "1",
+        "padding": "10px",
+      }
+    }>
+    1
+  </div>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "padding": "10px",
+      }
+    }>
+    2
+  </div>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "padding": "10px",
+      }
+    }>
+    3
+  </div>
+</div>
+`;
+
+exports[`Storyshots <HBox /> justifyContent props 1`] = `
+<div
+  className="Box-1692465394 rs-justifyContent-center-normal rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+  style={
+    Object {
+      "border": "1px solid red",
+      "padding": "10px",
+    }
+  }>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "padding": "10px",
+      }
+    }>
+    1
+  </div>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "padding": "10px",
+      }
+    }>
+    2
+  </div>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "padding": "10px",
+      }
+    }>
+    3
+  </div>
+</div>
+`;
+
+exports[`Storyshots <Input /> Default state 1`] = `
+<input
+  className="input-3270226184"
+  disabled={undefined} />
+`;
+
+exports[`Storyshots <Input /> Disabled state 1`] = `
+<input
+  className="input-3270226184 input-disabled-3270226184"
+  disabled={true} />
+`;
+
+exports[`Storyshots <Input /> Error state 1`] = `
+<input
+  className="input-3270226184 input-error-3270226184"
+  disabled={undefined} />
+`;
+
+exports[`Storyshots <Input /> No border variant 1`] = `
+<input
+  className="input-3270226184 input-noBorder-3270226184"
+  disabled={undefined} />
+`;
+
+exports[`Storyshots <IntegerInput /> Basic 1`] = `
+<input
+  className="input-3270226184"
+  disabled={undefined}
+  onChange={[Function]}
+  value="" />
+`;
+
+exports[`Storyshots <LabelText /> Regular 1`] = `
+<span
+  className="LabelText-1647196763"
+  style={
+    Object {
+      "color": undefined,
+      "fontSize": undefined,
+      "fontWeight": undefined,
+    }
+  }>
+  I\'m a label
+</span>
+`;
+
+exports[`Storyshots <NumberInput /> Basic 1`] = `
+<input
+  className="input-3270226184"
+  disabled={undefined}
+  onChange={[Function]}
+  value="" />
+`;
+
+exports[`Storyshots <OptionButton /> Default state 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3970006144 button-normal-3970006144"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <OptionButton /> Grouped horizontally (rtl) 1`] = `
+<div
+  dir="rtl">
+  <div>
+    <button
+      aria-pressed={undefined}
+      className="button-3970006144  button-groupHorizontally-rtl-3970006144 button-normal-3970006144"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        Add
+      </div>
+    </button>
+    <button
+      aria-pressed={undefined}
+      className="button-3970006144  button-groupHorizontally-rtl-3970006144 button-normal-3970006144"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        Remove
+      </div>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <OptionButton /> Grouped horizontally 1`] = `
+<div>
+  <button
+    aria-pressed={undefined}
+    className="button-3970006144  button-groupHorizontally-ltr-3970006144 button-normal-3970006144"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-3970006144  button-groupHorizontally-ltr-3970006144 button-normal-3970006144"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Remove
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <OptionButton /> Grouped vertically 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }>
+  <button
+    aria-pressed={undefined}
+    className="button-3970006144 button-groupVertically-3970006144 button-normal-3970006144"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-3970006144 button-groupVertically-3970006144 button-normal-3970006144"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Remove
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <OptionButton /> Size: large 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3970006144 button-large-3970006144"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <OptionButton /> Size: normal 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3970006144 button-normal-3970006144"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <OptionButton /> Size: small 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3970006144 button-small-3970006144"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <OptionButton /> Size: x-small 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3970006144 button-xSmall-3970006144"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <OptionButton /> With icon (alternative) 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3970006144 button-normal-3970006144"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Add
+  </div>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 4,
+        "marginRight": 0,
+      }
+    }>
+    +
+  </div>
+</button>
+`;
+
+exports[`Storyshots <OptionButton /> With icon 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3970006144 button-normal-3970006144"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 0,
+        "marginRight": 4,
+      }
+    }>
+    +
+  </div>
+  <div
+    className="div-2772671">
+    Add
+  </div>
+</button>
+`;
+
+exports[`Storyshots <ProgressBar /> 0% 1`] = `
+<div
+  className="Block-995840821"
+  style={
+    Object {
+      "bottom": undefined,
+      "display": undefined,
+      "float": undefined,
+      "height": undefined,
+      "left": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "maxHeight": undefined,
+      "maxWidth": undefined,
+      "minHeight": undefined,
+      "minWidth": undefined,
+      "paddingBottom": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "position": "relative",
+      "right": undefined,
+      "textAlign": undefined,
+      "top": undefined,
+      "verticalAlign": undefined,
+      "whiteSpace": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="Block-4033463732"
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "absolute",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": "0%",
+      }
+    } />
+  <div
+    className="Block-2782117534"
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "absolute",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    0%
+  </div>
+</div>
+`;
+
+exports[`Storyshots <ProgressBar /> 33% 1`] = `
+<div
+  className="Block-995840821"
+  style={
+    Object {
+      "bottom": undefined,
+      "display": undefined,
+      "float": undefined,
+      "height": undefined,
+      "left": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "maxHeight": undefined,
+      "maxWidth": undefined,
+      "minHeight": undefined,
+      "minWidth": undefined,
+      "paddingBottom": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "position": "relative",
+      "right": undefined,
+      "textAlign": undefined,
+      "top": undefined,
+      "verticalAlign": undefined,
+      "whiteSpace": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="Block-4033463732"
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "absolute",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": "33%",
+      }
+    } />
+  <div
+    className="Block-2782117534"
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "absolute",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    33%
+  </div>
+</div>
+`;
+
+exports[`Storyshots <ProgressBar /> 66% 1`] = `
+<div
+  className="Block-995840821"
+  style={
+    Object {
+      "bottom": undefined,
+      "display": undefined,
+      "float": undefined,
+      "height": undefined,
+      "left": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "maxHeight": undefined,
+      "maxWidth": undefined,
+      "minHeight": undefined,
+      "minWidth": undefined,
+      "paddingBottom": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "position": "relative",
+      "right": undefined,
+      "textAlign": undefined,
+      "top": undefined,
+      "verticalAlign": undefined,
+      "whiteSpace": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="Block-4033463732"
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "absolute",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": "66%",
+      }
+    } />
+  <div
+    className="Block-2782117534"
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "absolute",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    66%
+  </div>
+</div>
+`;
+
+exports[`Storyshots <ProgressBar /> 100% 1`] = `
+<div
+  className="Block-995840821"
+  style={
+    Object {
+      "bottom": undefined,
+      "display": undefined,
+      "float": undefined,
+      "height": undefined,
+      "left": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "maxHeight": undefined,
+      "maxWidth": undefined,
+      "minHeight": undefined,
+      "minWidth": undefined,
+      "paddingBottom": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "position": "relative",
+      "right": undefined,
+      "textAlign": undefined,
+      "top": undefined,
+      "verticalAlign": undefined,
+      "whiteSpace": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="Block-4033463732"
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "absolute",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": "100%",
+      }
+    } />
+  <div
+    className="Block-2782117534"
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "absolute",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    100%
+  </div>
+</div>
+`;
+
+exports[`Storyshots <QuietButton /> Default state 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2127033244 button-normal-2127033244"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <QuietButton /> Grouped horizontally (rtl) 1`] = `
+<div
+  dir="rtl">
+  <div>
+    <button
+      aria-pressed={undefined}
+      className="button-2127033244  button-groupHorizontally-rtl-2127033244 button-normal-2127033244"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        Add
+      </div>
+    </button>
+    <button
+      aria-pressed={undefined}
+      className="button-2127033244  button-groupHorizontally-rtl-2127033244 button-normal-2127033244"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        Remove
+      </div>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <QuietButton /> Grouped horizontally 1`] = `
+<div>
+  <button
+    aria-pressed={undefined}
+    className="button-2127033244  button-groupHorizontally-ltr-2127033244 button-normal-2127033244"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-2127033244  button-groupHorizontally-ltr-2127033244 button-normal-2127033244"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Remove
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <QuietButton /> Grouped vertically 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }>
+  <button
+    aria-pressed={undefined}
+    className="button-2127033244 button-groupVertically-2127033244 button-normal-2127033244"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-2127033244 button-groupVertically-2127033244 button-normal-2127033244"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Remove
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <QuietButton /> Size: large 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2127033244 button-large-2127033244"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <QuietButton /> Size: normal 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2127033244 button-normal-2127033244"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <QuietButton /> Size: small 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2127033244 button-small-2127033244"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <QuietButton /> Size: x-small 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2127033244 button-xSmall-2127033244"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <QuietButton /> With icon (alternative) 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2127033244 button-normal-2127033244"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Add
+  </div>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 4,
+        "marginRight": 0,
+      }
+    }>
+    +
+  </div>
+</button>
+`;
+
+exports[`Storyshots <QuietButton /> With icon 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2127033244 button-normal-2127033244"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 0,
+        "marginRight": 4,
+      }
+    }>
+    +
+  </div>
+  <div
+    className="div-2772671">
+    Add
+  </div>
+</button>
+`;
+
+exports[`Storyshots <Radio /> Disabled state 1`] = `
+<div
+  title={undefined}
+  variant={
+    Object {
+      "disabled": true,
+      "ltr": true,
+      "rtl": false,
+    }
+  }>
+  <input
+    aria-labelledby="aria28"
+    checked={true}
+    className="input-161314557 input-disabled-161314557"
+    disabled={true}
+    inputRef={[Function]}
+    onChange={[Function]}
+    type="radio" />
+  <div
+    className="Block-2087937970 Block-ltr-2087937970"
+    onClick={[Function]}
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-1120473989 div-disabled-1120473989"
+      id="aria28">
+      Lights on
+    </div>
+    <div
+      className="div-2120500968 div-disabled-2120500968">
+      You can control the lights
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <Radio /> Off state 1`] = `
+<div
+  title={undefined}
+  variant={
+    Object {
+      "disabled": undefined,
+      "ltr": true,
+      "rtl": false,
+    }
+  }>
+  <input
+    aria-labelledby="aria23"
+    checked={false}
+    className="input-161314557"
+    disabled={undefined}
+    inputRef={[Function]}
+    onChange={[Function]}
+    type="radio" />
+</div>
+`;
+
+exports[`Storyshots <Radio /> On state 1`] = `
+<div
+  title={undefined}
+  variant={
+    Object {
+      "disabled": undefined,
+      "ltr": true,
+      "rtl": false,
+    }
+  }>
+  <input
+    aria-labelledby="aria24"
+    checked={true}
+    className="input-161314557"
+    disabled={undefined}
+    inputRef={[Function]}
+    onChange={[Function]}
+    type="radio" />
+</div>
+`;
+
+exports[`Storyshots <Radio /> With label & hint (rtl) 1`] = `
+<div
+  dir="rtl">
+  <div
+    title={undefined}
+    variant={
+      Object {
+        "disabled": undefined,
+        "ltr": false,
+        "rtl": true,
+      }
+    }>
+    <input
+      aria-labelledby="aria27"
+      checked={true}
+      className="input-161314557"
+      disabled={undefined}
+      inputRef={[Function]}
+      onChange={[Function]}
+      type="radio" />
+    <div
+      className="Block-2087937970 Block-rtl-2087937970"
+      onClick={[Function]}
+      style={
+        Object {
+          "bottom": undefined,
+          "display": undefined,
+          "float": undefined,
+          "height": undefined,
+          "left": undefined,
+          "marginBottom": undefined,
+          "marginLeft": undefined,
+          "marginRight": undefined,
+          "marginTop": undefined,
+          "maxHeight": undefined,
+          "maxWidth": undefined,
+          "minHeight": undefined,
+          "minWidth": undefined,
+          "paddingBottom": undefined,
+          "paddingLeft": undefined,
+          "paddingRight": undefined,
+          "paddingTop": undefined,
+          "position": "relative",
+          "right": undefined,
+          "textAlign": undefined,
+          "top": undefined,
+          "verticalAlign": undefined,
+          "whiteSpace": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-1120473989"
+        id="aria27">
+        Lights on
+      </div>
+      <div
+        className="div-2120500968">
+        You can control the lights
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <Radio /> With label & hint 1`] = `
+<div
+  title={undefined}
+  variant={
+    Object {
+      "disabled": undefined,
+      "ltr": true,
+      "rtl": false,
+    }
+  }>
+  <input
+    aria-labelledby="aria26"
+    checked={true}
+    className="input-161314557"
+    disabled={undefined}
+    inputRef={[Function]}
+    onChange={[Function]}
+    type="radio" />
+  <div
+    className="Block-2087937970 Block-ltr-2087937970"
+    onClick={[Function]}
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-1120473989"
+      id="aria26">
+      Lights on
+    </div>
+    <div
+      className="div-2120500968">
+      You can control the lights
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <Radio /> With label 1`] = `
+<div
+  title={undefined}
+  variant={
+    Object {
+      "disabled": undefined,
+      "ltr": true,
+      "rtl": false,
+    }
+  }>
+  <input
+    aria-labelledby="aria25"
+    checked={true}
+    className="input-161314557"
+    disabled={undefined}
+    inputRef={[Function]}
+    onChange={[Function]}
+    type="radio" />
+  <div
+    className="Block-2087937970 Block-ltr-2087937970"
+    onClick={[Function]}
+    style={
+      Object {
+        "bottom": undefined,
+        "display": undefined,
+        "float": undefined,
+        "height": undefined,
+        "left": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "position": "relative",
+        "right": undefined,
+        "textAlign": undefined,
+        "top": undefined,
+        "verticalAlign": undefined,
+        "whiteSpace": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-1120473989"
+      id="aria25">
+      Lights on
+    </div>
+    <div
+      className="div-2120500968" />
+  </div>
+</div>
+`;
+
+exports[`Storyshots <RadioBase /> Off state 1`] = `
+<div
+  title={undefined}
+  variant={
+    Object {
+      "disabled": undefined,
+      "ltr": true,
+      "rtl": false,
+    }
+  }>
+  <input
+    aria-labelledby="aria29"
+    checked={false}
+    disabled={undefined}
+    inputRef={[Function]}
+    onChange={[Function]}
+    type="radio"
+    variant={
+      Object {
+        "disabled": undefined,
+        "ltr": true,
+        "rtl": false,
+      }
+    } />
+</div>
+`;
+
+exports[`Storyshots <RadioBase /> On state 1`] = `
+<div
+  title={undefined}
+  variant={
+    Object {
+      "disabled": undefined,
+      "ltr": true,
+      "rtl": false,
+    }
+  }>
+  <input
+    aria-labelledby="aria30"
+    checked={true}
+    disabled={undefined}
+    inputRef={[Function]}
+    onChange={[Function]}
+    type="radio"
+    variant={
+      Object {
+        "disabled": undefined,
+        "ltr": true,
+        "rtl": false,
+      }
+    } />
+</div>
+`;
+
+exports[`Storyshots <RadioGroup /> Horizontal layout (rtl) 1`] = `
+<div
+  dir="rtl">
+  <div
+    className="div-1648223554"
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="radiogroup"
+    tabIndex={0}>
+    <div
+      className="div-828019517 div-horizontal-828019517 div-horizontal-rtl-828019517">
+      <div
+        title={undefined}
+        variant={
+          Object {
+            "disabled": undefined,
+            "ltr": false,
+            "rtl": true,
+          }
+        }>
+        <input
+          aria-labelledby="aria35"
+          checked={false}
+          className="input-161314557"
+          disabled={undefined}
+          idx={0}
+          inputRef={[Function]}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          tabIndex={-1}
+          type="radio" />
+        <div
+          className="Block-2087937970 Block-rtl-2087937970"
+          onClick={[Function]}
+          style={
+            Object {
+              "bottom": undefined,
+              "display": undefined,
+              "float": undefined,
+              "height": undefined,
+              "left": undefined,
+              "marginBottom": undefined,
+              "marginLeft": undefined,
+              "marginRight": undefined,
+              "marginTop": undefined,
+              "maxHeight": undefined,
+              "maxWidth": undefined,
+              "minHeight": undefined,
+              "minWidth": undefined,
+              "paddingBottom": undefined,
+              "paddingLeft": undefined,
+              "paddingRight": undefined,
+              "paddingTop": undefined,
+              "position": "relative",
+              "right": undefined,
+              "textAlign": undefined,
+              "top": undefined,
+              "verticalAlign": undefined,
+              "whiteSpace": undefined,
+              "width": undefined,
+            }
+          }>
+          <div
+            className="div-1120473989"
+            id="aria35">
+            A
+          </div>
+          <div
+            className="div-2120500968" />
+        </div>
+      </div>
+    </div>
+    <div
+      className="div-828019517 div-horizontal-828019517 div-horizontal-rtl-828019517">
+      <div
+        title={undefined}
+        variant={
+          Object {
+            "disabled": undefined,
+            "ltr": false,
+            "rtl": true,
+          }
+        }>
+        <input
+          aria-labelledby="aria36"
+          checked={false}
+          className="input-161314557"
+          disabled={undefined}
+          idx={1}
+          inputRef={[Function]}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          tabIndex={-1}
+          type="radio" />
+        <div
+          className="Block-2087937970 Block-rtl-2087937970"
+          onClick={[Function]}
+          style={
+            Object {
+              "bottom": undefined,
+              "display": undefined,
+              "float": undefined,
+              "height": undefined,
+              "left": undefined,
+              "marginBottom": undefined,
+              "marginLeft": undefined,
+              "marginRight": undefined,
+              "marginTop": undefined,
+              "maxHeight": undefined,
+              "maxWidth": undefined,
+              "minHeight": undefined,
+              "minWidth": undefined,
+              "paddingBottom": undefined,
+              "paddingLeft": undefined,
+              "paddingRight": undefined,
+              "paddingTop": undefined,
+              "position": "relative",
+              "right": undefined,
+              "textAlign": undefined,
+              "top": undefined,
+              "verticalAlign": undefined,
+              "whiteSpace": undefined,
+              "width": undefined,
+            }
+          }>
+          <div
+            className="div-1120473989"
+            id="aria36">
+            B
+          </div>
+          <div
+            className="div-2120500968" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <RadioGroup /> Horizontal layout 1`] = `
+<div
+  className="div-1648223554"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  role="radiogroup"
+  tabIndex={0}>
+  <div
+    className="div-828019517 div-horizontal-828019517 div-horizontal-ltr-828019517">
+    <div
+      title={undefined}
+      variant={
+        Object {
+          "disabled": undefined,
+          "ltr": true,
+          "rtl": false,
+        }
+      }>
+      <input
+        aria-labelledby="aria33"
+        checked={false}
+        className="input-161314557"
+        disabled={undefined}
+        idx={0}
+        inputRef={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        tabIndex={-1}
+        type="radio" />
+      <div
+        className="Block-2087937970 Block-ltr-2087937970"
+        onClick={[Function]}
+        style={
+          Object {
+            "bottom": undefined,
+            "display": undefined,
+            "float": undefined,
+            "height": undefined,
+            "left": undefined,
+            "marginBottom": undefined,
+            "marginLeft": undefined,
+            "marginRight": undefined,
+            "marginTop": undefined,
+            "maxHeight": undefined,
+            "maxWidth": undefined,
+            "minHeight": undefined,
+            "minWidth": undefined,
+            "paddingBottom": undefined,
+            "paddingLeft": undefined,
+            "paddingRight": undefined,
+            "paddingTop": undefined,
+            "position": "relative",
+            "right": undefined,
+            "textAlign": undefined,
+            "top": undefined,
+            "verticalAlign": undefined,
+            "whiteSpace": undefined,
+            "width": undefined,
+          }
+        }>
+        <div
+          className="div-1120473989"
+          id="aria33">
+          A
+        </div>
+        <div
+          className="div-2120500968" />
+      </div>
+    </div>
+  </div>
+  <div
+    className="div-828019517 div-horizontal-828019517 div-horizontal-ltr-828019517">
+    <div
+      title={undefined}
+      variant={
+        Object {
+          "disabled": undefined,
+          "ltr": true,
+          "rtl": false,
+        }
+      }>
+      <input
+        aria-labelledby="aria34"
+        checked={false}
+        className="input-161314557"
+        disabled={undefined}
+        idx={1}
+        inputRef={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        tabIndex={-1}
+        type="radio" />
+      <div
+        className="Block-2087937970 Block-ltr-2087937970"
+        onClick={[Function]}
+        style={
+          Object {
+            "bottom": undefined,
+            "display": undefined,
+            "float": undefined,
+            "height": undefined,
+            "left": undefined,
+            "marginBottom": undefined,
+            "marginLeft": undefined,
+            "marginRight": undefined,
+            "marginTop": undefined,
+            "maxHeight": undefined,
+            "maxWidth": undefined,
+            "minHeight": undefined,
+            "minWidth": undefined,
+            "paddingBottom": undefined,
+            "paddingLeft": undefined,
+            "paddingRight": undefined,
+            "paddingTop": undefined,
+            "position": "relative",
+            "right": undefined,
+            "textAlign": undefined,
+            "top": undefined,
+            "verticalAlign": undefined,
+            "whiteSpace": undefined,
+            "width": undefined,
+          }
+        }>
+        <div
+          className="div-1120473989"
+          id="aria34">
+          B
+        </div>
+        <div
+          className="div-2120500968" />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <RadioGroup /> Vertical layout 1`] = `
+<div
+  className="div-1648223554"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  role="radiogroup"
+  tabIndex={0}>
+  <div
+    className="div-828019517 div-vertical-828019517">
+    <div
+      title={undefined}
+      variant={
+        Object {
+          "disabled": undefined,
+          "ltr": true,
+          "rtl": false,
+        }
+      }>
+      <input
+        aria-labelledby="aria31"
+        checked={false}
+        className="input-161314557"
+        disabled={undefined}
+        idx={0}
+        inputRef={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        tabIndex={-1}
+        type="radio" />
+      <div
+        className="Block-2087937970 Block-ltr-2087937970"
+        onClick={[Function]}
+        style={
+          Object {
+            "bottom": undefined,
+            "display": undefined,
+            "float": undefined,
+            "height": undefined,
+            "left": undefined,
+            "marginBottom": undefined,
+            "marginLeft": undefined,
+            "marginRight": undefined,
+            "marginTop": undefined,
+            "maxHeight": undefined,
+            "maxWidth": undefined,
+            "minHeight": undefined,
+            "minWidth": undefined,
+            "paddingBottom": undefined,
+            "paddingLeft": undefined,
+            "paddingRight": undefined,
+            "paddingTop": undefined,
+            "position": "relative",
+            "right": undefined,
+            "textAlign": undefined,
+            "top": undefined,
+            "verticalAlign": undefined,
+            "whiteSpace": undefined,
+            "width": undefined,
+          }
+        }>
+        <div
+          className="div-1120473989"
+          id="aria31">
+          A
+        </div>
+        <div
+          className="div-2120500968" />
+      </div>
+    </div>
+  </div>
+  <div
+    className="div-828019517 div-vertical-828019517">
+    <div
+      title={undefined}
+      variant={
+        Object {
+          "disabled": undefined,
+          "ltr": true,
+          "rtl": false,
+        }
+      }>
+      <input
+        aria-labelledby="aria32"
+        checked={false}
+        className="input-161314557"
+        disabled={undefined}
+        idx={1}
+        inputRef={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        tabIndex={-1}
+        type="radio" />
+      <div
+        className="Block-2087937970 Block-ltr-2087937970"
+        onClick={[Function]}
+        style={
+          Object {
+            "bottom": undefined,
+            "display": undefined,
+            "float": undefined,
+            "height": undefined,
+            "left": undefined,
+            "marginBottom": undefined,
+            "marginLeft": undefined,
+            "marginRight": undefined,
+            "marginTop": undefined,
+            "maxHeight": undefined,
+            "maxWidth": undefined,
+            "minHeight": undefined,
+            "minWidth": undefined,
+            "paddingBottom": undefined,
+            "paddingLeft": undefined,
+            "paddingRight": undefined,
+            "paddingTop": undefined,
+            "position": "relative",
+            "right": undefined,
+            "textAlign": undefined,
+            "top": undefined,
+            "verticalAlign": undefined,
+            "whiteSpace": undefined,
+            "width": undefined,
+          }
+        }>
+        <div
+          className="div-1120473989"
+          id="aria32">
+          B
+        </div>
+        <div
+          className="div-2120500968" />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <RadioGroupBase /> Example 1`] = `
+<div
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  role="radiogroup"
+  tabIndex={0}>
+  <div
+    variant={
+      Object {
+        "disabled": undefined,
+        "horizontal": false,
+        "ltr": true,
+        "rtl": false,
+        "vertical": true,
+      }
+    }>
+    <div
+      title={undefined}
+      variant={
+        Object {
+          "disabled": undefined,
+          "ltr": true,
+          "rtl": false,
+        }
+      }>
+      <input
+        aria-labelledby="aria37"
+        checked={false}
+        disabled={undefined}
+        idx={0}
+        inputRef={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        tabIndex={-1}
+        type="radio"
+        variant={
+          Object {
+            "disabled": undefined,
+            "ltr": true,
+            "rtl": false,
+          }
+        } />
+      <div
+        onClick={[Function]}
+        variant={
+          Object {
+            "disabled": undefined,
+            "ltr": true,
+            "rtl": false,
+          }
+        }>
+        <div
+          id="aria37"
+          variant={
+            Object {
+              "disabled": undefined,
+              "ltr": true,
+              "rtl": false,
+            }
+          }>
+          A
+        </div>
+        <div
+          variant={
+            Object {
+              "disabled": undefined,
+              "ltr": true,
+              "rtl": false,
+            }
+          } />
+      </div>
+    </div>
+  </div>
+  <div
+    variant={
+      Object {
+        "disabled": undefined,
+        "horizontal": false,
+        "ltr": true,
+        "rtl": false,
+        "vertical": true,
+      }
+    }>
+    <div
+      title={undefined}
+      variant={
+        Object {
+          "disabled": undefined,
+          "ltr": true,
+          "rtl": false,
+        }
+      }>
+      <input
+        aria-labelledby="aria38"
+        checked={false}
+        disabled={undefined}
+        idx={1}
+        inputRef={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        tabIndex={-1}
+        type="radio"
+        variant={
+          Object {
+            "disabled": undefined,
+            "ltr": true,
+            "rtl": false,
+          }
+        } />
+      <div
+        onClick={[Function]}
+        variant={
+          Object {
+            "disabled": undefined,
+            "ltr": true,
+            "rtl": false,
+          }
+        }>
+        <div
+          id="aria38"
+          variant={
+            Object {
+              "disabled": undefined,
+              "ltr": true,
+              "rtl": false,
+            }
+          }>
+          B
+        </div>
+        <div
+          variant={
+            Object {
+              "disabled": undefined,
+              "ltr": true,
+              "rtl": false,
+            }
+          } />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <Select /> Basic 1`] = `
+<select
+  onChange={[Function]}
+  value="__NOVALUE__">
+  <option
+    value="__NOVALUE__">
+    
+  </option>
+  <option
+    value="a">
+    A
+  </option>
+  <option
+    value="b">
+    B
+  </option>
+</select>
+`;
+
+exports[`Storyshots <SuccessButton /> Default state 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3570445596 button-normal-3570445596"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <SuccessButton /> Grouped horizontally (rtl) 1`] = `
+<div
+  dir="rtl">
+  <div>
+    <button
+      aria-pressed={undefined}
+      className="button-3570445596  button-groupHorizontally-rtl-3570445596 button-normal-3570445596"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        Add
+      </div>
+    </button>
+    <button
+      aria-pressed={undefined}
+      className="button-3570445596  button-groupHorizontally-rtl-3570445596 button-normal-3570445596"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        Remove
+      </div>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <SuccessButton /> Grouped horizontally 1`] = `
+<div>
+  <button
+    aria-pressed={undefined}
+    className="button-3570445596  button-groupHorizontally-ltr-3570445596 button-normal-3570445596"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-3570445596  button-groupHorizontally-ltr-3570445596 button-normal-3570445596"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Remove
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <SuccessButton /> Grouped vertically 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }>
+  <button
+    aria-pressed={undefined}
+    className="button-3570445596 button-groupVertically-3570445596 button-normal-3570445596"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-3570445596 button-groupVertically-3570445596 button-normal-3570445596"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Remove
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <SuccessButton /> Size: large 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3570445596 button-large-3570445596"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <SuccessButton /> Size: normal 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3570445596 button-normal-3570445596"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <SuccessButton /> Size: small 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3570445596 button-small-3570445596"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <SuccessButton /> Size: x-small 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3570445596 button-xSmall-3570445596"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Storyshots <SuccessButton /> With icon (alternative) 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3570445596 button-normal-3570445596"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-2772671">
+    Add
+  </div>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 4,
+        "marginRight": 0,
+      }
+    }>
+    +
+  </div>
+</button>
+`;
+
+exports[`Storyshots <SuccessButton /> With icon 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3570445596 button-normal-3570445596"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 0,
+        "marginRight": 4,
+      }
+    }>
+    +
+  </div>
+  <div
+    className="div-2772671">
+    Add
+  </div>
+</button>
+`;
+
+exports[`Storyshots <Text /> Regular 1`] = `
+<span
+  style={
+    Object {
+      "color": undefined,
+      "fontSize": undefined,
+      "fontWeight": undefined,
+    }
+  }>
+  Hello
+</span>
+`;
+
+exports[`Storyshots <Textarea /> Default state 1`] = `
+<textarea
+  className="input-3270226184"
+  disabled={undefined}
+  rows={3} />
+`;
+
+exports[`Storyshots <Textarea /> Disabled state 1`] = `
+<textarea
+  className="input-3270226184 input-disabled-3270226184"
+  disabled={true}
+  rows={3} />
+`;
+
+exports[`Storyshots <Textarea /> Error state 1`] = `
+<textarea
+  className="input-3270226184 input-error-3270226184"
+  disabled={undefined}
+  rows={3} />
+`;
+
+exports[`Storyshots <Textarea /> No border variant 1`] = `
+<textarea
+  className="input-3270226184 input-noBorder-3270226184"
+  disabled={undefined}
+  rows={3} />
+`;
+
+exports[`Storyshots <VBox /> Simple 1`] = `
+<div
+  className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-column-normal rs-0"
+  style={
+    Object {
+      "border": "1px solid red",
+      "padding": "10px",
+    }
+  }>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-column-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "padding": "10px",
+      }
+    }>
+    1
+  </div>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-column-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "padding": "10px",
+      }
+    }>
+    2
+  </div>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-column-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "padding": "10px",
+      }
+    }>
+    3
+  </div>
+</div>
+`;
+
+exports[`Storyshots <VBox /> alignItems props 1`] = `
+<div
+  className="Box-1692465394 rs-alignItems-center-normal rs-boxSizing-border-box-normal rs-flexDirection-column-normal rs-0"
+  style={
+    Object {
+      "border": "1px solid red",
+      "padding": "10px",
+    }
+  }>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-column-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "height": "50px",
+        "padding": "10px",
+        "width": "50px",
+      }
+    }>
+    1
+  </div>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-column-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "height": "50px",
+        "padding": "10px",
+        "width": "50px",
+      }
+    }>
+    2
+  </div>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-column-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "height": "50px",
+        "padding": "10px",
+        "width": "50px",
+      }
+    }>
+    3
+  </div>
+</div>
+`;
+
+exports[`Storyshots <VBox /> flexGrow prop 1`] = `
+<div
+  className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-column-normal rs-0"
+  style={
+    Object {
+      "border": "1px solid red",
+      "height": "200px",
+      "padding": "10px",
+    }
+  }>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-column-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "flexGrow": "1",
+        "padding": "10px",
+      }
+    }>
+    1
+  </div>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-column-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "padding": "10px",
+      }
+    }>
+    2
+  </div>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-column-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "padding": "10px",
+      }
+    }>
+    3
+  </div>
+</div>
+`;
+
+exports[`Storyshots <VBox /> justifyContent props 1`] = `
+<div
+  className="Box-1692465394 rs-justifyContent-center-normal rs-boxSizing-border-box-normal rs-flexDirection-column-normal rs-0"
+  style={
+    Object {
+      "border": "1px solid red",
+      "height": "200px",
+      "padding": "10px",
+    }
+  }>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-column-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "padding": "10px",
+      }
+    }>
+    1
+  </div>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-column-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "padding": "10px",
+      }
+    }>
+    2
+  </div>
+  <div
+    className="Box-1692465394 rs-boxSizing-border-box-normal rs-flexDirection-column-normal rs-0"
+    style={
+      Object {
+        "border": "1px solid red",
+        "padding": "10px",
+      }
+    }>
+    3
+  </div>
+</div>
+`;
+
+exports[`Storyshots <topNav.Navigation /> Basic 1`] = `
+<div
+  className="Box-1692465394 VBox-721903046 rs-boxSizing-border-box-normal rs-flexDirection-column-normal rs-0"
+  style={Object {}}>
+  <div
+    className="Box-1692465394 HBox-1417013499 rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+    style={Object {}}>
+    <div
+      className="Box-1692465394 VBox-970101093 rs-boxSizing-border-box-normal rs-flexDirection-column-normal rs-0"
+      style={Object {}}>
+      <a
+        className="a-2879647391">
+        React UI
+      </a>
+    </div>
+    <div
+      className="Box-1692465394 HBox-2855416894 rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+      style={Object {}}>
+      <a
+        aria-pressed={undefined}
+        className="a-3596106041"
+        disabled={undefined}
+        href={undefined}
+        role="button"
+        style={
+          Object {
+            "height": undefined,
+            "textAlign": undefined,
+            "width": undefined,
+          }
+        }>
+        <div
+          className="div-2833604010">
+          Main
+        </div>
+      </a>
+      <div
+        className="Box-1692465394 rs-overflow-visible-normal rs-boxSizing-border-box-normal rs-flexDirection-column-normal rs-0"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={Object {}}>
+        <a
+          aria-pressed={undefined}
+          className="a-3596106041"
+          disabled={undefined}
+          href={undefined}
+          role="button"
+          style={
+            Object {
+              "height": undefined,
+              "textAlign": undefined,
+              "width": undefined,
+            }
+          }>
+          <div
+            className="div-2833604010">
+            Menu
+          </div>
+        </a>
+      </div>
+    </div>
+    <div
+      className="Box-1692465394 HBox-1901222894 rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+      style={Object {}}>
+      <a
+        aria-pressed={undefined}
+        className="a-3596106041 a-small-3596106041"
+        disabled={undefined}
+        href={undefined}
+        role="button"
+        style={
+          Object {
+            "height": undefined,
+            "textAlign": undefined,
+            "width": undefined,
+          }
+        }>
+        <div
+          className="div-2833604010">
+          Log out
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;

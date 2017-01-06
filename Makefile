@@ -29,14 +29,14 @@ check::
 test::
 	@$(BIN)/jest
 
-report-type-cov::
+test-cov::
+	@$(BIN)/jest --coverage
+
+type::
+	@$(BIN)/flow
+
+type-cov::
 	@$(BIN)/flow-coverage-report -i 'src/**/*.js' -x 'src/**/*-test.js' -f $(BIN)/flow
-
-report-cov::
-	@$(BIN)/nyc report --reporter html
-
-report-cov-coveralls::
-	@$(BIN)/nyc report --reporter=text-lcov | $(BIN)/coveralls
 
 ci::
 	@$(BIN)/jest --watch
