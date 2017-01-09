@@ -5,7 +5,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import debounce from 'lodash/debounce';
+import {debounce} from './Utils';
 
 export let contextTypes = {
   focusable: React.PropTypes.object,

@@ -4,8 +4,7 @@
  */
 
 import React from 'react';
-import noop from 'lodash/noop';
-import uniqueId from 'lodash/uniqueId';
+import {uniqueId, noop} from './Utils';
 import * as I18N from './I18N';
 import * as Focus from './Focus';
 

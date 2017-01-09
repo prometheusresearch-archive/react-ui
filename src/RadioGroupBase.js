@@ -4,11 +4,11 @@
  */
 
 import React from 'react';
-import {noop} from 'lodash';
 
-import Radio from './RadioBase';
+import {noop} from './Utils';
 import * as I18N from './I18N';
 import * as Focus from './Focus';
+import Radio from './RadioBase';
 
 type Option = {
   value: string;

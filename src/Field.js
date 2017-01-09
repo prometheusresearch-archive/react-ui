@@ -4,7 +4,6 @@
  */
 
 import React from 'react';
-import uniqueId from 'lodash/uniqueId';
 import {style, css} from 'react-stylesheet';
 
 import Block from './Block';
@@ -12,6 +11,7 @@ import Text from './Text';
 import LabelText from './LabelText';
 import ErrorText from './ErrorText';
 import {fontSize} from './theme';
+import {uniqueId} from './Utils';
 
 let Hint = style(Text, {
   base: {

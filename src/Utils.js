@@ -3,6 +3,21 @@
  * @flow
  */
 
+import debounce from 'debounce';
+
+export {debounce};
+
+let uniqueIdNum = 0;
+
+export function uniqueId(prefix?: string = 'id'): string {
+  uniqueIdNum = uniqueIdNum + 1;
+  return `${prefix}${uniqueIdNum}`;
+}
+
+export function noop(): void {
+
+}
+
 export function chooseValue(
   nameMapping: Object,
   a?: string | number,

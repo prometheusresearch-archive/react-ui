@@ -66,10 +66,10 @@
     "flow-coverage-report": "^0.2.0",
     "indent-string": "^2.1.0",
     "jest-cli": "^17.0.0",
-    "lodash": "^4.13.0",
     "normalize.css": "^4.1.1",
     "power-assert": "^1.4.1",
     "react": "^15.3.1",
+    "react-scripts": "^0.8.4",
     "react-addons-test-utils": "^15.3.1",
     "react-dom": "^15.3.1",
     "react-icons": "^2.1.0",
@@ -78,9 +78,8 @@
   },
   "dependencies": {
     "color-js": "^1.0.3",
+    "debounce": "^1.0.0",
     "invariant": "^2.2.1",
-    "lodash": "^4.13.0",
-    "react-scripts": "^0.8.4",
-    "react-stylesheet": "2.0.0-beta.15"
+    "react-stylesheet": "^2.0.0"
   }
 }

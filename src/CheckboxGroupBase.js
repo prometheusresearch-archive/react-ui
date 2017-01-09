@@ -5,8 +5,8 @@
 
 import invariant from 'invariant';
 import React from 'react';
-import {noop} from 'lodash';
 
+import {noop} from './Utils';
 import * as I18N from './I18N';
 import * as Focus from './Focus';
 import CheckboxBase from './CheckboxBase';
