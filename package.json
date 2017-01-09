@@ -3,6 +3,10 @@
   "version": "0.21.3",
   "description": "Configurable and styleable UI components",
   "main": "lib/index.js",
+  "files": [
+    "lib/",
+    "topNav.js"
+  ],
   "scripts": {
     "test": "make lint test",
     "storybook": "start-storybook -p 6006",
