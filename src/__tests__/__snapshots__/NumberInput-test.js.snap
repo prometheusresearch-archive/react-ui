@@ -1,6 +1,6 @@
 exports[`test renders 1`] = `
 <input
-  className="input-3270226184"
+  className="input-1197536361"
   disabled={undefined}
   onChange={[Function]}
   value="" />
@@ -8,7 +8,7 @@ exports[`test renders 1`] = `
 
 exports[`test renders 2`] = `
 <input
-  className="input-3270226184"
+  className="input-1197536361"
   disabled={undefined}
   onChange={[Function]}
   value="" />

@@ -2387,7 +2387,7 @@ exports[`Storyshots <Field /> Disabled 1`] = `
       }
     }>
     <input
-      className="input-3270226184 input-disabled-3270226184"
+      className="input-1197536361 input-disabled-1197536361"
       disabled={true}
       id="formfield22" />
   </div>
@@ -2534,7 +2534,7 @@ exports[`Storyshots <Field /> Error text 1`] = `
       }
     }>
     <input
-      className="input-3270226184"
+      className="input-1197536361"
       disabled={undefined}
       id="formfield20" />
   </div>
@@ -2733,7 +2733,7 @@ exports[`Storyshots <Field /> Error text inline 1`] = `
       }
     }>
     <input
-      className="input-3270226184"
+      className="input-1197536361"
       disabled={undefined}
       id="formfield21" />
   </div>
@@ -2921,7 +2921,7 @@ exports[`Storyshots <Field /> Hint 1`] = `
       }
     }>
     <input
-      className="input-3270226184"
+      className="input-1197536361"
       disabled={undefined}
       id="formfield18" />
   </div>
@@ -3109,7 +3109,7 @@ exports[`Storyshots <Field /> Invalid 1`] = `
       }
     }>
     <input
-      className="input-3270226184"
+      className="input-1197536361"
       disabled={undefined}
       id="formfield19" />
   </div>
@@ -3256,7 +3256,7 @@ exports[`Storyshots <Field /> Simple 1`] = `
       }
     }>
     <input
-      className="input-3270226184"
+      className="input-1197536361"
       disabled={undefined}
       id="formfield17" />
   </div>
@@ -4335,31 +4335,31 @@ exports[`Storyshots <HBox /> justifyContent props 1`] = `
 
 exports[`Storyshots <Input /> Default state 1`] = `
 <input
-  className="input-3270226184"
+  className="input-1197536361"
   disabled={undefined} />
 `;
 
 exports[`Storyshots <Input /> Disabled state 1`] = `
 <input
-  className="input-3270226184 input-disabled-3270226184"
+  className="input-1197536361 input-disabled-1197536361"
   disabled={true} />
 `;
 
 exports[`Storyshots <Input /> Error state 1`] = `
 <input
-  className="input-3270226184 input-error-3270226184"
+  className="input-1197536361 input-error-1197536361"
   disabled={undefined} />
 `;
 
 exports[`Storyshots <Input /> No border variant 1`] = `
 <input
-  className="input-3270226184 input-noBorder-3270226184"
+  className="input-1197536361 input-noBorder-1197536361"
   disabled={undefined} />
 `;
 
 exports[`Storyshots <IntegerInput /> Basic 1`] = `
 <input
-  className="input-3270226184"
+  className="input-1197536361"
   disabled={undefined}
   onChange={[Function]}
   value="" />
@@ -4381,7 +4381,7 @@ exports[`Storyshots <LabelText /> Regular 1`] = `
 
 exports[`Storyshots <NumberInput /> Basic 1`] = `
 <input
-  className="input-3270226184"
+  className="input-1197536361"
   disabled={undefined}
   onChange={[Function]}
   value="" />
@@ -6613,28 +6613,28 @@ exports[`Storyshots <Text /> Regular 1`] = `
 
 exports[`Storyshots <Textarea /> Default state 1`] = `
 <textarea
-  className="input-3270226184"
+  className="input-1197536361"
   disabled={undefined}
   rows={3} />
 `;
 
 exports[`Storyshots <Textarea /> Disabled state 1`] = `
 <textarea
-  className="input-3270226184 input-disabled-3270226184"
+  className="input-1197536361 input-disabled-1197536361"
   disabled={true}
   rows={3} />
 `;
 
 exports[`Storyshots <Textarea /> Error state 1`] = `
 <textarea
-  className="input-3270226184 input-error-3270226184"
+  className="input-1197536361 input-error-1197536361"
   disabled={undefined}
   rows={3} />
 `;
 
 exports[`Storyshots <Textarea /> No border variant 1`] = `
 <textarea
-  className="input-3270226184 input-noBorder-3270226184"
+  className="input-1197536361 input-noBorder-1197536361"
   disabled={undefined}
   rows={3} />
 `;
