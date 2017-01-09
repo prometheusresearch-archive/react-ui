@@ -8,7 +8,7 @@ import {style, css} from 'react-stylesheet';
 
 let InputRootFocus = {
   outline: 'none',
-  border: {width: 1, color: '#708698'},
+  border: {width: 1, style: 'solid', color: '#708698'},
   boxShadow: [
     {
       inset: true,
