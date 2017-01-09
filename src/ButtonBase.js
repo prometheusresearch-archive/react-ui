@@ -26,7 +26,6 @@ export let stylesheet = {
       display: 'inline-block',
     }
   }),
-  Icon: 'span',
   IconWrapper: style('div', {
     base: {
       display: 'inline-block',
@@ -117,7 +116,7 @@ export default class ButtonBase
       Component,
       groupVertically, groupHorizontally,
       variant,
-      stylesheet: {Root, Caption, Icon, IconWrapper} = this.constructor.stylesheet,
+      stylesheet: {Root, Caption, IconWrapper} = this.constructor.stylesheet,
       textAlign, width, height,
       style,
       ...props
