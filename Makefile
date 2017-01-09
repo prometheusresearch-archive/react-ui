@@ -41,10 +41,10 @@ type-cov::
 ci::
 	@$(BIN)/jest --watch
 
-version-major version-minor version-patch: lint test build
+version-major version-minor version-patch: build check lint test
 	@npm version $(@:version-%=%)
 
-publish:
+publish: build check lint test
 	@git push --tags origin HEAD:master
 	@npm publish --access public
 
