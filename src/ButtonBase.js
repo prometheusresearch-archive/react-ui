@@ -168,8 +168,8 @@ export default class ButtonBase
 
     if (icon) {
       let style = {
-        marginRight: i18n.dir === 'ltr' ? 4 : 0,
-        marginLeft: i18n.dir === 'rtl' ? 4 : 0,
+        marginRight: children && i18n.dir === 'ltr' ? 4 : 0,
+        marginLeft: children && i18n.dir === 'rtl' ? 4 : 0,
       };
       icon = (
         <IconWrapper style={style}>
@@ -180,8 +180,8 @@ export default class ButtonBase
 
     if (iconAlt) {
       let style = {
-        marginLeft: i18n.dir === 'ltr' ? 4 : 0,
-        marginRight: i18n.dir === 'rtl' ? 4 : 0,
+        marginLeft: children && i18n.dir === 'ltr' ? 4 : 0,
+        marginRight: children && i18n.dir === 'rtl' ? 4 : 0,
       };
       iconAlt = (
         <IconWrapper style={style}>

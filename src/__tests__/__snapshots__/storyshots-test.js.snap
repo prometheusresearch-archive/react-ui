@@ -266,6 +266,74 @@ exports[`Storyshots <Button /> With icon (alternative) 1`] = `
 </button>
 `;
 
+exports[`Storyshots <Button /> With icon (alternative, rtl) 1`] = `
+<div
+  dir="rtl">
+  <button
+    aria-pressed={undefined}
+    className="button-21528751 button-normal-21528751"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+    <div
+      className="div-845420761"
+      style={
+        Object {
+          "marginLeft": 0,
+          "marginRight": 4,
+        }
+      }>
+      +
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <Button /> With icon (rtl) 1`] = `
+<div
+  dir="rtl">
+  <button
+    aria-pressed={undefined}
+    className="button-21528751 button-normal-21528751"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-845420761"
+      style={
+        Object {
+          "marginLeft": 4,
+          "marginRight": 0,
+        }
+      }>
+      +
+    </div>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+</div>
+`;
+
 exports[`Storyshots <Button /> With icon 1`] = `
 <button
   aria-pressed={undefined}
@@ -293,6 +361,33 @@ exports[`Storyshots <Button /> With icon 1`] = `
   <div
     className="div-2772671">
     Add
+  </div>
+</button>
+`;
+
+exports[`Storyshots <Button /> With icon only 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-21528751 button-normal-21528751"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 0,
+        "marginRight": 0,
+      }
+    }>
+    +
   </div>
 </button>
 `;
@@ -2202,6 +2297,74 @@ exports[`Storyshots <DangerButton /> With icon (alternative) 1`] = `
 </button>
 `;
 
+exports[`Storyshots <DangerButton /> With icon (alternative, rtl) 1`] = `
+<div
+  dir="rtl">
+  <button
+    aria-pressed={undefined}
+    className="button-2081366032 button-normal-2081366032"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+    <div
+      className="div-845420761"
+      style={
+        Object {
+          "marginLeft": 0,
+          "marginRight": 4,
+        }
+      }>
+      +
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <DangerButton /> With icon (rtl) 1`] = `
+<div
+  dir="rtl">
+  <button
+    aria-pressed={undefined}
+    className="button-2081366032 button-normal-2081366032"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-845420761"
+      style={
+        Object {
+          "marginLeft": 4,
+          "marginRight": 0,
+        }
+      }>
+      +
+    </div>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+</div>
+`;
+
 exports[`Storyshots <DangerButton /> With icon 1`] = `
 <button
   aria-pressed={undefined}
@@ -2229,6 +2392,33 @@ exports[`Storyshots <DangerButton /> With icon 1`] = `
   <div
     className="div-2772671">
     Add
+  </div>
+</button>
+`;
+
+exports[`Storyshots <DangerButton /> With icon only 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2081366032 button-normal-2081366032"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 0,
+        "marginRight": 0,
+      }
+    }>
+    +
   </div>
 </button>
 `;
@@ -3531,6 +3721,74 @@ exports[`Storyshots <FlatButton /> With icon (alternative) 1`] = `
 </button>
 `;
 
+exports[`Storyshots <FlatButton /> With icon (alternative, rtl) 1`] = `
+<div
+  dir="rtl">
+  <button
+    aria-pressed={undefined}
+    className="button-3703635351 button-normal-3703635351"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+    <div
+      className="div-845420761"
+      style={
+        Object {
+          "marginLeft": 0,
+          "marginRight": 4,
+        }
+      }>
+      +
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <FlatButton /> With icon (rtl) 1`] = `
+<div
+  dir="rtl">
+  <button
+    aria-pressed={undefined}
+    className="button-3703635351 button-normal-3703635351"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-845420761"
+      style={
+        Object {
+          "marginLeft": 4,
+          "marginRight": 0,
+        }
+      }>
+      +
+    </div>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+</div>
+`;
+
 exports[`Storyshots <FlatButton /> With icon 1`] = `
 <button
   aria-pressed={undefined}
@@ -3558,6 +3816,33 @@ exports[`Storyshots <FlatButton /> With icon 1`] = `
   <div
     className="div-2772671">
     Add
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatButton /> With icon only 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3703635351 button-normal-3703635351"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 0,
+        "marginRight": 0,
+      }
+    }>
+    +
   </div>
 </button>
 `;
@@ -3830,6 +4115,74 @@ exports[`Storyshots <FlatDangerButton /> With icon (alternative) 1`] = `
 </button>
 `;
 
+exports[`Storyshots <FlatDangerButton /> With icon (alternative, rtl) 1`] = `
+<div
+  dir="rtl">
+  <button
+    aria-pressed={undefined}
+    className="button-194652796 button-normal-194652796"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+    <div
+      className="div-845420761"
+      style={
+        Object {
+          "marginLeft": 0,
+          "marginRight": 4,
+        }
+      }>
+      +
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <FlatDangerButton /> With icon (rtl) 1`] = `
+<div
+  dir="rtl">
+  <button
+    aria-pressed={undefined}
+    className="button-194652796 button-normal-194652796"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-845420761"
+      style={
+        Object {
+          "marginLeft": 4,
+          "marginRight": 0,
+        }
+      }>
+      +
+    </div>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+</div>
+`;
+
 exports[`Storyshots <FlatDangerButton /> With icon 1`] = `
 <button
   aria-pressed={undefined}
@@ -3857,6 +4210,33 @@ exports[`Storyshots <FlatDangerButton /> With icon 1`] = `
   <div
     className="div-2772671">
     Add
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatDangerButton /> With icon only 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-194652796 button-normal-194652796"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 0,
+        "marginRight": 0,
+      }
+    }>
+    +
   </div>
 </button>
 `;
@@ -4129,6 +4509,74 @@ exports[`Storyshots <FlatSuccessButton /> With icon (alternative) 1`] = `
 </button>
 `;
 
+exports[`Storyshots <FlatSuccessButton /> With icon (alternative, rtl) 1`] = `
+<div
+  dir="rtl">
+  <button
+    aria-pressed={undefined}
+    className="button-2293669648 button-normal-2293669648"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+    <div
+      className="div-845420761"
+      style={
+        Object {
+          "marginLeft": 0,
+          "marginRight": 4,
+        }
+      }>
+      +
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <FlatSuccessButton /> With icon (rtl) 1`] = `
+<div
+  dir="rtl">
+  <button
+    aria-pressed={undefined}
+    className="button-2293669648 button-normal-2293669648"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-845420761"
+      style={
+        Object {
+          "marginLeft": 4,
+          "marginRight": 0,
+        }
+      }>
+      +
+    </div>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+</div>
+`;
+
 exports[`Storyshots <FlatSuccessButton /> With icon 1`] = `
 <button
   aria-pressed={undefined}
@@ -4156,6 +4604,33 @@ exports[`Storyshots <FlatSuccessButton /> With icon 1`] = `
   <div
     className="div-2772671">
     Add
+  </div>
+</button>
+`;
+
+exports[`Storyshots <FlatSuccessButton /> With icon only 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2293669648 button-normal-2293669648"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 0,
+        "marginRight": 0,
+      }
+    }>
+    +
   </div>
 </button>
 `;
@@ -4655,6 +5130,74 @@ exports[`Storyshots <OptionButton /> With icon (alternative) 1`] = `
 </button>
 `;
 
+exports[`Storyshots <OptionButton /> With icon (alternative, rtl) 1`] = `
+<div
+  dir="rtl">
+  <button
+    aria-pressed={undefined}
+    className="button-3970006144 button-normal-3970006144"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+    <div
+      className="div-845420761"
+      style={
+        Object {
+          "marginLeft": 0,
+          "marginRight": 4,
+        }
+      }>
+      +
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <OptionButton /> With icon (rtl) 1`] = `
+<div
+  dir="rtl">
+  <button
+    aria-pressed={undefined}
+    className="button-3970006144 button-normal-3970006144"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-845420761"
+      style={
+        Object {
+          "marginLeft": 4,
+          "marginRight": 0,
+        }
+      }>
+      +
+    </div>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+</div>
+`;
+
 exports[`Storyshots <OptionButton /> With icon 1`] = `
 <button
   aria-pressed={undefined}
@@ -4682,6 +5225,33 @@ exports[`Storyshots <OptionButton /> With icon 1`] = `
   <div
     className="div-2772671">
     Add
+  </div>
+</button>
+`;
+
+exports[`Storyshots <OptionButton /> With icon only 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3970006144 button-normal-3970006144"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 0,
+        "marginRight": 0,
+      }
+    }>
+    +
   </div>
 </button>
 `;
@@ -5338,6 +5908,74 @@ exports[`Storyshots <QuietButton /> With icon (alternative) 1`] = `
 </button>
 `;
 
+exports[`Storyshots <QuietButton /> With icon (alternative, rtl) 1`] = `
+<div
+  dir="rtl">
+  <button
+    aria-pressed={undefined}
+    className="button-2127033244 button-normal-2127033244"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+    <div
+      className="div-845420761"
+      style={
+        Object {
+          "marginLeft": 0,
+          "marginRight": 4,
+        }
+      }>
+      +
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <QuietButton /> With icon (rtl) 1`] = `
+<div
+  dir="rtl">
+  <button
+    aria-pressed={undefined}
+    className="button-2127033244 button-normal-2127033244"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-845420761"
+      style={
+        Object {
+          "marginLeft": 4,
+          "marginRight": 0,
+        }
+      }>
+      +
+    </div>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+</div>
+`;
+
 exports[`Storyshots <QuietButton /> With icon 1`] = `
 <button
   aria-pressed={undefined}
@@ -5365,6 +6003,33 @@ exports[`Storyshots <QuietButton /> With icon 1`] = `
   <div
     className="div-2772671">
     Add
+  </div>
+</button>
+`;
+
+exports[`Storyshots <QuietButton /> With icon only 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-2127033244 button-normal-2127033244"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 0,
+        "marginRight": 0,
+      }
+    }>
+    +
   </div>
 </button>
 `;
@@ -6567,6 +7232,74 @@ exports[`Storyshots <SuccessButton /> With icon (alternative) 1`] = `
 </button>
 `;
 
+exports[`Storyshots <SuccessButton /> With icon (alternative, rtl) 1`] = `
+<div
+  dir="rtl">
+  <button
+    aria-pressed={undefined}
+    className="button-3570445596 button-normal-3570445596"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+    <div
+      className="div-845420761"
+      style={
+        Object {
+          "marginLeft": 0,
+          "marginRight": 4,
+        }
+      }>
+      +
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots <SuccessButton /> With icon (rtl) 1`] = `
+<div
+  dir="rtl">
+  <button
+    aria-pressed={undefined}
+    className="button-3570445596 button-normal-3570445596"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-845420761"
+      style={
+        Object {
+          "marginLeft": 4,
+          "marginRight": 0,
+        }
+      }>
+      +
+    </div>
+    <div
+      className="div-2772671">
+      Add
+    </div>
+  </button>
+</div>
+`;
+
 exports[`Storyshots <SuccessButton /> With icon 1`] = `
 <button
   aria-pressed={undefined}
@@ -6594,6 +7327,33 @@ exports[`Storyshots <SuccessButton /> With icon 1`] = `
   <div
     className="div-2772671">
     Add
+  </div>
+</button>
+`;
+
+exports[`Storyshots <SuccessButton /> With icon only 1`] = `
+<button
+  aria-pressed={undefined}
+  className="button-3570445596 button-normal-3570445596"
+  disabled={undefined}
+  href={undefined}
+  role="button"
+  style={
+    Object {
+      "height": undefined,
+      "textAlign": undefined,
+      "width": undefined,
+    }
+  }>
+  <div
+    className="div-845420761"
+    style={
+      Object {
+        "marginLeft": 0,
+        "marginRight": 0,
+      }
+    }>
+    +
   </div>
 </button>
 `;

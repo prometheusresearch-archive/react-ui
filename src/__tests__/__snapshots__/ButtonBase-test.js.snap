@@ -69,7 +69,7 @@ exports[`test renders with just icon (element) 1`] = `
     style={
       Object {
         "marginLeft": 0,
-        "marginRight": 4,
+        "marginRight": 0,
       }
     }>
     <icon />
@@ -96,7 +96,7 @@ exports[`test renders with just icon (text) 1`] = `
     style={
       Object {
         "marginLeft": 0,
-        "marginRight": 4,
+        "marginRight": 0,
       }
     }>
     plus

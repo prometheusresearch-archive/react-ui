@@ -27,8 +27,21 @@ export function createButtonStories(Button: any) {
     .add('With icon', () =>
       <Button icon="+">Add</Button>
     )
+    .add('With icon (rtl)', () =>
+      <I18N dir="rtl">
+        <Button icon="+">Add</Button>
+      </I18N>
+    )
+    .add('With icon only', () =>
+      <Button icon="+" />
+    )
     .add('With icon (alternative)', () =>
       <Button iconAlt="+">Add</Button>
+    )
+    .add('With icon (alternative, rtl)', () =>
+      <I18N dir="rtl">
+        <Button iconAlt="+">Add</Button>
+      </I18N>
     )
     .add('Grouped horizontally', () =>
       <div>
