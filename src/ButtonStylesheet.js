@@ -59,6 +59,9 @@ export type ButtonStylesheet = {
   shadowFocusRing?: string;
 };
 
+
+let noBorder = {width: 1, color: 'transparent', style: 'solid'};
+
 let defaultTextSize: FontSize = {
   xSmall: 10,
   small: 12,
@@ -400,31 +403,88 @@ export function create(stylesheet: ButtonStylesheet) {
         padding: css.padding(10, 30),
       }
     },
+
     groupHorizontally_ltr: {
-      borderTopRightRadius: 0,
-      borderBottomRightRadius: 0,
+      borderRadius: 0,
+
+      // reset borderLeft
+      borderLeft: noBorder,
+      hover: {borderLeft: noBorder},
+      focus: {borderLeft: noBorder},
+      active:  {borderLeft: noBorder},
+      disabled: {borderLeft: noBorder},
+
+      firstChild: {
+        borderTopLeftRadius: borderRadius,
+        borderBottomLeftRadius: borderRadius,
+
+        // restore borderLeft
+        borderLeft: colors.border,
+        hover: {borderLeft: hoverColors.border},
+        focus: {borderLeft: focusColors.border},
+        active: {borderLeft: activeColors.border},
+        disabled: {borderLeft: disabledColors.border},
+      },
+
       lastChild: {
-        borderLeft: 'none',
-        borderTopLeftRadius: 0,
-        borderBottomLeftRadius: 0,
+        borderTopRightRadius: borderRadius,
+        borderBottomRightRadius: borderRadius,
       }
     },
+
     groupHorizontally_rtl: {
-      borderTopLeftRadius: 0,
-      borderBottomLeftRadius: 0,
+      borderRadius: 0,
+
+      // reset borderRight
+      borderRight: noBorder,
+      hover: {borderRight: noBorder},
+      focus: {borderRight: noBorder},
+      active:  {borderRight: noBorder},
+      disabled: {borderRight: noBorder},
+
+      firstChild: {
+        borderTopRightRadius: borderRadius,
+        borderBottomRightRadius: borderRadius,
+
+        // restore borderRight
+        borderRight: colors.border,
+        hover: {borderRight: hoverColors.border},
+        focus: {borderRight: focusColors.border},
+        active: {borderRight: activeColors.border},
+        disabled: {borderRight: disabledColors.border},
+      },
+
       lastChild: {
-        borderRight: 'none',
-        borderTopRightRadius: 0,
-        borderBottomRightRadius: 0,
+        borderTopLeftRadius: borderRadius,
+        borderBottomLeftRadius: borderRadius,
       }
     },
+
     groupVertically: {
-      borderBottomRightRadius: 0,
-      borderBottomLeftRadius: 0,
+      borderRadius: 0,
+
+      // reset borderTop
+      borderTop: noBorder,
+      hover: {borderTop: noBorder},
+      focus: {borderTop: noBorder},
+      active:  {borderTop: noBorder},
+      disabled: {borderTop: noBorder},
+
+      firstChild: {
+        borderTopLeftRadius: borderRadius,
+        borderTopRightRadius: borderRadius,
+
+        // restore borderTop
+        borderTop: colors.border,
+        hover: {borderTop: hoverColors.border},
+        focus: {borderTop: focusColors.border},
+        active: {borderTop: activeColors.border},
+        disabled: {borderTop: disabledColors.border},
+      },
+
       lastChild: {
-        borderTop: 'none',
-        borderTopLeftRadius: 0,
-        borderTopRightRadius: 0,
+        borderBottomLeftRadius: borderRadius,
+        borderBottomRightRadius: borderRadius,
       }
     },
   });

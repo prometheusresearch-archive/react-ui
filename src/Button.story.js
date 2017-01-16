@@ -46,6 +46,7 @@ export function createButtonStories(Button: any) {
     .add('Grouped horizontally', () =>
       <div>
         <Button groupHorizontally>Add</Button>
+        <Button groupHorizontally>No op</Button>
         <Button groupHorizontally>Remove</Button>
       </div>
     )
@@ -53,6 +54,7 @@ export function createButtonStories(Button: any) {
       <I18N dir="rtl">
         <div>
           <Button groupHorizontally>Add</Button>
+          <Button groupHorizontally>No op</Button>
           <Button groupHorizontally>Remove</Button>
         </div>
       </I18N>
@@ -60,6 +62,7 @@ export function createButtonStories(Button: any) {
     .add('Grouped vertically', () =>
       <div style={{display: 'flex', flexDirection: 'column'}}>
         <Button groupVertically>Add</Button>
+        <Button groupVertically>No op</Button>
         <Button groupVertically>Remove</Button>
       </div>
     );
