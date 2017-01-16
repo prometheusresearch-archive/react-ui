@@ -1,7 +1,7 @@
 exports[`Storyshots <Button /> Default state 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-21528751 button-normal-21528751"
+  className="button-1222142338 button-normal-1222142338"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -25,7 +25,7 @@ exports[`Storyshots <Button /> Grouped horizontally (rtl) 1`] = `
   <div>
     <button
       aria-pressed={undefined}
-      className="button-21528751  button-groupHorizontally-rtl-21528751 button-normal-21528751"
+      className="button-1222142338  button-groupHorizontally-rtl-1222142338 button-normal-1222142338"
       disabled={undefined}
       href={undefined}
       role="button"
@@ -43,7 +43,25 @@ exports[`Storyshots <Button /> Grouped horizontally (rtl) 1`] = `
     </button>
     <button
       aria-pressed={undefined}
-      className="button-21528751  button-groupHorizontally-rtl-21528751 button-normal-21528751"
+      className="button-1222142338  button-groupHorizontally-rtl-1222142338 button-normal-1222142338"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        No op
+      </div>
+    </button>
+    <button
+      aria-pressed={undefined}
+      className="button-1222142338  button-groupHorizontally-rtl-1222142338 button-normal-1222142338"
       disabled={undefined}
       href={undefined}
       role="button"
@@ -67,7 +85,7 @@ exports[`Storyshots <Button /> Grouped horizontally 1`] = `
 <div>
   <button
     aria-pressed={undefined}
-    className="button-21528751  button-groupHorizontally-ltr-21528751 button-normal-21528751"
+    className="button-1222142338  button-groupHorizontally-ltr-1222142338 button-normal-1222142338"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -85,7 +103,25 @@ exports[`Storyshots <Button /> Grouped horizontally 1`] = `
   </button>
   <button
     aria-pressed={undefined}
-    className="button-21528751  button-groupHorizontally-ltr-21528751 button-normal-21528751"
+    className="button-1222142338  button-groupHorizontally-ltr-1222142338 button-normal-1222142338"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      No op
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-1222142338  button-groupHorizontally-ltr-1222142338 button-normal-1222142338"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -114,7 +150,7 @@ exports[`Storyshots <Button /> Grouped vertically 1`] = `
   }>
   <button
     aria-pressed={undefined}
-    className="button-21528751 button-groupVertically-21528751 button-normal-21528751"
+    className="button-1222142338 button-groupVertically-1222142338 button-normal-1222142338"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -132,7 +168,25 @@ exports[`Storyshots <Button /> Grouped vertically 1`] = `
   </button>
   <button
     aria-pressed={undefined}
-    className="button-21528751 button-groupVertically-21528751 button-normal-21528751"
+    className="button-1222142338 button-groupVertically-1222142338 button-normal-1222142338"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      No op
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-1222142338 button-groupVertically-1222142338 button-normal-1222142338"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -154,7 +208,7 @@ exports[`Storyshots <Button /> Grouped vertically 1`] = `
 exports[`Storyshots <Button /> Size: large 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-21528751 button-large-21528751"
+  className="button-1222142338 button-large-1222142338"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -175,7 +229,7 @@ exports[`Storyshots <Button /> Size: large 1`] = `
 exports[`Storyshots <Button /> Size: normal 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-21528751 button-normal-21528751"
+  className="button-1222142338 button-normal-1222142338"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -196,7 +250,7 @@ exports[`Storyshots <Button /> Size: normal 1`] = `
 exports[`Storyshots <Button /> Size: small 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-21528751 button-small-21528751"
+  className="button-1222142338 button-small-1222142338"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -217,7 +271,7 @@ exports[`Storyshots <Button /> Size: small 1`] = `
 exports[`Storyshots <Button /> Size: x-small 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-21528751 button-xSmall-21528751"
+  className="button-1222142338 button-xSmall-1222142338"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -238,7 +292,7 @@ exports[`Storyshots <Button /> Size: x-small 1`] = `
 exports[`Storyshots <Button /> With icon (alternative) 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-21528751 button-normal-21528751"
+  className="button-1222142338 button-normal-1222142338"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -271,7 +325,7 @@ exports[`Storyshots <Button /> With icon (alternative, rtl) 1`] = `
   dir="rtl">
   <button
     aria-pressed={undefined}
-    className="button-21528751 button-normal-21528751"
+    className="button-1222142338 button-normal-1222142338"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -305,7 +359,7 @@ exports[`Storyshots <Button /> With icon (rtl) 1`] = `
   dir="rtl">
   <button
     aria-pressed={undefined}
-    className="button-21528751 button-normal-21528751"
+    className="button-1222142338 button-normal-1222142338"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -337,7 +391,7 @@ exports[`Storyshots <Button /> With icon (rtl) 1`] = `
 exports[`Storyshots <Button /> With icon 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-21528751 button-normal-21528751"
+  className="button-1222142338 button-normal-1222142338"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -368,7 +422,7 @@ exports[`Storyshots <Button /> With icon 1`] = `
 exports[`Storyshots <Button /> With icon only 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-21528751 button-normal-21528751"
+  className="button-1222142338 button-normal-1222142338"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -2032,7 +2086,7 @@ exports[`Storyshots <CheckboxGroupBase /> Example 1`] = `
 exports[`Storyshots <DangerButton /> Default state 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2081366032 button-normal-2081366032"
+  className="button-11025640 button-normal-11025640"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -2056,7 +2110,7 @@ exports[`Storyshots <DangerButton /> Grouped horizontally (rtl) 1`] = `
   <div>
     <button
       aria-pressed={undefined}
-      className="button-2081366032  button-groupHorizontally-rtl-2081366032 button-normal-2081366032"
+      className="button-11025640  button-groupHorizontally-rtl-11025640 button-normal-11025640"
       disabled={undefined}
       href={undefined}
       role="button"
@@ -2074,7 +2128,25 @@ exports[`Storyshots <DangerButton /> Grouped horizontally (rtl) 1`] = `
     </button>
     <button
       aria-pressed={undefined}
-      className="button-2081366032  button-groupHorizontally-rtl-2081366032 button-normal-2081366032"
+      className="button-11025640  button-groupHorizontally-rtl-11025640 button-normal-11025640"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        No op
+      </div>
+    </button>
+    <button
+      aria-pressed={undefined}
+      className="button-11025640  button-groupHorizontally-rtl-11025640 button-normal-11025640"
       disabled={undefined}
       href={undefined}
       role="button"
@@ -2098,7 +2170,7 @@ exports[`Storyshots <DangerButton /> Grouped horizontally 1`] = `
 <div>
   <button
     aria-pressed={undefined}
-    className="button-2081366032  button-groupHorizontally-ltr-2081366032 button-normal-2081366032"
+    className="button-11025640  button-groupHorizontally-ltr-11025640 button-normal-11025640"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -2116,7 +2188,25 @@ exports[`Storyshots <DangerButton /> Grouped horizontally 1`] = `
   </button>
   <button
     aria-pressed={undefined}
-    className="button-2081366032  button-groupHorizontally-ltr-2081366032 button-normal-2081366032"
+    className="button-11025640  button-groupHorizontally-ltr-11025640 button-normal-11025640"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      No op
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-11025640  button-groupHorizontally-ltr-11025640 button-normal-11025640"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -2145,7 +2235,7 @@ exports[`Storyshots <DangerButton /> Grouped vertically 1`] = `
   }>
   <button
     aria-pressed={undefined}
-    className="button-2081366032 button-groupVertically-2081366032 button-normal-2081366032"
+    className="button-11025640 button-groupVertically-11025640 button-normal-11025640"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -2163,7 +2253,25 @@ exports[`Storyshots <DangerButton /> Grouped vertically 1`] = `
   </button>
   <button
     aria-pressed={undefined}
-    className="button-2081366032 button-groupVertically-2081366032 button-normal-2081366032"
+    className="button-11025640 button-groupVertically-11025640 button-normal-11025640"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      No op
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-11025640 button-groupVertically-11025640 button-normal-11025640"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -2185,7 +2293,7 @@ exports[`Storyshots <DangerButton /> Grouped vertically 1`] = `
 exports[`Storyshots <DangerButton /> Size: large 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2081366032 button-large-2081366032"
+  className="button-11025640 button-large-11025640"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -2206,7 +2314,7 @@ exports[`Storyshots <DangerButton /> Size: large 1`] = `
 exports[`Storyshots <DangerButton /> Size: normal 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2081366032 button-normal-2081366032"
+  className="button-11025640 button-normal-11025640"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -2227,7 +2335,7 @@ exports[`Storyshots <DangerButton /> Size: normal 1`] = `
 exports[`Storyshots <DangerButton /> Size: small 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2081366032 button-small-2081366032"
+  className="button-11025640 button-small-11025640"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -2248,7 +2356,7 @@ exports[`Storyshots <DangerButton /> Size: small 1`] = `
 exports[`Storyshots <DangerButton /> Size: x-small 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2081366032 button-xSmall-2081366032"
+  className="button-11025640 button-xSmall-11025640"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -2269,7 +2377,7 @@ exports[`Storyshots <DangerButton /> Size: x-small 1`] = `
 exports[`Storyshots <DangerButton /> With icon (alternative) 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2081366032 button-normal-2081366032"
+  className="button-11025640 button-normal-11025640"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -2302,7 +2410,7 @@ exports[`Storyshots <DangerButton /> With icon (alternative, rtl) 1`] = `
   dir="rtl">
   <button
     aria-pressed={undefined}
-    className="button-2081366032 button-normal-2081366032"
+    className="button-11025640 button-normal-11025640"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -2336,7 +2444,7 @@ exports[`Storyshots <DangerButton /> With icon (rtl) 1`] = `
   dir="rtl">
   <button
     aria-pressed={undefined}
-    className="button-2081366032 button-normal-2081366032"
+    className="button-11025640 button-normal-11025640"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -2368,7 +2476,7 @@ exports[`Storyshots <DangerButton /> With icon (rtl) 1`] = `
 exports[`Storyshots <DangerButton /> With icon 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2081366032 button-normal-2081366032"
+  className="button-11025640 button-normal-11025640"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -2399,7 +2507,7 @@ exports[`Storyshots <DangerButton /> With icon 1`] = `
 exports[`Storyshots <DangerButton /> With icon only 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2081366032 button-normal-2081366032"
+  className="button-11025640 button-normal-11025640"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -3456,7 +3564,7 @@ exports[`Storyshots <Field /> Simple 1`] = `
 exports[`Storyshots <FlatButton /> Default state 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3703635351 button-normal-3703635351"
+  className="button-1452460163 button-normal-1452460163"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -3480,7 +3588,7 @@ exports[`Storyshots <FlatButton /> Grouped horizontally (rtl) 1`] = `
   <div>
     <button
       aria-pressed={undefined}
-      className="button-3703635351  button-groupHorizontally-rtl-3703635351 button-normal-3703635351"
+      className="button-1452460163  button-groupHorizontally-rtl-1452460163 button-normal-1452460163"
       disabled={undefined}
       href={undefined}
       role="button"
@@ -3498,7 +3606,25 @@ exports[`Storyshots <FlatButton /> Grouped horizontally (rtl) 1`] = `
     </button>
     <button
       aria-pressed={undefined}
-      className="button-3703635351  button-groupHorizontally-rtl-3703635351 button-normal-3703635351"
+      className="button-1452460163  button-groupHorizontally-rtl-1452460163 button-normal-1452460163"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        No op
+      </div>
+    </button>
+    <button
+      aria-pressed={undefined}
+      className="button-1452460163  button-groupHorizontally-rtl-1452460163 button-normal-1452460163"
       disabled={undefined}
       href={undefined}
       role="button"
@@ -3522,7 +3648,7 @@ exports[`Storyshots <FlatButton /> Grouped horizontally 1`] = `
 <div>
   <button
     aria-pressed={undefined}
-    className="button-3703635351  button-groupHorizontally-ltr-3703635351 button-normal-3703635351"
+    className="button-1452460163  button-groupHorizontally-ltr-1452460163 button-normal-1452460163"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -3540,7 +3666,25 @@ exports[`Storyshots <FlatButton /> Grouped horizontally 1`] = `
   </button>
   <button
     aria-pressed={undefined}
-    className="button-3703635351  button-groupHorizontally-ltr-3703635351 button-normal-3703635351"
+    className="button-1452460163  button-groupHorizontally-ltr-1452460163 button-normal-1452460163"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      No op
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-1452460163  button-groupHorizontally-ltr-1452460163 button-normal-1452460163"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -3569,7 +3713,7 @@ exports[`Storyshots <FlatButton /> Grouped vertically 1`] = `
   }>
   <button
     aria-pressed={undefined}
-    className="button-3703635351 button-groupVertically-3703635351 button-normal-3703635351"
+    className="button-1452460163 button-groupVertically-1452460163 button-normal-1452460163"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -3587,7 +3731,25 @@ exports[`Storyshots <FlatButton /> Grouped vertically 1`] = `
   </button>
   <button
     aria-pressed={undefined}
-    className="button-3703635351 button-groupVertically-3703635351 button-normal-3703635351"
+    className="button-1452460163 button-groupVertically-1452460163 button-normal-1452460163"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      No op
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-1452460163 button-groupVertically-1452460163 button-normal-1452460163"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -3609,7 +3771,7 @@ exports[`Storyshots <FlatButton /> Grouped vertically 1`] = `
 exports[`Storyshots <FlatButton /> Size: large 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3703635351 button-large-3703635351"
+  className="button-1452460163 button-large-1452460163"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -3630,7 +3792,7 @@ exports[`Storyshots <FlatButton /> Size: large 1`] = `
 exports[`Storyshots <FlatButton /> Size: normal 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3703635351 button-normal-3703635351"
+  className="button-1452460163 button-normal-1452460163"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -3651,7 +3813,7 @@ exports[`Storyshots <FlatButton /> Size: normal 1`] = `
 exports[`Storyshots <FlatButton /> Size: small 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3703635351 button-small-3703635351"
+  className="button-1452460163 button-small-1452460163"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -3672,7 +3834,7 @@ exports[`Storyshots <FlatButton /> Size: small 1`] = `
 exports[`Storyshots <FlatButton /> Size: x-small 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3703635351 button-xSmall-3703635351"
+  className="button-1452460163 button-xSmall-1452460163"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -3693,7 +3855,7 @@ exports[`Storyshots <FlatButton /> Size: x-small 1`] = `
 exports[`Storyshots <FlatButton /> With icon (alternative) 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3703635351 button-normal-3703635351"
+  className="button-1452460163 button-normal-1452460163"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -3726,7 +3888,7 @@ exports[`Storyshots <FlatButton /> With icon (alternative, rtl) 1`] = `
   dir="rtl">
   <button
     aria-pressed={undefined}
-    className="button-3703635351 button-normal-3703635351"
+    className="button-1452460163 button-normal-1452460163"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -3760,7 +3922,7 @@ exports[`Storyshots <FlatButton /> With icon (rtl) 1`] = `
   dir="rtl">
   <button
     aria-pressed={undefined}
-    className="button-3703635351 button-normal-3703635351"
+    className="button-1452460163 button-normal-1452460163"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -3792,7 +3954,7 @@ exports[`Storyshots <FlatButton /> With icon (rtl) 1`] = `
 exports[`Storyshots <FlatButton /> With icon 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3703635351 button-normal-3703635351"
+  className="button-1452460163 button-normal-1452460163"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -3823,7 +3985,7 @@ exports[`Storyshots <FlatButton /> With icon 1`] = `
 exports[`Storyshots <FlatButton /> With icon only 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3703635351 button-normal-3703635351"
+  className="button-1452460163 button-normal-1452460163"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -3850,7 +4012,7 @@ exports[`Storyshots <FlatButton /> With icon only 1`] = `
 exports[`Storyshots <FlatDangerButton /> Default state 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-194652796 button-normal-194652796"
+  className="button-3359529521 button-normal-3359529521"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -3874,7 +4036,7 @@ exports[`Storyshots <FlatDangerButton /> Grouped horizontally (rtl) 1`] = `
   <div>
     <button
       aria-pressed={undefined}
-      className="button-194652796  button-groupHorizontally-rtl-194652796 button-normal-194652796"
+      className="button-3359529521  button-groupHorizontally-rtl-3359529521 button-normal-3359529521"
       disabled={undefined}
       href={undefined}
       role="button"
@@ -3892,7 +4054,25 @@ exports[`Storyshots <FlatDangerButton /> Grouped horizontally (rtl) 1`] = `
     </button>
     <button
       aria-pressed={undefined}
-      className="button-194652796  button-groupHorizontally-rtl-194652796 button-normal-194652796"
+      className="button-3359529521  button-groupHorizontally-rtl-3359529521 button-normal-3359529521"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        No op
+      </div>
+    </button>
+    <button
+      aria-pressed={undefined}
+      className="button-3359529521  button-groupHorizontally-rtl-3359529521 button-normal-3359529521"
       disabled={undefined}
       href={undefined}
       role="button"
@@ -3916,7 +4096,7 @@ exports[`Storyshots <FlatDangerButton /> Grouped horizontally 1`] = `
 <div>
   <button
     aria-pressed={undefined}
-    className="button-194652796  button-groupHorizontally-ltr-194652796 button-normal-194652796"
+    className="button-3359529521  button-groupHorizontally-ltr-3359529521 button-normal-3359529521"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -3934,7 +4114,25 @@ exports[`Storyshots <FlatDangerButton /> Grouped horizontally 1`] = `
   </button>
   <button
     aria-pressed={undefined}
-    className="button-194652796  button-groupHorizontally-ltr-194652796 button-normal-194652796"
+    className="button-3359529521  button-groupHorizontally-ltr-3359529521 button-normal-3359529521"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      No op
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-3359529521  button-groupHorizontally-ltr-3359529521 button-normal-3359529521"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -3963,7 +4161,7 @@ exports[`Storyshots <FlatDangerButton /> Grouped vertically 1`] = `
   }>
   <button
     aria-pressed={undefined}
-    className="button-194652796 button-groupVertically-194652796 button-normal-194652796"
+    className="button-3359529521 button-groupVertically-3359529521 button-normal-3359529521"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -3981,7 +4179,25 @@ exports[`Storyshots <FlatDangerButton /> Grouped vertically 1`] = `
   </button>
   <button
     aria-pressed={undefined}
-    className="button-194652796 button-groupVertically-194652796 button-normal-194652796"
+    className="button-3359529521 button-groupVertically-3359529521 button-normal-3359529521"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      No op
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-3359529521 button-groupVertically-3359529521 button-normal-3359529521"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -4003,7 +4219,7 @@ exports[`Storyshots <FlatDangerButton /> Grouped vertically 1`] = `
 exports[`Storyshots <FlatDangerButton /> Size: large 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-194652796 button-large-194652796"
+  className="button-3359529521 button-large-3359529521"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -4024,7 +4240,7 @@ exports[`Storyshots <FlatDangerButton /> Size: large 1`] = `
 exports[`Storyshots <FlatDangerButton /> Size: normal 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-194652796 button-normal-194652796"
+  className="button-3359529521 button-normal-3359529521"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -4045,7 +4261,7 @@ exports[`Storyshots <FlatDangerButton /> Size: normal 1`] = `
 exports[`Storyshots <FlatDangerButton /> Size: small 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-194652796 button-small-194652796"
+  className="button-3359529521 button-small-3359529521"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -4066,7 +4282,7 @@ exports[`Storyshots <FlatDangerButton /> Size: small 1`] = `
 exports[`Storyshots <FlatDangerButton /> Size: x-small 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-194652796 button-xSmall-194652796"
+  className="button-3359529521 button-xSmall-3359529521"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -4087,7 +4303,7 @@ exports[`Storyshots <FlatDangerButton /> Size: x-small 1`] = `
 exports[`Storyshots <FlatDangerButton /> With icon (alternative) 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-194652796 button-normal-194652796"
+  className="button-3359529521 button-normal-3359529521"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -4120,7 +4336,7 @@ exports[`Storyshots <FlatDangerButton /> With icon (alternative, rtl) 1`] = `
   dir="rtl">
   <button
     aria-pressed={undefined}
-    className="button-194652796 button-normal-194652796"
+    className="button-3359529521 button-normal-3359529521"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -4154,7 +4370,7 @@ exports[`Storyshots <FlatDangerButton /> With icon (rtl) 1`] = `
   dir="rtl">
   <button
     aria-pressed={undefined}
-    className="button-194652796 button-normal-194652796"
+    className="button-3359529521 button-normal-3359529521"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -4186,7 +4402,7 @@ exports[`Storyshots <FlatDangerButton /> With icon (rtl) 1`] = `
 exports[`Storyshots <FlatDangerButton /> With icon 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-194652796 button-normal-194652796"
+  className="button-3359529521 button-normal-3359529521"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -4217,7 +4433,7 @@ exports[`Storyshots <FlatDangerButton /> With icon 1`] = `
 exports[`Storyshots <FlatDangerButton /> With icon only 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-194652796 button-normal-194652796"
+  className="button-3359529521 button-normal-3359529521"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -4244,7 +4460,7 @@ exports[`Storyshots <FlatDangerButton /> With icon only 1`] = `
 exports[`Storyshots <FlatSuccessButton /> Default state 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2293669648 button-normal-2293669648"
+  className="button-2062378597 button-normal-2062378597"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -4268,7 +4484,7 @@ exports[`Storyshots <FlatSuccessButton /> Grouped horizontally (rtl) 1`] = `
   <div>
     <button
       aria-pressed={undefined}
-      className="button-2293669648  button-groupHorizontally-rtl-2293669648 button-normal-2293669648"
+      className="button-2062378597  button-groupHorizontally-rtl-2062378597 button-normal-2062378597"
       disabled={undefined}
       href={undefined}
       role="button"
@@ -4286,7 +4502,25 @@ exports[`Storyshots <FlatSuccessButton /> Grouped horizontally (rtl) 1`] = `
     </button>
     <button
       aria-pressed={undefined}
-      className="button-2293669648  button-groupHorizontally-rtl-2293669648 button-normal-2293669648"
+      className="button-2062378597  button-groupHorizontally-rtl-2062378597 button-normal-2062378597"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        No op
+      </div>
+    </button>
+    <button
+      aria-pressed={undefined}
+      className="button-2062378597  button-groupHorizontally-rtl-2062378597 button-normal-2062378597"
       disabled={undefined}
       href={undefined}
       role="button"
@@ -4310,7 +4544,7 @@ exports[`Storyshots <FlatSuccessButton /> Grouped horizontally 1`] = `
 <div>
   <button
     aria-pressed={undefined}
-    className="button-2293669648  button-groupHorizontally-ltr-2293669648 button-normal-2293669648"
+    className="button-2062378597  button-groupHorizontally-ltr-2062378597 button-normal-2062378597"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -4328,7 +4562,25 @@ exports[`Storyshots <FlatSuccessButton /> Grouped horizontally 1`] = `
   </button>
   <button
     aria-pressed={undefined}
-    className="button-2293669648  button-groupHorizontally-ltr-2293669648 button-normal-2293669648"
+    className="button-2062378597  button-groupHorizontally-ltr-2062378597 button-normal-2062378597"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      No op
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-2062378597  button-groupHorizontally-ltr-2062378597 button-normal-2062378597"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -4357,7 +4609,7 @@ exports[`Storyshots <FlatSuccessButton /> Grouped vertically 1`] = `
   }>
   <button
     aria-pressed={undefined}
-    className="button-2293669648 button-groupVertically-2293669648 button-normal-2293669648"
+    className="button-2062378597 button-groupVertically-2062378597 button-normal-2062378597"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -4375,7 +4627,25 @@ exports[`Storyshots <FlatSuccessButton /> Grouped vertically 1`] = `
   </button>
   <button
     aria-pressed={undefined}
-    className="button-2293669648 button-groupVertically-2293669648 button-normal-2293669648"
+    className="button-2062378597 button-groupVertically-2062378597 button-normal-2062378597"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      No op
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-2062378597 button-groupVertically-2062378597 button-normal-2062378597"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -4397,7 +4667,7 @@ exports[`Storyshots <FlatSuccessButton /> Grouped vertically 1`] = `
 exports[`Storyshots <FlatSuccessButton /> Size: large 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2293669648 button-large-2293669648"
+  className="button-2062378597 button-large-2062378597"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -4418,7 +4688,7 @@ exports[`Storyshots <FlatSuccessButton /> Size: large 1`] = `
 exports[`Storyshots <FlatSuccessButton /> Size: normal 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2293669648 button-normal-2293669648"
+  className="button-2062378597 button-normal-2062378597"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -4439,7 +4709,7 @@ exports[`Storyshots <FlatSuccessButton /> Size: normal 1`] = `
 exports[`Storyshots <FlatSuccessButton /> Size: small 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2293669648 button-small-2293669648"
+  className="button-2062378597 button-small-2062378597"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -4460,7 +4730,7 @@ exports[`Storyshots <FlatSuccessButton /> Size: small 1`] = `
 exports[`Storyshots <FlatSuccessButton /> Size: x-small 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2293669648 button-xSmall-2293669648"
+  className="button-2062378597 button-xSmall-2062378597"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -4481,7 +4751,7 @@ exports[`Storyshots <FlatSuccessButton /> Size: x-small 1`] = `
 exports[`Storyshots <FlatSuccessButton /> With icon (alternative) 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2293669648 button-normal-2293669648"
+  className="button-2062378597 button-normal-2062378597"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -4514,7 +4784,7 @@ exports[`Storyshots <FlatSuccessButton /> With icon (alternative, rtl) 1`] = `
   dir="rtl">
   <button
     aria-pressed={undefined}
-    className="button-2293669648 button-normal-2293669648"
+    className="button-2062378597 button-normal-2062378597"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -4548,7 +4818,7 @@ exports[`Storyshots <FlatSuccessButton /> With icon (rtl) 1`] = `
   dir="rtl">
   <button
     aria-pressed={undefined}
-    className="button-2293669648 button-normal-2293669648"
+    className="button-2062378597 button-normal-2062378597"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -4580,7 +4850,7 @@ exports[`Storyshots <FlatSuccessButton /> With icon (rtl) 1`] = `
 exports[`Storyshots <FlatSuccessButton /> With icon 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2293669648 button-normal-2293669648"
+  className="button-2062378597 button-normal-2062378597"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -4611,7 +4881,7 @@ exports[`Storyshots <FlatSuccessButton /> With icon 1`] = `
 exports[`Storyshots <FlatSuccessButton /> With icon only 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2293669648 button-normal-2293669648"
+  className="button-2062378597 button-normal-2062378597"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -4865,7 +5135,7 @@ exports[`Storyshots <NumberInput /> Basic 1`] = `
 exports[`Storyshots <OptionButton /> Default state 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3970006144 button-normal-3970006144"
+  className="button-3410016056 button-normal-3410016056"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -4889,7 +5159,7 @@ exports[`Storyshots <OptionButton /> Grouped horizontally (rtl) 1`] = `
   <div>
     <button
       aria-pressed={undefined}
-      className="button-3970006144  button-groupHorizontally-rtl-3970006144 button-normal-3970006144"
+      className="button-3410016056  button-groupHorizontally-rtl-3410016056 button-normal-3410016056"
       disabled={undefined}
       href={undefined}
       role="button"
@@ -4907,7 +5177,25 @@ exports[`Storyshots <OptionButton /> Grouped horizontally (rtl) 1`] = `
     </button>
     <button
       aria-pressed={undefined}
-      className="button-3970006144  button-groupHorizontally-rtl-3970006144 button-normal-3970006144"
+      className="button-3410016056  button-groupHorizontally-rtl-3410016056 button-normal-3410016056"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        No op
+      </div>
+    </button>
+    <button
+      aria-pressed={undefined}
+      className="button-3410016056  button-groupHorizontally-rtl-3410016056 button-normal-3410016056"
       disabled={undefined}
       href={undefined}
       role="button"
@@ -4931,7 +5219,7 @@ exports[`Storyshots <OptionButton /> Grouped horizontally 1`] = `
 <div>
   <button
     aria-pressed={undefined}
-    className="button-3970006144  button-groupHorizontally-ltr-3970006144 button-normal-3970006144"
+    className="button-3410016056  button-groupHorizontally-ltr-3410016056 button-normal-3410016056"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -4949,7 +5237,25 @@ exports[`Storyshots <OptionButton /> Grouped horizontally 1`] = `
   </button>
   <button
     aria-pressed={undefined}
-    className="button-3970006144  button-groupHorizontally-ltr-3970006144 button-normal-3970006144"
+    className="button-3410016056  button-groupHorizontally-ltr-3410016056 button-normal-3410016056"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      No op
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-3410016056  button-groupHorizontally-ltr-3410016056 button-normal-3410016056"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -4978,7 +5284,7 @@ exports[`Storyshots <OptionButton /> Grouped vertically 1`] = `
   }>
   <button
     aria-pressed={undefined}
-    className="button-3970006144 button-groupVertically-3970006144 button-normal-3970006144"
+    className="button-3410016056 button-groupVertically-3410016056 button-normal-3410016056"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -4996,7 +5302,25 @@ exports[`Storyshots <OptionButton /> Grouped vertically 1`] = `
   </button>
   <button
     aria-pressed={undefined}
-    className="button-3970006144 button-groupVertically-3970006144 button-normal-3970006144"
+    className="button-3410016056 button-groupVertically-3410016056 button-normal-3410016056"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      No op
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-3410016056 button-groupVertically-3410016056 button-normal-3410016056"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -5018,7 +5342,7 @@ exports[`Storyshots <OptionButton /> Grouped vertically 1`] = `
 exports[`Storyshots <OptionButton /> Size: large 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3970006144 button-large-3970006144"
+  className="button-3410016056 button-large-3410016056"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -5039,7 +5363,7 @@ exports[`Storyshots <OptionButton /> Size: large 1`] = `
 exports[`Storyshots <OptionButton /> Size: normal 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3970006144 button-normal-3970006144"
+  className="button-3410016056 button-normal-3410016056"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -5060,7 +5384,7 @@ exports[`Storyshots <OptionButton /> Size: normal 1`] = `
 exports[`Storyshots <OptionButton /> Size: small 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3970006144 button-small-3970006144"
+  className="button-3410016056 button-small-3410016056"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -5081,7 +5405,7 @@ exports[`Storyshots <OptionButton /> Size: small 1`] = `
 exports[`Storyshots <OptionButton /> Size: x-small 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3970006144 button-xSmall-3970006144"
+  className="button-3410016056 button-xSmall-3410016056"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -5102,7 +5426,7 @@ exports[`Storyshots <OptionButton /> Size: x-small 1`] = `
 exports[`Storyshots <OptionButton /> With icon (alternative) 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3970006144 button-normal-3970006144"
+  className="button-3410016056 button-normal-3410016056"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -5135,7 +5459,7 @@ exports[`Storyshots <OptionButton /> With icon (alternative, rtl) 1`] = `
   dir="rtl">
   <button
     aria-pressed={undefined}
-    className="button-3970006144 button-normal-3970006144"
+    className="button-3410016056 button-normal-3410016056"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -5169,7 +5493,7 @@ exports[`Storyshots <OptionButton /> With icon (rtl) 1`] = `
   dir="rtl">
   <button
     aria-pressed={undefined}
-    className="button-3970006144 button-normal-3970006144"
+    className="button-3410016056 button-normal-3410016056"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -5201,7 +5525,7 @@ exports[`Storyshots <OptionButton /> With icon (rtl) 1`] = `
 exports[`Storyshots <OptionButton /> With icon 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3970006144 button-normal-3970006144"
+  className="button-3410016056 button-normal-3410016056"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -5232,7 +5556,7 @@ exports[`Storyshots <OptionButton /> With icon 1`] = `
 exports[`Storyshots <OptionButton /> With icon only 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3970006144 button-normal-3970006144"
+  className="button-3410016056 button-normal-3410016056"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -5643,7 +5967,7 @@ exports[`Storyshots <ProgressBar /> 100% 1`] = `
 exports[`Storyshots <QuietButton /> Default state 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2127033244 button-normal-2127033244"
+  className="button-3278880939 button-normal-3278880939"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -5667,7 +5991,7 @@ exports[`Storyshots <QuietButton /> Grouped horizontally (rtl) 1`] = `
   <div>
     <button
       aria-pressed={undefined}
-      className="button-2127033244  button-groupHorizontally-rtl-2127033244 button-normal-2127033244"
+      className="button-3278880939  button-groupHorizontally-rtl-3278880939 button-normal-3278880939"
       disabled={undefined}
       href={undefined}
       role="button"
@@ -5685,7 +6009,25 @@ exports[`Storyshots <QuietButton /> Grouped horizontally (rtl) 1`] = `
     </button>
     <button
       aria-pressed={undefined}
-      className="button-2127033244  button-groupHorizontally-rtl-2127033244 button-normal-2127033244"
+      className="button-3278880939  button-groupHorizontally-rtl-3278880939 button-normal-3278880939"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        No op
+      </div>
+    </button>
+    <button
+      aria-pressed={undefined}
+      className="button-3278880939  button-groupHorizontally-rtl-3278880939 button-normal-3278880939"
       disabled={undefined}
       href={undefined}
       role="button"
@@ -5709,7 +6051,7 @@ exports[`Storyshots <QuietButton /> Grouped horizontally 1`] = `
 <div>
   <button
     aria-pressed={undefined}
-    className="button-2127033244  button-groupHorizontally-ltr-2127033244 button-normal-2127033244"
+    className="button-3278880939  button-groupHorizontally-ltr-3278880939 button-normal-3278880939"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -5727,7 +6069,25 @@ exports[`Storyshots <QuietButton /> Grouped horizontally 1`] = `
   </button>
   <button
     aria-pressed={undefined}
-    className="button-2127033244  button-groupHorizontally-ltr-2127033244 button-normal-2127033244"
+    className="button-3278880939  button-groupHorizontally-ltr-3278880939 button-normal-3278880939"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      No op
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-3278880939  button-groupHorizontally-ltr-3278880939 button-normal-3278880939"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -5756,7 +6116,7 @@ exports[`Storyshots <QuietButton /> Grouped vertically 1`] = `
   }>
   <button
     aria-pressed={undefined}
-    className="button-2127033244 button-groupVertically-2127033244 button-normal-2127033244"
+    className="button-3278880939 button-groupVertically-3278880939 button-normal-3278880939"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -5774,7 +6134,25 @@ exports[`Storyshots <QuietButton /> Grouped vertically 1`] = `
   </button>
   <button
     aria-pressed={undefined}
-    className="button-2127033244 button-groupVertically-2127033244 button-normal-2127033244"
+    className="button-3278880939 button-groupVertically-3278880939 button-normal-3278880939"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      No op
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-3278880939 button-groupVertically-3278880939 button-normal-3278880939"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -5796,7 +6174,7 @@ exports[`Storyshots <QuietButton /> Grouped vertically 1`] = `
 exports[`Storyshots <QuietButton /> Size: large 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2127033244 button-large-2127033244"
+  className="button-3278880939 button-large-3278880939"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -5817,7 +6195,7 @@ exports[`Storyshots <QuietButton /> Size: large 1`] = `
 exports[`Storyshots <QuietButton /> Size: normal 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2127033244 button-normal-2127033244"
+  className="button-3278880939 button-normal-3278880939"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -5838,7 +6216,7 @@ exports[`Storyshots <QuietButton /> Size: normal 1`] = `
 exports[`Storyshots <QuietButton /> Size: small 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2127033244 button-small-2127033244"
+  className="button-3278880939 button-small-3278880939"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -5859,7 +6237,7 @@ exports[`Storyshots <QuietButton /> Size: small 1`] = `
 exports[`Storyshots <QuietButton /> Size: x-small 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2127033244 button-xSmall-2127033244"
+  className="button-3278880939 button-xSmall-3278880939"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -5880,7 +6258,7 @@ exports[`Storyshots <QuietButton /> Size: x-small 1`] = `
 exports[`Storyshots <QuietButton /> With icon (alternative) 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2127033244 button-normal-2127033244"
+  className="button-3278880939 button-normal-3278880939"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -5913,7 +6291,7 @@ exports[`Storyshots <QuietButton /> With icon (alternative, rtl) 1`] = `
   dir="rtl">
   <button
     aria-pressed={undefined}
-    className="button-2127033244 button-normal-2127033244"
+    className="button-3278880939 button-normal-3278880939"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -5947,7 +6325,7 @@ exports[`Storyshots <QuietButton /> With icon (rtl) 1`] = `
   dir="rtl">
   <button
     aria-pressed={undefined}
-    className="button-2127033244 button-normal-2127033244"
+    className="button-3278880939 button-normal-3278880939"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -5979,7 +6357,7 @@ exports[`Storyshots <QuietButton /> With icon (rtl) 1`] = `
 exports[`Storyshots <QuietButton /> With icon 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2127033244 button-normal-2127033244"
+  className="button-3278880939 button-normal-3278880939"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -6010,7 +6388,7 @@ exports[`Storyshots <QuietButton /> With icon 1`] = `
 exports[`Storyshots <QuietButton /> With icon only 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2127033244 button-normal-2127033244"
+  className="button-3278880939 button-normal-3278880939"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -6967,7 +7345,7 @@ exports[`Storyshots <Select /> Basic 1`] = `
 exports[`Storyshots <SuccessButton /> Default state 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3570445596 button-normal-3570445596"
+  className="button-982470270 button-normal-982470270"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -6991,7 +7369,7 @@ exports[`Storyshots <SuccessButton /> Grouped horizontally (rtl) 1`] = `
   <div>
     <button
       aria-pressed={undefined}
-      className="button-3570445596  button-groupHorizontally-rtl-3570445596 button-normal-3570445596"
+      className="button-982470270  button-groupHorizontally-rtl-982470270 button-normal-982470270"
       disabled={undefined}
       href={undefined}
       role="button"
@@ -7009,7 +7387,25 @@ exports[`Storyshots <SuccessButton /> Grouped horizontally (rtl) 1`] = `
     </button>
     <button
       aria-pressed={undefined}
-      className="button-3570445596  button-groupHorizontally-rtl-3570445596 button-normal-3570445596"
+      className="button-982470270  button-groupHorizontally-rtl-982470270 button-normal-982470270"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }>
+      <div
+        className="div-2772671">
+        No op
+      </div>
+    </button>
+    <button
+      aria-pressed={undefined}
+      className="button-982470270  button-groupHorizontally-rtl-982470270 button-normal-982470270"
       disabled={undefined}
       href={undefined}
       role="button"
@@ -7033,7 +7429,7 @@ exports[`Storyshots <SuccessButton /> Grouped horizontally 1`] = `
 <div>
   <button
     aria-pressed={undefined}
-    className="button-3570445596  button-groupHorizontally-ltr-3570445596 button-normal-3570445596"
+    className="button-982470270  button-groupHorizontally-ltr-982470270 button-normal-982470270"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -7051,7 +7447,25 @@ exports[`Storyshots <SuccessButton /> Grouped horizontally 1`] = `
   </button>
   <button
     aria-pressed={undefined}
-    className="button-3570445596  button-groupHorizontally-ltr-3570445596 button-normal-3570445596"
+    className="button-982470270  button-groupHorizontally-ltr-982470270 button-normal-982470270"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      No op
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-982470270  button-groupHorizontally-ltr-982470270 button-normal-982470270"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -7080,7 +7494,7 @@ exports[`Storyshots <SuccessButton /> Grouped vertically 1`] = `
   }>
   <button
     aria-pressed={undefined}
-    className="button-3570445596 button-groupVertically-3570445596 button-normal-3570445596"
+    className="button-982470270 button-groupVertically-982470270 button-normal-982470270"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -7098,7 +7512,25 @@ exports[`Storyshots <SuccessButton /> Grouped vertically 1`] = `
   </button>
   <button
     aria-pressed={undefined}
-    className="button-3570445596 button-groupVertically-3570445596 button-normal-3570445596"
+    className="button-982470270 button-groupVertically-982470270 button-normal-982470270"
+    disabled={undefined}
+    href={undefined}
+    role="button"
+    style={
+      Object {
+        "height": undefined,
+        "textAlign": undefined,
+        "width": undefined,
+      }
+    }>
+    <div
+      className="div-2772671">
+      No op
+    </div>
+  </button>
+  <button
+    aria-pressed={undefined}
+    className="button-982470270 button-groupVertically-982470270 button-normal-982470270"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -7120,7 +7552,7 @@ exports[`Storyshots <SuccessButton /> Grouped vertically 1`] = `
 exports[`Storyshots <SuccessButton /> Size: large 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3570445596 button-large-3570445596"
+  className="button-982470270 button-large-982470270"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -7141,7 +7573,7 @@ exports[`Storyshots <SuccessButton /> Size: large 1`] = `
 exports[`Storyshots <SuccessButton /> Size: normal 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3570445596 button-normal-3570445596"
+  className="button-982470270 button-normal-982470270"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -7162,7 +7594,7 @@ exports[`Storyshots <SuccessButton /> Size: normal 1`] = `
 exports[`Storyshots <SuccessButton /> Size: small 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3570445596 button-small-3570445596"
+  className="button-982470270 button-small-982470270"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -7183,7 +7615,7 @@ exports[`Storyshots <SuccessButton /> Size: small 1`] = `
 exports[`Storyshots <SuccessButton /> Size: x-small 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3570445596 button-xSmall-3570445596"
+  className="button-982470270 button-xSmall-982470270"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -7204,7 +7636,7 @@ exports[`Storyshots <SuccessButton /> Size: x-small 1`] = `
 exports[`Storyshots <SuccessButton /> With icon (alternative) 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3570445596 button-normal-3570445596"
+  className="button-982470270 button-normal-982470270"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -7237,7 +7669,7 @@ exports[`Storyshots <SuccessButton /> With icon (alternative, rtl) 1`] = `
   dir="rtl">
   <button
     aria-pressed={undefined}
-    className="button-3570445596 button-normal-3570445596"
+    className="button-982470270 button-normal-982470270"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -7271,7 +7703,7 @@ exports[`Storyshots <SuccessButton /> With icon (rtl) 1`] = `
   dir="rtl">
   <button
     aria-pressed={undefined}
-    className="button-3570445596 button-normal-3570445596"
+    className="button-982470270 button-normal-982470270"
     disabled={undefined}
     href={undefined}
     role="button"
@@ -7303,7 +7735,7 @@ exports[`Storyshots <SuccessButton /> With icon (rtl) 1`] = `
 exports[`Storyshots <SuccessButton /> With icon 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3570445596 button-normal-3570445596"
+  className="button-982470270 button-normal-982470270"
   disabled={undefined}
   href={undefined}
   role="button"
@@ -7334,7 +7766,7 @@ exports[`Storyshots <SuccessButton /> With icon 1`] = `
 exports[`Storyshots <SuccessButton /> With icon only 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-3570445596 button-normal-3570445596"
+  className="button-982470270 button-normal-982470270"
   disabled={undefined}
   href={undefined}
   role="button"
