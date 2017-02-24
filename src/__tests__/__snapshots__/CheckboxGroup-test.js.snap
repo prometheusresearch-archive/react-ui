@@ -1,12 +1,16 @@
-exports[`test renders 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
 <div
   className="div-1648223554"
   onBlur={[Function]}
   onFocus={[Function]}
   onKeyDown={[Function]}
-  tabIndex={0}>
+  tabIndex={0}
+>
   <div
-    className="div-2379509982 div-vertical-2379509982">
+    className="div-2379509982 div-vertical-2379509982"
+  >
     <div
       title={undefined}
       variant={
@@ -15,7 +19,8 @@ exports[`test renders 1`] = `
           "ltr": true,
           "rtl": false,
         }
-      }>
+      }
+    >
       <input
         aria-labelledby="aria1"
         checked={true}
@@ -26,7 +31,8 @@ exports[`test renders 1`] = `
         onChange={[Function]}
         onFocus={undefined}
         tabIndex={-1}
-        type="checkbox" />
+        type="checkbox"
+      />
       <div
         className="Block-2087937970 Block-ltr-2087937970"
         onClick={[Function]}
@@ -57,19 +63,23 @@ exports[`test renders 1`] = `
             "whiteSpace": undefined,
             "width": undefined,
           }
-        }>
+        }
+      >
         <div
           className="div-4001537281"
-          id="aria1">
+          id="aria1"
+        >
           A
         </div>
         <div
-          className="div-2120500968" />
+          className="div-2120500968"
+        />
       </div>
     </div>
   </div>
   <div
-    className="div-2379509982 div-vertical-2379509982">
+    className="div-2379509982 div-vertical-2379509982"
+  >
     <div
       title={undefined}
       variant={
@@ -78,7 +88,8 @@ exports[`test renders 1`] = `
           "ltr": true,
           "rtl": false,
         }
-      }>
+      }
+    >
       <input
         aria-labelledby="aria2"
         checked={false}
@@ -89,7 +100,8 @@ exports[`test renders 1`] = `
         onChange={[Function]}
         onFocus={undefined}
         tabIndex={-1}
-        type="checkbox" />
+        type="checkbox"
+      />
       <div
         className="Block-2087937970 Block-ltr-2087937970"
         onClick={[Function]}
@@ -120,14 +132,17 @@ exports[`test renders 1`] = `
             "whiteSpace": undefined,
             "width": undefined,
           }
-        }>
+        }
+      >
         <div
           className="div-4001537281"
-          id="aria2">
+          id="aria2"
+        >
           B
         </div>
         <div
-          className="div-2120500968" />
+          className="div-2120500968"
+        />
       </div>
     </div>
   </div>

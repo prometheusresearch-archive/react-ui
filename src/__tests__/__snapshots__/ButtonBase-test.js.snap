@@ -1,4 +1,6 @@
-exports[`test renders with icon and caption 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders with icon and caption 1`] = `
 <button
   aria-pressed={undefined}
   className="button-2121099832"
@@ -11,7 +13,8 @@ exports[`test renders with icon and caption 1`] = `
       "textAlign": undefined,
       "width": undefined,
     }
-  }>
+  }
+>
   <div
     className="div-2772671"
     style={
@@ -19,17 +22,19 @@ exports[`test renders with icon and caption 1`] = `
         "marginLeft": 0,
         "marginRight": 4,
       }
-    }>
+    }
+  >
     plus
   </div>
   <div
-    className="div-2772671">
+    className="div-2772671"
+  >
     Caption
   </div>
 </button>
 `;
 
-exports[`test renders with just caption 1`] = `
+exports[`renders with just caption 1`] = `
 <button
   aria-pressed={undefined}
   className="button-2121099832"
@@ -42,15 +47,17 @@ exports[`test renders with just caption 1`] = `
       "textAlign": undefined,
       "width": undefined,
     }
-  }>
+  }
+>
   <div
-    className="div-2772671">
+    className="div-2772671"
+  >
     OK
   </div>
 </button>
 `;
 
-exports[`test renders with just icon (element) 1`] = `
+exports[`renders with just icon (element) 1`] = `
 <button
   aria-pressed={undefined}
   className="button-2121099832"
@@ -63,7 +70,8 @@ exports[`test renders with just icon (element) 1`] = `
       "textAlign": undefined,
       "width": undefined,
     }
-  }>
+  }
+>
   <div
     className="div-2772671"
     style={
@@ -71,13 +79,14 @@ exports[`test renders with just icon (element) 1`] = `
         "marginLeft": 0,
         "marginRight": 0,
       }
-    }>
+    }
+  >
     <icon />
   </div>
 </button>
 `;
 
-exports[`test renders with just icon (text) 1`] = `
+exports[`renders with just icon (text) 1`] = `
 <button
   aria-pressed={undefined}
   className="button-2121099832"
@@ -90,7 +99,8 @@ exports[`test renders with just icon (text) 1`] = `
       "textAlign": undefined,
       "width": undefined,
     }
-  }>
+  }
+>
   <div
     className="div-2772671"
     style={
@@ -98,7 +108,8 @@ exports[`test renders with just icon (text) 1`] = `
         "marginLeft": 0,
         "marginRight": 0,
       }
-    }>
+    }
+  >
     plus
   </div>
 </button>

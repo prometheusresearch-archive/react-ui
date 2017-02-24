@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`i18n props processes float="end" 1`] = `
 <div
   style={
@@ -27,12 +29,14 @@ exports[`i18n props processes float="end" 1`] = `
       "whiteSpace": undefined,
       "width": undefined,
     }
-  } />
+  }
+/>
 `;
 
 exports[`i18n props processes float="end" 2`] = `
 <div
-  dir="rtl">
+  dir="rtl"
+>
   <div
     style={
       Object {
@@ -61,7 +65,8 @@ exports[`i18n props processes float="end" 2`] = `
         "whiteSpace": undefined,
         "width": undefined,
       }
-    } />
+    }
+  />
 </div>
 `;
 
@@ -94,12 +99,14 @@ exports[`i18n props processes float="start" 1`] = `
       "whiteSpace": undefined,
       "width": undefined,
     }
-  } />
+  }
+/>
 `;
 
 exports[`i18n props processes float="start" 2`] = `
 <div
-  dir="rtl">
+  dir="rtl"
+>
   <div
     style={
       Object {
@@ -128,7 +135,8 @@ exports[`i18n props processes float="start" 2`] = `
         "whiteSpace": undefined,
         "width": undefined,
       }
-    } />
+    }
+  />
 </div>
 `;
 
@@ -161,12 +169,14 @@ exports[`i18n props processes marginStart/marginEnd 1`] = `
       "whiteSpace": undefined,
       "width": undefined,
     }
-  } />
+  }
+/>
 `;
 
 exports[`i18n props processes marginStart/marginEnd 2`] = `
 <div
-  dir="rtl">
+  dir="rtl"
+>
   <div
     style={
       Object {
@@ -195,7 +205,8 @@ exports[`i18n props processes marginStart/marginEnd 2`] = `
         "whiteSpace": undefined,
         "width": undefined,
       }
-    } />
+    }
+  />
 </div>
 `;
 
@@ -228,12 +239,14 @@ exports[`i18n props processes paddingStart/paddingEnd 1`] = `
       "whiteSpace": undefined,
       "width": undefined,
     }
-  } />
+  }
+/>
 `;
 
 exports[`i18n props processes paddingStart/paddingEnd 2`] = `
 <div
-  dir="rtl">
+  dir="rtl"
+>
   <div
     style={
       Object {
@@ -262,7 +275,8 @@ exports[`i18n props processes paddingStart/paddingEnd 2`] = `
         "whiteSpace": undefined,
         "width": undefined,
       }
-    } />
+    }
+  />
 </div>
 `;
 
@@ -295,12 +309,14 @@ exports[`i18n props processes positionStart/positionEnd 1`] = `
       "whiteSpace": undefined,
       "width": undefined,
     }
-  } />
+  }
+/>
 `;
 
 exports[`i18n props processes positionStart/positionEnd 2`] = `
 <div
-  dir="rtl">
+  dir="rtl"
+>
   <div
     style={
       Object {
@@ -329,7 +345,8 @@ exports[`i18n props processes positionStart/positionEnd 2`] = `
         "whiteSpace": undefined,
         "width": undefined,
       }
-    } />
+    }
+  />
 </div>
 `;
 
@@ -363,12 +380,14 @@ exports[`i18n props processes textAlign="end" 1`] = `
       "width": undefined,
     }
   }
-  testAlign="end" />
+  testAlign="end"
+/>
 `;
 
 exports[`i18n props processes textAlign="end" 2`] = `
 <div
-  dir="rtl">
+  dir="rtl"
+>
   <div
     style={
       Object {
@@ -397,7 +416,8 @@ exports[`i18n props processes textAlign="end" 2`] = `
         "whiteSpace": undefined,
         "width": undefined,
       }
-    } />
+    }
+  />
 </div>
 `;
 
@@ -430,12 +450,14 @@ exports[`i18n props processes textAlign="start" 1`] = `
       "whiteSpace": undefined,
       "width": undefined,
     }
-  } />
+  }
+/>
 `;
 
 exports[`i18n props processes textAlign="start" 2`] = `
 <div
-  dir="rtl">
+  dir="rtl"
+>
   <div
     style={
       Object {
@@ -464,6 +486,7 @@ exports[`i18n props processes textAlign="start" 2`] = `
         "whiteSpace": undefined,
         "width": undefined,
       }
-    } />
+    }
+  />
 </div>
 `;

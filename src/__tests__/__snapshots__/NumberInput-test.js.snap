@@ -1,15 +1,19 @@
-exports[`test renders 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
 <input
   className="input-1197536361"
   disabled={undefined}
   onChange={[Function]}
-  value="" />
+  value=""
+/>
 `;
 
-exports[`test renders 2`] = `
+exports[`renders 2`] = `
 <input
   className="input-1197536361"
   disabled={undefined}
   onChange={[Function]}
-  value="" />
+  value=""
+/>
 `;

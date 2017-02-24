@@ -1,4 +1,6 @@
-exports[`test does not triggerd onChange on label click if disabled 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`does not triggerd onChange on label click if disabled 1`] = `
 <div
   title={undefined}
   variant={
@@ -7,7 +9,8 @@ exports[`test does not triggerd onChange on label click if disabled 1`] = `
       "ltr": true,
       "rtl": false,
     }
-  }>
+  }
+>
   <input
     aria-labelledby="aria3"
     checked={false}
@@ -21,7 +24,8 @@ exports[`test does not triggerd onChange on label click if disabled 1`] = `
         "ltr": true,
         "rtl": false,
       }
-    } />
+    }
+  />
   <div
     onClick={[Function]}
     variant={
@@ -30,7 +34,8 @@ exports[`test does not triggerd onChange on label click if disabled 1`] = `
         "ltr": true,
         "rtl": false,
       }
-    }>
+    }
+  >
     <div
       id="aria3"
       variant={
@@ -39,7 +44,8 @@ exports[`test does not triggerd onChange on label click if disabled 1`] = `
           "ltr": true,
           "rtl": false,
         }
-      }>
+      }
+    >
       OK
     </div>
     <div
@@ -49,12 +55,13 @@ exports[`test does not triggerd onChange on label click if disabled 1`] = `
           "ltr": true,
           "rtl": false,
         }
-      } />
+      }
+    />
   </div>
 </div>
 `;
 
-exports[`test triggers onChange on input 1`] = `
+exports[`triggers onChange on input 1`] = `
 <div
   title={undefined}
   variant={
@@ -63,7 +70,8 @@ exports[`test triggers onChange on input 1`] = `
       "ltr": true,
       "rtl": false,
     }
-  }>
+  }
+>
   <input
     aria-labelledby="aria1"
     checked={false}
@@ -77,11 +85,12 @@ exports[`test triggers onChange on input 1`] = `
         "ltr": true,
         "rtl": false,
       }
-    } />
+    }
+  />
 </div>
 `;
 
-exports[`test triggers onChange on label click 1`] = `
+exports[`triggers onChange on label click 1`] = `
 <div
   title={undefined}
   variant={
@@ -90,7 +99,8 @@ exports[`test triggers onChange on label click 1`] = `
       "ltr": true,
       "rtl": false,
     }
-  }>
+  }
+>
   <input
     aria-labelledby="aria2"
     checked={false}
@@ -104,7 +114,8 @@ exports[`test triggers onChange on label click 1`] = `
         "ltr": true,
         "rtl": false,
       }
-    } />
+    }
+  />
   <div
     onClick={[Function]}
     variant={
@@ -113,7 +124,8 @@ exports[`test triggers onChange on label click 1`] = `
         "ltr": true,
         "rtl": false,
       }
-    }>
+    }
+  >
     <div
       id="aria2"
       variant={
@@ -122,7 +134,8 @@ exports[`test triggers onChange on label click 1`] = `
           "ltr": true,
           "rtl": false,
         }
-      }>
+      }
+    >
       OK
     </div>
     <div
@@ -132,7 +145,8 @@ exports[`test triggers onChange on label click 1`] = `
           "ltr": true,
           "rtl": false,
         }
-      } />
+      }
+    />
   </div>
 </div>
 `;

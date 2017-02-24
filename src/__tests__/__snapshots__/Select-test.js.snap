@@ -1,51 +1,64 @@
-exports[`test renders 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
 <select
   onChange={[Function]}
-  value="__NOVALUE__">
+  value="__NOVALUE__"
+>
   <option
-    value="__NOVALUE__">
+    value="__NOVALUE__"
+  >
     
   </option>
   <option
-    value="a">
+    value="a"
+  >
     A
   </option>
   <option
-    value="b">
+    value="b"
+  >
     B
   </option>
 </select>
 `;
 
-exports[`test renders 2`] = `
+exports[`renders 2`] = `
 <select
   onChange={[Function]}
-  value="a">
+  value="a"
+>
   <option
-    value="a">
+    value="a"
+  >
     A
   </option>
   <option
-    value="b">
+    value="b"
+  >
     B
   </option>
 </select>
 `;
 
-exports[`test renders 3`] = `
+exports[`renders 3`] = `
 <select
   onChange={[Function]}
-  value="a">
+  value="a"
+>
   <option
-    value="__NOVALUE__">
+    value="__NOVALUE__"
+  >
     
   </option>
   <option
-    value="a">
+    value="a"
+  >
     A
   </option>
   <option
-    value="b">
+    value="b"
+  >
     B
   </option>
 </select>
