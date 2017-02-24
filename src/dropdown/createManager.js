@@ -1,15 +1,38 @@
-var ReactDOM = require('react-dom');
-var createFocusGroup = require('focus-group');
-var externalStateControl = require('./externalStateControl');
+/**
+ * @flow
+ */
 
-var focusGroupOptions = {
+import ReactDOM from 'react-dom';
+import createFocusGroup from 'focus-group';
+import * as externalStateControl from './externalStateControl';
+
+const focusGroupOptions = {
   wrap: true,
   stringSearch: true,
 };
 
-var protoManager = {
+type ManagerOptions = {
+  id?: string,
+  wrap?: boolean,
+  stringSearch?: boolean,
+  closeOnSelection?: boolean,
+  onMenuToggle: ({isOpen: boolean}) => *,
+  onSelection: Function,
+};
 
-  init: function(options) {
+type FocusGroup = any;
+type Item = any;
+
+export class Manager {
+  options: ManagerOptions;
+  focusGroup: FocusGroup;
+  button: any;
+  menu: any;
+  isOpen: boolean;
+  moveFocusTimer: ?number = null;
+  blurTimer: ?number = null;
+
+  constructor(options: ManagerOptions) {
     this.options = options || {};
 
     if (typeof this.options.closeOnSelection === 'undefined') {
@@ -19,10 +42,6 @@ var protoManager = {
     if (this.options.id) {
       externalStateControl.registerManager(this.options.id, this);
     }
-
-    this.handleBlur = handleBlur.bind(this);
-    this.handleSelection = handleSelection.bind(this);
-    this.handleMenuKey = handleMenuKey.bind(this);
 
     // "With focus on the drop-down menu, the Up and Down Arrow
     // keys move focus within the menu items, "wrapping" at the top and bottom."
@@ -38,53 +57,55 @@ var protoManager = {
 
     // State trackers
     this.isOpen = false;
-  },
+  }
 
-  focusItem: function(index) {
+  focusItem(index: number) {
     this.focusGroup.focusNodeAtIndex(index);
-  },
+  }
 
-  addItem: function(item) {
+  addItem(item: Item) {
     this.focusGroup.addMember(item);
-  },
+  }
 
-  clearItems: function() {
-    this.focusGroup.clearMembers()
-  },
+  clearItems() {
+    this.focusGroup.clearMembers();
+  }
 
-  handleButtonNonArrowKey: function(event) {
+  handleButtonNonArrowKey(event: KeyboardEvent) {
     this.focusGroup._handleUnboundKey(event);
-  },
+  }
 
-  destroy: function() {
+  destroy() {
     this.button = null;
     this.menu = null;
     this.focusGroup.deactivate();
-    clearTimeout(this.blurTimer)
-    clearTimeout(this.moveFocusTimer)
-  },
+    clearTimeout(this.blurTimer);
+    clearTimeout(this.moveFocusTimer);
+  }
 
-  update: function() {
-    this.menu.setState({ isOpen: this.isOpen });
-    this.button.setState({ menuOpen: this.isOpen });
-    this.options.onMenuToggle && this.options.onMenuToggle({ isOpen: this.isOpen });
-  },
+  update() {
+    this.menu.setState({isOpen: this.isOpen});
+    this.button.setState({menuOpen: this.isOpen});
+    this.options.onMenuToggle && this.options.onMenuToggle({isOpen: this.isOpen});
+  }
 
-  openMenu: function(openOptions) {
+  openMenu(openOptions: any) {
     if (this.isOpen) return;
     openOptions = openOptions || {};
     this.isOpen = true;
     this.update();
     this.focusGroup.activate();
     if (openOptions.focusMenu) {
-      var self = this;
-      this.moveFocusTimer = setTimeout(function() {
-        self.focusItem(0)
-      }, 0);
+      this.moveFocusTimer = setTimeout(
+        () => {
+          this.focusItem(0);
+        },
+        0,
+      );
     }
-  },
+  }
 
-  closeMenu: function(closeOptions) {
+  closeMenu(closeOptions: any) {
     if (!this.isOpen) return;
     closeOptions = closeOptions || {};
     this.isOpen = false;
@@ -92,45 +113,45 @@ var protoManager = {
     if (closeOptions.focusButton) {
       ReactDOM.findDOMNode(this.button).focus();
     }
-  },
+  }
 
-  toggleMenu: function() {
+  toggleMenu() {
     if (this.isOpen) {
       this.closeMenu();
     } else {
       this.openMenu();
     }
-  },
-}
-
-function handleBlur() {
-  var self = this;
-  self.blurTimer = setTimeout(function() {
-    var buttonNode = ReactDOM.findDOMNode(self.button);
-    var menuNode = ReactDOM.findDOMNode(self.menu);
-    var activeEl = buttonNode.ownerDocument.activeElement;
-    if (buttonNode && activeEl === buttonNode) return;
-    if (menuNode && menuNode.contains(activeEl)) return;
-    if (self.isOpen) self.closeMenu({ focusButton: false });
-  }, 0);
-}
-
-function handleSelection(value, event) {
-  if (this.options.closeOnSelection) this.closeMenu({ focusButton: true });
-  this.options.onSelection(value, event);
-}
-
-function handleMenuKey(event) {
-  // "With focus on the drop-down menu, pressing Escape closes
-  // the menu and returns focus to the button.
-  if (this.isOpen && event.key === 'Escape') {
-    event.preventDefault();
-    this.closeMenu({ focusButton: true });
   }
+
+  handleBlur = () => {
+    this.blurTimer = setTimeout(
+      () => {
+        let buttonNode = ReactDOM.findDOMNode(this.button);
+        let menuNode = ReactDOM.findDOMNode(this.menu);
+        let activeEl = buttonNode.ownerDocument.activeElement;
+        if (buttonNode && activeEl === buttonNode) return;
+        if (menuNode && menuNode.contains(activeEl)) return;
+        if (this.isOpen) this.closeMenu({focusButton: false});
+      },
+      0,
+    );
+  };
+
+  handleSelection = (value: any, event: any) => {
+    if (this.options.closeOnSelection) this.closeMenu({focusButton: true});
+    this.options.onSelection(value, event);
+  };
+
+  handleMenuKey = (event: KeyboardEvent) => {
+    // "With focus on the drop-down menu, pressing Escape closes
+    // the menu and returns focus to the button.
+    if (this.isOpen && event.key === 'Escape') {
+      event.preventDefault();
+      this.closeMenu({focusButton: true});
+    }
+  };
 }
 
-module.exports = function(options) {
-  var newManager = Object.create(protoManager);
-  newManager.init(options);
-  return newManager;
-};
+export default function createManager(options: ManagerOptions) {
+  return new Manager(options);
+}

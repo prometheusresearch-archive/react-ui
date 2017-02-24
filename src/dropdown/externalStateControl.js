@@ -1,30 +1,33 @@
-var registeredManagers = {};
+/**
+ * @flow
+ */
 
-var errorCommon = 'a menu outside a mounted Wrapper with an id, or a menu that does not exist';
+import {type Manager} from './createManager';
 
-function registerManager(menuId, manager) {
+type ManagerRegistry = {
+  [id: string]: Manager,
+};
+
+const registeredManagers: ManagerRegistry = {};
+
+const errorCommon = 'a menu outside a mounted Wrapper with an id, or a menu that does not exist';
+
+export function registerManager(menuId: string, manager: Manager) {
   registeredManagers[menuId] = manager;
 }
 
-function unregisterManager(menuId) {
+export function unregisterManager(menuId: string) {
   delete registeredManagers[menuId];
 }
 
-function openMenu(menuId, openOptions) {
-  var manager = registeredManagers[menuId];
+export function openMenu(menuId: string, openOptions: any) {
+  let manager = registeredManagers[menuId];
   if (!manager) throw new Error('Cannot open ' + errorCommon);
   manager.openMenu(openOptions);
 }
 
-function closeMenu(menuId, closeOptions) {
-  var manager = registeredManagers[menuId];
+export function closeMenu(menuId: string, closeOptions: any) {
+  let manager = registeredManagers[menuId];
   if (!manager) throw new Error('Cannot close ' + errorCommon);
   manager.closeMenu(closeOptions);
-}
-
-module.exports = {
-  registerManager: registerManager,
-  unregisterManager: unregisterManager,
-  openMenu: openMenu,
-  closeMenu: closeMenu,
 }
