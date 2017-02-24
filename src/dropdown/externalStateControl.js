@@ -2,7 +2,7 @@
  * @flow
  */
 
-import {type Manager} from './createManager';
+import type {Manager} from './createManager';
 
 type ManagerRegistry = {
   [id: string]: Manager,
