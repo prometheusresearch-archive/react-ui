@@ -2,7 +2,7 @@ var React = require('react');
 var ReactDOMServer = require('react-dom/server');
 var shallow = require('enzyme').shallow;
 var shallowToJson = require('enzyme-to-json').shallowToJson;
-var Button = require('../Button');
+var Button = require('../Button').default;
 var MockWrapper = require('./helpers/MockWrapper');
 var createMockKeyEvent = require('./helpers/createMockKeyEvent');
 var createMockManager = require('./helpers/createMockManager');
@@ -21,7 +21,7 @@ describe('<Button>', function() {
   beforeEach(function() {
     ambManager = createMockManager();
     shallowOptions = {
-      context: { ambManager: ambManager },
+      context: {ambManager: ambManager},
     };
     downEvent = createMockKeyEvent('ArrowDown');
     enterEvent = createMockKeyEvent('Enter');
@@ -41,12 +41,12 @@ describe('<Button>', function() {
       {
         id: 'foo',
         className: 'bar',
-        style: { top: 2 },
+        style: {top: 2},
         tag: 'button',
         disabled: true,
         'data-something-something': 'seven', // arbitrary prop
       },
-      el('span', null, 'hooha')
+      el('span', null, 'hooha'),
     );
     var wrapper = shallow(button, shallowOptions);
     expect(shallowToJson(wrapper)).toMatchSnapshot();
@@ -60,7 +60,7 @@ describe('<Button>', function() {
   });
 
   it('click when disabled', function() {
-    var wrapper = shallow(el(Button, { disabled: true }, 'foo'), shallowOptions);
+    var wrapper = shallow(el(Button, {disabled: true}, 'foo'), shallowOptions);
     wrapper.simulate('click');
 
     expect(ambManager.toggleMenu).not.toHaveBeenCalled();
@@ -72,7 +72,7 @@ describe('<Button>', function() {
 
     expect(downEvent.preventDefault).toHaveBeenCalledTimes(1);
     expect(ambManager.openMenu).toHaveBeenCalledTimes(1);
-    expect(ambManager.openMenu).toHaveBeenCalledWith({ focusMenu: true });
+    expect(ambManager.openMenu).toHaveBeenCalledWith({focusMenu: true});
   });
 
   it('down arrow when open', function() {
@@ -119,7 +119,7 @@ describe('<Button>', function() {
   });
 
   it('enter key when disabled', function() {
-    var wrapper = shallow(el(Button, { disabled: true }, 'foo'), shallowOptions);
+    var wrapper = shallow(el(Button, {disabled: true}, 'foo'), shallowOptions);
     wrapper.simulate('keyDown', enterEvent);
 
     expect(enterEvent.preventDefault).not.toHaveBeenCalled();
@@ -130,9 +130,7 @@ describe('<Button>', function() {
 describe('<Button> rendered via renderToString', function() {
   it('does not throw', function() {
     var output = ReactDOMServer.renderToString(
-      el(MockWrapper, { mockManager: createMockManager() },
-        el(Button, null, 'foo')
-      )
+      el(MockWrapper, {mockManager: createMockManager()}, el(Button, null, 'foo')),
     );
     expect(output).toMatchSnapshot();
   });

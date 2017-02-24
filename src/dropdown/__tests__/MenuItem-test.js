@@ -2,7 +2,7 @@ var React = require('react');
 var ReactDOMServer = require('react-dom/server');
 var shallow = require('enzyme').shallow;
 var shallowToJson = require('enzyme-to-json').shallowToJson;
-var MenuItem = require('../MenuItem');
+var MenuItem = require('../MenuItem').default;
 var MockWrapper = require('./helpers/MockWrapper');
 var createMockKeyEvent = require('./helpers/createMockKeyEvent');
 var createMockManager = require('./helpers/createMockManager');
@@ -16,7 +16,7 @@ describe('<MenuItem>', function() {
   beforeEach(function() {
     ambManager = createMockManager();
     shallowOptions = {
-      context: { ambManager: ambManager },
+      context: {ambManager: ambManager},
     };
   });
 
@@ -27,24 +27,25 @@ describe('<MenuItem>', function() {
   });
 
   it('DOM with all possible props and element child', function() {
-    var menuItem = el(MenuItem,
+    var menuItem = el(
+      MenuItem,
       {
         className: 'foobar',
         id: 'hogwash',
         tag: 'li',
-        style: { right: '1em' },
+        style: {right: '1em'},
         text: 'horse',
         value: 'lamb',
         'data-something-something': 'seven', // arbitrary prop
       },
-      el('a', { href: '#' }, 'foo')
+      el('a', {href: '#'}, 'foo'),
     );
     var wrapper = shallow(menuItem, shallowOptions);
     expect(shallowToJson(wrapper)).toMatchSnapshot();
   });
 
   it('click without specified value prop', function() {
-    var mockEvent = { bee: 'baa' };
+    var mockEvent = {bee: 'baa'};
     var menuItem = el(MenuItem, null, 'foo');
     var wrapper = shallow(menuItem, shallowOptions);
     wrapper.simulate('click', mockEvent);
@@ -53,8 +54,8 @@ describe('<MenuItem>', function() {
   });
 
   it('click with specified value prop', function() {
-    var mockEvent = { bee: 'baa' };
-    var menuItem = el(MenuItem, { value: 'bar' }, 'foo');
+    var mockEvent = {bee: 'baa'};
+    var menuItem = el(MenuItem, {value: 'bar'}, 'foo');
     var wrapper = shallow(menuItem, shallowOptions);
     wrapper.simulate('click', mockEvent);
     expect(ambManager.handleSelection).toHaveBeenCalledTimes(1);
@@ -80,9 +81,7 @@ describe('<MenuItem>', function() {
 describe('<MenuItem> rendered via renderToString', function() {
   it('does not throw', function() {
     var output = ReactDOMServer.renderToString(
-      el(MockWrapper, { mockManager: createMockManager() },
-        el(MenuItem, null, 'foo')
-      )
+      el(MockWrapper, {mockManager: createMockManager()}, el(MenuItem, null, 'foo')),
     );
     expect(output).toMatchSnapshot();
   });

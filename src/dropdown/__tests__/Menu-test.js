@@ -3,7 +3,7 @@ var ReactDOMServer = require('react-dom/server');
 var shallow = require('enzyme').shallow;
 var mount = require('enzyme').mount;
 var shallowToJson = require('enzyme-to-json').shallowToJson;
-var Menu = require('../Menu');
+var Menu = require('../Menu').default;
 var MockWrapper = require('./helpers/MockWrapper');
 var createMockManager = require('./helpers/createMockManager');
 
@@ -16,23 +16,19 @@ describe('<Menu>', function() {
   beforeEach(function() {
     ambManager = createMockManager();
     shallowOptions = {
-      context: { ambManager: ambManager },
+      context: {ambManager: ambManager},
     };
   });
 
   it('closed Menu DOM with only required props and element child', function() {
-    var menuEl = el(Menu, null,
-      el('div', null, 'foo')
-    );
+    var menuEl = el(Menu, null, el('div', null, 'foo'));
     var wrapper = shallow(menuEl, shallowOptions);
     expect(shallowToJson(wrapper)).toMatchSnapshot();
   });
 
   it('open Menu DOM with only required props and element child', function() {
     ambManager.isOpen = true;
-    var menuEl = el(Menu, null,
-      el('div', null, el('div', null, 'foo'))
-    );
+    var menuEl = el(Menu, null, el('div', null, el('div', null, 'foo')));
     var wrapper = shallow(menuEl, shallowOptions);
     expect(shallowToJson(wrapper)).toMatchSnapshot();
   });
@@ -41,17 +37,21 @@ describe('<Menu>', function() {
     var childFunction = jest.fn().mockImplementation(function(menuState) {
       return 'isOpen = ' + menuState.isOpen;
     });
-    var menuEl = el(Menu, {
-      id: 'foo',
-      className: 'bar',
-      style: { bottom: 1 },
-      tag: 'ul',
-      'data-something-something': 'seven', // arbitrary prop
-    }, childFunction);
+    var menuEl = el(
+      Menu,
+      {
+        id: 'foo',
+        className: 'bar',
+        style: {bottom: 1},
+        tag: 'ul',
+        'data-something-something': 'seven', // arbitrary prop
+      },
+      childFunction,
+    );
     var wrapper = shallow(menuEl, shallowOptions);
     expect(shallowToJson(wrapper)).toMatchSnapshot();
     expect(childFunction).toHaveBeenCalledTimes(1);
-    expect(childFunction.mock.calls[0]).toEqual([{ isOpen: false }]);
+    expect(childFunction.mock.calls[0]).toEqual([{isOpen: false}]);
   });
 
   it('open menu DOM with all possible props and function child', function() {
@@ -59,16 +59,20 @@ describe('<Menu>', function() {
     var childFunction = jest.fn().mockImplementation(function(menuState) {
       return 'isOpen = ' + menuState.isOpen;
     });
-    var menuEl = el(Menu, {
-      id: 'bar',
-      className: 'foo',
-      style: { left: 1 },
-      tag: 'section',
-    }, childFunction);
+    var menuEl = el(
+      Menu,
+      {
+        id: 'bar',
+        className: 'foo',
+        style: {left: 1},
+        tag: 'section',
+      },
+      childFunction,
+    );
     var wrapper = shallow(menuEl, shallowOptions);
     expect(shallowToJson(wrapper)).toMatchSnapshot();
     expect(childFunction).toHaveBeenCalledTimes(1);
-    expect(childFunction.mock.calls[0]).toEqual([{ isOpen: true }]);
+    expect(childFunction.mock.calls[0]).toEqual([{isOpen: true}]);
   });
 
   it('menu updating', function() {
@@ -77,15 +81,13 @@ describe('<Menu>', function() {
 
     var LittleApp = React.createClass({
       getInitialState: function() {
-        return { open: false };
+        return {open: false};
       },
       toggleMenu: function() {
-        this.setState({ open: !this.state.open });
+        this.setState({open: !this.state.open});
       },
       render: function() {
-        return el(MockWrapper, { mockManager: ambManager },
-          el(Menu, null, childFunction)
-        );
+        return el(MockWrapper, {mockManager: ambManager}, el(Menu, null, childFunction));
       },
     });
 
@@ -98,9 +100,11 @@ describe('<Menu>', function() {
 describe('<Menu> rendered via renderToString', function() {
   it('does not throw', function() {
     var output = ReactDOMServer.renderToString(
-      el(MockWrapper, { mockManager: createMockManager() },
-        el(Menu, null, el('div', null, 'foo'))
-      )
+      el(
+        MockWrapper,
+        {mockManager: createMockManager()},
+        el(Menu, null, el('div', null, 'foo')),
+      ),
     );
     expect(output).toMatchSnapshot();
   });
