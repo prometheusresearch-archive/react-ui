@@ -83,7 +83,9 @@
   "dependencies": {
     "color-js": "^1.0.4",
     "debounce": "^1.0.0",
+    "focus-group": "^0.3.1",
     "invariant": "^2.2.1",
-    "react-stylesheet": "^2.0.2"
+    "react-stylesheet": "^2.0.2",
+    "teeny-tap": "^0.2.0"
   }
 }
