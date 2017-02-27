@@ -25,12 +25,23 @@ const colorList = [
   '#D4C4FB',
 ];
 
-storiesOf('<SwatchColorPicker />', module).add('Basic', () => {
-  return (
-    <SwatchColorPicker
-      colorList={colorList}
-      value="#B80000"
-      onChange={action('onChange')}
-    />
-  );
-});
+storiesOf('<SwatchColorPicker />', module)
+  .add('basic', () => {
+    return (
+      <SwatchColorPicker
+        colorList={colorList}
+        value="#b80000"
+        onChange={action('onChange')}
+      />
+    );
+  })
+  .add('position right', () => {
+    return (
+      <SwatchColorPicker
+        menuPosition="right"
+        colorList={colorList}
+        value="#b80000"
+        onChange={action('onChange')}
+      />
+    );
+  });

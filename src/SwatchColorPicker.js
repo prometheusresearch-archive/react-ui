@@ -14,12 +14,14 @@ export default class SwatchColorPicker extends React.Component {
     menuSize: number,
     swatchWidth: number,
     swatchHeight: number,
+    menuPosition: 'left' | 'right',
   };
 
   static defaultProps = {
     swatchWidth: 25,
     swatchHeight: 25,
     menuSize: 8,
+    menuPosition: 'left',
   };
 
   onSelection = (value: string) => {
@@ -27,9 +29,16 @@ export default class SwatchColorPicker extends React.Component {
   };
 
   render() {
-    const {value, colorList, menuSize, swatchWidth, swatchHeight} = this.props;
+    const {
+      value,
+      colorList,
+      menuSize,
+      menuPosition,
+      swatchWidth,
+      swatchHeight,
+    } = this.props;
     return (
-      <Dropdown.Wrapper onSelection={this.onSelection}>
+      <Dropdown.Wrapper onSelection={this.onSelection} tag={Element} position="relative">
         <Dropdown.Button
           tag={ColorSwatch}
           width={swatchWidth}
@@ -39,6 +48,7 @@ export default class SwatchColorPicker extends React.Component {
         <Dropdown.Menu>
           <ColorMenu
             size={menuSize}
+            position={menuPosition}
             colorList={colorList}
             swatchWidth={swatchWidth}
             swatchHeight={swatchHeight}
@@ -51,7 +61,7 @@ export default class SwatchColorPicker extends React.Component {
 
 class ColorMenu extends React.Component {
   render() {
-    const {colorList, size, swatchWidth, swatchHeight} = this.props;
+    const {colorList, size, position, swatchWidth, swatchHeight} = this.props;
     const menu = colorList.map(color => (
       <Dropdown.MenuItem
         tag={ColorSwatch}
@@ -64,6 +74,7 @@ class ColorMenu extends React.Component {
     ));
     const borderWidth = 1;
     const padding = 5;
+    const width = swatchWidth * size + 2 * borderWidth + 2 * padding;
     return (
       <HBox
         overflow="visible"
@@ -75,9 +86,9 @@ class ColorMenu extends React.Component {
         border={{width: borderWidth, style: 'solid', color: 'rgba(0, 0, 0, 0.2)'}}
         background="#fff"
         position="absolute"
-        left={3}
+        left={position === 'right' ? -width + 31 : -5}
         zIndex={100}
-        width={swatchWidth * size + 2 * borderWidth + 2 * padding}>
+        width={width}>
         <Element
           position="absolute"
           borderTop={{width: 8, style: 'solid', color: 'transparent'}}
@@ -89,7 +100,8 @@ class ColorMenu extends React.Component {
             color: 'rgba(0, 0, 0, 0.14902)',
           }}
           top={-16}
-          left={9}
+          right={position === 'right' ? 9 : undefined}
+          left={position === 'left' ? 9 : undefined}
         />
         <Element
           position="absolute"
@@ -102,7 +114,8 @@ class ColorMenu extends React.Component {
             color: 'rgb(255, 255, 255)',
           }}
           top={-14}
-          left={10}
+          right={position === 'right' ? 10 : undefined}
+          left={position === 'left' ? 10 : undefined}
         />
         {menu}
       </HBox>
