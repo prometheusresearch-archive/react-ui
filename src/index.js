@@ -50,3 +50,5 @@ export {default as ProgressBar} from './ProgressBar';
 export {default as Text} from './Text';
 export {default as LabelText} from './LabelText';
 export {default as ErrorText} from './ErrorText';
+
+export {default as SwatchColorPicker} from './SwatchColorPicker';
