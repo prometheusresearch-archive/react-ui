@@ -8437,6 +8437,39 @@ exports[`Storyshots <SuccessButton /> With icon only 1`] = `
 </button>
 `;
 
+exports[`Storyshots <SwatchColorPicker /> Basic 1`] = `
+<div>
+  <div
+    aria-disabled={undefined}
+    aria-expanded={false}
+    aria-haspopup={true}
+    className="rs-display-inline-block-normal rs-position-relative-hover rs-boxSizing-border-box-normal rs-2489425533"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    style={
+      Object {
+        "height": "25px",
+        "width": "25px",
+      }
+    }
+    tabIndex="0"
+  >
+    <div
+      className="rs-boxSizing-border-box-normal rs-0"
+      style={
+        Object {
+          "background": "#B80000",
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
 exports[`Storyshots <Text /> Regular 1`] = `
 <span
   style={
