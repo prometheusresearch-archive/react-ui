@@ -52,3 +52,5 @@ export {default as LabelText} from './LabelText';
 export {default as ErrorText} from './ErrorText';
 
 export {default as SwatchColorPicker} from './SwatchColorPicker';
+
+export {Element, style, css} from 'react-stylesheet';
