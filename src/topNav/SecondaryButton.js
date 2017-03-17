@@ -7,8 +7,9 @@ import {css, style} from 'react-stylesheet';
 import ButtonBase from '../ButtonBase';
 import theme from './theme';
 
-export default class SecondaryButton extends ButtonBase {
+const borderWidth = 3;
 
+export default class SecondaryButton extends ButtonBase {
   static stylesheet = {
     ...ButtonBase.stylesheet,
     Root: style('a', {
@@ -25,17 +26,19 @@ export default class SecondaryButton extends ButtonBase {
         border: css.none,
         height: theme.subHeader.height,
         padding: css.padding(0, 25),
+        borderBottom: css.border(borderWidth, 'transparent'),
         hover: {
           background: theme.subHeader.background,
-          borderTop: css.border(4, theme.subHeader.background),
-          borderBottom: css.border(4, theme.subHeader.background),
         },
         focus: {
           outline: css.none,
         },
       },
       open: {
-        borderBottom: css.border(5, theme.header.background),
+        borderBottom: css.border(borderWidth, theme.header.background),
+        hover: {
+          borderBottom: css.border(borderWidth, theme.header.background),
+        },
       },
     }),
   };

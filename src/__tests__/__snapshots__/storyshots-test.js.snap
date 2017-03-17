@@ -8750,9 +8750,154 @@ exports[`Storyshots <VBox /> justifyContent props 1`] = `
 
 exports[`Storyshots <topNav.Navigation /> Basic 1`] = `
 <div
-  className="Box-1692465394 VBox-721903046 rs-boxSizing-border-box-normal rs-flexDirection-column-normal rs-0"
+  className="Box-1692465394 rs-flexDirection-column-reverse-normal rs-overflow-visible-normal rs-boxSizing-border-box-normal rs-0"
   style={Object {}}
 >
+  <div
+    className="Box-1692465394 HBox-1417013499 rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+    style={Object {}}
+  >
+    <div
+      className="Box-1692465394 VBox-970101093 rs-boxSizing-border-box-normal rs-flexDirection-column-normal rs-0"
+      style={Object {}}
+    >
+      <a
+        className="a-2879647391"
+      >
+        React UI
+      </a>
+    </div>
+    <div
+      className="Box-1692465394 HBox-2855416894 rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+      style={Object {}}
+    >
+      <a
+        aria-pressed={undefined}
+        className="a-3596106041"
+        disabled={undefined}
+        href={undefined}
+        role="button"
+        style={
+          Object {
+            "height": undefined,
+            "textAlign": undefined,
+            "width": undefined,
+          }
+        }
+      >
+        <div
+          className="div-2833604010"
+        >
+          Main
+        </div>
+      </a>
+      <div
+        className="Box-1692465394 rs-overflow-visible-normal rs-boxSizing-border-box-normal rs-flexDirection-column-normal rs-0"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={Object {}}
+      >
+        <a
+          aria-pressed={undefined}
+          className="a-3596106041"
+          disabled={undefined}
+          href={undefined}
+          role="button"
+          style={
+            Object {
+              "height": undefined,
+              "textAlign": undefined,
+              "width": undefined,
+            }
+          }
+        >
+          <div
+            className="div-2833604010"
+          >
+            Menu
+          </div>
+        </a>
+      </div>
+    </div>
+    <div
+      className="Box-1692465394 HBox-1901222894 rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+      style={Object {}}
+    >
+      <a
+        aria-pressed={undefined}
+        className="a-3596106041 a-small-3596106041"
+        disabled={undefined}
+        href={undefined}
+        role="button"
+        style={
+          Object {
+            "height": undefined,
+            "textAlign": undefined,
+            "width": undefined,
+          }
+        }
+      >
+        <div
+          className="div-2833604010"
+        >
+          Log out
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots <topNav.Navigation /> With secondary menu 1`] = `
+<div
+  className="Box-1692465394 rs-flexDirection-column-reverse-normal rs-overflow-visible-normal rs-boxSizing-border-box-normal rs-0"
+  style={Object {}}
+>
+  <div
+    className="Box-1692465394 HBox-1571648509 rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
+    style={Object {}}
+  >
+    <a
+      aria-pressed={undefined}
+      className="a-3316963219 a-open-3316963219"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }
+    >
+      <div
+        className="div-2772671"
+      >
+        Main
+      </div>
+    </a>
+    <a
+      aria-pressed={undefined}
+      className="a-3316963219"
+      disabled={undefined}
+      href={undefined}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+          "textAlign": undefined,
+          "width": undefined,
+        }
+      }
+    >
+      <div
+        className="div-2772671"
+      >
+        Another
+      </div>
+    </a>
+  </div>
   <div
     className="Box-1692465394 HBox-1417013499 rs-boxSizing-border-box-normal rs-flexDirection-row-normal rs-0"
     style={Object {}}

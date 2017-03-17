@@ -4,19 +4,10 @@
  */
 
 import * as React from 'react';
-import {css, style} from 'react-stylesheet';
+import {css, style, VBox, HBox} from 'react-stylesheet';
 
-import VBox from '../VBox';
-import HBox from '../HBox';
 import theme from './theme';
 import Title from './Title';
-
-let TopNavigationContainer = style(VBox, {
-  base: {
-    flexDirection: 'column-reverse',
-    overflow: 'visible',
-  }
-});
 
 let Top = style(HBox, {
   base: {
@@ -27,7 +18,7 @@ let Top = style(HBox, {
     border: css.none,
     height: theme.header.height,
     justifyContent: 'center',
-  }
+  },
 });
 
 let PrimaryMenuContainer = style(HBox, {
@@ -35,7 +26,7 @@ let PrimaryMenuContainer = style(HBox, {
     alignItems: 'flex-end',
     overflow: 'visible',
     flex: '1',
-  }
+  },
 });
 
 let SecondaryMenuContainer = style(HBox, {
@@ -49,7 +40,7 @@ let SecondaryMenuContainer = style(HBox, {
     width: '100%',
   },
   collapsed: {
-    height: 5
+    height: 5,
   },
 });
 
@@ -57,23 +48,22 @@ let ApplicationTitleContainer = style(VBox, {
   base: {
     justifyContent: 'flex-end',
     padding: '5px 10px',
-  }
+  },
 });
 
 let ApplicationMenuContainer = style(HBox, {
   base: {
     alignItems: 'flex-start',
-    marginRight: 5
-  }
+    marginRight: 5,
+  },
 });
 
 export default class Navigation extends React.Component {
-
   props: {
-    title: ?string | React.Element<*>;
-    menu: Array<React.Element<*>>;
-    secondaryMenu: Array<React.Element<*>>;
-    applicationMenu: Array<React.Element<*>>;
+    title: ?string | React.Element<*>,
+    menu: Array<React.Element<*>>,
+    secondaryMenu: Array<React.Element<*>>,
+    applicationMenu: Array<React.Element<*>>,
   };
 
   render() {
@@ -81,7 +71,7 @@ export default class Navigation extends React.Component {
       title,
       menu,
       secondaryMenu,
-      applicationMenu
+      applicationMenu,
     } = this.props;
 
     if (typeof title === 'string') {
@@ -89,7 +79,7 @@ export default class Navigation extends React.Component {
     }
 
     return (
-      <TopNavigationContainer>
+      <VBox flexDirection="column-reverse" overflow="visible">
         {secondaryMenu &&
           <SecondaryMenuContainer variant={{collapsed: secondaryMenu.length === 0}}>
             {secondaryMenu}
@@ -105,7 +95,7 @@ export default class Navigation extends React.Component {
             {applicationMenu}
           </ApplicationMenuContainer>
         </Top>
-      </TopNavigationContainer>
+      </VBox>
     );
   }
 }
