@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import findHTMLElement from '../findHTMLElement';
 import specialAssign from './specialAssign';
 
 const IGNORE_PROPS = {
@@ -51,7 +51,7 @@ export default class MenuItem extends React.Component {
   };
 
   registerNode = (node: ?HTMLElement) => {
-    this.node = node ? ReactDOM.findDOMNode(node) : null;
+    this.node = node ? findHTMLElement(node) : null;
   };
 
   render() {

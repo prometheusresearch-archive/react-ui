@@ -4,6 +4,7 @@
 
 import ReactDOM from 'react-dom';
 import createFocusGroup from 'focus-group';
+import findHTMLElement from '../findHTMLElement';
 import * as externalStateControl from './externalStateControl';
 
 const focusGroupOptions = {
@@ -111,7 +112,10 @@ export class Manager {
     this.isOpen = false;
     this.update();
     if (closeOptions.focusButton) {
-      ReactDOM.findDOMNode(this.button).focus();
+      const elem = findHTMLElement(this.button);
+      if (elem != null) {
+        elem.focus();
+      }
     }
   }
 
@@ -126,12 +130,20 @@ export class Manager {
   handleBlur = () => {
     this.blurTimer = setTimeout(
       () => {
-        let buttonNode = ReactDOM.findDOMNode(this.button);
-        let menuNode = ReactDOM.findDOMNode(this.menu);
-        let activeEl = buttonNode.ownerDocument.activeElement;
-        if (buttonNode && activeEl === buttonNode) return;
-        if (menuNode && menuNode.contains(activeEl)) return;
-        if (this.isOpen) this.closeMenu({focusButton: false});
+        const buttonNode = findHTMLElement(this.button);
+        const menuNode = findHTMLElement(this.menu);
+        if (buttonNode != null) {
+          let activeEl = buttonNode.ownerDocument.activeElement;
+          if (activeEl === buttonNode) {
+            return;
+          }
+          if (menuNode != null && menuNode.contains(activeEl)) {
+            return;
+          }
+          if (this.isOpen) {
+            this.closeMenu({focusButton: false});
+          }
+        }
       },
       0,
     );

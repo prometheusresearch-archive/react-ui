@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import ReactDOM from 'react-dom';
+import findHTMLElement from './findHTMLElement';
 import {debounce} from './Utils';
 
 export let contextTypes = {
@@ -29,8 +29,8 @@ export class Focusable extends React.Component<*, FocusableProps, *> {
     this._inputRef = null;
   }
 
-  get input(): HTMLElement {
-    return ReactDOM.findDOMNode(this._inputRef || this._ref || this);
+  get input(): ?HTMLElement {
+    return findHTMLElement(this._inputRef || this._ref || this);
   }
 
   get isFocused(): boolean {
