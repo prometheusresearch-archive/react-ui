@@ -31,9 +31,17 @@ export type Stylesheet = {
   Hint: Component,
 };
 
+function Root({variant: _variant, ...props}) {
+  return <div {...props} />;
+}
+
+function Input({inputRef: _inputRef, ...props}) {
+  return <input {...props} />;
+}
+
 export let stylesheet: Stylesheet = {
-  Root: 'div',
-  Input: 'input',
+  Root,
+  Input,
   LabelWrapper: 'div',
   Hint: 'div',
   Label: 'div',
