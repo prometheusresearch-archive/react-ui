@@ -2,7 +2,6 @@
  * @flow
  */
 
-import ReactDOM from 'react-dom';
 import createFocusGroup from 'focus-group';
 import findHTMLElement from '../findHTMLElement';
 import * as externalStateControl from './externalStateControl';
