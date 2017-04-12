@@ -6930,20 +6930,12 @@ exports[`Storyshots <QuietButton /> With icon only 1`] = `
 exports[`Storyshots <Radio /> Disabled state 1`] = `
 <div
   title={undefined}
-  variant={
-    Object {
-      "disabled": true,
-      "ltr": true,
-      "rtl": false,
-    }
-  }
 >
   <input
     aria-labelledby="aria28"
     checked={true}
-    className="input-161314557 input-disabled-161314557"
+    className="Input-161314557 Input-disabled-161314557"
     disabled={true}
-    inputRef={[Function]}
     onChange={[Function]}
     type="radio"
   />
@@ -6980,7 +6972,7 @@ exports[`Storyshots <Radio /> Disabled state 1`] = `
     }
   >
     <div
-      className="div-1120473989 div-disabled-1120473989"
+      className="div-3928652604 div-disabled-3928652604"
       id="aria28"
     >
       Lights on
@@ -6997,20 +6989,12 @@ exports[`Storyshots <Radio /> Disabled state 1`] = `
 exports[`Storyshots <Radio /> Off state 1`] = `
 <div
   title={undefined}
-  variant={
-    Object {
-      "disabled": undefined,
-      "ltr": true,
-      "rtl": false,
-    }
-  }
 >
   <input
     aria-labelledby="aria23"
     checked={false}
-    className="input-161314557"
+    className="Input-161314557"
     disabled={undefined}
-    inputRef={[Function]}
     onChange={[Function]}
     type="radio"
   />
@@ -7020,20 +7004,12 @@ exports[`Storyshots <Radio /> Off state 1`] = `
 exports[`Storyshots <Radio /> On state 1`] = `
 <div
   title={undefined}
-  variant={
-    Object {
-      "disabled": undefined,
-      "ltr": true,
-      "rtl": false,
-    }
-  }
 >
   <input
     aria-labelledby="aria24"
     checked={true}
-    className="input-161314557"
+    className="Input-161314557"
     disabled={undefined}
-    inputRef={[Function]}
     onChange={[Function]}
     type="radio"
   />
@@ -7046,20 +7022,12 @@ exports[`Storyshots <Radio /> With label & hint (rtl) 1`] = `
 >
   <div
     title={undefined}
-    variant={
-      Object {
-        "disabled": undefined,
-        "ltr": false,
-        "rtl": true,
-      }
-    }
   >
     <input
       aria-labelledby="aria27"
       checked={true}
-      className="input-161314557"
+      className="Input-161314557"
       disabled={undefined}
-      inputRef={[Function]}
       onChange={[Function]}
       type="radio"
     />
@@ -7096,7 +7064,7 @@ exports[`Storyshots <Radio /> With label & hint (rtl) 1`] = `
       }
     >
       <div
-        className="div-1120473989"
+        className="div-3928652604"
         id="aria27"
       >
         Lights on
@@ -7114,20 +7082,12 @@ exports[`Storyshots <Radio /> With label & hint (rtl) 1`] = `
 exports[`Storyshots <Radio /> With label & hint 1`] = `
 <div
   title={undefined}
-  variant={
-    Object {
-      "disabled": undefined,
-      "ltr": true,
-      "rtl": false,
-    }
-  }
 >
   <input
     aria-labelledby="aria26"
     checked={true}
-    className="input-161314557"
+    className="Input-161314557"
     disabled={undefined}
-    inputRef={[Function]}
     onChange={[Function]}
     type="radio"
   />
@@ -7164,7 +7124,7 @@ exports[`Storyshots <Radio /> With label & hint 1`] = `
     }
   >
     <div
-      className="div-1120473989"
+      className="div-3928652604"
       id="aria26"
     >
       Lights on
@@ -7181,20 +7141,12 @@ exports[`Storyshots <Radio /> With label & hint 1`] = `
 exports[`Storyshots <Radio /> With label 1`] = `
 <div
   title={undefined}
-  variant={
-    Object {
-      "disabled": undefined,
-      "ltr": true,
-      "rtl": false,
-    }
-  }
 >
   <input
     aria-labelledby="aria25"
     checked={true}
-    className="input-161314557"
+    className="Input-161314557"
     disabled={undefined}
-    inputRef={[Function]}
     onChange={[Function]}
     type="radio"
   />
@@ -7231,7 +7183,7 @@ exports[`Storyshots <Radio /> With label 1`] = `
     }
   >
     <div
-      className="div-1120473989"
+      className="div-3928652604"
       id="aria25"
     >
       Lights on
@@ -7246,19 +7198,11 @@ exports[`Storyshots <Radio /> With label 1`] = `
 exports[`Storyshots <RadioBase /> Off state 1`] = `
 <div
   title={undefined}
-  variant={
-    Object {
-      "disabled": undefined,
-      "ltr": true,
-      "rtl": false,
-    }
-  }
 >
   <input
     aria-labelledby="aria29"
     checked={false}
     disabled={undefined}
-    inputRef={[Function]}
     onChange={[Function]}
     type="radio"
     variant={
@@ -7275,19 +7219,11 @@ exports[`Storyshots <RadioBase /> Off state 1`] = `
 exports[`Storyshots <RadioBase /> On state 1`] = `
 <div
   title={undefined}
-  variant={
-    Object {
-      "disabled": undefined,
-      "ltr": true,
-      "rtl": false,
-    }
-  }
 >
   <input
     aria-labelledby="aria30"
     checked={true}
     disabled={undefined}
-    inputRef={[Function]}
     onChange={[Function]}
     type="radio"
     variant={
@@ -7318,21 +7254,12 @@ exports[`Storyshots <RadioGroup /> Horizontal layout (rtl) 1`] = `
     >
       <div
         title={undefined}
-        variant={
-          Object {
-            "disabled": undefined,
-            "ltr": false,
-            "rtl": true,
-          }
-        }
       >
         <input
           aria-labelledby="aria35"
           checked={false}
-          className="input-161314557"
+          className="Input-161314557"
           disabled={undefined}
-          idx={0}
-          inputRef={[Function]}
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
@@ -7372,7 +7299,7 @@ exports[`Storyshots <RadioGroup /> Horizontal layout (rtl) 1`] = `
           }
         >
           <div
-            className="div-1120473989"
+            className="div-3928652604"
             id="aria35"
           >
             A
@@ -7388,21 +7315,12 @@ exports[`Storyshots <RadioGroup /> Horizontal layout (rtl) 1`] = `
     >
       <div
         title={undefined}
-        variant={
-          Object {
-            "disabled": undefined,
-            "ltr": false,
-            "rtl": true,
-          }
-        }
       >
         <input
           aria-labelledby="aria36"
           checked={false}
-          className="input-161314557"
+          className="Input-161314557"
           disabled={undefined}
-          idx={1}
-          inputRef={[Function]}
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
@@ -7442,7 +7360,7 @@ exports[`Storyshots <RadioGroup /> Horizontal layout (rtl) 1`] = `
           }
         >
           <div
-            className="div-1120473989"
+            className="div-3928652604"
             id="aria36"
           >
             B
@@ -7471,21 +7389,12 @@ exports[`Storyshots <RadioGroup /> Horizontal layout 1`] = `
   >
     <div
       title={undefined}
-      variant={
-        Object {
-          "disabled": undefined,
-          "ltr": true,
-          "rtl": false,
-        }
-      }
     >
       <input
         aria-labelledby="aria33"
         checked={false}
-        className="input-161314557"
+        className="Input-161314557"
         disabled={undefined}
-        idx={0}
-        inputRef={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
@@ -7525,7 +7434,7 @@ exports[`Storyshots <RadioGroup /> Horizontal layout 1`] = `
         }
       >
         <div
-          className="div-1120473989"
+          className="div-3928652604"
           id="aria33"
         >
           A
@@ -7541,21 +7450,12 @@ exports[`Storyshots <RadioGroup /> Horizontal layout 1`] = `
   >
     <div
       title={undefined}
-      variant={
-        Object {
-          "disabled": undefined,
-          "ltr": true,
-          "rtl": false,
-        }
-      }
     >
       <input
         aria-labelledby="aria34"
         checked={false}
-        className="input-161314557"
+        className="Input-161314557"
         disabled={undefined}
-        idx={1}
-        inputRef={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
@@ -7595,7 +7495,7 @@ exports[`Storyshots <RadioGroup /> Horizontal layout 1`] = `
         }
       >
         <div
-          className="div-1120473989"
+          className="div-3928652604"
           id="aria34"
         >
           B
@@ -7623,21 +7523,12 @@ exports[`Storyshots <RadioGroup /> Vertical layout 1`] = `
   >
     <div
       title={undefined}
-      variant={
-        Object {
-          "disabled": undefined,
-          "ltr": true,
-          "rtl": false,
-        }
-      }
     >
       <input
         aria-labelledby="aria31"
         checked={false}
-        className="input-161314557"
+        className="Input-161314557"
         disabled={undefined}
-        idx={0}
-        inputRef={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
@@ -7677,7 +7568,7 @@ exports[`Storyshots <RadioGroup /> Vertical layout 1`] = `
         }
       >
         <div
-          className="div-1120473989"
+          className="div-3928652604"
           id="aria31"
         >
           A
@@ -7693,21 +7584,12 @@ exports[`Storyshots <RadioGroup /> Vertical layout 1`] = `
   >
     <div
       title={undefined}
-      variant={
-        Object {
-          "disabled": undefined,
-          "ltr": true,
-          "rtl": false,
-        }
-      }
     >
       <input
         aria-labelledby="aria32"
         checked={false}
-        className="input-161314557"
+        className="Input-161314557"
         disabled={undefined}
-        idx={1}
-        inputRef={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
@@ -7747,7 +7629,7 @@ exports[`Storyshots <RadioGroup /> Vertical layout 1`] = `
         }
       >
         <div
-          className="div-1120473989"
+          className="div-3928652604"
           id="aria32"
         >
           B
@@ -7782,20 +7664,11 @@ exports[`Storyshots <RadioGroupBase /> Example 1`] = `
   >
     <div
       title={undefined}
-      variant={
-        Object {
-          "disabled": undefined,
-          "ltr": true,
-          "rtl": false,
-        }
-      }
     >
       <input
         aria-labelledby="aria37"
         checked={false}
         disabled={undefined}
-        idx={0}
-        inputRef={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
@@ -7856,20 +7729,11 @@ exports[`Storyshots <RadioGroupBase /> Example 1`] = `
   >
     <div
       title={undefined}
-      variant={
-        Object {
-          "disabled": undefined,
-          "ltr": true,
-          "rtl": false,
-        }
-      }
     >
       <input
         aria-labelledby="aria38"
         checked={false}
         disabled={undefined}
-        idx={1}
-        inputRef={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}

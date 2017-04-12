@@ -9,9 +9,9 @@ export default function findHTMLElement(
   component: HTMLElement | Component<*, *, *>,
 ): ?HTMLElement {
   const node = findDOMNode(component);
-  if (node instanceof HTMLElement) {
-    return node;
-  } else {
+  if (node instanceof Text) {
     return null;
+  } else {
+    return (node: any);
   }
 }

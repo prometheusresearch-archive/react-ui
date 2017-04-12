@@ -3,19 +3,11 @@
 exports[`does not triggerd onChange on label click if disabled 1`] = `
 <div
   title={undefined}
-  variant={
-    Object {
-      "disabled": true,
-      "ltr": true,
-      "rtl": false,
-    }
-  }
 >
   <input
     aria-labelledby="aria3"
     checked={false}
     disabled={true}
-    inputRef={[Function]}
     onChange={[Function]}
     type="radio"
     variant={
@@ -64,19 +56,11 @@ exports[`does not triggerd onChange on label click if disabled 1`] = `
 exports[`triggers onChange on input 1`] = `
 <div
   title={undefined}
-  variant={
-    Object {
-      "disabled": undefined,
-      "ltr": true,
-      "rtl": false,
-    }
-  }
 >
   <input
     aria-labelledby="aria1"
     checked={false}
     disabled={undefined}
-    inputRef={[Function]}
     onChange={[Function]}
     type="radio"
     variant={
@@ -93,19 +77,11 @@ exports[`triggers onChange on input 1`] = `
 exports[`triggers onChange on label click 1`] = `
 <div
   title={undefined}
-  variant={
-    Object {
-      "disabled": undefined,
-      "ltr": true,
-      "rtl": false,
-    }
-  }
 >
   <input
     aria-labelledby="aria2"
     checked={false}
     disabled={undefined}
-    inputRef={[Function]}
     onChange={[Function]}
     type="radio"
     variant={

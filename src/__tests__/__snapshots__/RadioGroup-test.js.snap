@@ -14,21 +14,12 @@ exports[`renders 1`] = `
   >
     <div
       title={undefined}
-      variant={
-        Object {
-          "disabled": undefined,
-          "ltr": true,
-          "rtl": false,
-        }
-      }
     >
       <input
         aria-labelledby="aria1"
         checked={true}
-        className="input-161314557"
+        className="Input-161314557"
         disabled={undefined}
-        idx={0}
-        inputRef={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
@@ -68,7 +59,7 @@ exports[`renders 1`] = `
         }
       >
         <div
-          className="div-1120473989"
+          className="div-3928652604"
           id="aria1"
         >
           A
@@ -84,21 +75,12 @@ exports[`renders 1`] = `
   >
     <div
       title={undefined}
-      variant={
-        Object {
-          "disabled": undefined,
-          "ltr": true,
-          "rtl": false,
-        }
-      }
     >
       <input
         aria-labelledby="aria2"
         checked={false}
-        className="input-161314557"
+        className="Input-161314557"
         disabled={undefined}
-        idx={1}
-        inputRef={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
@@ -138,7 +120,7 @@ exports[`renders 1`] = `
         }
       >
         <div
-          className="div-1120473989"
+          className="div-3928652604"
           id="aria2"
         >
           B
