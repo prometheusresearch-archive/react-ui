@@ -14,6 +14,7 @@ type Props = {
   label?: string;
   title?: string;
   hint?: string;
+  idx: number;
   disabled?: boolean;
   focusIndex?: number;
   inputRef: (HTMLElement) => *;
@@ -58,7 +59,7 @@ export default class RadioBase extends React.Component<*, Props, *> {
   render() {
     let {
       value, label, title, hint, inputRef,
-      variant, disabled, focusIndex, ...props
+      variant, disabled, focusIndex, idx: _idx, ...props
     } = this.props;
     let {Root, Input, Label, Hint, LabelWrapper} = this.constructor.stylesheet;
     let {i18n = I18N.defaultContext} = this.context;
