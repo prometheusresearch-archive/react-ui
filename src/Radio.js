@@ -14,7 +14,7 @@ export default class Radio extends RadioBase {
     Label: style(stylesheet.Label, {
       base: {
         fontSize: '0.875rem',
-        fontWeight: 400,
+        fontWeight: 200,
         color: '#444',
       },
       disabled: {
