@@ -8,11 +8,7 @@ import VBox from './VBox';
 
 function Box(props) {
   return (
-    <VBox
-      {...props}
-      border={{width: 1, style: 'solid', color: 'red'}}
-      padding={10}
-      />
+    <VBox {...props} border={{width: 1, style: 'solid', color: 'red'}} padding={10} />
   );
 }
 
@@ -45,4 +41,3 @@ storiesOf('<VBox />', module)
       <Box>3</Box>
     </Box>
   ));
-

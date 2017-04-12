@@ -10,20 +10,19 @@ export const NOVALUE = '__NOVALUE__';
 const NOVALUE_OPTION = {label: '', value: NOVALUE};
 
 type Option = {
-  value: string;
-  label?: string;
-  hint?: string;
+  value: string,
+  label?: string,
+  hint?: string,
 };
 
 type Props = {
-  options: Array<Option>;
-  value: string;
-  allowNoValue?: boolean;
-  onChange: (?string) => *;
+  options: Array<Option>,
+  value: string,
+  allowNoValue?: boolean,
+  onChange: (?string) => *,
 };
 
 export default class Select extends React.Component<*, Props, *> {
-
   render() {
     let {options, value, allowNoValue} = this.props;
     if (value == null) {
@@ -55,5 +54,5 @@ export default class Select extends React.Component<*, Props, *> {
       value = null;
     }
     this.props.onChange(value);
-  }
+  };
 }

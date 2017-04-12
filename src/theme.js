@@ -11,18 +11,18 @@ const brandColors = {
 const size = {
   'xx-small': 4,
   'x-small': 8,
-  'small': 16,
-  'medium': 24,
-  'large': 32,
+  small: 16,
+  medium: 24,
+  large: 32,
   'x-large': 64,
   'xx-large': 96,
 };
 
 const fontSize = {
   'x-small': 12,
-  'small': 14,
-  'medium': 16,
-  'large': 18,
+  small: 14,
+  medium: 16,
+  large: 18,
   'x-large': 22,
 };
 
@@ -42,12 +42,12 @@ let __THEME = {
     focus: {},
     active: {},
     disabled: {},
-  }
+  },
 };
 
 type ThemeType = typeof __THEME; // eslint-disable-line no-unused-vars
 
-declare var __REACT_UI_THEME__: ThemeType | (theme: ThemeType) => ThemeType;
+declare var __REACT_UI_THEME__: ThemeType | ((theme: ThemeType) => ThemeType);
 
 if (typeof __REACT_UI_THEME__ !== 'undefined') {
   if (typeof __REACT_UI_THEME__ === 'function') {

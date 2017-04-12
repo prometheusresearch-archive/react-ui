@@ -7,20 +7,16 @@ import * as React from 'react';
 import invariant from 'invariant';
 import Input from './Input';
 
-import {
-  tryParseInteger,
-  extractValueFromEvent
-} from './FormUtils';
+import {tryParseInteger, extractValueFromEvent} from './FormUtils';
 
 type Props = {
-  value: string | number;
-  onChange: (number | string) => *;
+  value: string | number,
+  onChange: (number | string) => *,
 };
 
 export default class IntegerInput extends React.Component<*, Props, *> {
-
   state: {
-    value: string;
+    value: string,
   };
 
   static stylesheet = {
@@ -38,13 +34,7 @@ export default class IntegerInput extends React.Component<*, Props, *> {
 
   render() {
     let {Input} = this.constructor.stylesheet;
-    return (
-      <Input
-        {...this.props}
-        value={this.state.value}
-        onChange={this.onChange}
-        />
-    );
+    return <Input {...this.props} value={this.state.value} onChange={this.onChange} />;
   }
 
   componentWillReceiveProps(nextProps: Props) {
@@ -60,7 +50,7 @@ export default class IntegerInput extends React.Component<*, Props, *> {
     const value = extractValueFromEvent(event) || '';
     invariant(
       typeof value === 'string',
-      'Expected a string value from the underlying input'
+      'Expected a string value from the underlying input',
     );
     this.setState({value}, () => {
       if (value != null) {
@@ -69,6 +59,5 @@ export default class IntegerInput extends React.Component<*, Props, *> {
         this.props.onChange(value);
       }
     });
-  }
-
+  };
 }

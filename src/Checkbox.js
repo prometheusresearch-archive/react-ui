@@ -9,7 +9,6 @@ import {margin, textColors} from './theme';
 import Block from './Block';
 
 export default class Checkbox extends CheckboxBase {
-
   static stylesheet = {
     ...stylesheet,
     Label: style(stylesheet.Label, {
@@ -53,7 +52,7 @@ export default class Checkbox extends CheckboxBase {
       disabled: {
         cursor: 'not-allowed',
         color: textColors.disabled,
-      }
+      },
     }),
-  }
+  };
 }

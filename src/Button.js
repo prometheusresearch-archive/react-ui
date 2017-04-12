@@ -3,12 +3,11 @@
  * @flow
  */
 
-import {css}  from 'react-stylesheet';
+import {css} from 'react-stylesheet';
 import ButtonBase from './ButtonBase';
 import * as ButtonStylesheet from './ButtonStylesheet';
 
 export default class Button extends ButtonBase {
-
   static stylesheet = ButtonStylesheet.create({
     raised: true,
 

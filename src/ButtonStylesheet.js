@@ -4,61 +4,60 @@
  */
 
 import type {fontWeight} from 'react-stylesheet/lib/CSSType';
-import {style, css}  from 'react-stylesheet';
+import {style, css} from 'react-stylesheet';
 import {stylesheet as StylesheetBase} from './ButtonBase';
 import theme from './theme';
 
 export type FontSize = {
-  xSmall: number;
-  small: number;
-  normal: number;
-  large: number;
+  xSmall: number,
+  small: number,
+  normal: number,
+  large: number,
 };
 
 export type Size = {
-  xSmall: number;
-  small: number;
-  normal: number;
-  large: number;
+  xSmall: number,
+  small: number,
+  normal: number,
+  large: number,
 };
 
 export type ButtonStylesheet = {
-  raised: boolean;
+  raised: boolean,
 
-  width?: Size;
-  height?: Size;
+  width?: Size,
+  height?: Size,
 
-  borderRadius?: number;
+  borderRadius?: number,
 
-  textWidth: fontWeight;
-  textSize?: FontSize | string;
+  textWidth: fontWeight,
+  textSize?: FontSize | string,
 
-  text: string;
-  textHover: string;
-  textFocus: string;
-  textActive: string;
-  textDisabled: string;
+  text: string,
+  textHover: string,
+  textFocus: string,
+  textActive: string,
+  textDisabled: string,
 
-  background: string;
-  backgroundHover: string;
-  backgroundFocus: string;
-  backgroundActive: string;
-  backgroundDisabled: string;
+  background: string,
+  backgroundHover: string,
+  backgroundFocus: string,
+  backgroundActive: string,
+  backgroundDisabled: string,
 
-  border?: string;
-  borderHover?: string;
-  borderFocus?: string;
-  borderActive?: string;
-  borderDisabled?: string;
+  border?: string,
+  borderHover?: string,
+  borderFocus?: string,
+  borderActive?: string,
+  borderDisabled?: string,
 
-  shadow?: string;
-  shadowHover?: string;
-  shadowFocus?: string;
-  shadowActive?: string;
+  shadow?: string,
+  shadowHover?: string,
+  shadowFocus?: string,
+  shadowActive?: string,
 
-  shadowFocusRing?: string;
+  shadowFocusRing?: string,
 };
-
 
 let noBorder = {width: 1, color: 'transparent', style: 'solid'};
 
@@ -86,7 +85,6 @@ let defaultWidth = {
 };
 
 export function create(stylesheet: ButtonStylesheet) {
-
   let {
     textSize = defaultTextSize,
     height = defaultHeight,
@@ -96,94 +94,60 @@ export function create(stylesheet: ButtonStylesheet) {
   } = stylesheet;
 
   let colors = {
-    background: (
-      theme.button.backgroundColor ||
-      stylesheet.background
-    ),
-    color: (
-      theme.button.textColor ||
-      stylesheet.text
-    ),
+    background: theme.button.backgroundColor || stylesheet.background,
+    color: theme.button.textColor || stylesheet.text,
     border: css.border(
-      1, css.border.solid,
-      theme.button.borderColor ||
-      stylesheet.border
+      1,
+      css.border.solid,
+      theme.button.borderColor || stylesheet.border,
     ),
   };
 
   let hoverColors = {
-    background: (
-      theme.button.hover.backgroundColor ||
+    background: theme.button.hover.backgroundColor ||
       stylesheet.backgroundHover ||
-      stylesheet.background
-    ),
-    color: (
-      theme.button.hover.textColor ||
-      stylesheet.textHover ||
-      stylesheet.text
-    ),
+      stylesheet.background,
+    color: theme.button.hover.textColor || stylesheet.textHover || stylesheet.text,
     border: css.border(
-      1, css.border.solid,
-      theme.button.hover.borderColor ||
-      stylesheet.borderHover ||
-      stylesheet.border
+      1,
+      css.border.solid,
+      theme.button.hover.borderColor || stylesheet.borderHover || stylesheet.border,
     ),
   };
 
   let focusColors = {
-    background: (
-      theme.button.focus.backgroundColor ||
+    background: theme.button.focus.backgroundColor ||
       stylesheet.backgroundFocus ||
-      stylesheet.background
-    ),
-    color: (
-      theme.button.focus.textColor ||
-      stylesheet.textFocus ||
-      stylesheet.text
-    ),
+      stylesheet.background,
+    color: theme.button.focus.textColor || stylesheet.textFocus || stylesheet.text,
     border: css.border(
-      1, css.border.solid,
-      theme.button.focus.borderColor ||
-      stylesheet.borderFocus ||
-      stylesheet.border
+      1,
+      css.border.solid,
+      theme.button.focus.borderColor || stylesheet.borderFocus || stylesheet.border,
     ),
   };
 
   let activeColors = {
-    background: (
-      theme.button.active.backgroundColor ||
+    background: theme.button.active.backgroundColor ||
       stylesheet.backgroundActive ||
-      stylesheet.background
-    ),
-    color: (
-      theme.button.active.textColor ||
-      stylesheet.textActive ||
-      stylesheet.text
-    ),
+      stylesheet.background,
+    color: theme.button.active.textColor || stylesheet.textActive || stylesheet.text,
     border: css.border(
-      1, css.border.solid,
-      theme.button.active.borderColor ||
-      stylesheet.borderActive ||
-      stylesheet.border
+      1,
+      css.border.solid,
+      theme.button.active.borderColor || stylesheet.borderActive || stylesheet.border,
     ),
   };
 
   let disabledColors = {
-    background: (
-      theme.button.disabled.backgroundColor ||
+    background: theme.button.disabled.backgroundColor ||
       stylesheet.backgroundDisabled ||
-      stylesheet.background
-    ),
-    color: (
-      theme.button.disabled.textColor ||
-      stylesheet.textDisabled ||
-      stylesheet.text
-    ),
+      stylesheet.background,
+    color: theme.button.disabled.textColor || stylesheet.textDisabled || stylesheet.text,
     border: css.border(
-      1, css.border.solid,
-      theme.button.disabled.borderColor ||
-      stylesheet.borderDisabled ||
-      stylesheet.border
+      1,
+      css.border.solid,
+      theme.button.disabled.borderColor || stylesheet.borderDisabled || stylesheet.border,
     ),
   };
 
@@ -195,7 +159,6 @@ export function create(stylesheet: ButtonStylesheet) {
   });
 
   let Root = style(StylesheetBase.Root, {
-
     base: {
       position: 'relative',
       textAlign: 'center',
@@ -235,7 +198,7 @@ export function create(stylesheet: ButtonStylesheet) {
         active: {
           ...disabledColors,
           boxShadow: css.none,
-        }
+        },
       },
     },
     xSmall: {
@@ -247,7 +210,7 @@ export function create(stylesheet: ButtonStylesheet) {
       fontSize: typeof textSize === 'string' ? textSize : textSize.xSmall,
       boxShadow: css.multi(
         css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadow),
-        css.boxShadow(0, 1, 1, 0, stylesheet.shadow)
+        css.boxShadow(0, 1, 1, 0, stylesheet.shadow),
       ),
       hover: {
         boxShadow: css.multi(
@@ -271,11 +234,11 @@ export function create(stylesheet: ButtonStylesheet) {
             css.insetBoxShadow(0, 1, 1, 0, stylesheet.shadowActive),
             shadowFocusRing,
           ),
-        }
+        },
       },
       disabled: {
         padding: css.padding(2, 6),
-      }
+      },
     },
 
     small: {
@@ -287,7 +250,7 @@ export function create(stylesheet: ButtonStylesheet) {
       fontSize: typeof textSize === 'string' ? textSize : textSize.small,
       boxShadow: css.multi(
         css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadow),
-        css.boxShadow(0, 1, 1, 0, stylesheet.shadow)
+        css.boxShadow(0, 1, 1, 0, stylesheet.shadow),
       ),
       hover: {
         boxShadow: css.multi(
@@ -313,11 +276,11 @@ export function create(stylesheet: ButtonStylesheet) {
             css.insetBoxShadow(0, 1, 1, 0, stylesheet.shadowActive),
             shadowFocusRing,
           ),
-        }
+        },
       },
       disabled: {
         padding: css.padding(4, 10),
-      }
+      },
     },
 
     normal: {
@@ -355,11 +318,11 @@ export function create(stylesheet: ButtonStylesheet) {
             css.insetBoxShadow(0, 1, 1, 0, stylesheet.shadowActive),
             shadowFocusRing,
           ),
-        }
+        },
       },
       disabled: {
         padding: css.padding(8, 15),
-      }
+      },
     },
 
     large: {
@@ -377,7 +340,7 @@ export function create(stylesheet: ButtonStylesheet) {
         boxShadow: css.multi(
           css.insetBoxShadow(0, -2, 9, -4, stylesheet.shadowHover),
           css.boxShadow(0, 2, 3, 0, stylesheet.shadowHover),
-        )
+        ),
       },
       focus: {
         boxShadow: css.multi(
@@ -397,11 +360,11 @@ export function create(stylesheet: ButtonStylesheet) {
             css.insetBoxShadow(0, 3, 3, 0, stylesheet.shadowActive),
             shadowFocusRing,
           ),
-        }
+        },
       },
       disabled: {
         padding: css.padding(10, 30),
-      }
+      },
     },
 
     groupHorizontally_ltr: {
@@ -411,7 +374,7 @@ export function create(stylesheet: ButtonStylesheet) {
       borderLeft: noBorder,
       hover: {borderLeft: noBorder},
       focus: {borderLeft: noBorder},
-      active:  {borderLeft: noBorder},
+      active: {borderLeft: noBorder},
       disabled: {borderLeft: noBorder},
 
       firstChild: {
@@ -429,7 +392,7 @@ export function create(stylesheet: ButtonStylesheet) {
       lastChild: {
         borderTopRightRadius: borderRadius,
         borderBottomRightRadius: borderRadius,
-      }
+      },
     },
 
     groupHorizontally_rtl: {
@@ -439,7 +402,7 @@ export function create(stylesheet: ButtonStylesheet) {
       borderRight: noBorder,
       hover: {borderRight: noBorder},
       focus: {borderRight: noBorder},
-      active:  {borderRight: noBorder},
+      active: {borderRight: noBorder},
       disabled: {borderRight: noBorder},
 
       firstChild: {
@@ -457,7 +420,7 @@ export function create(stylesheet: ButtonStylesheet) {
       lastChild: {
         borderTopLeftRadius: borderRadius,
         borderBottomLeftRadius: borderRadius,
-      }
+      },
     },
 
     groupVertically: {
@@ -467,7 +430,7 @@ export function create(stylesheet: ButtonStylesheet) {
       borderTop: noBorder,
       hover: {borderTop: noBorder},
       focus: {borderTop: noBorder},
-      active:  {borderTop: noBorder},
+      active: {borderTop: noBorder},
       disabled: {borderTop: noBorder},
 
       firstChild: {
@@ -485,7 +448,7 @@ export function create(stylesheet: ButtonStylesheet) {
       lastChild: {
         borderBottomLeftRadius: borderRadius,
         borderBottomRightRadius: borderRadius,
-      }
+      },
     },
   });
 
@@ -496,4 +459,3 @@ export function create(stylesheet: ButtonStylesheet) {
     IconWrapper,
   };
 }
-

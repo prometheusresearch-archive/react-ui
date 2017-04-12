@@ -9,7 +9,7 @@ export function findByType(tree, type) {
   if (tree.type === type) {
     return tree;
   } else if (tree.children) {
-    for (let i = 0; i < tree.children.length; i++){
+    for (let i = 0; i < tree.children.length; i++) {
       let found = findByType(tree.children[i], type);
       if (found !== null) {
         return found;
@@ -28,10 +28,9 @@ export function findAllByType(tree, type) {
     found.push(tree);
   }
   if (tree.children) {
-    for (let i = 0; i < tree.children.length; i++){
+    for (let i = 0; i < tree.children.length; i++) {
       found = found.concat(findAllByType(tree.children[i], type));
     }
   }
   return found;
 }
-

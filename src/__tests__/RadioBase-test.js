@@ -12,12 +12,7 @@ import RadioBase from '../RadioBase';
 
 it('triggers onChange on input', function() {
   let onChange = jest.fn();
-  let tree = Renderer.create(
-    <RadioBase
-      value={false}
-      onChange={onChange}
-      />
-  );
+  let tree = Renderer.create(<RadioBase value={false} onChange={onChange} />);
   expect(tree).toMatchSnapshot();
 
   let input = findByType(tree, 'input');
@@ -28,13 +23,7 @@ it('triggers onChange on input', function() {
 
 it('triggers onChange on label click', function() {
   let onChange = jest.fn();
-  let tree = Renderer.create(
-    <RadioBase
-      label="OK"
-      value={false}
-      onChange={onChange}
-      />
-  );
+  let tree = Renderer.create(<RadioBase label="OK" value={false} onChange={onChange} />);
   expect(tree).toMatchSnapshot();
 
   let divs = findAllByType(tree, 'div');
@@ -46,12 +35,7 @@ it('triggers onChange on label click', function() {
 it('does not triggerd onChange on label click if disabled', function() {
   let onChange = jest.fn();
   let tree = Renderer.create(
-    <RadioBase
-      disabled
-      label="OK"
-      value={false}
-      onChange={onChange}
-      />
+    <RadioBase disabled label="OK" value={false} onChange={onChange} />,
   );
   expect(tree).toMatchSnapshot();
 

@@ -19,56 +19,55 @@ export let stylesheet = {
       userSelect: 'none',
       whiteSpace: 'nowrap',
       overflow: 'hidden',
-    }
+    },
   }),
   Caption: style('div', {
     base: {
       display: 'inline-block',
-    }
+    },
   }),
   IconWrapper: style('div', {
     base: {
       display: 'inline-block',
-    }
+    },
   }),
 };
 
 export type ButtonBaseProps = {
-
   /**
     * If button should be rendered as being pressed.
     */
-  active?: boolean;
+  active?: boolean,
 
   /**
     * If button should be rendered in disabled state.
     */
-  disabled?: boolean;
+  disabled?: boolean,
 
-  width?: number | string;
-  height?: number | string;
-  textAlign?: typeof css.textAlign;
+  width?: number | string,
+  height?: number | string,
+  textAlign?: typeof css.textAlign,
 
-  attach?: {left?: boolean; right?: boolean; top?: boolean; bottom?: boolean};
+  attach?: {left?: boolean, right?: boolean, top?: boolean, bottom?: boolean},
 
-  groupVertically?: boolean;
-  groupHorizontally?: boolean;
+  groupVertically?: boolean,
+  groupHorizontally?: boolean,
 
   /**
     * Button size.
     */
-  size?: 'x-small' | 'small' | 'normal' | 'large';
+  size?: 'x-small' | 'small' | 'normal' | 'large',
 
   /**
     * Button's icon.
     */
-  icon?: string | React.Element<*>;
+  icon?: string | React.Element<*>,
 
   /**
     * Button's alternative icon (placed at the opposite direction to the
     * label).
     */
-  iconAlt?: string | React.Element<*>;
+  iconAlt?: string | React.Element<*>,
 
   /**
     * Button's alternative icon (placed at the opposite direction to the
@@ -76,19 +75,19 @@ export type ButtonBaseProps = {
     *
     * Deprecated.
     */
-  iconRight?: string | React.Element<*>;
+  iconRight?: string | React.Element<*>,
 
-  href?: String;
+  href?: String,
 
-  stylesheet: typeof stylesheet;
+  stylesheet: typeof stylesheet,
 
-  variant?: Object;
+  variant?: Object,
 
-  style?: Object;
+  style?: Object,
 
-  Component?: string | Function;
+  Component?: string | Function,
 
-  children?: React.Element<*>;
+  children?: React.Element<*>,
 };
 
 /**
@@ -96,9 +95,7 @@ export type ButtonBaseProps = {
  *
  * Button is clickable element with optional icon and/or caption.
  */
-export default class ButtonBase
-  extends Component<*, ButtonBaseProps, *> {
-
+export default class ButtonBase extends Component<*, ButtonBaseProps, *> {
   context: {i18n: I18NContext};
 
   static stylesheet = stylesheet;
@@ -106,24 +103,29 @@ export default class ButtonBase
   static contextTypes = I18N.contextTypes;
 
   render() {
-
     let {
-      children, icon, iconAlt = this.props.iconRight,
-      disabled, active,
+      children,
+      icon,
+      iconAlt = this.props.iconRight,
+      disabled,
+      active,
       size = 'normal',
       attach = {},
       href,
       Component,
-      groupVertically, groupHorizontally,
+      groupVertically,
+      groupHorizontally,
       variant,
       stylesheet: {Root, Caption, IconWrapper} = this.constructor.stylesheet,
-      textAlign, width, height,
+      textAlign,
+      width,
+      height,
       style,
       ...props
     } = this.props;
 
     let {
-      i18n = I18N.defaultContext
+      i18n = I18N.defaultContext,
     } = this.context;
 
     let sizeVariant = {
@@ -139,7 +141,8 @@ export default class ButtonBase
     };
 
     variant = {
-      active, disabled,
+      active,
+      disabled,
       attachLeft: attach.left,
       attachRight: attach.right,
       attachTop: attach.top,
@@ -152,7 +155,8 @@ export default class ButtonBase
     };
 
     style = {
-      width, height,
+      width,
+      height,
       textAlign,
       ...style,
     };

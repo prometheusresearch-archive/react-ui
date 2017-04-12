@@ -47,5 +47,3 @@ storiesOf('<Card />', module)
       </CardItem>
     </Card>
   ));
-
-

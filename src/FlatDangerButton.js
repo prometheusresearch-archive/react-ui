@@ -8,7 +8,6 @@ import * as ButtonStylesheet from './ButtonStylesheet';
 import ButtonBase from './ButtonBase';
 
 export default class FlatDangerButton extends ButtonBase {
-
   static stylesheet = ButtonStylesheet.create({
     raised: true,
 

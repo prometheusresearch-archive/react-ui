@@ -9,7 +9,6 @@ import Block from './Block';
 import {margin, textColors} from './theme';
 
 export default class Radio extends RadioBase {
-
   static stylesheet = {
     ...stylesheet,
     Label: style(stylesheet.Label, {
@@ -53,6 +52,6 @@ export default class Radio extends RadioBase {
         cursor: 'not-allowed',
         color: textColors.disabled,
       },
-    })
+    }),
   };
 }

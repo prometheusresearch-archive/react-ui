@@ -14,13 +14,12 @@ import CheckboxBase from './CheckboxBase';
 type Value = Array<string>;
 
 type Option = {
-  label: string;
-  hint?: string;
-  value: string;
+  label: string,
+  hint?: string,
+  value: string,
 };
 
 export let primitiveValueStrategy = {
-
   findIndex(value: ?Value, option: Option): number {
     if (!value) {
       return -1;
@@ -41,21 +40,14 @@ export let primitiveValueStrategy = {
     value = value.slice(0);
     let idx = this.findIndex(value, option);
     if (checked) {
-      invariant(
-        idx === -1,
-        'Duplicate id added'
-      );
+      invariant(idx === -1, 'Duplicate id added');
       value.push(this.optionToValue(option));
     } else {
-      invariant(
-        idx > -1,
-        'Non-existent id unchecked'
-      );
+      invariant(idx > -1, 'Non-existent id unchecked');
       value.splice(idx, 1);
     }
     return value;
-  }
-
+  },
 };
 
 export let stylesheet = {
@@ -65,25 +57,24 @@ export let stylesheet = {
 };
 
 type Props = {
-  options: Array<Option>;
-  disabled?: boolean;
-  tabIndex?: number;
-  valueStrategy: typeof primitiveValueStrategy;
-  onChange: (Value) => *;
-  value: Value;
+  options: Array<Option>,
+  disabled?: boolean,
+  tabIndex?: number,
+  valueStrategy: typeof primitiveValueStrategy,
+  onChange: (Value) => *,
+  value: Value,
 
-  layout: 'horizontal' | 'vertical';
+  layout: 'horizontal' | 'vertical',
 
-  onFocus?: (UIEvent) => *;
-  onBlur?: (UIEvent) => *;
+  onFocus?: (UIEvent) => *,
+  onBlur?: (UIEvent) => *,
 
-  variant?: Object;
+  variant?: Object,
 };
 
 export default class CheckboxGroupBase extends React.Component<*, Props, *> {
-
   static propTypes = {
-    valueStrategy: React.PropTypes.object
+    valueStrategy: React.PropTypes.object,
   };
 
   static stylesheet = stylesheet;
@@ -139,7 +130,7 @@ export default class CheckboxGroupBase extends React.Component<*, Props, *> {
           onBlur={this.props.onBlur}
           onFocus={this.props.onFocus}
           onChange={this.onChange.bind(this, option)}
-          />
+        />
       </CheckboxWrapper>
     );
   }

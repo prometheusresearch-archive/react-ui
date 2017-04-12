@@ -8,11 +8,5 @@ import React from 'react';
 import Input from './Input';
 
 export default function Textarea(props: InputProps) {
-  return (
-    <Input
-      rows={3}
-      {...props}
-      Component="textarea"
-      />
-  );
+  return <Input rows={3} {...props} Component="textarea" />;
 }

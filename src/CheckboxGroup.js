@@ -9,7 +9,6 @@ import Checkbox from './Checkbox';
 import {margin} from './theme';
 
 export default class CheckboxGroup extends CheckboxGroupBase {
-
   static stylesheet = {
     ...stylesheet,
     Root: style(stylesheet.Root, {
@@ -29,14 +28,14 @@ export default class CheckboxGroup extends CheckboxGroupBase {
         marginRight: margin['x-small'],
         lastChild: {
           marginRight: 0,
-        }
+        },
       },
       horizontal_rtl: {
         marginLeft: margin['x-small'],
         lastChild: {
           marginLeft: 0,
-        }
-      }
+        },
+      },
     }),
-  }
+  };
 }

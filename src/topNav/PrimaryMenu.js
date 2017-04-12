@@ -22,7 +22,7 @@ let PrimaryMenuContainer = style(VBox, {
     paddingTop: 10,
     paddingBottom: 10,
     boxShadow: css.boxShadow(0, 8, 16, 0, css.rgba(0, 0, 0, 0.2)),
-  }
+  },
 });
 
 export class PrimaryMenuItem extends ButtonBase {
@@ -41,29 +41,28 @@ export class PrimaryMenuItem extends ButtonBase {
           outline: css.none,
         },
         hover: {
-          background: theme.headerMenu.hover.background
+          background: theme.headerMenu.hover.background,
         },
       },
-      selected:{
+      selected: {
         background: theme.subHeader.background,
         hover: {
           background: theme.subHeader.background,
-        }
+        },
       },
     }),
   };
 }
 
 export class PrimaryMenu extends React.Component {
-
   state: {
-    open: boolean
+    open: boolean,
   } = {
-    open: false
+    open: false,
   };
 
   static defaultProps = {
-    items: []
+    items: [],
   };
 
   render() {

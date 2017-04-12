@@ -10,9 +10,7 @@ import IntegerInput from '../IntegerInput';
 
 it('renders', function() {
   let onChange = jest.fn();
-  let tree = Renderer.create(
-    <IntegerInput onChange={onChange} />
-  );
+  let tree = Renderer.create(<IntegerInput onChange={onChange} />);
   expect(tree).toMatchSnapshot();
 
   let input = findByType(tree, 'input');

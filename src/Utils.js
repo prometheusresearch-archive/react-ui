@@ -14,17 +14,14 @@ export function uniqueId(prefix?: string = 'id'): string {
   return `${prefix}${uniqueIdNum}`;
 }
 
-export function noop(): void {
-
-}
+export function noop(): void {}
 
 export function chooseValue(
   nameMapping: Object,
   a?: string | number,
   b?: string | number,
-  c?: string | number
+  c?: string | number,
 ): void | string | number {
-
   let val;
   if (a !== undefined) {
     val = a;

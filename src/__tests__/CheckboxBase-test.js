@@ -14,12 +14,7 @@ let tree;
 
 it('triggers onChange on input', function() {
   let onChange = jest.fn();
-  tree = Renderer.create(
-    <CheckboxBase
-      value={false}
-      onChange={onChange}
-      />
-  );
+  tree = Renderer.create(<CheckboxBase value={false} onChange={onChange} />);
   expect(tree).toMatchSnapshot();
 
   let input = findByType(tree, 'input');
@@ -31,13 +26,7 @@ it('triggers onChange on input', function() {
 
 it('triggers onChange on label click', function() {
   let onChange = jest.fn();
-  tree = Renderer.create(
-    <CheckboxBase
-      label="OK"
-      value={false}
-      onChange={onChange}
-      />
-  );
+  tree = Renderer.create(<CheckboxBase label="OK" value={false} onChange={onChange} />);
   expect(tree).toMatchSnapshot();
 
   let divs = findAllByType(tree, 'div');
@@ -49,12 +38,7 @@ it('triggers onChange on label click', function() {
 it('does not triggerd onChange on label click if disabled', function() {
   let onChange = jest.fn();
   tree = Renderer.create(
-    <CheckboxBase
-      disabled
-      label="OK"
-      value={false}
-      onChange={onChange}
-      />
+    <CheckboxBase disabled label="OK" value={false} onChange={onChange} />,
   );
   expect(tree).toMatchSnapshot();
 

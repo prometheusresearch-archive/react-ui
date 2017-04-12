@@ -83,7 +83,11 @@ class ColorMenu extends React.Component {
         boxShadow="rgba(0, 0, 0, 0.14902) 0px 3px 12px"
         borderRadius={2}
         padding={padding}
-        border={{width: borderWidth, style: 'solid', color: 'rgba(0, 0, 0, 0.2)'}}
+        border={{
+          width: borderWidth,
+          style: 'solid',
+          color: 'rgba(0, 0, 0, 0.2)',
+        }}
         background="#fff"
         position="absolute"
         left={position === 'right' ? -width + 31 : -5}

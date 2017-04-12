@@ -12,74 +12,94 @@ import * as I18N from './I18N';
 type Size = number | string;
 
 type Props = {
-  Component?: string | Function;
-  inline?: boolean;
-  noWrap?: boolean;
+  Component?: string | Function,
+  inline?: boolean,
+  noWrap?: boolean,
   position?: 'relative' | 'absolute' | 'fixed',
-  width?: Size;
-  maxWidth?: Size;
-  minWidth?: Size;
-  height?: Size;
-  maxHeight?: Size;
-  minHeight?: Size;
-  top?: Size;
-  left?: Size;
-  bottom?: Size;
-  right?: Size;
-  positionStart?: Size;
-  positionEnd?: Size;
-  padding?: Size;
-  paddingV?: Size;
-  paddingH?: Size;
-  paddingStart?: Size;
-  paddingEnd?: Size;
-  paddingLeft?: Size;
-  paddingRight?: Size;
-  paddingTop?: Size;
-  paddingBottom?: Size;
-  margin?: Size;
-  marginV?: Size;
-  marginH?: Size;
-  marginStart?: Size;
-  marginEnd?: Size;
-  marginLeft?: Size;
-  marginRight?: Size;
-  marginTop?: Size;
-  marginBottom?: Size;
+  width?: Size,
+  maxWidth?: Size,
+  minWidth?: Size,
+  height?: Size,
+  maxHeight?: Size,
+  minHeight?: Size,
+  top?: Size,
+  left?: Size,
+  bottom?: Size,
+  right?: Size,
+  positionStart?: Size,
+  positionEnd?: Size,
+  padding?: Size,
+  paddingV?: Size,
+  paddingH?: Size,
+  paddingStart?: Size,
+  paddingEnd?: Size,
+  paddingLeft?: Size,
+  paddingRight?: Size,
+  paddingTop?: Size,
+  paddingBottom?: Size,
+  margin?: Size,
+  marginV?: Size,
+  marginH?: Size,
+  marginStart?: Size,
+  marginEnd?: Size,
+  marginLeft?: Size,
+  marginRight?: Size,
+  marginTop?: Size,
+  marginBottom?: Size,
   float?: 'left' | 'right' | 'start' | 'end',
   textAlign?: 'left' | 'right' | 'center' | 'start' | 'end',
-  verticalAlign?: string;
-  style?: Object;
+  verticalAlign?: string,
+  style?: Object,
 };
 
 type Context = {
-  i18n: I18NContext;
+  i18n: I18NContext,
 };
 
-export default function Block({
-  Component,
-  inline,
-  noWrap,
-  position = 'relative',
-  width, maxWidth, minWidth,
-  height, maxHeight, minHeight,
-  positionStart, positionEnd,
-  top, left, bottom, right,
-  padding,
-  paddingV, paddingH,
-  paddingStart, paddingEnd,
-  paddingLeft, paddingRight, paddingTop, paddingBottom,
-  margin,
-  marginV, marginH,
-  marginStart, marginEnd,
-  marginLeft, marginRight, marginTop, marginBottom,
-  float,
-  textAlign,
-  verticalAlign,
-  style,
-  ...props
-}: Props, {i18n = I18N.defaultContext}: Context) {
-
+export default function Block(
+  {
+    Component,
+    inline,
+    noWrap,
+    position = 'relative',
+    width,
+    maxWidth,
+    minWidth,
+    height,
+    maxHeight,
+    minHeight,
+    positionStart,
+    positionEnd,
+    top,
+    left,
+    bottom,
+    right,
+    padding,
+    paddingV,
+    paddingH,
+    paddingStart,
+    paddingEnd,
+    paddingLeft,
+    paddingRight,
+    paddingTop,
+    paddingBottom,
+    margin,
+    marginV,
+    marginH,
+    marginStart,
+    marginEnd,
+    marginLeft,
+    marginRight,
+    marginTop,
+    marginBottom,
+    float,
+    textAlign,
+    verticalAlign,
+    style,
+    ...props
+  }: Props,
+  {i18n = I18N.defaultContext}: Context,
+) {
   if (Component == null) {
     Component = 'div';
   }
@@ -156,9 +176,16 @@ export default function Block({
     display: inline ? 'inline-block' : undefined,
     whiteSpace: noWrap ? 'nowrap' : undefined,
     position,
-    width, minWidth, maxWidth,
-    height, minHeight, maxHeight,
-    top, left, bottom, right,
+    width,
+    minWidth,
+    maxWidth,
+    height,
+    minHeight,
+    maxHeight,
+    top,
+    left,
+    bottom,
+    right,
     float,
     textAlign,
     verticalAlign,

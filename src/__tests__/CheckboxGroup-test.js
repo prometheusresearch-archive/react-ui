@@ -11,21 +11,14 @@ import {findAllByType} from '../test';
 import Checkbox from '../Checkbox';
 import CheckboxGroup from '../CheckboxGroup';
 
-let options = [
-  {value: 'a', label: 'A'},
-  {value: 'b', label: 'B'}
-];
+let options = [{value: 'a', label: 'A'}, {value: 'b', label: 'B'}];
 
 let tree;
 
 it('renders', function() {
   let onChange = jest.fn();
   tree = Renderer.create(
-    <CheckboxGroup
-      value={['a']}
-      onChange={onChange}
-      options={options}
-      />
+    <CheckboxGroup value={['a']} onChange={onChange} options={options} />,
   );
   expect(tree).toMatchSnapshot();
 

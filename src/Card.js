@@ -8,15 +8,17 @@ import CardBase, {stylesheet} from './CardBase';
 import Block from './Block';
 import {padding, fontSize} from './theme';
 
-function variant({
-  shadow,
-  headerColor,
-  headerBackground,
-  contentColor,
-  contentBackground,
-  border,
-  borderRadius,
-}) {
+function variant(
+  {
+    shadow,
+    headerColor,
+    headerBackground,
+    contentColor,
+    contentBackground,
+    border,
+    borderRadius,
+  },
+) {
   return {
     Root: {
       boxShadow: css.boxShadow(0, 1, 2, 0, shadow),
@@ -31,9 +33,7 @@ function variant({
       backgroundColor: contentBackground,
       color: contentColor,
     },
-    Footer: {
-
-    },
+    Footer: {},
   };
 }
 
@@ -47,7 +47,7 @@ let base = variant({
   contentColor: '#000',
 });
 
-let success =  variant({
+let success = variant({
   shadow: css.rgba(37, 40, 43, 0.1),
   border: css.rgb(40, 172, 33),
   borderRadius: 2,
@@ -58,7 +58,6 @@ let success =  variant({
 });
 
 export class Card extends CardBase {
-
   static stylesheet = {
     ...stylesheet,
 
@@ -95,8 +94,8 @@ export class Card extends CardBase {
         ...base.Footer,
       },
       success: success.Footer,
-    })
-  }
+    }),
+  };
 }
 
 export let CardItem = style(Block, {
@@ -104,8 +103,8 @@ export let CardItem = style(Block, {
     borderBottom: css.border(1, css.rgb(180)),
     lastChild: {
       borderBottom: css.none,
-    }
-  }
+    },
+  },
 });
 
 export default Card;

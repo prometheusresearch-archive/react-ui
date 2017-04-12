@@ -10,24 +10,24 @@ import * as I18N from './I18N';
 import * as Focus from './Focus';
 
 type Props = {
-  value?: boolean;
-  label?: string;
-  title?: string;
-  hint?: string;
-  variant?: Object;
-  disabled?: boolean;
-  focusIndex?: number;
-  onChange: (boolean) => number;
+  value?: boolean,
+  label?: string,
+  title?: string,
+  hint?: string,
+  variant?: Object,
+  disabled?: boolean,
+  focusIndex?: number,
+  onChange: (boolean) => number,
 };
 
 type Component = string | ReactClass<*>;
 
 export type Stylesheet = {
-  Root: Component;
-  Input: Component;
-  LabelWrapper: Component;
-  Hint: Component;
-  Label: Component;
+  Root: Component,
+  Input: Component,
+  LabelWrapper: Component,
+  Hint: Component,
+  Label: Component,
 };
 
 export let stylesheet: Stylesheet = {
@@ -39,7 +39,6 @@ export let stylesheet: Stylesheet = {
 };
 
 export default class CheckboxBase extends React.Component<*, Props, *> {
-
   ariaId: string;
 
   static contextTypes = I18N.contextTypes;
@@ -57,10 +56,22 @@ export default class CheckboxBase extends React.Component<*, Props, *> {
 
   render() {
     let {
-      value, label, title, hint,
-      variant, disabled, focusIndex, ...props
+      value,
+      label,
+      title,
+      hint,
+      variant,
+      disabled,
+      focusIndex,
+      ...props
     } = this.props;
-    let {Root, Input, Label, Hint, LabelWrapper} = this.constructor.stylesheet;
+    let {
+      Root,
+      Input,
+      Label,
+      Hint,
+      LabelWrapper,
+    } = this.constructor.stylesheet;
     let {i18n = I18N.defaultContext} = this.context;
     variant = {
       rtl: i18n.dir === 'rtl',
@@ -79,7 +90,7 @@ export default class CheckboxBase extends React.Component<*, Props, *> {
             type="checkbox"
             checked={value}
             onChange={this.onChange}
-            />
+          />
         </Focus.Focusable>
         {label &&
           <LabelWrapper variant={variant} onClick={this.onClick}>
@@ -102,5 +113,3 @@ export default class CheckboxBase extends React.Component<*, Props, *> {
     this.props.onChange(checked);
   };
 }
-
-

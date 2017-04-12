@@ -9,12 +9,9 @@ import {findByType} from '../test';
 import NumberInput from '../NumberInput';
 
 it('renders', function() {
-
   let onChange = jest.fn();
 
-  let tree = Renderer.create(
-    <NumberInput onChange={onChange} />
-  );
+  let tree = Renderer.create(<NumberInput onChange={onChange} />);
   expect(tree).toMatchSnapshot();
 
   let input = findByType(tree, 'input');
@@ -34,9 +31,6 @@ it('renders', function() {
   input.props.onChange('');
   expect(onChange).toBeCalledWith('');
 
-  tree = Renderer.create(
-    <NumberInput onChange={onChange} value={undefined} />
-  );
+  tree = Renderer.create(<NumberInput onChange={onChange} value={undefined} />);
   expect(tree).toMatchSnapshot();
-
 });

@@ -9,7 +9,6 @@ import {style, css} from 'react-stylesheet';
 import {margin} from './theme';
 
 export default class RadioGroup extends RadioGroupBase {
-
   static stylesheet = {
     ...stylesheet,
     Root: style(stylesheet.Root, {
@@ -25,7 +24,7 @@ export default class RadioGroup extends RadioGroupBase {
         marginBottom: margin['xx-small'],
         lastChild: {
           marginBottom: 0,
-        }
+        },
       },
       horizontal: {
         display: 'inline-block',
@@ -34,14 +33,14 @@ export default class RadioGroup extends RadioGroupBase {
         marginRight: margin['x-small'],
         lastChild: {
           marginRight: 0,
-        }
+        },
       },
       horizontal_rtl: {
         marginLeft: margin['x-small'],
         lastChild: {
           marginLeft: 0,
-        }
+        },
       },
-    })
-  }
+    }),
+  };
 }

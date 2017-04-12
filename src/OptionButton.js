@@ -9,7 +9,6 @@ import ButtonBase from './ButtonBase';
 import {brandColors} from './theme';
 
 export default class OptionButton extends ButtonBase {
-
   static stylesheet = ButtonStylesheet.create({
     raised: false,
 

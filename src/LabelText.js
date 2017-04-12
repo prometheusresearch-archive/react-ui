@@ -19,5 +19,5 @@ export default style(Text, {
   disabled: {
     color: '#aaa',
     cursor: 'not-allowed',
-  }
+  },
 });

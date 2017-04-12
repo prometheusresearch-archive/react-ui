@@ -14,21 +14,20 @@ export let stylesheet = {
 };
 
 type Props = {
-  children?: React.Element<*>;
-  header?: React.Element<*>;
-  footer?: React.Element<*>;
-  padding?: string | number;
-  paddingTop?: string | number;
-  paddingBottom?: string | number;
-  paddingLeft?: string | number;
-  paddingRight?: string | number;
-  paddingV?: string | number;
-  paddingH?: string | number;
-  variant?: Object;
+  children?: React.Element<*>,
+  header?: React.Element<*>,
+  footer?: React.Element<*>,
+  padding?: string | number,
+  paddingTop?: string | number,
+  paddingBottom?: string | number,
+  paddingLeft?: string | number,
+  paddingRight?: string | number,
+  paddingV?: string | number,
+  paddingH?: string | number,
+  variant?: Object,
 };
 
 export default class CardBase extends React.Component<*, Props, *> {
-
   static stylesheet = stylesheet;
 
   render() {
@@ -37,8 +36,12 @@ export default class CardBase extends React.Component<*, Props, *> {
       header,
       footer,
       padding,
-      paddingTop, paddingBottom, paddingLeft, paddingRight,
-      paddingV, paddingH,
+      paddingTop,
+      paddingBottom,
+      paddingLeft,
+      paddingRight,
+      paddingV,
+      paddingH,
       variant,
       ...props
     } = this.props;
@@ -68,4 +71,3 @@ export default class CardBase extends React.Component<*, Props, *> {
     );
   }
 }
-

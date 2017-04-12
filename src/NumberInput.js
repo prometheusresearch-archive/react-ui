@@ -5,13 +5,9 @@
 import * as React from 'react';
 import Input from './Input';
 
-import {
-  tryParseNumber,
-  extractValueFromEvent
-} from './FormUtils';
+import {tryParseNumber, extractValueFromEvent} from './FormUtils';
 
 export default class NumberInput extends React.Component {
-
   static stylesheet = {
     Input: Input,
   };
@@ -27,13 +23,7 @@ export default class NumberInput extends React.Component {
 
   render() {
     let {Input} = this.constructor.stylesheet;
-    return (
-      <Input
-        {...this.props}
-        value={this.state.value}
-        onChange={this.onChange}
-        />
-    );
+    return <Input {...this.props} value={this.state.value} onChange={this.onChange} />;
   }
 
   componentWillReceiveProps(nextProps) {
@@ -53,5 +43,5 @@ export default class NumberInput extends React.Component {
       }
       this.props.onChange(value);
     });
-  }
+  };
 }

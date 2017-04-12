@@ -12,13 +12,12 @@ export let contextTypes = {
 };
 
 type FocusableProps = {
-  children: React.Element<*>;
-  inputRef: (HTMLElement) => *;
-  focusIndex: number;
+  children: React.Element<*>,
+  inputRef: (HTMLElement) => *,
+  focusIndex: number,
 };
 
 export class Focusable extends React.Component<*, FocusableProps, *> {
-
   _ref: ?HTMLElement;
   _inputRef: ?HTMLElement;
 
@@ -39,12 +38,10 @@ export class Focusable extends React.Component<*, FocusableProps, *> {
   }
 
   render() {
-    return React.cloneElement(
-      React.Children.only(this.props.children), {
-        ref: this.onRef,
-        inputRef: this.onInputRef,
-      }
-    );
+    return React.cloneElement(React.Children.only(this.props.children), {
+      ref: this.onRef,
+      inputRef: this.onInputRef,
+    });
   }
 
   onInputRef = (_inputRef: HTMLElement) => {
@@ -89,19 +86,18 @@ export class Focusable extends React.Component<*, FocusableProps, *> {
 }
 
 type FocusableListProps = {
-  tabIndex: number;
-  children: any;
-  activeDescendant: string;
+  tabIndex: number,
+  children: any,
+  activeDescendant: string,
 };
 
 export class FocusableList extends React.Component<*, FocusableListProps, *> {
-
   items: {
-    [name: string]: Focusable;
+    [name: string]: Focusable,
   };
 
   state: {
-    focused: false;
+    focused: false,
   };
 
   static childContextTypes = contextTypes;
@@ -112,16 +108,20 @@ export class FocusableList extends React.Component<*, FocusableListProps, *> {
     this.state = {focused: false};
   }
 
-  toggleFocused = debounce(focused => this.setState(state => {
-    if (state.focused !== focused) {
-      state = {...state, focused};
-    }
-    return state;
-  }), 0);
+  toggleFocused = debounce(
+    focused =>
+      this.setState(state => {
+        if (state.focused !== focused) {
+          state = {...state, focused};
+        }
+        return state;
+      }),
+    0,
+  );
 
   getChildContext() {
     return {
-      focusable: this
+      focusable: this,
     };
   }
 
@@ -131,13 +131,12 @@ export class FocusableList extends React.Component<*, FocusableListProps, *> {
     if (focused) {
       tabIndex = -1;
     }
-    return React.cloneElement(
-      React.Children.only(children), {
-        tabIndex,
-        onKeyDown: this.onKeyDown,
-        onFocus: this.onFocus,
-        onBlur: this.onBlur,
-      });
+    return React.cloneElement(React.Children.only(children), {
+      tabIndex,
+      onKeyDown: this.onKeyDown,
+      onFocus: this.onFocus,
+      onBlur: this.onBlur,
+    });
   }
 
   getFocusedIndex() {

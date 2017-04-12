@@ -15,4 +15,4 @@ module.exports = function() {
     currentFocus: -1,
     addItem: jest.fn(),
   };
-}
+};

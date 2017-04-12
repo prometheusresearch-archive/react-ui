@@ -23,22 +23,21 @@ let Hint = style(Text, {
   disabled: {
     color: '#aaa',
     cursor: 'not-allowed',
-  }
+  },
 });
 
 type Props = {
-  input: React.Element<*>;
-  label?: string;
-  hint?: string;
-  error?: string;
-  errorInline?: string;
-  disabled?: boolean;
-  required?: boolean;
-  invalid?: boolean;
+  input: React.Element<*>,
+  label?: string,
+  hint?: string,
+  error?: string,
+  errorInline?: string,
+  disabled?: boolean,
+  required?: boolean,
+  invalid?: boolean,
 };
 
 export default class Field extends React.Component<*, Props, *> {
-
   id: string;
 
   constructor(props: Props) {
@@ -49,9 +48,13 @@ export default class Field extends React.Component<*, Props, *> {
   render() {
     let {
       input,
-      label, hint,
-      error, errorInline,
-      disabled, required, invalid
+      label,
+      hint,
+      error,
+      errorInline,
+      disabled,
+      required,
+      invalid,
     } = this.props;
 
     if (error && !invalid) {
@@ -96,5 +99,4 @@ export default class Field extends React.Component<*, Props, *> {
       </Block>
     );
   }
-
 }

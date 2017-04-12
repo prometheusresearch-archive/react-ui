@@ -9,26 +9,26 @@ import * as I18N from './I18N';
 import * as Focus from './Focus';
 
 type Props = {
-  value: boolean;
-  onChange: (boolean) => *;
-  label?: string;
-  title?: string;
-  hint?: string;
-  idx: number;
-  disabled?: boolean;
-  focusIndex?: number;
-  inputRef: (HTMLElement) => *;
-  variant?: Object;
+  value: boolean,
+  onChange: (boolean) => *,
+  label?: string,
+  title?: string,
+  hint?: string,
+  idx: number,
+  disabled?: boolean,
+  focusIndex?: number,
+  inputRef: (HTMLElement) => *,
+  variant?: Object,
 };
 
 type Component = string | ReactClass<*>;
 
 export type Stylesheet = {
-  Root: Component;
-  Input: Component;
-  LabelWrapper: Component;
-  Label: Component;
-  Hint: Component;
+  Root: Component,
+  Input: Component,
+  LabelWrapper: Component,
+  Label: Component,
+  Hint: Component,
 };
 
 export let stylesheet: Stylesheet = {
@@ -40,7 +40,6 @@ export let stylesheet: Stylesheet = {
 };
 
 export default class RadioBase extends React.Component<*, Props, *> {
-
   ariaId: string;
 
   static stylesheet = stylesheet;
@@ -58,10 +57,24 @@ export default class RadioBase extends React.Component<*, Props, *> {
 
   render() {
     let {
-      value, label, title, hint, inputRef,
-      variant, disabled, focusIndex, idx: _idx, ...props
+      value,
+      label,
+      title,
+      hint,
+      inputRef,
+      variant,
+      disabled,
+      focusIndex,
+      idx: _idx,
+      ...props
     } = this.props;
-    let {Root, Input, Label, Hint, LabelWrapper} = this.constructor.stylesheet;
+    let {
+      Root,
+      Input,
+      Label,
+      Hint,
+      LabelWrapper,
+    } = this.constructor.stylesheet;
     let {i18n = I18N.defaultContext} = this.context;
     variant = {
       rtl: i18n.dir === 'rtl',
@@ -82,7 +95,7 @@ export default class RadioBase extends React.Component<*, Props, *> {
             type="radio"
             checked={value}
             onChange={this.onChange}
-            />
+          />
         </Focus.Focusable>
         {label &&
           <LabelWrapper variant={variant} onClick={this.onClick}>
@@ -103,5 +116,5 @@ export default class RadioBase extends React.Component<*, Props, *> {
     // $FlowIssue: ...
     let checked = e.target.checked;
     this.props.onChange(checked);
-  }
+  };
 }

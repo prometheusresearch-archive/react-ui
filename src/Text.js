@@ -11,19 +11,21 @@ import * as theme from './theme';
 import {chooseValue} from './Utils';
 
 type Props = {
-  fontSize?: fontSize;
-  fontWeight?: fontWeight;
-  color?: string;
-  style?: Object;
+  fontSize?: fontSize,
+  fontWeight?: fontWeight,
+  color?: string,
+  style?: Object,
 };
 
-export default function Text({
-  fontSize,
-  fontWeight,
-  color,
-  style,
-  ...props
-}: Props) {
+export default function Text(
+  {
+    fontSize,
+    fontWeight,
+    color,
+    style,
+    ...props
+  }: Props,
+) {
   style = {
     fontSize: chooseValue(theme.fontSize, fontSize),
     fontWeight: fontWeight,

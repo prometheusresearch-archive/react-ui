@@ -10,7 +10,6 @@ import ButtonBase from './ButtonBase';
 let textColor = css.rgb(255, 231, 231);
 
 export default class DangerButton extends ButtonBase {
-
   static stylesheet = ButtonStylesheet.create({
     raised: true,
 

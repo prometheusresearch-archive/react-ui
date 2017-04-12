@@ -8,11 +8,7 @@ import HBox from './HBox';
 
 function Box(props) {
   return (
-    <HBox
-      {...props}
-      border={{width: 1, style: 'solid', color: 'red'}}
-      padding={10}
-      />
+    <HBox {...props} border={{width: 1, style: 'solid', color: 'red'}} padding={10} />
   );
 }
 

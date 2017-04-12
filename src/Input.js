@@ -12,12 +12,16 @@ let InputRootFocus = {
   boxShadow: [
     {
       inset: true,
-      x: 0, y: 1, blur: 1,
-      color: css.rgba(0, 0, 0, 0.075)
+      x: 0,
+      y: 1,
+      blur: 1,
+      color: css.rgba(0, 0, 0, 0.075),
     },
     {
-      x: 0, y: 0, spread: 2,
-      color: css.rgba(0, 126, 229, 0.5)
+      x: 0,
+      y: 0,
+      spread: 2,
+      color: css.rgba(0, 126, 229, 0.5),
     },
   ],
 };
@@ -26,13 +30,13 @@ let InputRootTransition = [
   {
     property: 'border-coolor',
     timingFunction: 'ease-in-out',
-    duration: 0.15
+    duration: 0.15,
   },
   {
     property: 'box-shadow',
     timingFunction: 'ease-in-out',
     duration: 0.15,
-  }
+  },
 ];
 
 export const InputRoot = style('input', {
@@ -48,14 +52,14 @@ export const InputRoot = style('input', {
     border: {
       width: 1,
       style: 'solid',
-      color: '#ccc'
+      color: '#ccc',
     },
     borderRadius: 2,
     boxShadow: {
       x: 0,
       y: 1,
       blur: 1,
-      color: css.rgba(0, 0, 0, 0.075)
+      color: css.rgba(0, 0, 0, 0.075),
     },
     transition: InputRootTransition,
     focus: InputRootFocus,
@@ -74,13 +78,13 @@ export const InputRoot = style('input', {
     backgroundColor: '#f9f9f9',
     borderColor: '#f1f1f1',
     cursor: 'not-allowed',
-  }
+  },
 });
 
 export type InputProps = {
-  noBorder?: boolean;
-  disabled?: boolean;
-  error?: boolean;
+  noBorder?: boolean,
+  disabled?: boolean,
+  error?: boolean,
 };
 
 export default function Input({error, disabled, noBorder, ...props}: InputProps) {

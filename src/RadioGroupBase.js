@@ -11,30 +11,30 @@ import * as Focus from './Focus';
 import Radio from './RadioBase';
 
 type Option = {
-  value: string;
-  label?: string;
-  hint?: string;
+  value: string,
+  label?: string,
+  hint?: string,
 };
 
 type Props = {
-  options: Array<Option>;
-  value: string;
-  onChange: (string) => *;
-  layout?: 'horizontal' | 'vertical';
-  disabled?: boolean;
-  variant?: Object;
-  tabIndex?: number;
+  options: Array<Option>,
+  value: string,
+  onChange: (string) => *,
+  layout?: 'horizontal' | 'vertical',
+  disabled?: boolean,
+  variant?: Object,
+  tabIndex?: number,
 
-  onFocus: (ev: UIEvent) => *;
-  onBlur: (ev: UIEvent) => *;
+  onFocus: (ev: UIEvent) => *,
+  onBlur: (ev: UIEvent) => *,
 };
 
 type Component = string | ReactClass<*>;
 
 export type Stylesheet = {
-  Root: Component;
-  RadioWrapper: Component;
-  Radio: Component;
+  Root: Component,
+  RadioWrapper: Component,
+  Radio: Component,
 };
 
 export let stylesheet: Stylesheet = {
@@ -44,7 +44,6 @@ export let stylesheet: Stylesheet = {
 };
 
 export default class RadioGroupBase extends React.Component<*, Props, *> {
-
   static contextTypes = I18N.contextTypes;
 
   static stylesheet = stylesheet;
@@ -100,7 +99,7 @@ export default class RadioGroupBase extends React.Component<*, Props, *> {
           onChange={this.onChange.bind(this, option.value)}
           onFocus={this.props.onFocus}
           onBlur={this.props.onBlur}
-          />
+        />
       </RadioWrapper>
     );
   }

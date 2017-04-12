@@ -15,8 +15,6 @@ export default style('a', {
     margin: 0,
     color: theme.header.text,
     textDecoration: css.none,
-    cursor: css.cursor.pointer
-  }
+    cursor: css.cursor.pointer,
+  },
 });
-
-

@@ -8,7 +8,6 @@ import ButtonBase from '../ButtonBase';
 import theme from './theme';
 
 export default class PrimaryButton extends ButtonBase {
-
   static stylesheet = {
     ...ButtonBase.stylesheet,
     Root: style('a', {
@@ -40,17 +39,17 @@ export default class PrimaryButton extends ButtonBase {
       },
       small: {
         fontSize: '10pt',
-      }
+      },
     }),
     Caption: style(ButtonBase.stylesheet.Caption, {
       base: {
         verticalAlign: 'middle',
-      }
+      },
     }),
     IconWrapper: style(ButtonBase.stylesheet.IconWrapper, {
       hasCaption: {
-        marginRight: 5
-      }
+        marginRight: 5,
+      },
     }),
   };
 }

@@ -41,6 +41,5 @@ const INTEGER_RE = /^\-?[0-9]+?$/;
  */
 export function tryParseInteger(value: string): string | number {
   let parsed = parseInt(value, 10);
-  return isNaN(parsed) || !INTEGER_RE.exec(value) ?
-    value : parsed;
+  return isNaN(parsed) || !INTEGER_RE.exec(value) ? value : parsed;
 }

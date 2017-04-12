@@ -12,5 +12,5 @@ export default style(Text, {
   base: {
     color: 'red',
     fontSize: fontSize['x-small'],
-  }
+  },
 });

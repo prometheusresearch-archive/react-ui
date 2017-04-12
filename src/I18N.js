@@ -6,7 +6,7 @@
 import * as React from 'react';
 
 export type I18NContext = {
-  dir: 'ltr' | 'rtl';
+  dir: 'ltr' | 'rtl',
 };
 
 export const contextTypes = {
@@ -18,9 +18,8 @@ export const defaultContext: I18NContext = {
 };
 
 export class I18N extends React.Component {
-
   props: I18NContext & {
-    children?: any;
+    children?: any,
   };
 
   static childContextTypes = contextTypes;

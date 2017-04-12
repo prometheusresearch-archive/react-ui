@@ -10,19 +10,12 @@ import React from 'react';
 import {findAllByType} from '../test';
 import RadioGroup from '../RadioGroup';
 
-let options = [
-  {value: 'a', label: 'A'},
-  {value: 'b', label: 'B'}
-];
+let options = [{value: 'a', label: 'A'}, {value: 'b', label: 'B'}];
 
 it('renders', function() {
   let onChange = jest.fn();
   let tree = Renderer.create(
-    <RadioGroup
-      value="a"
-      onChange={onChange}
-      options={options}
-      />
+    <RadioGroup value="a" onChange={onChange} options={options} />,
   );
   expect(tree).toMatchSnapshot();
 

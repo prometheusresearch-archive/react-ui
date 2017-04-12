@@ -14,14 +14,14 @@ let ProgressBarRoot = style(Block, {
     width: '100%',
     height: 24,
     background: '#79b8f1',
-  }
+  },
 });
 
 let ProgressBarBar = style(Block, {
   base: {
     background: brandColors.primary,
     height: '100%',
-  }
+  },
 });
 
 let ProgressBarLabel = style(Block, {
@@ -34,27 +34,23 @@ let ProgressBarLabel = style(Block, {
     width: '100%',
     fontSize: '12px',
     padding: '5px',
-  }
+  },
 });
 
 type Props = {
-  progress?: number;
-  formatLabel?: ({progress: number}) => string | React$Element<*>;
+  progress?: number,
+  formatLabel?: ({progress: number}) => string | React$Element<*>,
 };
 
 export default function ProgressBar({progress = 0, formatLabel}: Props) {
   let progressWidth = `${100 * progress}%`;
-  let progressLabel = formatLabel ?
-    formatLabel({progress}) :
-    `${Math.floor(100 * progress)}%`;
+  let progressLabel = formatLabel
+    ? formatLabel({progress})
+    : `${Math.floor(100 * progress)}%`;
   return (
     <ProgressBarRoot>
-      <ProgressBarBar
-        position="absolute"
-        width={progressWidth}
-        />
-      <ProgressBarLabel
-        position="absolute">
+      <ProgressBarBar position="absolute" width={progressWidth} />
+      <ProgressBarLabel position="absolute">
         {progressLabel}
       </ProgressBarLabel>
     </ProgressBarRoot>
