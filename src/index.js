@@ -53,4 +53,6 @@ export {default as ErrorText} from './ErrorText';
 
 export {default as SwatchColorPicker} from './SwatchColorPicker';
 
+export {default as TabContainer} from './TabContainer';
+
 export {Element, style, css} from 'react-stylesheet';
