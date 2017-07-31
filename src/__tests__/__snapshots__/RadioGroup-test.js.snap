@@ -2,7 +2,7 @@
 
 exports[`renders 1`] = `
 <div
-  className="div-1648223554"
+  className={CompiledCSSWithVariants {}}
   onBlur={[Function]}
   onFocus={[Function]}
   onKeyDown={[Function]}
@@ -10,7 +10,16 @@ exports[`renders 1`] = `
   tabIndex={0}
 >
   <div
-    className="div-828019517 div-vertical-828019517"
+    className={
+      CompiledCSSWithVariants {
+        "vertical": Object {
+          "lastChild": Object {
+            "marginBottom": 0,
+          },
+          "marginBottom": 4,
+        },
+      }
+    }
   >
     <div
       title={undefined}
@@ -18,7 +27,13 @@ exports[`renders 1`] = `
       <input
         aria-labelledby="aria1"
         checked={true}
-        className="Input-161314557"
+        className={
+          CompiledCSSWithVariants {
+            "base": Object {
+              "verticalAlign": "middle",
+            },
+          }
+        }
         disabled={undefined}
         onBlur={[Function]}
         onChange={[Function]}
@@ -27,7 +42,19 @@ exports[`renders 1`] = `
         type="radio"
       />
       <div
-        className="Block-2087937970 Block-ltr-2087937970"
+        className={
+          CompiledCSSWithVariants {
+            "base": Object {
+              "cursor": "default",
+              "display": "inline-block",
+              "userSelect": "none",
+              "verticalAlign": "middle",
+            },
+            "ltr": Object {
+              "marginLeft": 8,
+            },
+          }
+        }
         onClick={[Function]}
         style={
           Object {
@@ -59,19 +86,42 @@ exports[`renders 1`] = `
         }
       >
         <div
-          className="div-3928652604"
+          className={
+            CompiledCSSWithVariants {
+              "base": Object {
+                "color": "#444",
+                "fontSize": "0.875rem",
+                "fontWeight": 200,
+              },
+            }
+          }
           id="aria1"
         >
           A
         </div>
         <div
-          className="div-2120500968"
+          className={
+            CompiledCSSWithVariants {
+              "base": Object {
+                "fontSize": "0.6rem",
+              },
+            }
+          }
         />
       </div>
     </div>
   </div>
   <div
-    className="div-828019517 div-vertical-828019517"
+    className={
+      CompiledCSSWithVariants {
+        "vertical": Object {
+          "lastChild": Object {
+            "marginBottom": 0,
+          },
+          "marginBottom": 4,
+        },
+      }
+    }
   >
     <div
       title={undefined}
@@ -79,7 +129,13 @@ exports[`renders 1`] = `
       <input
         aria-labelledby="aria2"
         checked={false}
-        className="Input-161314557"
+        className={
+          CompiledCSSWithVariants {
+            "base": Object {
+              "verticalAlign": "middle",
+            },
+          }
+        }
         disabled={undefined}
         onBlur={[Function]}
         onChange={[Function]}
@@ -88,7 +144,19 @@ exports[`renders 1`] = `
         type="radio"
       />
       <div
-        className="Block-2087937970 Block-ltr-2087937970"
+        className={
+          CompiledCSSWithVariants {
+            "base": Object {
+              "cursor": "default",
+              "display": "inline-block",
+              "userSelect": "none",
+              "verticalAlign": "middle",
+            },
+            "ltr": Object {
+              "marginLeft": 8,
+            },
+          }
+        }
         onClick={[Function]}
         style={
           Object {
@@ -120,13 +188,27 @@ exports[`renders 1`] = `
         }
       >
         <div
-          className="div-3928652604"
+          className={
+            CompiledCSSWithVariants {
+              "base": Object {
+                "color": "#444",
+                "fontSize": "0.875rem",
+                "fontWeight": 200,
+              },
+            }
+          }
           id="aria2"
         >
           B
         </div>
         <div
-          className="div-2120500968"
+          className={
+            CompiledCSSWithVariants {
+              "base": Object {
+                "fontSize": "0.6rem",
+              },
+            }
+          }
         />
       </div>
     </div>

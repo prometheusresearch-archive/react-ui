@@ -3,7 +3,18 @@
 exports[`renders with icon and caption 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2121099832"
+  className={
+    CompiledCSSWithVariants {
+      "base": Object {
+        "display": "inline-block",
+        "overflow": "hidden",
+        "textAlign": "left",
+        "userSelect": "none",
+        "verticalAlign": "bottom",
+        "whiteSpace": "nowrap",
+      },
+    }
+  }
   disabled={undefined}
   href={undefined}
   role="button"
@@ -16,7 +27,13 @@ exports[`renders with icon and caption 1`] = `
   }
 >
   <div
-    className="div-2772671"
+    className={
+      CompiledCSSWithVariants {
+        "base": Object {
+          "display": "inline-block",
+        },
+      }
+    }
     style={
       Object {
         "marginLeft": 0,
@@ -27,7 +44,13 @@ exports[`renders with icon and caption 1`] = `
     plus
   </div>
   <div
-    className="div-2772671"
+    className={
+      CompiledCSSWithVariants {
+        "base": Object {
+          "display": "inline-block",
+        },
+      }
+    }
   >
     Caption
   </div>
@@ -37,7 +60,18 @@ exports[`renders with icon and caption 1`] = `
 exports[`renders with just caption 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2121099832"
+  className={
+    CompiledCSSWithVariants {
+      "base": Object {
+        "display": "inline-block",
+        "overflow": "hidden",
+        "textAlign": "left",
+        "userSelect": "none",
+        "verticalAlign": "bottom",
+        "whiteSpace": "nowrap",
+      },
+    }
+  }
   disabled={undefined}
   href={undefined}
   role="button"
@@ -50,7 +84,13 @@ exports[`renders with just caption 1`] = `
   }
 >
   <div
-    className="div-2772671"
+    className={
+      CompiledCSSWithVariants {
+        "base": Object {
+          "display": "inline-block",
+        },
+      }
+    }
   >
     OK
   </div>
@@ -60,7 +100,18 @@ exports[`renders with just caption 1`] = `
 exports[`renders with just icon (element) 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2121099832"
+  className={
+    CompiledCSSWithVariants {
+      "base": Object {
+        "display": "inline-block",
+        "overflow": "hidden",
+        "textAlign": "left",
+        "userSelect": "none",
+        "verticalAlign": "bottom",
+        "whiteSpace": "nowrap",
+      },
+    }
+  }
   disabled={undefined}
   href={undefined}
   role="button"
@@ -73,7 +124,13 @@ exports[`renders with just icon (element) 1`] = `
   }
 >
   <div
-    className="div-2772671"
+    className={
+      CompiledCSSWithVariants {
+        "base": Object {
+          "display": "inline-block",
+        },
+      }
+    }
     style={
       Object {
         "marginLeft": 0,
@@ -89,7 +146,18 @@ exports[`renders with just icon (element) 1`] = `
 exports[`renders with just icon (text) 1`] = `
 <button
   aria-pressed={undefined}
-  className="button-2121099832"
+  className={
+    CompiledCSSWithVariants {
+      "base": Object {
+        "display": "inline-block",
+        "overflow": "hidden",
+        "textAlign": "left",
+        "userSelect": "none",
+        "verticalAlign": "bottom",
+        "whiteSpace": "nowrap",
+      },
+    }
+  }
   disabled={undefined}
   href={undefined}
   role="button"
@@ -102,7 +170,13 @@ exports[`renders with just icon (text) 1`] = `
   }
 >
   <div
-    className="div-2772671"
+    className={
+      CompiledCSSWithVariants {
+        "base": Object {
+          "display": "inline-block",
+        },
+      }
+    }
     style={
       Object {
         "marginLeft": 0,
