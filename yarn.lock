@@ -5239,9 +5239,9 @@ react-stubber@^1.0.0:
   dependencies:
     babel-runtime "^6.5.0"
 
-react-stylesheet@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/react-stylesheet/-/react-stylesheet-2.1.0.tgz#3c94aa053796c67c43340845bcd60f5e2772ed15"
+react-stylesheet@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/react-stylesheet/-/react-stylesheet-2.1.1.tgz#c5ab35eb832d2b0f00938ad971bf5dac5fae7008"
   dependencies:
     fbjs "^0.8.9"
     inline-style-prefix-all "^2.0.2"
