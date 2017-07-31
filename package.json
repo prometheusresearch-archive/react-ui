@@ -45,6 +45,9 @@
     "testPathIgnorePatterns": [
       "<rootDir>[/\\\\](build|docs|node_modules)[/\\\\]"
     ],
+    "snapshotSerializers": [
+      "react-stylesheet/testutils-snapshot-serializer"
+    ],
     "testEnvironment": "jsdom",
     "testURL": "http://localhost",
     "transform": {
@@ -63,7 +66,7 @@
     "@kadira/storybook": "^2.35.3",
     "babel-cli": "^6.23.0",
     "babel-core": "^6.23.1",
-    "babel-jest": "^19.0.0",
+    "babel-jest": "^20.0.0",
     "babel-preset-prometheusresearch": "^0.1.0",
     "conventional-changelog-cli": "^1.2.0",
     "enzyme": "^2.7.1",
@@ -74,7 +77,7 @@
     "flow-bin": "^0.43.1",
     "flow-coverage-report": "^0.3.0",
     "indent-string": "^3.1.0",
-    "jest-cli": "^19.0.2",
+    "jest-cli": "^20.0.0",
     "normalize.css": "^5.0.0",
     "power-assert": "^1.4.1",
     "prettier": "^0.22.0",
@@ -90,7 +93,7 @@
     "debounce": "^1.0.0",
     "focus-group": "^0.3.1",
     "invariant": "^2.2.1",
-    "react-stylesheet": "^2.0.3",
+    "react-stylesheet": "^2.1.0",
     "teeny-tap": "^0.2.0"
   }
 }

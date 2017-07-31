@@ -4,4 +4,3 @@ lib/
 examples/webpack/bundle
 site/bundle
 npm-debug.log
-yarn.lock
