@@ -78,6 +78,7 @@ function TabButton({label, active, onClick}) {
       overflow="hidden"
       whiteSpace="nowrap"
       textOverflow="ellipsis"
+      title={label}
       onClick={onClick}>
       <span>{label}</span>
     </Element>
